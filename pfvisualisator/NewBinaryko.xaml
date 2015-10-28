@@ -1,0 +1,35 @@
+﻿<Window x:Class="pfVisualisator.NewBinaryko"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="NewBinaryko" Height="286" Width="591">
+    <DockPanel>
+        <StackPanel Name="Bosso" Margin="12">
+            <StackPanel Orientation="Horizontal" Margin="3">
+                <StackPanel Orientation= "Vertical">
+                    <StackPanel Orientation="Horizontal" Margin="3">
+                        <Label Name="CommentoLb">Описание:</Label>
+                        <TextBox Name="CommentoTbx" Width="360" Text ="Котёнок опешил
+Смайлик «smile»
+!!! Что за чудище!!! И похоже от общения с ними сошёл с ума... " HorizontalAlignment="Right" AcceptsReturn="True" Height="100"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="3">
+                        <Label Name="FiloCaptionLb">Файло: </Label>
+                        <TextBlock HorizontalAlignment="Left" Name="FiloTBl" VerticalAlignment="Center" MaxWidth="270" />
+                        <Label Name="SizoCaptioncrLb">Размер: </Label>
+                        <TextBlock HorizontalAlignment="Left" Name="SizoTBl" VerticalAlignment="Center" />
+                    </StackPanel>
+                </StackPanel>
+                <Label Name="pSdvigLb1"></Label>
+                <StackPanel VerticalAlignment="Center">
+                <Button Name="FiloOpenaBtn" Click="FiloOpena_Click" VerticalAlignment="Center">Load from File</Button>
+                <Label Name="pSdvigLb2"></Label>
+                <Button Name="FromoBasoBtn" Click="FromoBaso_Click" VerticalAlignment="Center">Load from Base</Button>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="3" HorizontalAlignment="Center">
+                <Button Name="savoBtn" Margin="13" Click="savoBtn_Click">Save</Button>
+                <Button Name="canceloBtn" Margin="13" Click="canceloBtn_Click">Cancel</Button>
+            </StackPanel>
+        </StackPanel>
+    </DockPanel>
+</Window>

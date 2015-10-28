@@ -1,0 +1,34 @@
+﻿<Window x:Class="pfVisualisator.PictureNew"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:pfVisualisator"
+        xmlns:converts="clr-namespace:pfVisualisator"
+        Title="Загрузить картинку" Height="420" Width="604">
+    <Window.Resources>
+        <ObjectDataProvider x:Key="ObjPica" ObjectType="{x:Type local:mypict}" MethodName="ZagoPusta">
+        </ObjectDataProvider>
+        <converts:BinaryImageConverter x:Key="imgConverter" />
+    </Window.Resources>
+    <DockPanel>
+        <StackPanel Name="Bosso" Margin="12" DataContext="{Binding Source={StaticResource ObjPica}, Mode=OneWay}" >
+            <StackPanel Orientation="Horizontal" Margin="3">
+                <Label Name="pdescrLb">Описание:</Label>
+                <TextBox Name="pdescrTbx" Width="260" HorizontalAlignment="Right" Text="{Binding Path=Commento, Mode=TwoWay}"></TextBox>
+                <Label Name="pSdvigLb1"></Label>
+                <Button Name="FiloOpenaBtn" Click="FiloOpena_Click">Load from File</Button>
+                <Label Name="pSdvigLb2"> </Label>
+                <Button Name="FromoBuffoBtn" Click="FromoBuffo_Click">Load from Buffer</Button>
+            </StackPanel>
+            <Image Name="image1" Source="{Binding Converter={StaticResource imgConverter}, Path=Picture}" 
+                   Stretch="UniformToFill" StretchDirection="Both">
+                <Image.BitmapEffect>
+                    <DropShadowBitmapEffect Color="Black" />
+                </Image.BitmapEffect>
+            </Image>
+            <StackPanel Orientation="Horizontal" Margin="3" HorizontalAlignment="Center">
+                <Button Name="savoBtn" Margin="13" Click="savoBtn_Click">Save</Button>
+                <Button Name="canceloBtn" Margin="13" Click="canceloBtn_Click">Cancel</Button>
+            </StackPanel>
+        </StackPanel>
+    </DockPanel>
+</Window>

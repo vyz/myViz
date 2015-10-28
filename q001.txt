@@ -1,0 +1,133 @@
+Alexander, Chumachenko-Robert, Hovhannisyan Отличие:файл-прого$1. Nf3 {[%clk 1:30:57]} Nf6 {[%clk 1:30:58]} 2. d4 {[%clk 1:31:24]} d5$1. Nf3 Nf6 2. d4 d5 3. g3 g6 4. Bg2 Bg7 0-1$
+Faizrakhmanov, Ildar-Fakhrutdinov, Timur Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Nge2 d5 6. a3 Bd6 7. Ng3 c6 8. Be2$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Ne2 d5 6. a3 Bd6 7. Ng3 c6 8. Be2 a6$
+Faizrakhmanov, Ildar-Fakhrutdinov, Timur Отличие:файл-прого$a6 9. O-O c5 10. dxc5 Bxc5 11. Qc2 Nc6 12. Rd1 Ba7 13. Bf3 Ne5 14. cxd5 Nxf3+$9. O-O c5 10. dxc5 Bxc5 11. Qc2 Nc6 12. Rd1 Ba7 13. Bf3 Ne5 14. cxd5 Nxf3+ 15.$
+Faizrakhmanov, Ildar-Fakhrutdinov, Timur Отличие:файл-прого$15. gxf3 exd5 16. Qb3 h5 17. Nxd5 h4 18. Ne2 Be6 19. Nef4 Nxd5 20. Nxd5 Qg5+$gxf3 exd5 16. Qb3 h5 17. Nxd5 h4 18. Ne2 Be6 19. Nef4 Nxd5 20. Nxd5 Qg5+ 21.$
+Faizrakhmanov, Ildar-Fakhrutdinov, Timur Отличие:файл-прого$21. Kf1 Rad8 22. e4 Qe5 23. Qc3 Qxh2 24. Be3 Bxd5 25. Bxa7 Bc6 26. Bd4 Rc8 27.$Kf1 Rad8 22. e4 Qe5 23. Qc3 Qxh2 24. Be3 Bxd5 25. Bxa7 Bc6 26. Bd4 Rc8 27. Ke1$
+Faizrakhmanov, Ildar-Fakhrutdinov, Timur Отличие:файл-прого$Ke1 Bb5 28. Qb3 Rfd8 29. Bb6 Qg1# 0-1$Bb5 28. Qb3 Rfd8 29. Bb6 Qg1# 0-1$
+Lintchevski, Daniil-Filipenko, Alexander V Отличие:файл-прого$Qb6 9. c5 Qa6 10. Re1 b6 11. cxb6 Qxb6 12. e4 Bh7 13. exd5 cxd5 14. Qa4 Ngf6$Qb6 9. c5 Qa6 10. Re1 b6 11. cxb6 Qxb6 12. e4 Bh7 13. exd5 cxd5 14. Qa4 Nf6 15.$
+Lintchevski, Daniil-Filipenko, Alexander V Отличие:файл-прого$15. Ne5 Qb7 16. b3 Kf8 17. Ba3 Nb6 18. Bxe7+ Qxe7 19. Qa5 g5 20. Nb5 Kg7 21.$Ne5 Qb7 16. b3 Kf8 17. Ba3 Nb6 18. Bxe7+ Qxe7 19. Qa5 g5 20. Nb5 Kg7 21. Rec1$
+Lintchevski, Daniil-Filipenko, Alexander V Отличие:файл-прого$Rec1 Rhc8 22. Rxc8 Nxc8 23. Nc7 Nb6 24. Nxa8 Nxa8 25. Rc1 Ne4 26. f3 Nd6 27.$Rhc8 22. Rxc8 Nxc8 23. Nc7 Nb6 24. Nxa8 Nxa8 25. Rc1 Ne4 26. f3 Nd6 27. Nc6 1-0$
+Shimanov, Aleksandr-Shahinyan, David Отличие:файл-прого$Kc5 59. Qf6 {Kd5} 1-0$Kc5 59. Qf6 1-0$
+Faizrakhmanov, Ildar-Baiburina, Kamilla Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Nge2 c5 6. a3 Bxc3+ 7. Nxc3 b6 8.$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Ne2 c5 6. a3 Bxc3+ 7. Nxc3 b6 8. Bd3$
+Faizrakhmanov, Ildar-Baiburina, Kamilla Отличие:файл-прого$Bd3 Bb7 9. O-O d6 10. b3 Nbd7 11. Bb2 Re8 12. Nb5 Qb8 13. dxc5 dxc5 14. Qc2 a6$Bb7 9. O-O d6 10. b3 Nbd7 11. Bb2 Re8 12. Nb5 Qb8 13. dxc5 dxc5 14. Qc2 a6 15.$
+Faizrakhmanov, Ildar-Baiburina, Kamilla Отличие:файл-прого$15. Nc3 Ne5 16. Ne4 Nfd7 17. Ng3 Nxd3 18. Qxd3 Qc7 19. Qc3 f6 20. Rad1 Rad8 21.$Nc3 Ne5 16. Ne4 Nfd7 17. Ng3 Nxd3 18. Qxd3 Qc7 19. Qc3 f6 20. Rad1 Rad8 21. e4$
+Faizrakhmanov, Ildar-Baiburina, Kamilla Отличие:файл-прого$e4 b5 22. f4 Nb6 23. cxb5 axb5 24. Nh5 Rxd1 25. Rxd1 e5 26. fxe5 fxe5 27. Qg3$b5 22. f4 Nb6 23. cxb5 axb5 24. Nh5 Rxd1 25. Rxd1 e5 26. fxe5 fxe5 27. Qg3 Qe7$
+Faizrakhmanov, Ildar-Baiburina, Kamilla Отличие:файл-прого$Qe7 28. Rf1 Kh8 29. Bxe5 Rg8 30. Qf4 Nd7 31. Bxg7+ Rxg7 32. Nxg7 Qxg7 33. Rd1$28. Rf1 Kh8 29. Bxe5 Rg8 30. Qf4 Nd7 31. Bxg7+ Rxg7 32. Nxg7 Qxg7 33. Rd1 Bc6$
+Faizrakhmanov, Ildar-Baiburina, Kamilla Отличие:файл-прого$Bc6 34. h3 Qe7 35. Qf5 c4 36. bxc4 bxc4 37. Qf3 Bxe4 38. Rxd7 Qc5+ 39. Qf2$34. h3 Qe7 35. Qf5 c4 36. bxc4 bxc4 37. Qf3 Bxe4 38. Rxd7 Qc5+ 39. Qf2 Qxf2+$
+Faizrakhmanov, Ildar-Baiburina, Kamilla Отличие:файл-прого$Qxf2+ 40. Kxf2 c3 41. Rc7 c2 42. g4 Kg8 43. Ke3 Bg6 44. Kd2 1-0$40. Kxf2 c3 41. Rc7 c2 42. g4 Kg8 43. Ke3 Bg6 44. Kd2 1-0$
+Predke, Alexandr-Shimanov, Aleksandr Отличие:файл-прого$53. Kf1 Qb1+ 54. Kg2 Rg5+ 55. Kf3 Qh1+ 56. Kxf4 Qh4+ {Ke5+ Kxe5} 0-1$53. Kf1 Qb1+ 54. Kg2 Rg5+ 55. Kf3 Qh1+ 56. Kxf4 Qh4+ 0-1$
+Mamedov, Nidjat-Pridorozhni, Aleksei Отличие:файл-прого$Rh4 h5 35. Kc3 Kf7 36. Kb3 Ke6 37. Ba3 f4 38. g3 Kf5 39. gxf4 exf4 40. Bd6 {Ke5$Rh4 h5 35. Kc3 Kf7 36. Kb3 Ke6 37. Ba3 f4 38. g3 Kf5 39. gxf4 exf4 40. Bd6$
+Mamedov, Nidjat-Pridorozhni, Aleksei Отличие:файл-прого$} 1/2-1/2$1/2-1/2$
+Murzin, Lenar-Gordievsky, Dmitry Отличие:файл-прого$1. d4 c5 2. d5 g6 3. e4 Bg7 4. Nc3 d6 5. Bb5+ Nd7 6. a4 Ngf6 7. Nf3 a6 8. Be2$1. d4 c5 2. d5 g6 3. e4 Bg7 4. Nc3 d6 5. Bb5+ Nd7 6. a4 Nf6 7. Nf3 a6 8. Be2 b6$
+Murzin, Lenar-Gordievsky, Dmitry Отличие:файл-прого$b6 9. O-O O-O 10. Re1 Ne8 11. Bg5 h6 12. Bh4 Ne5 13. Bg3 Bd7 14. h3 Nxf3+ 15.$9. O-O O-O 10. Re1 Ne8 11. Bg5 h6 12. Bh4 Ne5 13. Bg3 Bd7 14. h3 Nxf3+ 15. Bxf3$
+Murzin, Lenar-Gordievsky, Dmitry Отличие:файл-прого$Bxf3 b5 16. axb5 axb5 17. Rxa8 Qxa8 18. e5 b4 19. Ne4 Qa6 20. b3 Bf5 21. Nd2$b5 16. axb5 axb5 17. Rxa8 Qxa8 18. e5 b4 19. Ne4 Qa6 20. b3 Bf5 21. Nd2 dxe5$
+Murzin, Lenar-Gordievsky, Dmitry Отличие:файл-прого$dxe5 22. Bxe5 Bxe5 23. Rxe5 Bxc2 24. Qe1 Qf6 25. Rxe7 Nd6 26. Rc7 Re8 27. Qc1$22. Bxe5 Bxe5 23. Rxe5 Bxc2 24. Qe1 Qf6 25. Rxe7 Nd6 26. Rc7 Re8 27. Qc1 Qc3$
+Murzin, Lenar-Gordievsky, Dmitry Отличие:файл-прого$Qc3 28. Rc6 Ra8 29. Nf1 Nf5 30. d6 Rd8 31. Qf4 Nd4 32. Rc7 Nxf3+ 33. Qxf3 Qxf3$28. Rc6 Ra8 29. Nf1 Nf5 30. d6 Rd8 31. Qf4 Nd4 32. Rc7 Nxf3+ 33. Qxf3 Qxf3 34.$
+Murzin, Lenar-Gordievsky, Dmitry Отличие:файл-прого$34. gxf3 Rxd6 35. Rxc5 Bxb3 36. Rb5 Rd4 37. Ne3 Be6 38. Kg2 b3 39. Ng4 Kg7 40.$gxf3 Rxd6 35. Rxc5 Bxb3 36. Rb5 Rd4 37. Ne3 Be6 38. Kg2 b3 39. Ng4 Kg7 40. Kg3$
+Murzin, Lenar-Gordievsky, Dmitry Отличие:файл-прого$Kg3 Rd2 41. Ne5 b2 0-1$Rd2 41. Ne5 b2 0-1$
+Kurninov, Andrei-Belova, Olga Отличие:файл-прого$Qxg2 Bxg2 29. Kxg2 Qg7+ 30. Kh3 Qxf7 31. Rg1 Qf5+ 32. Rg4 Rg8 33. Rcg1 d5 34.$Qxg2 Bxg2 29. Kxg2 Qg7+ 30. Kh3 Qxf7 31. Rg1 Qf5+ 32. Rg4 Rg8 33. Rg1 d5 34.$
+Balashov, Yuri S-Khazieva, Elza Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 b6 5. Nge2 Bb7 6. a3 Bxc3+ 7. Nxc3 O-O 8.$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 b6 5. Ne2 Bb7 6. a3 Bxc3+ 7. Nxc3 O-O 8. d5$
+Balashov, Yuri S-Khazieva, Elza Отличие:файл-прого$d5 d6 9. Be2 e5 10. e4 a5 11. Be3 Nbd7 12. b4 Re8 13. O-O Nf8 14. c5 bxc5 15.$d6 9. Be2 e5 10. e4 a5 11. Be3 Nbd7 12. b4 Re8 13. O-O Nf8 14. c5 bxc5 15. bxc5$
+Balashov, Yuri S-Khazieva, Elza Отличие:файл-прого$bxc5 dxc5 16. Bb5 N6d7 17. Rb1 Ba6 18. Qc2 Qh4 19. f3 Rec8 20. a4 h6 21. Rfc1$dxc5 16. Bb5 N6d7 17. Rb1 Ba6 18. Qc2 Qh4 19. f3 Rec8 20. a4 h6 21. Rfc1 Qf6$
+Balashov, Yuri S-Khazieva, Elza Отличие:файл-прого$Qf6 22. Bc6 Ra7 23. Nb5 Bxb5 24. Rxb5 Qd6 25. Rxc5 1-0$22. Bc6 Ra7 23. Nb5 Bxb5 24. Rxb5 Qd6 25. Rxc5 1-0$
+Belova, Olga-Miroshnichenko, Pavel Отличие:файл-прого$Nd1 Nd4+ 28. cxd4 cxd4 29. Ndb2 d3+ 30. Nxd3 Qxc4+ 31. Kd2 Qxa2+ 32. Ke3 Qb3$Nd1 Nd4+ 28. cxd4 cxd4 29. Nb2 d3+ 30. Nxd3 Qxc4+ 31. Kd2 Qxa2+ 32. Ke3 Qb3 33.$
+Belova, Olga-Miroshnichenko, Pavel Отличие:файл-прого$33. Kd4 Qc4+ 34. Ke3 Qc3 35. Qd2 Nc4+ 0-1$Kd4 Qc4+ 34. Ke3 Qc3 35. Qd2 Nc4+ 0-1$
+Hovhannisyan, Robert-Danin, Alexandre Отличие:файл-прого$gxf4 41. gxf4 Bc7 42. Rd4 Kf5 43. Bc4 Rxc6 44. Kf3 Kf6 45. Ke4 {Ke5+} 1/2-1/2$gxf4 41. gxf4 Bc7 42. Rd4 Kf5 43. Bc4 Rxc6 44. Kf3 Kf6 45. Ke4 1/2-1/2$
+Gerasimov, Ivan-Faizulin, Zharas Отличие:файл-прого$1. d4 c5 2. d5 e5 3. e4 d6 4. Bb5+ Nd7 5. a4 Ngf6 6. Nc3 Be7 7. Nf3 O-O 8. O-O$1. d4 c5 2. d5 e5 3. e4 d6 4. Bb5+ Nd7 5. a4 Nf6 6. Nc3 Be7 7. Nf3 O-O 8. O-O$
+Shimanov, Aleksandr-Lintchevski, Daniil Отличие:файл-прого$Ke3 b1=N 41. Rxb1 Kxf6 42. Ke4 {Ke5+} 1/2-1/2$Ke3 b1=N 41. Rxb1 Kxf6 42. Ke4 1/2-1/2$
+Kalegin, Evgenij-Askerov, Marat Отличие:файл-прого$Rxe6 28. Nxe6 Bxf2+ 29. Rxf2 Qb6 30. Nf4 Re7 31. Ref1 h6 32. Nd3 Ba6 33. Qb2$Rxe6 28. Nxe6 Bxf2+ 29. Rxf2 Qb6 30. Nf4 Re7 31. Rf1 h6 32. Nd3 Ba6 33. Qb2$
+Neizvestnykh, Vitalij-Panfilov, Ilya Отличие:файл-прого$Qc2 Bb4 9. Nge2 O-O 10. h4 c5 11. Bf5 cxd4 12. Nxd4 Ne4 13. O-O Bxc3 14. bxc3$Qc2 Bb4 9. Ne2 O-O 10. h4 c5 11. Bf5 cxd4 12. Nxd4 Ne4 13. O-O Bxc3 14. bxc3$
+Morozov, Fedor-Baiburina, Kamilla Отличие:файл-прого$Bd6 8. Nd5 Nbd7 9. f3 a6 10. Ne2 h6 11. Be3 Bxd5 12. exd5 Ke7 13. Ng3 g6 14. c4$Bd6 8. Nd5 Nd7 9. f3 a6 10. Ne2 h6 11. Be3 Bxd5 12. exd5 Ke7 13. Ng3 g6 14. c4$
+Vorobiov, Evgeny E-Rychagov, Andrey Отличие:файл-прого$Bf1 Bc8 {Ke4 Ke5+} 1/2-1/2$Bf1 Bc8 1/2-1/2$
+Yandemirov, Valeri-Bocharov, Dmitry Отличие:файл-прого$53. Bc4 f5 54. Ke3 g4 55. Bb3 Nc6 56. Ba4 Na7 57. Bd7 {Ke4+ Kxe4} 1-0$53. Bc4 f5 54. Ke3 g4 55. Bb3 Nc6 56. Ba4 Na7 57. Bd7 1-0$
+Belova, Olga-Puzko, Danila Отличие:файл-прого$1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. Nge2 dxe4 5. a3 Bxc3+ 6. Nxc3 Nc6 7. d5 exd5 8.$1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. Ne2 dxe4 5. a3 Bxc3+ 6. Nxc3 Nc6 7. d5 exd5 8.$
+Khismatullin, Denis-Gaifullin, Artur ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.05.31
+Askerov, Marat-Goganov, Alexey ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.05.31
+Shimanov, Alexander-Pushkin, Eduard ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.05.31
+Murzin, Lenar-Mamedov, Nidjat ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.05.31
+Andriasian, Zaven-Neizvestnykh, Vitalij ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.05.31
+Vorobiov, Evgeny E-Shaydullina, Sandugach ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.05.31
+Remizov, Yaroslav-Bocharov, Dmitry ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.05.31
+Danin, Alexandre-Markelova, Lubov ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.05.31
+Martynyuk, Elizaveta-Rychagov, Andrey ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.05.31
+Shahinyan, David-Khismatullin, Denis ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.01
+Goganov, Aleksey-Sorokin, Aleksey ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.01
+Korchmar, Vasiliy-Shimanov, Aleksandr ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.01
+Mamedov, Nidjat-Nikitenko, Mihail ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.01
+Ponfilenok, Vladimir-Andriasian, Zaven ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.01
+Hovhannisyan, Robert-Murtazin, Bulat ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.01
+Fakhrutdinov, Timur-Vorobiov, Evgeny E ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.01
+Bocharov, Dmitry-Ambartsumova, Karina ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.01
+Gerasimov, Ivan-Danin, Alexandre ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.01
+Rychagov, Andrey-Mishuchkov, Nikolai M ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.01
+Shariyazdanov, Andrey-Goganov, Aleksey ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.02
+Timofeev, Artyom-Hovhannisyan, Robert ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.02
+Vorobiov, Evgeny E-Predke, Alexandr ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.02
+Kharchenko, Boris-Bocharov, Dmitry ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.02
+Belyakov, Bogdan-Rychagov, Andrey ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.02
+Pridorozhni, Aleksei-Gerasimov, Ivan ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.02
+Geller, Jakov-Lintchevski, Daniil ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.02
+Rozum, Ivan-Severina, Maria ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.02
+Khismatullin, Denis-Kalegin, Evgenij ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.02
+Shimanov, Aleksandr-Shahinyan, David ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.02
+Goganov, Aleksey-Rozum, Ivan ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.03
+Hovhannisyan, Robert-Geller, Jakov ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.03
+Predke, Alexandr-Shimanov, Aleksandr ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.03
+Mamedov, Nidjat-Pridorozhni, Aleksei ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.03
+Kalegin, Evgenij-Andriasian, Zaven ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.03
+Gerasimov, Ivan-Vorobiov, Evgeny E ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.03
+Bocharov, Dmitry-Belyakov, Bogdan ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.03
+Rychagov, Andrey-Kharchenko, Boris ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.03
+Lintchevski, Daniil-Korchmar, Vasiliy ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.03
+Miroshnichenko, Pavel-Danin, Alexandre ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.03
+Shimanov, Aleksandr-Hovhannisyan, Robert ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.04
+Rozum, Ivan-Rychagov, Andrey ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.04
+Andriasian, Zaven-Goganov, Aleksey ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.04
+Geller, Jakov-Mamedov, Nidjat ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.04
+Vorobiov, Evgeny E-Kalegin, Evgenij ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.04
+Sorokin, Aleksey-Bocharov, Dmitry ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.04
+Danin, Alexandre-Tokarev, Ilya ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.04
+Pridorozhni, Aleksei-Ovchinnikov, Yury ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.04
+Murtazin, Bulat-Lintchevski, Daniil ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.04
+Timofeev, Artyom-Gerasimov, Ivan ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.04
+Hovhannisyan, Robert-Danin, Alexandre ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.05
+Goganov, Aleksey-Timofeev, Artyom ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.05
+Rozum, Ivan-Shimanov, Aleksandr ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.05
+Rychagov, Andrey-Geller, Jakov ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.05
+Pridorozhni, Aleksei-Belyakov, Bogdan ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.05
+Balashov, Yuri S-Khismatullin, Denis ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.05
+Shahinyan, David-Andriasian, Zaven ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.05
+Yandemirov, Valeri-Vorobiov, Evgeny E ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.05
+Bocharov, Dmitry-Korchmar, Vasiliy ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.05
+Lintchevski, Daniil-Sorokin, Aleksey ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.05
+Goganov, Aleksey-Pridorozhni, Aleksei ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.06
+Rychagov, Andrey-Hovhannisyan, Robert ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.06
+Khismatullin, Denis-Rozum, Ivan ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.06
+Shimanov, Aleksandr-Lintchevski, Daniil ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.06
+Danin, Alexandre-Mamedov, Nidjat ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.06
+Andriasian, Zaven-Gerasimov, Ivan ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.06
+Vorobiov, Evgeny E-Shahinyan, David ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.06
+Geller, Jakov-Bocharov, Dmitry ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.06
+Timofeev, Artyom-Kalegin, Evgenij ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.06
+Korchmar, Vasiliy-Predke, Alexandr ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.06
+Pridorozhni, Aleksei-Rychagov, Andrey ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.07
+Khismatullin, Denis-Goganov, Aleksey ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.07
+Danin, Alexandre-Shimanov, Aleksandr ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.07
+Lintchevski, Daniil-Andriasian, Zaven ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.07
+Hovhannisyan, Robert-Vorobiov, Evgeny E ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.07
+Bocharov, Dmitry-Gordievsky, Dmitry ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.07
+Mamedov, Nidjat-Korchmar, Vasiliy ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.07
+Yandemirov, Valeri-Rozum, Ivan ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.07
+Nikitenko, Mihail-Timofeev, Artyom ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.07
+Predke, Alexandr-Mishuchkov, Nikolai M ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.07
+Pridorozhni, Aleksei-Khismatullin, Denis ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.08
+Vorobiov, Evgeny E-Rychagov, Andrey ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.08
+Goganov, Aleksey-Kabanov, Nikolai ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.08
+Shimanov, Aleksandr-Ponfilenok, Vladimir ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.08
+Dmitry, Gordievsky-Mamedov, Nidjat ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.08
+Andriasian, Zaven-Nikitenko, Mihail ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.08
+Geller, Jakov-Danin, Alexandre ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.08
+Belyakov, Bogdan-Lintchevski, Daniil ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.08
+Kalegin, Evgenij-Hovhannisyan, Robert ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.08
+Yandemirov, Valeri-Bocharov, Dmitry ИнтеллиЧенж:Произведена замена с 2015.??.?? на 2015.06.08
+
