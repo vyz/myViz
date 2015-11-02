@@ -4,7 +4,7 @@
         Title="GridoGamo" Height="700" Width="1680">
     <DockPanel Name="ManoDP">
         <DataGrid Name="GamoGrido" ItemsSource="{Binding Mode=OneWay, NotifyOnTargetUpdated=True}" AutoGenerateColumns="False" IsReadOnly="True"
-                  MouseDoubleClick="GamoGrido_MouseDoubleClick" CanUserResizeRows="False" RowHeight="22" RowHeaderWidth="25" LoadingRow="GamoGrido_LoadingRow">
+                  MouseDoubleClick="GamoGrido_MouseDoubleClick" CanUserResizeRows="False" RowHeight="22" RowHeaderWidth="35" LoadingRow="GamoGrido_LoadingRow">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Заголовок"  Binding="{Binding Namo}" />
                 <DataGridTextColumn Header="Результ" Binding="{Binding Result}" />

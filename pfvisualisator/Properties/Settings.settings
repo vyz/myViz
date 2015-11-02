@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="pfVisualisator.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="BidoStringo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Password=Petro;Persist Security Info=True;User ID=Petro;Initial Catalog=mywatcha;Data Source=vyz7;</Value>
+    </Setting>
+    <Setting Name="xmlORbase" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">baso</Value>
+    </Setting>
+    <Setting Name="xmlFailo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\Worka\XML\Obago\Repa.xml</Value>
+    </Setting>
+    <Setting Name="BinoRepoTablo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">OBG.RepoBinSP24_1505</Value>
+    </Setting>
+    <Setting Name="RepoForoTablo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbo.RepoFor1505</Value>
+    </Setting>
+    <Setting Name="GamoConfigoAtr" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">..\..\..\GamoAtro.cfg</Value>
+    </Setting>
+    <Setting Name="GamoPGNStartDir" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\Worka\Csharpo\pfVisualisator</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

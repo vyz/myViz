@@ -1,13 +1,17 @@
 ﻿<Window x:Class="pfVisualisator.GamoWinda"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:pfVisualisator"
         Title="GamoWinda" Height="438" Width="1180">
     <Grid Name="Grido">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*" />
             <ColumnDefinition Width="2*" />
         </Grid.ColumnDefinitions>
-        <GridSplitter Name="SplitIn1" Grid.Column="0" HorizontalContentAlignment="Right"></GridSplitter>
+        <Viewbox Name="BxBoard" Grid.Column="0">
+            <local:Borda x:Name="pfBoard"></local:Borda>
+        </Viewbox>
+        <GridSplitter Name="SplitIn1" Grid.Column="1" HorizontalAlignment="Left" Width="5"></GridSplitter>
         <StackPanel Name="GInfo" Grid.Column="1">
             <TextBlock Name="Heado" Text="{Binding Path=BigNamo}" HorizontalAlignment="Center"></TextBlock>
             <TextBox Name="Parto" Text="{Binding Path=OnlyMova}"></TextBox>

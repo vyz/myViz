@@ -1,0 +1,10 @@
+pfVisualisator/obj/*
+pfVisualisator/bin/*
+pfTesto/obj/*
+pfTesto/bin/*
+TestResults/*
+*.suo
+*.vsmdi
+*.sln
+*.testsettings
+

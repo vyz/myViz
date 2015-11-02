@@ -22,6 +22,7 @@ namespace pfVisualisator {
         private string strResulte;
         private List<Mova> lFactMoves;
         private List<pozo> lPozos;
+        private List<gTimo> lTimos;
         private gmKorrAtr intellectoattr;
 
         private Dictionary<gmAttro, string> datro;
@@ -67,7 +68,14 @@ namespace pfVisualisator {
                 } else if (minimov.StartsWith("$")) { //Это строка тайминга. Добавляем ее в лист таймингов с указанием позиции. 
                                                       //Так как возможен неполный, а только выборочный тайминг.
                     flagTiming = true;
+                    if (lTimos == null) {
+                        lTimos = new List<gTimo>();
+                        }
                     string timo = minimov.Substring(1);
+                    int curmove = tp.NumberMove;
+                    bool curcolor = tp.IsQueryMoveWhite;
+                    gTimo curTimo = new gTimo(curmove.ToString(), curcolor ? "w" : "b", timo);
+                    lTimos.Add(curTimo);
                 } else if (tp.ContraMov(minimov)) {
                     lFactMoves.Add(tp.GetFactMoveFilled());
                     tp = tp.GetPozoAfterControlMove();
@@ -314,7 +322,7 @@ namespace pfVisualisator {
                     continue;
                 } else if (aa.StartsWith("$")) {
                     reto.Add(aa);
-                } else if (Regex.IsMatch(aa, patprobelnost)) {
+                } else if (Regex.IsMatch(aa, patprobelnost) || aa.Length == 0) {
                     continue; //Пустоту просто пропускаем
                 } else {
                     reto.Add("ЖУЖАЖУЖУ");
@@ -374,8 +382,9 @@ namespace pfVisualisator {
             return reto;
             }
 
-        public List<string> pgnMoveRegione { get { return pgmova; } }
 
+#region--------------------------Свойства объекта-----------------------------------------
+        public List<string> pgnMoveRegione { get { return pgmova; } }
         public string GamerWhite { get { return GetAttro(gmAttro.White); } }
         public string GamerBlack { get { return GetAttro(gmAttro.Black); } }
         public string Date { get { return GetAttro(gmAttro.Date); } set { SetAttro(gmAttro.Date, value); } }
@@ -391,10 +400,12 @@ namespace pfVisualisator {
         public string Fen { get { return GetAttro(gmAttro.Fen); } }
         public bool ImpossibleMoveFlag { get { return flagImpossibleMove; } }
         public string ImpossibleMoveString { get { return strimpossiblemove; } }
+        public List<gTimo> ListoTimo { get { return lTimos; } }
         public gmKorrAtr KorrFlago { get { return intellectoattr; } }
-        }
+#endregion-----------------------Свойства объекта-----------------------------------------
+    }
 
-//---------------ДРУГОЙ КЛАСС--------------------------
+#region--------------------------------ДРУГОЙ КЛАСС--pgWorka------------------------
     public class pgWoka
     {
         private List<Gamo> lga;
@@ -615,7 +626,27 @@ namespace pfVisualisator {
         public List<Gamo> Listo { get { return lga; } }
         public string LogoMesso { get { return bigomesso(); } }
     }
+#endregion-----------------------------ДРУГОЙ КЛАСС--pgWorka------------------------
 
+#region--------------------------------ДРУГОЙ КЛАСС--gTimo------------------------
+    public class gTimo {
+        private string movenumber;
+        private string coloro;
+        private string timostring;
+
+        public gTimo() { }
+
+        public gTimo(string pmn, string pcol, string ptimo) {
+            movenumber = pmn;
+            coloro = pcol;
+            timostring = ptimo;
+            }
+
+        public string VanStroke { get { return string.Format("{0}-{1}-{2}",movenumber,coloro,timostring); } }
+        }
+#endregion-----------------------------ДРУГОЙ КЛАСС--gTimo------------------------
+
+    #region--------------------------------ENUM------------------------
     public enum gmAttro {
         Event,
         Site,
@@ -644,6 +675,7 @@ namespace pfVisualisator {
         TimeControl,
         WhiteTeam,
         BlackTeam,
+        EventType, 
         EventRounds,
         EventCountry,
         Source,
@@ -656,5 +688,6 @@ namespace pfVisualisator {
         EventDateHasAnswer,
         Unknown
         }
+#endregion-----------------------------ENUM------------------------
 
     }

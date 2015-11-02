@@ -1,0 +1,298 @@
+Rapport, Richard-Pavlovic, Milos Отличие:файл-прого$Rh5 N3c5 0-1$Rh5 Nc5 0-1$
+Ni, Hua-Khamatgaleev, Alexej Отличие:файл-прого$Qe7 9. d5 Nb8 10. c4 Bxa4 11. Qxa4+ Nd7 12. Nc3 Ngf6 13. Qc2 a5 14. a3 O-O 15.$Qe7 9. d5 Nb8 10. c4 Bxa4 11. Qxa4+ Nd7 12. Nc3 Nf6 13. Qc2 a5 14. a3 O-O 15.$
+Carlsen, Magnus-So, Wesley Отличие:файл-прого$1. c4 Nf6 2. Nc3 e6 3. d4 Bb4 4. e3 O-O 5. Nge2 d5 6. a3 Be7 7. cxd5 exd5 8. g3$1. c4 Nf6 2. Nc3 e6 3. d4 Bb4 4. e3 O-O 5. Ne2 d5 6. a3 Be7 7. cxd5 exd5 8. g3$
+Salem, AR.-L'Ami, E. Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Nge2 d5 6. a3 Be7 7. cxd5 exd5 8.$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Ne2 d5 6. a3 Be7 7. cxd5 exd5 8. Nf4$
+Salem, AR.-L'Ami, E. Отличие:файл-прого$Nf4 c6 9. Bd3 Na6 10. O-O Nc7 11. Bc2 Ne6 12. Nd3 b6 13. b4 Ba6 14. b5 Bxb5 15.$c6 9. Bd3 Na6 10. O-O Nc7 11. Bc2 Ne6 12. Nd3 b6 13. b4 Ba6 14. b5 Bxb5 15.$
+Timman, J.-Dale, Ari Отличие:файл-прого$34. Bc2 Nd7 35. Rxf7 N7e5 36. Qf1 Qd2 37. Qf5+ Rg6 38. Rxg7+ 1-0$34. Bc2 Nd7 35. Rxf7 Ne5 36. Qf1 Qd2 37. Qf5+ Rg6 38. Rxg7+ 1-0$
+Radjabov, T.-Giri, A. Отличие:файл-прого$21. Rxf6+ gxf6 22. Qxf6+ Kg8 23. Qg6+ Kf8 24. Qf6+ Kg8 25. Qg6+ Kf8 26. Qf6+$21. Rxf6# gxf6 22. Qxf6+ Kg8 23. Qg6+ Kf8 24. Qf6+ Kg8 25. Qg6+ Kf8 26. Qf6+$
+Jobava, Baadur-Caruana, Fabiano Отличие:файл-прого$1. d4 Nf6 2. Nc3 d5 3. Bf4 e6 4. e3 Bb4 5. Nge2 O-O 6. a3 Bd6 7. g3 b6 8. Bg2$1. d4 Nf6 2. Nc3 d5 3. Bf4 e6 4. e3 Bb4 5. Ne2 O-O 6. a3 Bd6 7. g3 b6 8. Bg2$
+Dale, Ari-Gunina, Valentina Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 c5 6. Nge2 Nc6 7. O-O d6 8. a3$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 c5 6. Ne2 Nc6 7. O-O d6 8. a3$
+Hou Yifan-Jobava, Ba Отличие:файл-прого$1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 6. c3 Qd5 7. Nf3 Bd6 8.$1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6# exf6 6. c3 Qd5 7. Nf3 Bd6 8.$
+Stefansson, Hannes-Vitiugov, Nikita Отличие:файл-прого$1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. exd5 exd5 5. Bd3 c6 6. Nge2 Ne7 7. O-O Bf5 8.$1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. exd5 exd5 5. Bd3 c6 6. Ne2 Ne7 7. O-O Bf5 8.$
+Bogner, Sebastian-Jakovenko, Dmitry Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Nge2 Re8 6. a3 Bf8 7. Ng3 d5 8. Be2$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Ne2 Re8 6. a3 Bf8 7. Ng3 d5 8. Be2$
+Henrichs, Thomas-Navara, David Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Nge2 d5 6. a3 Bd6 7. Ng3 c6 8. Qc2$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Ne2 d5 6. a3 Bd6 7. Ng3 c6 8. Qc2 e5$
+Henrichs, Thomas-Navara, David Отличие:файл-прого$e5 9. dxe5 Bxe5 10. Be2 Be6 11. O-O dxc4 12. f4 Bc7 13. e4 Ng4 14. Bxg4 Bxg4$9. dxe5 Bxe5 10. Be2 Be6 11. O-O dxc4 12. f4 Bc7 13. e4 Ng4 14. Bxg4 Bxg4 15.$
+Henrichs, Thomas-Navara, David Отличие:файл-прого$15. Be3 Nd7 16. e5 f6 17. Qe4 Qe8 18. Rae1 Kh8 19. Qxc4 fxe5 20. f5 Nf6 21.$Be3 Nd7 16. e5 f6 17. Qe4 Qe8 18. Rae1 Kh8 19. Qxc4 fxe5 20. f5 Nf6 21. Nce4$
+Henrichs, Thomas-Navara, David Отличие:файл-прого$Nce4 Nd5 22. Bc5 Bb6 23. Kh1 Rg8 24. Nd6 Qd7 25. b4 Bc7 26. Nde4 b6 27. Ng5$Nd5 22. Bc5 Bb6 23. Kh1 Rg8 24. Nd6 Qd7 25. b4 Bc7 26. Nde4 b6 27. Ng5 bxc5 28.$
+Henrichs, Thomas-Navara, David Отличие:файл-прого$bxc5 28. Qxg4 Nf6 29. Rd1 Qe7 30. Qc4 h6 31. Nf7+ Kh7 32. bxc5 e4 33. Nd6 Ng4$Qxg4 Nf6 29. Rd1 Qe7 30. Qc4 h6 31. Nf7+ Kh7 32. bxc5 e4 33. Nd6 Ng4 34. Qe6$
+Henrichs, Thomas-Navara, David Отличие:файл-прого$34. Qe6 Bxd6 35. Qg6+ Kh8 36. Rxd6 Qh4 37. Qh5 Qxh5 38. Nxh5 Rab8 39. Rxc6 Ne3$Bxd6 35. Qg6+ Kh8 36. Rxd6 Qh4 37. Qh5 Qxh5 38. Nxh5 Rab8 39. Rxc6 Ne3 40. Re1$
+Henrichs, Thomas-Navara, David Отличие:файл-прого$40. Re1 Nc2 41. Rc1 e3 42. Re6 Rge8 43. Nf4 Nd4 44. Rxe8+ Rxe8 45. c6 Rc8 46.$Nc2 41. Rc1 e3 42. Re6 Rge8 43. Nf4 Nd4 44. Rxe8+ Rxe8 45. c6 Rc8 46. Ng6+ Kh7$
+Henrichs, Thomas-Navara, David Отличие:файл-прого$Ng6+ Kh7 47. Ne7 Rc7 48. Nd5 Rxc6 49. Rxc6 Nxc6 50. Nxe3 Nd4 51. Kg1 h5 52. Kf2$47. Ne7 Rc7 48. Nd5 Rxc6 49. Rxc6 Nxc6 50. Nxe3 Nd4 51. Kg1 h5 52. Kf2 h4 53.$
+Henrichs, Thomas-Navara, David Отличие:файл-прого$h4 53. g4 hxg3+ 54. Kxg3 a5 55. Kf4 Kh6 56. Nc4 a4 57. Nb6 Nb5 58. Nxa4 Nxa3$g4 hxg3+ 54. Kxg3 a5 55. Kf4 Kh6 56. Nc4 a4 57. Nb6 Nb5 58. Nxa4 Nxa3 59. Nc5$
+Henrichs, Thomas-Navara, David Отличие:файл-прого$59. Nc5 1/2-1/2$1/2-1/2$
+Nakamura, Hikaru-Topalov, Veselin Отличие:файл-прого$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. a4 Ngf6 5. Nc3 e6 6. d4 cxd4 7. Qxd4 a6 8.$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. a4 Nf6 5. Nc3 e6 6. d4 cxd4 7. Qxd4 a6 8. Be2$
+Nakamura, Hikaru-Topalov, Veselin Отличие:файл-прого$Be2 b6 9. O-O Bb7 10. Rd1 Qc7 11. Bg5 Be7 12. Nd2 h6 13. Bh4 Ne5 14. Nf1 Rd8$b6 9. O-O Bb7 10. Rd1 Qc7 11. Bg5 Be7 12. Nd2 h6 13. Bh4 Ne5 14. Nf1 Rd8 15.$
+Nakamura, Hikaru-Topalov, Veselin Отличие:файл-прого$15. Bg3 O-O 16. Ne3 Rc8 17. Kh1 Rfd8 18. f3 Nh5 19. Bf2 Nf4 20. Bf1 Nfg6 21.$Bg3 O-O 16. Ne3 Rc8 17. Kh1 Rfd8 18. f3 Nh5 19. Bf2 Nf4 20. Bf1 Nfg6 21. Qd2$
+Nakamura, Hikaru-Topalov, Veselin Отличие:файл-прого$Qd2 Bg5 22. Qe1 Nf4 23. Bg3 Nh5 24. Bf2 Qe7 25. Ra3 Nf4 26. Rb3 Rc6 27. Ne2$Bg5 22. Qe1 Nf4 23. Bg3 Nh5 24. Bf2 Qe7 25. Ra3 Nf4 26. Rb3 Rc6 27. Ne2 Nxe2$
+Nakamura, Hikaru-Topalov, Veselin Отличие:файл-прого$Nxe2 28. Bxe2 Rdc8 29. c3 Nd7 30. Nc2 d5 31. Nb4 Rc5 32. exd5 Ra5 33. Nc6 Bxc6$28. Bxe2 Rdc8 29. c3 Nd7 30. Nc2 d5 31. Nb4 Rc5 32. exd5 Ra5 33. Nc6 Bxc6 34.$
+Nakamura, Hikaru-Topalov, Veselin Отличие:файл-прого$34. dxc6 Rxc6 35. Rb4 Bf6 36. Qf1 Rd6 37. Rxd6 Qxd6 38. Bxa6 Nc5 39. Bb5 Qd2$dxc6 Rxc6 35. Rb4 Bf6 36. Qf1 Rd6 37. Rxd6 Qxd6 38. Bxa6 Nc5 39. Bb5 Qd2 40.$
+Nakamura, Hikaru-Topalov, Veselin Отличие:файл-прого$40. Bg1 Ra8 41. Bc6 Rc8 42. Rxb6 Bd8 43. Rb5 Rxc6 44. Bxc5 Bc7 45. a5 Qc2 46.$Bg1 Ra8 41. Bc6 Rc8 42. Rxb6 Bd8 43. Rb5 Rxc6 44. Bxc5 Bc7 45. a5 Qc2 46. f4 f6$
+Nakamura, Hikaru-Topalov, Veselin Отличие:файл-прого$f4 f6 47. h3 Kh7 48. f5 exf5 49. Bg1 Be5 50. a6 1-0$47. h3 Kh7 48. f5 exf5 49. Bg1 Be5 50. a6 1-0$
+Svidler, Peter-Hou, Yifan Отличие:файл-прого$Bb5 O-O 9. Nge2 Bd7 10. O-O Bxc3 11. bxc3 a6 12. Bxc6 Bxc6 13. Qc2 Bb5 14. Re1$Bb5 O-O 9. Ne2 Bd7 10. O-O Bxc3 11. bxc3 a6 12. Bxc6 Bxc6 13. Qc2 Bb5 14. Re1$
+Wei, Yi-Felgaer, Ruben Отличие:файл-прого$a4 Ke8 34. Ree3 h5 35. Kb1 Kd8 36. Ka2 Kd7 37. Rd4 Qg5 38. Rh3 Qe5 39. Rd2 Qg5$a4 Ke8 34. Re3 h5 35. Kb1 Kd8 36. Ka2 Kd7 37. Rd4 Qg5 38. Rh3 Qe5 39. Rd2 Qg5$
+Petrosian, Tigran L-Inarkiev, Ernesto Отличие:файл-прого$Be5 Rbf8 35. Nd6 f4 36. Rf3 Bxh3 37. Ne4 Re8 38. Rxh3 Qxh3 39. Bxf7+ Kf8 40.$Be5 Rf8 35. Nd6 f4 36. Rf3 Bxh3 37. Ne4 Re8 38. Rxh3 Qxh3 39. Bxf7+ Kf8 40.$
+Fier, Alexandr-Harikrishna, Pentala Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Nge2 Re8 6. a3 Bf8 7. Ng3 d5 8. Be2$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Ne2 Re8 6. a3 Bf8 7. Ng3 d5 8. Be2$
+Damaso, Rui-Navara, David Отличие:файл-прого$Rxh1 15. Kxf2 Rxf1+ 16. Kxf1 Qf6 17. Nbd4 Bb7 18. e5 Qe7 19. Bg5 f6 20. exf6$Rxh1 15. Kxf2 Rxf1+ 16. Kxf1 Qf6 17. Nd4 Bb7 18. e5 Qe7 19. Bg5 f6 20. exf6$
+Vitiugov, Nikita-Goryachkina, Aleksandra Отличие:файл-прого$Bxf3 a6 9. d4 Ngf6 10. e4 b5 11. Qb3 Nb6 12. e5 Nfd7 13. Ne2 Rc8 14. h4 Nb8 15.$Bxf3 a6 9. d4 Nf6 10. e4 b5 11. Qb3 Nb6 12. e5 Nfd7 13. Ne2 Rc8 14. h4 Nb8 15.$
+Vallejo Pons, Francisco-Timofeev, Artyom Отличие:файл-прого$Bb4 9. Bxc6+ bxc6 10. Nge2 O-O 11. a3 Bxc3+ 12. bxc3 Ba6 13. O-O Nd5 14. Bd2$Bb4 9. Bxc6+ bxc6 10. Ne2 O-O 11. a3 Bxc3+ 12. bxc3 Ba6 13. O-O Nd5 14. Bd2 Bc4$
+Vallejo Pons, Francisco-Timofeev, Artyom Отличие:файл-прого$Bc4 15. Rf2 Rab8 16. e4 Nb6 17. a4 f6 18. f4 Bf7 19. fxe5 fxe5 20. Bh6 Rfe8 21.$15. Rf2 Rab8 16. e4 Nb6 17. a4 f6 18. f4 Bf7 19. fxe5 fxe5 20. Bh6 Rfe8 21. Qd3$
+Vallejo Pons, Francisco-Timofeev, Artyom Отличие:файл-прого$Qd3 Be6 22. dxe5 Nd7 23. Raf1 Qxa4 24. Nd4 Qc4 25. Qf3 c5 26. Nc6 Ra8 27. Ne7+$Be6 22. dxe5 Nd7 23. Raf1 Qxa4 24. Nd4 Qc4 25. Qf3 c5 26. Nc6 Ra8 27. Ne7+ Kh8$
+Vallejo Pons, Francisco-Timofeev, Artyom Отличие:файл-прого$Kh8 28. Nd5 Rec8 29. h4 Rab8 30. Qf4 Rd8 31. Nf6 Nf8 32. Ne8 1-0$28. Nd5 Rec8 29. h4 Rab8 30. Qf4 Rd8 31. Nf6 Nf8 32. Ne8 1-0$
+Korobov, Anton-Sutovsky, Emil Отличие:файл-прого$Rxc3 53. Rf7+ Kb8 54. Rf8+ Kc7 55. Kc5 Rhd3 56. d6+ 1-0$Rxc3 53. Rf7+ Kb8 54. Rf8+ Kc7 55. Kc5 Rhd3 56. d6# 1-0$
+Fressinet-Le Roux Отличие:файл-прого$1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ gxf6 6. Nf3 Bf5 7. Bd3 Nd7$1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6# gxf6 6. Nf3 Bf5 7. Bd3 Nd7$
+Khismatullin, Denis-Eljanov, Pavel Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Nge2 Re8 6. a3 Bf8 7. Ng3 d5 8. Be2$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Ne2 Re8 6. a3 Bf8 7. Ng3 d5 8. Be2$
+Navara, David-Cheparinov, Ivan Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Nge2 d5 6. a3 Bd6 7. c5 Be7 8. b4 b6$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Ne2 d5 6. a3 Bd6 7. c5 Be7 8. b4 b6$
+Steingrimsson, Hedinn-Mamedyarov, Shakhriyar Отличие:файл-прого$28. h3 Bf8 29. Nde4 Nxe4 30. Qxe4 Bc5 31. Qe2 h5 32. Bg3 f5 33. Bf4 h4 34. Kf1$28. h3 Bf8 29. Ne4 Nxe4 30. Qxe4 Bc5 31. Qe2 h5 32. Bg3 f5 33. Bf4 h4 34. Kf1$
+Fier, Alexandr-Eljanov, Pavel Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Nge2 d5 6. a3 Bd6 7. Ng3 b6 8. Be2$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Ne2 d5 6. a3 Bd6 7. Ng3 b6 8. Be2$
+Le, Quang Liem-Li, Chao b Отличие:файл-прого$40. Rh1+ Kxg6 41. Qg8 Qf6 42. Rhh2 g3 43. Rhg2 Rc3 44. Ka2 Qd6 45. Qe8+ Kh6 46.$40. Rh1+ Kxg6 41. Qg8 Qf6 42. Rh2 g3 43. Rg2 Rc3 44. Ka2 Qd6 45. Qe8+ Kh6 46.$
+Bogdanovich, Stanislav-Nepomniachtchi, Ian Отличие:файл-прого$exd5 9. cxd5 f5 10. Bb5+ Nd7 11. exf5 gxf5 12. f4 Nhf6 13. O-O Ng4 14. Qf3 O-O$exd5 9. cxd5 f5 10. Bb5+ Nd7 11. exf5 gxf5 12. f4 Nf6 13. O-O Ng4 14. Qf3 O-O$
+Simacek, Pavel-Shirov, Alexej Отличие:файл-прого$1. e4 c5 2. Nc3 Nc6 3. f4 e6 4. Nf3 d5 5. Bb5 Nge7 6. exd5 Nxd5 7. Ne5 Bd7 8.$1. e4 c5 2. Nc3 Nc6 3. f4 e6 4. Nf3 d5 5. Bb5 Ne7 6. exd5 Nxd5 7. Ne5 Bd7 8.$
+Mamedyarov, Shakhriyar-Grigoriants, Sergey Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. f3 c5 5. d5 d6 6. e4 O-O 7. Bd3 Nbd7 8. Nge2$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. f3 c5 5. d5 d6 6. e4 O-O 7. Bd3 Nbd7 8. Ne2$
+So, Wesley-Sevian, Samuel Отличие:файл-прого$e4 Ndf6 22. b4 Rcxg5 23. fxg5 Be5 24. Bb2 Ng4 25. Qh5 Qxg5 26. Qh3 Qe3+ 27.$e4 Nf6 22. b4 Rcxg5 23. fxg5 Be5 24. Bb2 Ng4 25. Qh5 Qxg5 26. Qh3 Qe3+ 27. Qxe3$
+So, Wesley-Sevian, Samuel Отличие:файл-прого$Qxe3 Nxe3 28. Rf2 Ng5 29. Kh1 Nc4 30. Bc3 Nxe4 31. Rf7 Nxc3 32. Rxb7 Bxd4 33.$Nxe3 28. Rf2 Ng5 29. Kh1 Nc4 30. Bc3 Nxe4 31. Rf7 Nxc3 32. Rxb7 Bxd4 33. Rf1$
+So, Wesley-Sevian, Samuel Отличие:файл-прого$Rf1 Rg7 34. Rb8+ Kh7 35. g3 e5 36. Rff8 Ne3 37. h4 Ne4 38. Rh8+ Kg6 39. h5+ Kg5$Rg7 34. Rb8+ Kh7 35. g3 e5 36. Rff8 Ne3 37. h4 Ne4 38. Rh8+ Kg6 39. h5+ Kg5 40.$
+So, Wesley-Sevian, Samuel Отличие:файл-прого$40. h6 Rf7 41. h7 Rf1+ 0-1$h6 Rf7 41. h7 Rf1+ 0-1$
+Holt, C.-Troff, Kayden W Отличие:файл-прого$Rd8 9. Bc4 Be6 10. e4 Nxe4 11. Nge2 Nxf2 12. Qa4 Qxc5 13. dxe6 Nxh1 14. exf7+$Rd8 9. Bc4 Be6 10. e4 Nxe4 11. Ne2 Nxf2 12. Qa4 Qxc5 13. dxe6 Nxh1 14. exf7+$
+Naiditsch, Arkadij-Fischer, Sebastian Отличие:файл-прого$1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 4. d4 Nf6 5. Bc4 Bg4 6. f3 Bf5 7. Nge2 Nbd7 8.$1. e4 d5 2. exd5 Qxd5 3. Nc3 Qa5 4. d4 Nf6 5. Bc4 Bg4 6. f3 Bf5 7. Ne2 Nbd7 8.$
+Holt, Conrad-Akobian, Varuzhan Отличие:файл-прого$Rxd6 41. Rg8 Qa7 42. Rd1 Rhh6 43. b6 Qxb6 44. Bxa4 Rhe6 45. Rf1 Qd4 46. Qc1 Rg6$Rxd6 41. Rg8 Qa7 42. Rd1 Rh6 43. b6 Qxb6 44. Bxa4 Re6 45. Rf1 Qd4 46. Qc1 Rg6$
+Lampert, Jonas-Kasimdzhanov, Rustam Отличие:файл-прого$Qd5 Rad6 28. Qc4 Rc6 29. Qd5 Rcd6 30. Qc4 Be8 31. h3 Rc6 32. Qd5 Bf7 33. Red1$Qd5 Rd6 28. Qc4 Rc6 29. Qd5 Rd6 30. Qc4 Be8 31. h3 Rc6 32. Qd5 Bf7 33. Red1 Rc2$
+Lampert, Jonas-Kasimdzhanov, Rustam Отличие:файл-прого$Rc2 34. Qd8+ Qxd8 35. Rxd8+ Re8 36. Rxe8+ Bxe8 37. Ba3 Bxa4 38. Rc1 Ra2 39.$34. Qd8+ Qxd8 35. Rxd8+ Re8 36. Rxe8+ Bxe8 37. Ba3 Bxa4 38. Rc1 Ra2 39. Rc8+$
+Lampert, Jonas-Kasimdzhanov, Rustam Отличие:файл-прого$Rc8+ Kh7 40. Bf8 Rd2 41. Rc7 Rd1+ 42. Kh2 Rd7 43. Rxd7 Bxd7 44. h4 b5 45. f3$Kh7 40. Bf8 Rd2 41. Rc7 Rd1+ 42. Kh2 Rd7 43. Rxd7 Bxd7 44. h4 b5 45. f3 Kg6 46.$
+Lampert, Jonas-Kasimdzhanov, Rustam Отличие:файл-прого$Kg6 46. g4 Kf7 47. Ba3 g6 48. Kg3 Ke6 49. Kf2 Be8 50. Ke3 Kd5 51. Be7 f5 52.$g4 Kf7 47. Ba3 g6 48. Kg3 Ke6 49. Kf2 Be8 50. Ke3 Kd5 51. Be7 f5 52. gxf5 gxf5$
+Lampert, Jonas-Kasimdzhanov, Rustam Отличие:файл-прого$gxf5 gxf5 53. Bf8 f4+ 54. Ke2 Bh5 55. Kf2 e4 56. fxe4+ Kxe4 57. Bd6 f3 58. Bf8$53. Bf8 f4+ 54. Ke2 Bh5 55. Kf2 e4 56. fxe4+ Kxe4 57. Bd6 f3 58. Bf8 Kd3 59.$
+Lampert, Jonas-Kasimdzhanov, Rustam Отличие:файл-прого$Kd3 59. Be7 Kc3 60. Ke3 b4 0-1$Be7 Kc3 60. Ke3 b4 0-1$
+Gareev, T.-Robson, R. Отличие:файл-прого$8. a4 a6 9. Ra3 Nc6 10. Nge2 e6 11. b4 Qxb4 12. Rb3 Qa5 13. O-O axb5 14. Nxe4$8. a4 a6 9. Ra3 Nc6 10. Ne2 e6 11. b4 Qxb4 12. Rb3 Qa5 13. O-O axb5 14. Nxe4$
+Kamsky, Gata-Chigaev, Maksim Отличие:файл-прого$1. e4 c6 2. d4 d5 3. e5 c5 4. dxc5 Nc6 5. Bb5 e6 6. Nf3 Bxc5 7. O-O Nge7 8.$1. e4 c6 2. d4 d5 3. e5 c5 4. dxc5 Nc6 5. Bb5 e6 6. Nf3 Bxc5 7. O-O Ne7 8. Nbd2$
+Kamsky, Gata-Chigaev, Maksim Отличие:файл-прого$Nbd2 Bd7 9. Nb3 Bb6 10. Bd3 Ng6 11. Re1 O-O 12. Be3 Qc7 13. Bxb6 axb6 14. Qe2$Bd7 9. Nb3 Bb6 10. Bd3 Ng6 11. Re1 O-O 12. Be3 Qc7 13. Bxb6 axb6 14. Qe2 Ra4$
+Kamsky, Gata-Chigaev, Maksim Отличие:файл-прого$Ra4 15. c3 Rg4 16. Qe3 Nf4 17. Bf1 f6 18. g3 Ng6 19. exf6 Rxf6 20. Nbd2 e5 21.$15. c3 Rg4 16. Qe3 Nf4 17. Bf1 f6 18. g3 Ng6 19. exf6 Rxf6 20. Nbd2 e5 21. h3$
+Kamsky, Gata-Chigaev, Maksim Отличие:файл-прого$h3 Ra4 22. Bg2 e4 23. Nh2 Nce5 24. b3 Ra8 25. c4 Raf8 26. Rf1 Nd3 27. cxd5 Nxf2$Ra4 22. Bg2 e4 23. Nh2 Nce5 24. b3 Ra8 25. c4 Raf8 26. Rf1 Nd3 27. cxd5 Nxf2$
+Khairullin, Ildar-Tregubov, Pavel V Отличие:файл-прого$9. h4 h6 10. Be3 Qb6 11. Bxc5 Qxc5 12. f3 a6 13. Qf2 Qa5 14. Nge2 cxd5 15. cxd5$9. h4 h6 10. Be3 Qb6 11. Bxc5 Qxc5 12. f3 a6 13. Qf2 Qa5 14. Ne2 cxd5 15. cxd5$
+Malakhov, Vladimir-Demidov, Mikhail Отличие:файл-прого$Bb5 41. Rf1+ Kg7 42. Rf7+ Kg8 43. Rfc7 Bxe5 44. dxe5 a3 45. bxa3 Rxa3 46. Rc8+$Bb5 41. Rf1+ Kg7 42. Rf7+ Kg8 43. Rc7 Bxe5 44. dxe5 a3 45. bxa3 Rxa3 46. Rc8+$
+Malakhov, Vladimir-Demidov, Mikhail Отличие:файл-прого$Kf7 47. R8c7+ Kg6 48. Kf2 Bxc4 49. Rxc4 Rxh3 50. Rc6 Rg3 51. Rxe6+ Kf7 52. Rxb6$Kf7 47. Rc7+ Kg6 48. Kf2 Bxc4 49. Rxc4 Rxh3 50. Rc6 Rg3 51. Rxe6+ Kf7 52. Rxb6$
+Riazantsev, Alexander-Najer, Evgeniy Отличие:файл-прого$f3 Re5 34. Rd8 Rxf5 35. Ra8 N4g6 36. Rxa7 Rxf3 37. Bg2 Rf4 38. Nxc5 Nxh4 39.$f3 Re5 34. Rd8 Rxf5 35. Ra8 Ng6 36. Rxa7 Rxf3 37. Bg2 Rf4 38. Nxc5 Nxh4 39. Ra8$
+Riazantsev, Alexander-Najer, Evgeniy Отличие:файл-прого$Ra8 Rd4 1/2-1/2$Rd4 1/2-1/2$
+Matlakov, Maxim-Pridorozhni, Aleksei Отличие:файл-прого$Kb6 41. Nc5 Qc6 42. Qd2 Ne8 43. Ra1 Nec7 44. Qxa5+ Ka7 45. Nxa6 Qxa6 46. Rxb5$Kb6 41. Nc5 Qc6 42. Qd2 Ne8 43. Ra1 Nc7 44. Qxa5+ Ka7 45. Nxa6 Qxa6 46. Rxb5$
+Tari, Aryan-Agdestein, Simen Отличие:файл-прого$Ndb5 28. Qc5 Ne6 29. Qe3 Nbd4 30. Ncxe5 Qc7 31. Rc1 Qb7 32. axb3 Nf5 33. Qc3$Nb5 28. Qc5 Ne6 29. Qe3 Nbd4 30. Ncxe5 Qc7 31. Rc1 Qb7 32. axb3 Nf5 33. Qc3$
+Ponkratov, Pavel-Savchenko, Boris Отличие:файл-прого$1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. Nge2 dxe4 5. a3 Be7 6. Nxe4 Nf6 7. Qd3 Nbd7 8.$1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. Ne2 dxe4 5. a3 Be7 6. Nxe4 Nf6 7. Qd3 Nbd7 8.$
+Hansen, Cu-Agdestein, S. Отличие:файл-прого$Nb3 Nge7 9. Nbxd4 O-O 10. Bd3 h6 11. h3 Ng6 12. c3 Qf6 13. Be3 Nf4 14. Bxf4$Nb3 Ne7 9. Nbxd4 O-O 10. Bd3 h6 11. h3 Ng6 12. c3 Qf6 13. Be3 Nf4 14. Bxf4 Bxf4$
+Hansen, Cu-Agdestein, S. Отличие:файл-прого$Bxf4 15. Re1 Bc7 16. Bf1 Bb6 17. Qd2 Bd7 18. Rad1 Rfe8 19. g3 Re4 20. Bg2 Rae8$15. Re1 Bc7 16. Bf1 Bb6 17. Qd2 Bd7 18. Rad1 Rfe8 19. g3 Re4 20. Bg2 Rae8 21.$
+Hansen, Cu-Agdestein, S. Отличие:файл-прого$21. b3 Nxd4 22. cxd4 Rxe1+ 23. Rxe1 Rxe1+ 24. Qxe1 Bxd4 25. Qd2 Bb6 26. Qxd5$b3 Nxd4 22. cxd4 Rxe1+ 23. Rxe1 Rxe1+ 24. Qxe1 Bxd4 25. Qd2 Bb6 26. Qxd5 Qa1+$
+Hansen, Cu-Agdestein, S. Отличие:файл-прого$Qa1+ 27. Kh2 Bc6 28. Qd2 Qf6 29. Qe2 g6 30. Kg1 Qa1+ 31. Kh2 Qf6 32. Kg1 Qa1+$27. Kh2 Bc6 28. Qd2 Qf6 29. Qe2 g6 30. Kg1 Qa1+ 31. Kh2 Qf6 32. Kg1 Qa1+ 33.$
+Hansen, Cu-Agdestein, S. Отличие:файл-прого$33. Kh2 1/2-1/2$Kh2 1/2-1/2$
+Le Huec, Marc-L'Ami, Erwin Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Nge2 d5 6. a3 Be7 7. cxd5 exd5 8.$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Ne2 d5 6. a3 Be7 7. cxd5 exd5 8. Nf4$
+Le Huec, Marc-L'Ami, Erwin Отличие:файл-прого$Nf4 c6 9. Be2 Na6 10. g4 Nc7 11. g5 Ne4 1/2-1/2$c6 9. Be2 Na6 10. g4 Nc7 11. g5 Ne4 1/2-1/2$
+Stocek, Jiri-Navara, David Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 d5 6. cxd5 exd5 7. Nge2 Re8 8.$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 d5 6. cxd5 exd5 7. Ne2 Re8 8.$
+Solodovnichenko, Yuri-Giri, Anish Отличие:файл-прого$1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. Nge2 Nc6 5. a3 Ba5 6. b4 Bb6 7. Bb2 Nge7 8. g3$1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. Ne2 Nc6 5. a3 Ba5 6. b4 Bb6 7. Bb2 Nge7 8. g3$
+Naiditsch, Arkadij-Donchenko, Alexander Отличие:файл-прого$28. Qg3 Rh7 29. f4 Ne7 30. N2f3 Kd7 31. Rh2 Rxh2 32. Qxh2 Qc4 33. a3 Qd3 34.$28. Qg3 Rh7 29. f4 Ne7 30. Nf3 Kd7 31. Rh2 Rxh2 32. Qxh2 Qc4 33. a3 Qd3 34. Kg2$
+Naiditsch, Arkadij-Donchenko, Alexander Отличие:файл-прого$Kg2 Nc6 35. Nxc6 Qc2+ 36. Kg3 Qxh2+ 37. Kxh2 bxc6 38. Kg3 Rh8 39. c4 a5 40. b4$Nc6 35. Nxc6 Qc2+ 36. Kg3 Qxh2+ 37. Kxh2 bxc6 38. Kg3 Rh8 39. c4 a5 40. b4 Rb8$
+Naiditsch, Arkadij-Donchenko, Alexander Отличие:файл-прого$Rb8 41. cxd5 cxd5 42. bxa5 Rb3 43. Ra1 Kc6 44. Rc1+ Kd7 45. Ra1 Be3 46. a6 Kc6$41. cxd5 cxd5 42. bxa5 Rb3 43. Ra1 Kc6 44. Rc1+ Kd7 45. Ra1 Be3 46. a6 Kc6 47.$
+Naiditsch, Arkadij-Donchenko, Alexander Отличие:файл-прого$47. Rh1 d4 48. Rh8 d3 49. Rc8+ Kd7 50. Rf8 Ke7 51. Rh8 Rxa3 52. Rh1 Ra4 53. Rd1$Rh1 d4 48. Rh8 d3 49. Rc8+ Kd7 50. Rf8 Ke7 51. Rh8 Rxa3 52. Rh1 Ra4 53. Rd1$
+Pucher, Sebastien-Vachier-Lagrave, Maxime Отличие:файл-прого$Kxg7 16. b4 cxb3 17. axb3 h5 18. Nh1 Rac8 19. Rfc1 Qb6+ 20. Nf2 Rc7 21. Ncd1$Kxg7 16. b4 cxb3 17. axb3 h5 18. Nh1 Rac8 19. Rfc1 Qb6+ 20. Nf2 Rc7 21. Nd1$
+Ponomariov, Ruslan-Vachier-Lagrave, Maxime Отличие:файл-прого$Rh4 33. h3 Rxh3+ 34. gxh3 Qxf3+ 35. Kh2 Qf2+ 36. Kh1 Qf3+ 37. Kh2 Qf2+ 38. Kh1$Rh4 33. h3 Rxh3# 34. gxh3 Qxf3+ 35. Kh2 Qf2+ 36. Kh1 Qf3+ 37. Kh2 Qf2+ 38. Kh1$
+So, Wesley-Navara, David Отличие:файл-прого$Rf8 35. Rc8 Rgf7 36. Rg1+ Kh8 37. Rc2 Rd8 38. Nd5 Nxd5 39. exd5 Rfd7 40. Rgc1$Rf8 35. Rc8 Rf7 36. Rg1+ Kh8 37. Rc2 Rd8 38. Nd5 Nxd5 39. exd5 Rfd7 40. Rgc1$
+Carlsen, Magnus-Hammer, Jon Ludvig Отличие:файл-прого$1. d4 d5 2. c4 e6 3. Nc3 c6 4. e3 Nf6 5. b3 Bb4 6. Bb2 Qa5 7. Qc1 Ne4 8. Nge2$1. d4 d5 2. c4 e6 3. Nc3 c6 4. e3 Nf6 5. b3 Bb4 6. Bb2 Qa5 7. Qc1 Ne4 8. Ne2 c5$
+Carlsen, Magnus-Hammer, Jon Ludvig Отличие:файл-прого$c5 9. a3 Bxc3+ 10. Nxc3 cxd4 11. b4 Qc7 12. Nxe4 dxe4 13. Bxd4 O-O 14. Be2 Nc6$9. a3 Bxc3+ 10. Nxc3 cxd4 11. b4 Qc7 12. Nxe4 dxe4 13. Bxd4 O-O 14. Be2 Nc6 15.$
+Carlsen, Magnus-Hammer, Jon Ludvig Отличие:файл-прого$15. Bb2 b6 16. O-O Bb7 17. c5 bxc5 18. Qxc5 Qe7 19. Rac1 Qxc5 20. Rxc5 Rfd8 21.$Bb2 b6 16. O-O Bb7 17. c5 bxc5 18. Qxc5 Qe7 19. Rac1 Qxc5 20. Rxc5 Rfd8 21. b5$
+Carlsen, Magnus-Hammer, Jon Ludvig Отличие:файл-прого$b5 Na5 22. Rd1 Rxd1+ 23. Bxd1 Rd8 24. Bc2 Bd5 25. a4 Bb3 26. h4 Bxc2 27. Rxc2$Na5 22. Rd1 Rxd1+ 23. Bxd1 Rd8 24. Bc2 Bd5 25. a4 Bb3 26. h4 Bxc2 27. Rxc2 h5$
+Carlsen, Magnus-Hammer, Jon Ludvig Отличие:файл-прого$h5 28. Bd4 Nb3 29. Bxa7 Rd1+ 30. Kh2 Ra1 31. b6 Na5 32. Rc5 Rxa4 33. Rxa5 Rxa5$28. Bd4 Nb3 29. Bxa7 Rd1+ 30. Kh2 Ra1 31. b6 Na5 32. Rc5 Rxa4 33. Rxa5 Rxa5 34.$
+Carlsen, Magnus-Hammer, Jon Ludvig Отличие:файл-прого$34. b7 Rb5 35. b8=Q+ Rxb8 36. Bxb8 f6 37. Kg3 e5 38. f4 exf3 39. Kxf3 Kf7 40.$b7 Rb5 35. b8=Q+ Rxb8 36. Bxb8 f6 37. Kg3 e5 38. f4 exf3 39. Kxf3 Kf7 40. e4$
+Carlsen, Magnus-Hammer, Jon Ludvig Отличие:файл-прого$e4 Ke6 41. g4 hxg4+ 42. Kxg4 g6 43. Ba7 Kf7 44. h5 f5+ 45. exf5 gxf5+ 46. Kxf5$Ke6 41. g4 hxg4+ 42. Kxg4 g6 43. Ba7 Kf7 44. h5 f5+ 45. exf5 gxf5+ 46. Kxf5 Kg7$
+Carlsen, Magnus-Hammer, Jon Ludvig Отличие:файл-прого$Kg7 47. Be3 Kh7 48. Kxe5 Kg7 49. Kf5 Kh7 50. Kf6 Kh8 51. Kg6 Kg8 52. Bc5 Kh8$47. Be3 Kh7 48. Kxe5 Kg7 49. Kf5 Kh7 50. Kf6 Kh8 51. Kg6 Kg8 52. Bc5 Kh8 53. h6$
+Carlsen, Magnus-Hammer, Jon Ludvig Отличие:файл-прого$53. h6 Kg8 54. h7+ Kh8 55. Bd4# 1-0$Kg8 54. h7+ Kh8 55. Bd4# 1-0$
+Carlsen, Magnus-Giri, Anish Отличие:файл-прого$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Ngf6 5. Qe2 a6 6. Ba4 b5 7. Bc2 e6 8. d4$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Nf6 5. Qe2 a6 6. Ba4 b5 7. Bc2 e6 8. d4$
+Nepomniachtchi, Ian-Eljanov, Pavel Отличие:файл-прого$27. Nd5 Re2+ 28. Kd3 R7e5 29. Rhh8 Be1 30. Rb8+ Kc6 31. Kd4 Rxd5+ 32. cxd5+ Kd6$27. Nd5 Re2+ 28. Kd3 R7e5 29. Rhh8 Be1 30. Rb8+ Kc6 31. Kd4 Rxd5# 32. cxd5+ Kd6$
+Grischuk, Alexander-Topalov, Veselin Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. f3 c5 5. d5 O-O 6. e4 d6 7. Nge2 b5 8. Nf4$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. f3 c5 5. d5 O-O 6. e4 d6 7. Ne2 b5 8. Nf4 exd5$
+Grischuk, Alexander-Topalov, Veselin Отличие:файл-прого$exd5 9. cxd5 a6 10. Be2 Nbd7 11. O-O c4 12. Be3 Bc5 13. Bxc5 Nxc5 14. b4 cxb3$9. cxd5 a6 10. Be2 Nbd7 11. O-O c4 12. Be3 Bc5 13. Bxc5 Nxc5 14. b4 cxb3 15.$
+Grischuk, Alexander-Topalov, Veselin Отличие:файл-прого$15. axb3 b4 16. Nb5 Qb6 17. Kh1 g5 18. Qd4 Ncd7 19. Qxb6 Nxb6 20. Nc7 Ra7 21.$axb3 b4 16. Nb5 Qb6 17. Kh1 g5 18. Qd4 Ncd7 19. Qxb6 Nxb6 20. Nc7 Ra7 21. Nb5$
+Grischuk, Alexander-Topalov, Veselin Отличие:файл-прого$Nb5 Re7 22. Nxd6 gxf4 23. Bxa6 Rd8 24. Bxc8 Rxd6 25. Bf5 Nbd7 26. g3 fxg3 27.$Re7 22. Nxd6 gxf4 23. Bxa6 Rd8 24. Bxc8 Rxd6 25. Bf5 Nbd7 26. g3 fxg3 27. Rg1$
+Grischuk, Alexander-Topalov, Veselin Отличие:файл-прого$Rg1 Kf8 28. Rxg3 Nc5 29. Bh3 Re8 30. Rb1 Nh5 31. Rg5 Nf4 32. Bf1 Ra8 33. Bc4$Kf8 28. Rxg3 Nc5 29. Bh3 Re8 30. Rb1 Nh5 31. Rg5 Nf4 32. Bf1 Ra8 33. Bc4 Ra2$
+Grischuk, Alexander-Topalov, Veselin Отличие:файл-прого$Ra2 34. Rg4 Rh6 35. h4 Nfd3 36. Rg2 Rxh4+ 37. Kg1 Ra7 38. d6 Rh6 39. Rh2 Rxd6$34. Rg4 Rh6 35. h4 Nfd3 36. Rg2 Rxh4+ 37. Kg1 Ra7 38. d6 Rh6 39. Rh2 Rxd6 0-1$
+Gardner, R.-Shankland, S. Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Nge2 c6 6. a3 Ba5 7. Ng3 d5 8. Bd3$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Ne2 c6 6. a3 Ba5 7. Ng3 d5 8. Bd3$
+Nisipeanu, LD.-Meier, Geo Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 c5 5. Nge2 cxd4 6. exd4 d5 7. a3 Bxc3+ 8.$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 c5 5. Ne2 cxd4 6. exd4 d5 7. a3 Bxc3+ 8.$
+Naiditsch, A.-Hou Yifan Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 d5 6. cxd5 exd5 7. Nge2 Bd6 8.$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 d5 6. cxd5 exd5 7. Ne2 Bd6 8.$
+Lu, Shanglei-Ni, Hua Отличие:файл-прого$1. e4 e5 2. Nf3 Nc6 3. c3 d5 4. Bb5 dxe4 5. Nxe5 Qd5 6. Qa4 Nge7 7. f4 exf3 8.$1. e4 e5 2. Nf3 Nc6 3. c3 d5 4. Bb5 dxe4 5. Nxe5 Qd5 6. Qa4 Ne7 7. f4 exf3 8.$
+Bok, Benjamin-Van Kampen, Robin Отличие:файл-прого$1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. exd5 exd5 5. Bd3 Nf6 6. Nge2 c6 7. O-O O-O 8.$1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. exd5 exd5 5. Bd3 Nf6 6. Ne2 c6 7. O-O O-O 8. h3$
+Bok, Benjamin-Van Kampen, Robin Отличие:файл-прого$h3 Re8 9. Ng3 Nbd7 10. Qf3 Nf8 11. Nce2 Ng6 12. c3 Bd6 13. Bg5 Be7 14. Nf4 Nxf4$Re8 9. Ng3 Nbd7 10. Qf3 Nf8 11. Nce2 Ng6 12. c3 Bd6 13. Bg5 Be7 14. Nf4 Nxf4$
+Yu Yangyi-Wang Chen Отличие:файл-прого$34. Ka2 Bxe4 35. Rb6 Qd8 36. Rxa6 Ra8 37. Ra4 Rxa4+ 38. bxa4 Qa5 39. Ka3 Qc5+$34. Ka2 Bxe4 35. Rb6 Qd8 36. Rxa6 Ra8 37. Ra4 Rxa4# 38. bxa4 Qa5 39. Ka3 Qc5+$
+Sunilduth Lyna, Narayanan-Kovalenko, Igor Отличие:файл-прого$Kc2 Nd4+ 22. Rxd4 cxd4 23. e7+ Nxe7 24. dxe7+ Qxe7 25. Ng6+ Kf7 26. Nxh8+ Rxh8$Kc2 Nd4+ 22. Rxd4 cxd4 23. e7# Nxe7 24. dxe7+ Qxe7 25. Ng6+ Kf7 26. Nxh8+ Rxh8$
+Adams, Mi-Vachier Lagrave, M. Отличие:файл-прого$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Ngf6 5. Qe2 a6 6. Ba4 e5 7. O-O Be7 8. d4$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Nf6 5. Qe2 a6 6. Ba4 e5 7. O-O Be7 8. d4$
+Howell, David W L-Petrov, Marian Отличие:файл-прого$O-O Nge7 9. Nbd2 O-O 10. Nb3 Bb6 11. Re1 Bg4 12. Be3 Re8 13. Bd3 Ng6 14. Bxg6$O-O Ne7 9. Nbd2 O-O 10. Nb3 Bb6 11. Re1 Bg4 12. Be3 Re8 13. Bd3 Ng6 14. Bxg6$
+Brunello, Sabino-Fressinet, Laurent Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 d5 6. cxd5 exd5 7. Nge2 Re8 8.$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 d5 6. cxd5 exd5 7. Ne2 Re8 8.$
+Anton Guijarro, David-Harikrishna, Pentala Отличие:файл-прого$O-O Nge7 9. Nb3 Bd6 10. h3 O-O 11. c3 a6 12. Bd3 Bc7 13. Re1 Ng6 14. Bc2 Qd6$O-O Ne7 9. Nb3 Bd6 10. h3 O-O 11. c3 a6 12. Bd3 Bc7 13. Re1 Ng6 14. Bc2 Qd6 15.$
+Anton Guijarro, David-Harikrishna, Pentala Отличие:файл-прого$15. Be3 Nce5 16. Nxe5 Qxe5 17. g3 Qe6 18. Bf4 Qd7 19. Bxc7 Qxc7 20. h4 Rd8 21.$Be3 Nce5 16. Nxe5 Qxe5 17. g3 Qe6 18. Bf4 Qd7 19. Bxc7 Qxc7 20. h4 Rd8 21. Nd4$
+Anton Guijarro, David-Harikrishna, Pentala Отличие:файл-прого$Nd4 Nf8 22. Qf3 a5 23. Rad1 Ra6 24. Nb5 Qc5 25. a4 Rf6 26. Qe3 Qc6 27. Na7 Qc7$Nf8 22. Qf3 a5 23. Rad1 Ra6 24. Nb5 Qc5 25. a4 Rf6 26. Qe3 Qc6 27. Na7 Qc7 28.$
+Anton Guijarro, David-Harikrishna, Pentala Отличие:файл-прого$28. Nxc8 Qxc8 29. Bb3 Qc6 30. Qa7 b6 31. Qe7 Rd7 32. Qe8 Re6 33. Rxe6 fxe6 34.$Nxc8 Qxc8 29. Bb3 Qc6 30. Qa7 b6 31. Qe7 Rd7 32. Qe8 Re6 33. Rxe6 fxe6 34. Rd4$
+Anton Guijarro, David-Harikrishna, Pentala Отличие:файл-прого$Rd4 Rc7 35. Qxc6 Rxc6 36. f4 g6 37. g4 Kg7 38. f5 gxf5 39. gxf5 exf5 40. Rxd5$Rc7 35. Qxc6 Rxc6 36. f4 g6 37. g4 Kg7 38. f5 gxf5 39. gxf5 exf5 40. Rxd5 Ng6$
+Anton Guijarro, David-Harikrishna, Pentala Отличие:файл-прого$Ng6 41. Rxf5 Nxh4 42. Rb5 Rf6 43. Bd1 Nf5 44. b4 axb4 45. cxb4 Nd4 46. Rg5+$41. Rxf5 Nxh4 42. Rb5 Rf6 43. Bd1 Nf5 44. b4 axb4 45. cxb4 Nd4 46. Rg5+ 1/2-1/2$
+Khismatullin, D.-Bukavshin, I. Отличие:файл-прого$54. Rxd2 Bxd2 55. Bxa6 Be1 56. Ne3 Rf2+ 57. Kh3 Rf3 58. Nef5 Bxg3 59. Nxg3 h6$54. Rxd2 Bxd2 55. Bxa6 Be1 56. Ne3 Rf2+ 57. Kh3 Rf3 58. Nf5 Bxg3 59. Nxg3 h6$
+Tomashevsky, E.-Svidler, P. Отличие:файл-прого$Bxc4 O-O 9. Nge2 Nc6 10. O-O Qxc5 11. Nb5 Be6 12. Bd3 Qb4 13. Nc7 Bxa2 14. Nxa8$Bxc4 O-O 9. Ne2 Nc6 10. O-O Qxc5 11. Nb5 Be6 12. Bd3 Qb4 13. Nc7 Bxa2 14. Nxa8$
+Xiu, Deshun-Wang, Yue Отличие:файл-прого$15. Qa4 f5 16. Ba3 Nhf6 17. O-O-O O-O 18. f3 Rf7 19. e4 Nf8 20. exf5 Nh5 21.$15. Qa4 f5 16. Ba3 Nf6 17. O-O-O O-O 18. f3 Rf7 19. e4 Nf8 20. exf5 Nh5 21.$
+Zeng, Chongsheng-Wang, Hao Отличие:файл-прого$Qf3 53. Rd6 f6+ 0-1$Qf3 53. Rd6 f6# 0-1$
+Carlsen, Magnus-Topalov, Veselin Отличие:файл-прого$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. O-O Ngf6 5. Re1 a6 6. Bd3 b5 7. c4 g5 8. Nxg5$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. O-O Nf6 5. Re1 a6 6. Bd3 b5 7. c4 g5 8. Nxg5$
+Nevednichy, Vladislav-Almasi, Zoltan Отличие:файл-прого$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. d4 cxd4 5. Qxd4 Ngf6 6. O-O a6 7. Bxd7+ Bxd7$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. d4 cxd4 5. Qxd4 Nf6 6. O-O a6 7. Bxd7+ Bxd7$
+So, Wesley-Aronian, Levon Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. f3 c5 5. d5 O-O 6. e4 d6 7. Nge2 a6 8. a4 Ba5$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. f3 c5 5. d5 O-O 6. e4 d6 7. Ne2 a6 8. a4 Ba5$
+Caruana, Fabiano-Vachier-Lagrave, Maxime Отличие:файл-прого$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Ngf6 5. Qe2 a6 6. Ba4 e5 7. O-O Be7 8. d4$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Nf6 5. Qe2 a6 6. Ba4 e5 7. O-O Be7 8. d4$
+So, Wesley-Topalov, Veselin Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Nge2 d5 6. a3 Bd6 7. c5 Be7 8. b4 b6$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Ne2 d5 6. a3 Bd6 7. c5 Be7 8. b4 b6$
+Iljiushenok, Ilia-Jakovenko, Dmitry Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Nge2 Re8 6. a3 Bf8 7. Ng3 d5 8. Be2$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Ne2 Re8 6. a3 Bf8 7. Ng3 d5 8. Be2$
+Jakovenko, Dmitry-Iljiushenok, Ilia Отличие:файл-прого$Bb5+ Nbd7 16. O-O Ng4 17. h3 Qc7 18. Rfc1 Qh2+ 19. Kf1 Ngf6 20. Ne2 O-O 21. Ng1$Bb5+ Nbd7 16. O-O Ng4 17. h3 Qc7 18. Rfc1 Qh2+ 19. Kf1 Nf6 20. Ne2 O-O 21. Ng1$
+Kramnik, Vladimir-Bruzon Batista, Lazaro Отличие:файл-прого$hxg4 28. hxg4 Bb7 29. Qe6 Re8 30. Re1 Ref8 31. f4 Qd8 32. f5 Qg5 33. Bd2 Qh4$hxg4 28. hxg4 Bb7 29. Qe6 Re8 30. Re1 Rf8 31. f4 Qd8 32. f5 Qg5 33. Bd2 Qh4 34.$
+Kramnik, Vladimir-Bruzon Batista, Lazaro Отличие:файл-прого$34. Kg2 Rd8 35. Rh1 Bxd5+ 36. Rxd5 Qxg4+ 37. Kf2 Rxd5 38. Qxd5 c6 39. Qe6 Qd4+$Kg2 Rd8 35. Rh1 Bxd5+ 36. Rxd5 Qxg4+ 37. Kf2 Rxd5 38. Qxd5 c6 39. Qe6 Qd4+ 40.$
+Kramnik, Vladimir-Bruzon Batista, Lazaro Отличие:файл-прого$40. Be3 Qd5 41. Qxd5 cxd5 42. Bd4 Rxf5+ 43. Ke3 Kf7 44. Rh7 Rg5 45. Kf3 Kg8 46.$Be3 Qd5 41. Qxd5 cxd5 42. Bd4 Rxf5+ 43. Ke3 Kf7 44. Rh7 Rg5 45. Kf3 Kg8 46. Rh1$
+Kramnik, Vladimir-Bruzon Batista, Lazaro Отличие:файл-прого$Rh1 Kf7 47. a3 Ke6 48. Rb1 Rh5 49. Kg4 Rh2 50. Rb6+ Kd7 51. Kf5 Rh5+ 52. Kg4$Kf7 47. a3 Ke6 48. Rb1 Rh5 49. Kg4 Rh2 50. Rb6+ Kd7 51. Kf5 Rh5+ 52. Kg4 Rh2$
+Kramnik, Vladimir-Bruzon Batista, Lazaro Отличие:файл-прого$Rh2 53. Be5 Ra2 54. Rd6+ Ke7 55. Ra6 c3 56. Bxc3 Rxa3 57. Bxg7 Kd7 58. Kf5 Kc7$53. Be5 Ra2 54. Rd6+ Ke7 55. Ra6 c3 56. Bxc3 Rxa3 57. Bxg7 Kd7 58. Kf5 Kc7 59.$
+Kramnik, Vladimir-Bruzon Batista, Lazaro Отличие:файл-прого$59. Bd4 Kb7 60. Rb6+ Kc7 61. Ke5 Rh3 62. Kxd5 Rh5+ 63. Kc4 Kd7 64. Ra6 Rf5 65.$Bd4 Kb7 60. Rb6+ Kc7 61. Ke5 Rh3 62. Kxd5 Rh5+ 63. Kc4 Kd7 64. Ra6 Rf5 65. Bc5$
+Kramnik, Vladimir-Bruzon Batista, Lazaro Отличие:файл-прого$Bc5 Rf4+ 66. Kd5 Rf5+ 67. Kd4 a4 68. Kc4 Rf4+ 69. Bd4 a3 70. Kd5 Rf5+ 71. Be5$Rf4+ 66. Kd5 Rf5+ 67. Kd4 a4 68. Kc4 Rf4+ 69. Bd4 a3 70. Kd5 Rf5+ 71. Be5 Rf7$
+Kramnik, Vladimir-Bruzon Batista, Lazaro Отличие:файл-прого$Rf7 72. Ra8 a2 73. Ra7+ Ke8 74. Ra8+ Kd7 75. Rxa2 Ke7 76. Ra6 Kd7 77. Bf6 Ke8$72. Ra8 a2 73. Ra7+ Ke8 74. Ra8+ Kd7 75. Rxa2 Ke7 76. Ra6 Kd7 77. Bf6 Ke8 78.$
+Kramnik, Vladimir-Bruzon Batista, Lazaro Отличие:файл-прого$78. Ra8+ Kd7 79. Ke5 Kc6 80. Ke6 Rb7 81. Be5 Kb5 82. Kd5 Rd7+ 83. Bd6 Rb7 84.$Ra8+ Kd7 79. Ke5 Kc6 80. Ke6 Rb7 81. Be5 Kb5 82. Kd5 Rd7+ 83. Bd6 Rb7 84. Ra1$
+Kramnik, Vladimir-Bruzon Batista, Lazaro Отличие:файл-прого$Ra1 Kb6 85. Rc1 Kb5 86. Bc7 Ka6 87. Kd6 Rb5 88. Kc6 Rb6+ 89. Kd7 Rb5 90. Kc8$Kb6 85. Rc1 Kb5 86. Bc7 Ka6 87. Kd6 Rb5 88. Kc6 Rb6+ 89. Kd7 Rb5 90. Kc8 Rd5$
+Kramnik, Vladimir-Bruzon Batista, Lazaro Отличие:файл-прого$Rd5 91. Rb1 Rc5 92. Rb2 Rc4 93. Kd7 Rc5 94. Bd6 Rb5 95. Ra2+ Kb7 96. Ra4 Kb6$91. Rb1 Rc5 92. Rb2 Rc4 93. Kd7 Rc5 94. Bd6 Rb5 95. Ra2+ Kb7 96. Ra4 Kb6 97.$
+Kramnik, Vladimir-Bruzon Batista, Lazaro Отличие:файл-прого$97. Ra1 Kb7 98. Rd1 Kb6 99. Rh1 Kb7 100. Rh6 Rd5 101. Rh8 Rb5 102. Rc8 Kb6 103.$Ra1 Kb7 98. Rd1 Kb6 99. Rh1 Kb7 100. Rh6 Rd5 101. Rh8 Rb5 102. Rc8 Kb6 103.$
+Le, Quang Liem-Vitiugov, Nikita Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 c5 5. Nge2 cxd4 6. exd4 d5 7. c5 Ne4 8. Bd2$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 c5 5. Ne2 cxd4 6. exd4 d5 7. c5 Ne4 8. Bd2$
+Lu, Shanglei-Topalov, Veselin Отличие:файл-прого$1. e4 e5 2. Nf3 Nc6 3. c3 d5 4. Bb5 dxe4 5. Nxe5 Qd5 6. Qa4 Nge7 7. f4 exf3 8.$1. e4 e5 2. Nf3 Nc6 3. c3 d5 4. Bb5 dxe4 5. Nxe5 Qd5 6. Qa4 Ne7 7. f4 exf3 8.$
+Svidler, Peter-Topalov, Veselin Отличие:файл-прого$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. O-O Ngf6 5. Re1 a6 6. Bf1 b6 7. d4 cxd4 8.$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. O-O Nf6 5. Re1 a6 6. Bf1 b6 7. d4 cxd4 8.$
+Andreikin, Dmitry-Karjakin, Sergey Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 d5 6. Nge2 dxc4 7. Bxc4 c5 8.$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 d5 6. Ne2 dxc4 7. Bxc4 c5 8. O-O$
+Andreikin, Dmitry-Karjakin, Sergey Отличие:файл-прого$O-O Nc6 9. a3 Bxc3 10. bxc3 Qc7 11. Ba2 b6 12. Bb2 Ba6 1/2-1/2$Nc6 9. a3 Bxc3 10. bxc3 Qc7 11. Ba2 b6 12. Bb2 Ba6 1/2-1/2$
+Wojtaszek, Radoslaw-Giri, Anish Отличие:файл-прого$1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. b3 Bb4 6. Bb2 Ne4 7. Nge2 Qf6 8. f3$1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. b3 Bb4 6. Bb2 Ne4 7. Ne2 Qf6 8. f3$
+Wojtaszek, Radoslaw-Giri, Anish Отличие:файл-прого$1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. b3 Bb4 6. Bb2 Ne4 7. Nge2 Qf6 8. f3$1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. b3 Bb4 6. Bb2 Ne4 7. Ne2 Qf6 8. f3$
+Kobo, Ori-Harikrishna, Pentala Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. f3 c5 5. d5 O-O 6. e4 Re8 7. Nge2 d6 8. Bd2$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. f3 c5 5. d5 O-O 6. e4 Re8 7. Ne2 d6 8. Bd2$
+Spoelman, Wouter-Giri, Anish Отличие:файл-прого$Re1 c4 54. Ne5+ Ke7 55. Nxc4 Kf6 56. Nd6 Ng7 57. Ne8+ Nxe8 58. Rxe8 {Ke5}$Re1 c4 54. Ne5+ Ke7 55. Nxc4 Kf6 56. Nd6 Ng7 57. Ne8+ Nxe8 58. Rxe8 1/2-1/2$
+Morozevich, Alexander-Laznicka, Viktor Отличие:файл-прого$Kc6 28. Qe8+ Kd6 29. Ne4+ dxe4 30. Rd1+ 1-0$Kc6 28. Qe8+ Kd6 29. Ne4# dxe4 30. Rd1+ 1-0$
+Khismatullin, Denis-Inarkiev, Ernesto Отличие:файл-прого$Rc5 47. h6 Rg5 48. hxg7+ Rxg7 49. Rxg7 Qxg7 50. Qxg7+ Kxg7 51. Rd3 Kf6 52. Rd5$Rc5 47. h6 Rg5 48. hxg7# Rxg7 49. Rxg7 Qxg7 50. Qxg7+ Kxg7 51. Rd3 Kf6 52. Rd5$
+Carmaciu, Lucian-Catalin-Wang, Hao Отличие:файл-прого$1. e4 c5 2. Nc3 e6 3. f4 Nc6 4. Nf3 d5 5. Bb5 Nge7 6. exd5 Nxd5 7. Bxc6+ bxc6$1. e4 c5 2. Nc3 e6 3. f4 Nc6 4. Nf3 d5 5. Bb5 Ne7 6. exd5 Nxd5 7. Bxc6+ bxc6 8.$
+Carmaciu, Lucian-Catalin-Wang, Hao Отличие:файл-прого$8. d3 Nxc3 9. bxc3 c4 10. Ne5 cxd3 11. cxd3 Bd6 12. O-O O-O 13. Kh1 Qc7 14. Qa4$d3 Nxc3 9. bxc3 c4 10. Ne5 cxd3 11. cxd3 Bd6 12. O-O O-O 13. Kh1 Qc7 14. Qa4 c5$
+Carmaciu, Lucian-Catalin-Wang, Hao Отличие:файл-прого$c5 15. Rb1 Bb7 16. Bd2 Rab8 17. c4 Bxe5 18. fxe5 Qxe5 19. Qd1 Qd6 20. Qe2 e5$15. Rb1 Bb7 16. Bd2 Rab8 17. c4 Bxe5 18. fxe5 Qxe5 19. Qd1 Qd6 20. Qe2 e5 21.$
+Carmaciu, Lucian-Catalin-Wang, Hao Отличие:файл-прого$21. Be3 Bc6 22. Kg1 Rxb1 23. Rxb1 f5 24. Bf2 f4 25. Re1 Rf5 0-1$Be3 Bc6 22. Kg1 Rxb1 23. Rxb1 f5 24. Bf2 f4 25. Re1 Rf5 0-1$
+Le, Quang Liem-Boekhoff, Andrew Отличие:файл-прого$1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. b3 Bb4 6. Bb2 Ne4 7. Nge2 Qh4 8. g3$1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. b3 Bb4 6. Bb2 Ne4 7. Ne2 Qh4 8. g3 Qf6$
+Le, Quang Liem-Boekhoff, Andrew Отличие:файл-прого$Qf6 9. f4 Qg6 10. Bg2 Nd7 11. a3 Bxc3+ 12. Nxc3 Nd6 13. a4 Nf6 14. Ba3 Nf5 15.$9. f4 Qg6 10. Bg2 Nd7 11. a3 Bxc3+ 12. Nxc3 Nd6 13. a4 Nf6 14. Ba3 Nf5 15. Qd2$
+Le, Quang Liem-Boekhoff, Andrew Отличие:файл-прого$Qd2 Ng4 16. e4 dxe4 17. Bxe4 Bd7 18. h3 Nf6 19. g4 O-O-O 20. O-O-O Nxe4 21.$Ng4 16. e4 dxe4 17. Bxe4 Bd7 18. h3 Nf6 19. g4 O-O-O 20. O-O-O Nxe4 21. Nxe4$
+Le, Quang Liem-Boekhoff, Andrew Отличие:файл-прого$Nxe4 Nh6 22. Qa5 c5 23. Nd6+ Kb8 24. Bxc5 a6 25. Nxb7 1-0$Nh6 22. Qa5 c5 23. Nd6+ Kb8 24. Bxc5 a6 25. Nxb7 1-0$
+Pavlovic, Milos-Ponomariov, Ruslan Отличие:файл-прого$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Ngf6 5. Qe2 a6 6. Ba4 b5 7. Bc2 Bb7 8. O-O$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Nf6 5. Qe2 a6 6. Ba4 b5 7. Bc2 Bb7 8. O-O$
+Navara, David-Ivanchuk, Vassily Отличие:файл-прого$Qc8 59. Rfxe4 hxg4+ 60. Rxg4+ Kh5 61. Kg3 Qc7+ 62. Kh3 Qc8 63. Rc4 Qd7 64. Rcd4$Qc8 59. Rfxe4 hxg4+ 60. Rxg4+ Kh5 61. Kg3 Qc7+ 62. Kh3 Qc8 63. Rc4 Qd7 64. Rd4$
+Tomashevsky, Evgeny-Petrosian, Tigran L Отличие:файл-прого$Rxf7 Rgf8 41. Rhh7 Rxf7+ 42. Rxf7 Rxc3 43. Ne1 Rc8 44. Nf3 Rg8 45. Kg4 Ke8 46.$Rxf7 Rgf8 41. Rh7 Rxf7+ 42. Rxf7 Rxc3 43. Ne1 Rc8 44. Nf3 Rg8 45. Kg4 Ke8 46.$
+Bologan, Viktor-Eljanov, Pavel Отличие:файл-прого$dxe5+ Bxe5 34. Ne4+ dxe4 35. Qb4+ Kc7 36. Qc5+ Kb8 0-1$dxe5+ Bxe5 34. Ne4# dxe4 35. Qb4+ Kc7 36. Qc5+ Kb8 0-1$
+Maze, Sebastien-Grischuk, Alexander Отличие:файл-прого$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Ngf6 5. Qe2 a6 6. Ba4 b5 7. Bc2 Bb7 8. a4$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Nf6 5. Qe2 a6 6. Ba4 b5 7. Bc2 Bb7 8. a4$
+Maze, Sebastien-Grischuk, Alexander Отличие:файл-прого$e6 9. d4 Be7 10. e5 dxe5 11. dxe5 Nd5 12. axb5 axb5 13. Rxa8 Qxa8 14. Qxb5 N5b6$e6 9. d4 Be7 10. e5 dxe5 11. dxe5 Nd5 12. axb5 axb5 13. Rxa8 Qxa8 14. Qxb5 Nb6$
+Maze, Sebastien-Dominguez Perez, Leinier Отличие:файл-прого$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Ngf6 5. Qe2 a6 6. Ba4 b5 7. Bc2 Bb7 8. d4$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Nf6 5. Qe2 a6 6. Ba4 b5 7. Bc2 Bb7 8. d4$
+Stukopin, Andrey-Nakamura, Hikaru Отличие:файл-прого$1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 Bb4 5. e5 h6 6. Bh4 g5 7. Bg3 Ne4 8. Nge2$1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 Bb4 5. e5 h6 6. Bh4 g5 7. Bg3 Ne4 8. Ne2 h5$
+Stukopin, Andrey-Nakamura, Hikaru Отличие:файл-прого$h5 9. f3 Nxg3 10. hxg3 Bd7 11. Qd2 Be7 12. g4 h4 13. g3 c5 14. gxh4 Nc6 15. Qe3$9. f3 Nxg3 10. hxg3 Bd7 11. Qd2 Be7 12. g4 h4 13. g3 c5 14. gxh4 Nc6 15. Qe3$
+Khismatullin, Denis-Morozevich, Alexander Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 b6 6. Nge2 Bb7 7. a3 Bxc3+ 8.$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 b6 6. Ne2 Bb7 7. a3 Bxc3+ 8.$
+Agdestein, Simen-Riazantsev, Alexander Отличие:файл-прого$Kxf8 54. Nd7+ Ke7 55. Nde5 Kxe6 56. h6 Ne7 0-1$Kxf8 54. Nd7+ Ke7 55. Ne5 Kxe6 56. h6 Ne7 0-1$
+Ivanchuk, Vassily-Socko, Bartosz Отличие:файл-прого$1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. exd5 exd5 5. Bd3 Nc6 6. Nge2 Be6 7. O-O Qd7 8.$1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. exd5 exd5 5. Bd3 Nc6 6. Ne2 Be6 7. O-O Qd7 8.$
+Ponkratov, Pavel-Leko, Peter Отличие:файл-прого$Bf5 9. Nh4 Be6 10. Nf3 Bf5 11. Qa4 Ndb4 12. d3 Qa5 13. Qxa5 Nxa5 14. O-O gxh5$Bf5 9. Nh4 Be6 10. Nf3 Bf5 11. Qa4 Nb4 12. d3 Qa5 13. Qxa5 Nxa5 14. O-O gxh5$
+Dominguez Perez, Leinier-Ponkratov, Pavel Отличие:файл-прого$1. e4 e6 2. d4 d5 3. Nd2 c5 4. Ngf3 Nc6 5. exd5 exd5 6. Bb5 Bd6 7. O-O Nge7 8.$1. e4 e6 2. d4 d5 3. Nd2 c5 4. Ngf3 Nc6 5. exd5 exd5 6. Bb5 Bd6 7. O-O Ne7 8.$
+Khismatullin, Denis-Anand, Viswanathan Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 d5 6. cxd5 exd5 7. Nge2 Re8 8.$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 d5 6. cxd5 exd5 7. Ne2 Re8 8.$
+Navara, David-Wojtaszek, Radoslaw Отличие:файл-прого$1. d4 Nf6 2. Nc3 d5 3. Bf4 e6 4. e3 Bb4 5. Nge2 O-O 6. a3 Bd6 7. Ng3 c5 8. dxc5$1. d4 Nf6 2. Nc3 d5 3. Bf4 e6 4. e3 Bb4 5. Ne2 O-O 6. a3 Bd6 7. Ng3 c5 8. dxc5$
+Guseinov, Gadir-Khismatullin, Denis Отличие:файл-прого$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Ngf6 5. Qe2 a6 6. Ba4 b5 7. Bc2 Bb7 8. O-O$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Nf6 5. Qe2 a6 6. Ba4 b5 7. Bc2 Bb7 8. O-O$
+Safarli, Eltaj-Dreev, Aleksey Отличие:файл-прого$Kg7 34. b6 Rh8 35. Rg5+ Rxg5 36. Nfxg5 Kf6 37. Nf3 Be4 38. Kh2 Rc8 39. Nfg1 Kf5$Kg7 34. b6 Rh8 35. Rg5+ Rxg5 36. Nxg5 Kf6 37. Nf3 Be4 38. Kh2 Rc8 39. Nfg1 Kf5$
+Charmeteau, Sven-Radjabov, Teimour Отличие:файл-прого$1. e4 c5 2. Nc3 Nc6 3. f4 e6 4. Nf3 d5 5. Bb5 Nge7 6. Qe2 d4 7. Nd1 a6 8. Bxc6+$1. e4 c5 2. Nc3 Nc6 3. f4 e6 4. Nf3 d5 5. Bb5 Ne7 6. Qe2 d4 7. Nd1 a6 8. Bxc6+$
+Grischuk, Alexander-Najer, Evgeniy Отличие:файл-прого$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Ngf6 5. Qe2 a6 6. Ba4 b5 7. Bc2 Bb7 8. d4$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Nf6 5. Qe2 a6 6. Ba4 b5 7. Bc2 Bb7 8. d4$
+Grischuk, Alexander-Najer, Evgeniy Отличие:файл-прого$15. Rxa8 Qxa8 16. Qxb5 Nc7 17. Qa4 Qxf3 18. Be4 Qh5 19. Bf4 Nd5 20. Bg3 N5b6$15. Rxa8 Qxa8 16. Qxb5 Nc7 17. Qa4 Qxf3 18. Be4 Qh5 19. Bf4 Nd5 20. Bg3 Nb6 21.$
+Grischuk, Alexander-Najer, Evgeniy Отличие:файл-прого$21. Qc6 e5 22. Qe6 Rf8 23. Na3 Rf6 24. Qg8+ Bf8 25. Qb3 Qg4 26. Qc2 Bh6 27. Qe2$Qc6 e5 22. Qe6 Rf8 23. Na3 Rf6 24. Qg8+ Bf8 25. Qb3 Qg4 26. Qc2 Bh6 27. Qe2 Qh3$
+Grischuk, Alexander-Najer, Evgeniy Отличие:файл-прого$Qh3 28. Qf1 Qxf1+ 29. Kxf1 Rd6 30. Kg2 Bf4 31. Re1 c4 32. Re2 Nc5 33. Nb5 Rd1$28. Qf1 Qxf1+ 29. Kxf1 Rd6 30. Kg2 Bf4 31. Re1 c4 32. Re2 Nc5 33. Nb5 Rd1 34.$
+Grischuk, Alexander-Najer, Evgeniy Отличие:файл-прого$34. Bc2 Rc1 35. Na3 Nd3 36. f3 Bxg3 37. hxg3 e4 38. fxe4 Nxb2 39. Rd2 Nd7 40.$Bc2 Rc1 35. Na3 Nd3 36. f3 Bxg3 37. hxg3 e4 38. fxe4 Nxb2 39. Rd2 Nd7 40. Bb1$
+Grischuk, Alexander-Najer, Evgeniy Отличие:файл-прого$Bb1 Rxc3 41. Nb5 Rb3 42. Nc7+ Kd8 43. Ba2 Rb7 44. Nd5 Ke8 45. Kf2 e6 46. Nc3$Rxc3 41. Nb5 Rb3 42. Nc7+ Kd8 43. Ba2 Rb7 44. Nd5 Ke8 45. Kf2 e6 46. Nc3 Nd3+$
+Grischuk, Alexander-Najer, Evgeniy Отличие:файл-прого$Nd3+ 47. Ke3 N7e5 48. Ke2 Rf7 0-1$47. Ke3 N7e5 48. Ke2 Rf7 0-1$
+Morshedi, Ali-So, Wesley ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2014.12.??$
+So, Wesley-Bryant, John ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2014.12.??$
+Yankovsky, Roman-So, Wesley ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2014.12.??$
+So, Wesley-Yermolinsky, Alex ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2014.12.??$
+Erenburg, Sergey-So, Wesley ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2014.12.??$
+So, Wesley-Zhou, Jianchao ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2014.12.??$
+So, Wesley-Bu, Xiangzhi ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2014.12.??$
+Becerra, Julio-So, Wesley ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2014.12.??$
+So, Wesley-Batchuluun, Tsegme ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2014.12.??$
+Curien, Nicolas-Naiditsch, Arkadij ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Rapport, Richard-Bhend, Edwin ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Naiditsch, Arkadij-Toth, Bela ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Reinhart, Emmanuel-Rapport, Richard ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Dourerassou, Jonathan-Naiditsch, Arkadij ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Rapport, Richard-Graf, Felix ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Naiditsch, Arkadij-Svane, Rasmus ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Donchenko, Alexander-Rapport, Richard ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Rapport, Richard-Iturrizaga Bonelli, Eduardo ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Van Foreest, Jorden-Naiditsch, Arkadij ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Naiditsch, Arkadij-Rapport, Richard ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Dann, Matthias-Naiditsch, Arkadij ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Roubert-Fressinet ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Fressinet, L.-Smith, M. ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Bellahcene-Fressinet ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Fressinet-Le Roux ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Tregubov-Fressinet ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Fressinet-Fedorchuk ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Abergel-Fressinet ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Bindrich, Falko-Navara, David ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Pentala, Harikrishna-Cyborowski, Lukasz ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Simacek, Pavel-Shirov, Alexej ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Azarov, Sergei-Navara, David ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Pentala, Harikrishna-Fedorov, Aleksei ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Antoniewski, Rafal-Shirov, Alexej ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Navara, David-Luch, Michal ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Stachowiak, Kamil-Pentala, Harikrishna ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Shirov, Alexej-Studnicka, Tomas ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Li, Chao b-Rombach, Michael ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Schwander, Lukas-Naiditsch, Arkadij ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Bacrot, Etienne-Hansch, Torsten ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Vatter, Hans-Joachim-Li, Chao b ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Naiditsch, Arkadij-Fischer, Sebastian ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Jacob, Volker-Bacrot, Etienne ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Li, Chao b-Neef, Maximilian ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Noe, Christopher-Naiditsch, Arkadij ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Bacrot, Etienne-Lammers, Markus ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Krassowizkij, Jaroslaw-Li, Chao b ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Naiditsch, Arkadij-Carow, Johannes ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Vogel, Roven-Bacrot, Etienne ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Li, Chao b-Collins, Sam E ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Carlstedt, Jonathan-Naiditsch, Arkadij ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Bacrot, Etienne-Di Nicolantonio, Lucas ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Naiditsch, Arkadij-Li, Chao b ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Braun, Arik-Bacrot, Etienne ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Li, Chao b-Bacrot, Etienne ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Piorun, Kacper-Naiditsch, Arkadij ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Piorun, Kacper-Li, Chao b ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Naiditsch, Arkadij-Schroeder, Jan-Christian ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Bacrot, Etienne-Carow, Johannes ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Li, Chao b-Schmaltz, Roland ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Heimann, Andreas-Naiditsch, Arkadij ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Pijpers, Arthur-Bacrot, Etienne ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Lehmann, Klaus-Naiditsch, Arkadij ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Naiditsch, Arkadij-Bruchmann, Stephan ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Navara (2751), GM David-Biolek (2461), IM Richard ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Navara (2751), GM David-Rausis (2590), GM Igors ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Kraus (2402), FM Tomas-Navara (2751), GM David ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Navara (2751), GM David-Babula (2542), GM Vlastimil ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Halfhide, S.-Howell, D. ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Howell, D.-Visser, H.J. ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Milov, IGM Leonid-Howell, IGM David ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Howell, IGM David-Nikolic, IGM Predrag ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+van der Marel, Bert-Howell, IGM David ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Wei, Yi-Karjakin, Sergey ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Ding, Li ren-Karjakin, Sergey ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Karjakin, Sergey-Ni, Hua ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Dominguez Perez, Leinier-Kryvoruchko, Yuriy ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Nisipeanu, Liviu-Dieter-Ponomariov, Ruslan ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Fressinet, Laurent-Saric, Ivan ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Li, Chao b-Leko, Peter ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Dominguez Perez, Leinier-Harikrishna, Pentala ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Adhiban, Baskaran-Ponomariov, Ruslan ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Fressinet, Laurent-Ganguly, Surya Shekhar ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Anton Guijarro, David-Kryvoruchko, Yuriy ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Van Wely, Loek-Kryvoruchko, Yuriy ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Harikrishna, Pentala-Granda Zuniga, Julio E ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Rakhmanov, Aleksandr-Dominguez Perez, Leinier ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Ponomariov, Ruslan-Spraggett, Kevin ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Narciso Dublan, Marc-Fressinet, Laurent ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Dominguez Perez, Leinier-Van Wely, Loek ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Naiditsch, Arkadij-Ponomariov, Ruslan ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Fressinet, Laurent-Franco Alonso, Alejandro ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Anton Guijarro, David-Harikrishna, Pentala ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Kryvoruchko, Yuriy-Sargissian, Gabriel ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Bischoff, Klaus-Shirov, Alexei ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Romanov, Evgeny-Li, Chao b ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Reinderman, Dimitri-Giri, Anish ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Giri, Anish-Smeets, Jan ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Lai, Hing Ting-Giri, Anish ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+van Wely, Loek-Giri, Anish ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Giri, Anish-Klein, David ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Spoelman, Wouter-Giri, Anish ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Giri, Anish-Nijboer, Friso ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+
