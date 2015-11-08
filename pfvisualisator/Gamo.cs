@@ -36,6 +36,15 @@ namespace pfVisualisator {
             }
 
         /// <summary>
+        /// Модификация от 8 ноября 2015 года
+        /// Заложен 8 ноября 2015 года
+        /// </summary>
+        /// <param name="vg"></param>
+        public Gamo(vGamo vg) {
+
+            }
+
+        /// <summary>
         /// Модификация от 22 октября 2015 года
         /// Заложен июнь 2015 года
         /// </summary>

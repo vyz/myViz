@@ -22,5 +22,13 @@ namespace pfVisualisator
         {
             InitializeComponent();
         }
+
+        private void Parto_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            TextBox curra = (TextBox)sender;
+            int ipos = curra.CaretIndex;
+            vGamo aa = (vGamo)Grido.DataContext;
+            pozo newposo = aa.GetPozoOnOffset(ipos);
+        }
     }
 }

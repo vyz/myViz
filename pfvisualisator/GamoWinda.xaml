@@ -14,7 +14,7 @@
         <GridSplitter Name="SplitIn1" Grid.Column="1" HorizontalAlignment="Left" Width="5"></GridSplitter>
         <StackPanel Name="GInfo" Grid.Column="1">
             <TextBlock Name="Heado" Text="{Binding Path=BigNamo}" HorizontalAlignment="Center"></TextBlock>
-            <TextBox Name="Parto" Text="{Binding Path=OnlyMova}"></TextBox>
+            <TextBox Name="Parto" Text="{Binding Path=OnlyMova}" MouseDoubleClick="Parto_MouseDoubleClick"></TextBox>
         </StackPanel>
     </Grid>
 </Window>

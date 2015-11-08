@@ -72,6 +72,17 @@ namespace pfVisualisator
                     }
             }
 
+        /// <summary>
+        /// Модификация от 8 ноября 2015 года
+        /// Заложен 8 ноября 2015 года
+        /// </summary>
+        /// <param name="offseto"></param>
+        /// <returns></returns>
+        public pozo GetPozoOnOffset(int offseto) {
+            pozo reto = null;
+            return reto;
+            }
+
 #region--------------------------Свойства объекта-----------------------------------------
         public string Namo { get { return namo; } set { namo = value; } }
         public string BigNamo { get { return bignamo; } set { bignamo = value; } }
