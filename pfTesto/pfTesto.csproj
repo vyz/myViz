@@ -47,7 +47,7 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="WindowsBase" />
     <Reference Include="WPFExtensions">
-      <HintPath>..\..\ASample\Learna\pfVisualisator\Libraries\WPFExtensions.dll</HintPath>
+      <HintPath>..\pfVisualisator\bin\Release\WPFExtensions.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -201,10 +201,6 @@ namespace pfVisualisator
         private DateTime                                m_dateTimeStartSearching;
         /// <summary>Elapse time of the last search</summary>
         private TimeSpan                                m_timeSpanLastSearch;
-        /// <summary>Name of the player playing white piece</summary>
-        private string                                  m_strWhitePlayerName;
-        /// <summary>Name of the player playing black piece</summary>
-        private string                                  m_strBlackPlayerName;
         #endregion
 
         #region Board creation
@@ -249,11 +245,11 @@ namespace pfVisualisator
             m_board                     = currentopoza.BoardoSet;    ///////ALLLERT
             m_ptSelectedCell            = new IntPoint(-1, -1);
             m_bAutoSelection            = true;
-            m_strWhitePlayerName        = "Player 1";
-            m_strBlackPlayerName        = "Player 2";
             DesignModeYES = false;
             InitCell();
+            PieceSet = new PieceSetStandard("Leipzig", "Figures");
         }
+
         /// <summary>
         /// Refresh the board color
         /// </summary>
@@ -486,31 +482,6 @@ namespace pfVisualisator
                     m_board = value;
                     Refresh(false); // bForceRefresh
                 }
-            }
-        }
-
-
-        /// <summary>
-        /// Name of the player playing white piece
-        /// </summary>
-        public string WhitePlayerName {
-            get {
-                return(m_strWhitePlayerName);
-            }
-            set {
-                m_strWhitePlayerName = value;
-            }
-        }
-
-        /// <summary>
-        /// Name of the player playing black piece
-        /// </summary>
-        public string BlackPlayerName {
-            get {
-                return(m_strBlackPlayerName);
-            }
-            set {
-                m_strBlackPlayerName = value;
             }
         }
 
