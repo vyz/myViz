@@ -15,6 +15,7 @@ namespace pfVisualisator
         public event PropertyChangedEventHandler PropertyChanged;
 
         private int movacount;
+        private Gamo etalo;
 
         /// <summary>
         /// Модификация от 4 октября 2015 года
@@ -73,13 +74,17 @@ namespace pfVisualisator
             }
 
         /// <summary>
-        /// Модификация от 8 ноября 2015 года
+        /// Модификация от 10 ноября 2015 года
         /// Заложен 8 ноября 2015 года
         /// </summary>
         /// <param name="offseto"></param>
         /// <returns></returns>
         public pozo GetPozoOnOffset(int offseto) {
             pozo reto = null;
+            if (etalo == null) {
+                etalo = new Gamo(this);
+                }
+
             return reto;
             }
 
@@ -101,7 +106,7 @@ namespace pfVisualisator
         public string OnlyMova { get { return ltexto[12]; } set { ltexto[12] = value; } }
         public string AddAtr { get { return ltexto[13]; } set { ltexto[13] = value; } }
         public string Descripto { get { return ltexto[14]; } set { ltexto[14] = value; } }
-        public int movoQvo { get { return movacount; } }
+        public int movoQvo { get { return movacount; } set { movacount = value; } }
         public myTago Tago { get { return tago; } }
         public string TagoTextStroke { get { return tago.TStroke; } }
 #endregion-----------------------Свойства объекта-----------------------------------------
@@ -112,8 +117,51 @@ namespace pfVisualisator
                 handler(this, new PropertyChangedEventArgs(name));
                 }
             }
-        }
 
+        /// <summary>
+        /// Модификация от 11 ноября 2015 года
+        /// Заложен 11 ноября 2015 года
+        /// </summary>
+        /// <returns></returns>
+        public static vGamo CreateExemplarusForLife() {
+            vGamo reto = new vGamo();
+            reto.Namo = "Nikitenko, Mihail,  - Vorontsov, Pavlo, ";
+            reto.BigNamo = "Nikitenko, Mihail,  - Vorontsov, Pavlo,   1-0 C10";
+            reto.White = "Nikitenko, Mihail, ";
+            reto.Black = "Vorontsov, Pavlo, ";
+            reto.Result = "1-0";
+            reto.Date = "2014.05.18";
+            reto.Event = "Vanya Somov Memorial 2014";
+            reto.ECO = "C10";
+            reto.PlyCount = "75";
+            reto.WElo = "2199";
+            reto.BElo = "2413";
+            reto.Site = "Kirishi (Russia)";
+            reto.Round = "5.5";
+            reto.Fen = "";
+            reto.movoQvo = int.Parse(reto.PlyCount) / 2;
+            reto.OnlyMova = @"1. e4 e6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bd7 5. Nf3 Bc6 6. Bd3 Nd7 7. c3 Ngf6 8.
+Qc2 Bxe4 9. Bxe4 Nxe4 10. Qxe4 c6 11. Qe2 Nf6 12. O-O Be7 13. c4 O-O 14. b3 Qa5
+15. Qe5 Qxe5 16. dxe5 Nd7 17. Rd1 Rfd8 18. Be3 a5 19. Kf1 Kf8 20. Ke2 f6 21.
+exf6 gxf6 22. Rd4 e5 23. Rh4 Kg8 24. Rg4+ Kf7 25. Rh4 Nf8 26. Rd1 Rd7 27. g4
+Kg8 28. Rh5 Ne6 29. Rg1 e4 30. Nh4 a4 31. b4 Bxb4 32. Rh6 Nd4+ 33. Bxd4 Rxd4
+34. g5 fxg5 35. Rxg5+ Kh8 36. Ng6+ Kg7 37. Ne5+ Kf8 38. Rxh7 1-0";
+            reto.AddAtr = @"[Board] - [1]
+[WhiteTitle] - [GM]
+[WhiteCountry] - [BUL]
+[WhiteFideId] - [2900084]
+[WhiteEloChange] - [1]
+[BlackTitle] - [IM]
+[BlackCountry] - [NGR]
+[BlackFideId] - [8500258]
+[BlackEloChange] - [-2]";
+            reto.Descripto = "Искусственный член";
+
+            return reto;
+            }
+
+        }
+#region--------------------------------ДРУГОЙ КЛАСС--vlWGamo------------------------------
     /// <summary>
     /// Модификация от 6 октября 2015 года
     /// Заложен 6 октября 2015 года
@@ -162,7 +210,7 @@ namespace pfVisualisator
         public bool Edina { set { edina = value; } get { return edina; } }
         public List<vGamo> Listo { get { return manolist; } }
         }
-
+#endregion-----------------------------ДРУГОЙ КЛАСС--vlWGamo------------------------------
     /// <summary>
     /// Модификация от 6 октября 2015 года
     /// Заложен 6 октября 2015 года

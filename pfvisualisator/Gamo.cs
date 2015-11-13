@@ -36,12 +36,33 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 8 ноября 2015 года
+        /// Модификация от 12 ноября 2015 года
         /// Заложен 8 ноября 2015 года
         /// </summary>
         /// <param name="vg"></param>
         public Gamo(vGamo vg) {
-
+            datro = new Dictionary<gmAttro, string>();
+            if (vg.Fen == string.Empty) { flagFromStart = true; }
+            else { SetAttro(gmAttro.Fen, vg.Fen); }
+            if (vg.Result.Length > 0) {
+                strResulte = vg.Result;
+                SetAttro(gmAttro.Result, strResulte);
+                flagEndResulte = true;
+                }
+            if (vg.Event.Length > 0) { SetAttro(gmAttro.Event, vg.Event); }
+            if (vg.Site.Length > 0) { SetAttro(gmAttro.Site, vg.Site); }
+            if (vg.Date.Length > 0) { SetAttro(gmAttro.Date, vg.Date); }
+            if (vg.Round.Length > 0) { SetAttro(gmAttro.Round, vg.Round); }
+            if (vg.White.Length > 0) { SetAttro(gmAttro.White, vg.White); }
+            if (vg.Black.Length > 0) { SetAttro(gmAttro.Black, vg.Black); }
+            if (vg.ECO.Length > 0) { SetAttro(gmAttro.ECO, vg.ECO); }
+            if (vg.WElo.Length > 0) { SetAttro(gmAttro.WhiteElo, vg.WElo); }
+            if (vg.BElo.Length > 0) { SetAttro(gmAttro.BlackElo, vg.BElo); }
+            if (vg.PlyCount.Length > 0) { SetAttro(gmAttro.PlyCount, vg.PlyCount); }
+            FillMovesAndPozos(vg.OnlyMova);
+            if (vg.AddAtr.Length > 0) {
+                FillAddingAttribute(vg.AddAtr);
+                }
             }
 
         /// <summary>
@@ -264,6 +285,51 @@ namespace pfVisualisator {
             }
 
         /// <summary>
+        /// Модификация от 12 ноября 2015 года
+        /// Заложен 12 ноября 2015 года
+        /// </summary>
+        /// <param name="bigstrika"></param>
+        private void FillMainMovesTrusted(string bigstrika) {
+            onlymainmoves = new List<string>();
+            string Patterno = @"\s+";
+            string[] arkus = Regex.Split(bigstrika, Patterno);
+            string patnumbermove = @"\d+\.";
+            string patmovesymbol = @"[KQRBNa-hO][a-h1-8\-x=\+#QRBN]+";
+            string patresulte = @"1-0|0-1|1/2-1/2";
+            string patprobelnost = @"\s+";
+            foreach (string aa in arkus) {
+                if (Regex.IsMatch(aa, patnumbermove)) {
+                    continue;
+                } else if (Regex.IsMatch(aa, patmovesymbol)) {
+                    onlymainmoves.Add(aa);
+                } else if (Regex.IsMatch(aa, patresulte)) {
+                    continue;
+                } else if (Regex.IsMatch(aa, patprobelnost) || aa.Length == 0) {
+                    continue; //Пустоту просто пропускаем
+                } else {
+                    onlymainmoves.Add("ЩУЧАЩУЩУ");
+                    }
+                }
+            }
+
+        /// <summary>
+        /// Модификация от 12 ноября 2015 года
+        /// Заложен 12 ноября 2015 года
+        /// </summary>
+        /// <param name="addingo"></param>
+        private void FillAddingAttribute(string addingo) {
+            string vnutr = @"\[(.+)\] - \[(.+)\]";
+            foreach (Match m1 in Regex.Matches(addingo, vnutr)) {
+                if (m1.Groups.Count > 2) {
+                    string b1 = m1.Groups[1].Value;
+                    string b2 = m1.Groups[2].Value;
+                    gmAttro tatr = (gmAttro)Enum.Parse(typeof(gmAttro), b1);
+                    datro.Add(tatr, b2);
+                    }
+                }
+            }
+
+        /// <summary>
         /// Модификация от 21 октября 2015 года
         /// Заложен 22 июля 2015 года
         /// </summary>
@@ -371,6 +437,35 @@ namespace pfVisualisator {
                     }
                 }
             }
+
+        /// <summary>
+        /// Модификация от 12 ноября 2015 года
+        /// Заложен 12 ноября 2015 года
+        /// </summary>
+        /// <param name="movazone"></param>
+        private void FillMovesAndPozos(string movazone) {
+            pozo tp = null;
+            FillMainMovesTrusted(movazone);
+            if (flagFromStart)
+            {
+                tp = pozo.Starto();
+            }
+            lFactMoves = new List<Mova>();
+            lPozos = new List<pozo>();
+
+            lPozos.Add(tp);
+            foreach (string minimov in onlymainmoves) {
+                if (tp.ContraMov(minimov)) {
+                    lFactMoves.Add(tp.GetFactMoveFilled());
+                    tp = tp.GetPozoAfterControlMove();
+                    lPozos.Add(tp);
+                } else { //раз дошли досюдова, то трастовый набор ходов оказался подмоченным - фиксируем это в гаму
+                    flagImpossibleMove = true;
+                    strimpossiblemove = string.Format("ТРАСТО-Невозможный ход {0} после {1} хода {2}", minimov, tp.NumberMove, !tp.IsQueryMoveWhite ? "белых" : "чёрных");
+                    }
+                }
+            }
+
 
         static public Dictionary<gmAttro, string> CreateDictoAttribute(List<string> aa) {
             Dictionary<gmAttro, string> reto = null;
