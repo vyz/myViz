@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.ComponentModel;
 using System.Xml.Linq;
+using System.Text.RegularExpressions;
 
 namespace pfVisualisator
 {
@@ -84,7 +85,28 @@ namespace pfVisualisator
             if (etalo == null) {
                 etalo = new Gamo(this);
                 }
-
+            if( offseto <= 0 ) { //Это стартовая позиция - самое начало. Необязательно нулевая позиция
+                //reto = etalo
+                
+            } else {
+                string issledo = this.OnlyMova.Substring(0, offseto + 1);
+                if (issledo.Length == 0)
+                {
+                    throw new VisualisatorException("vGamo-GetPozoOnOffset !!! Не существует набора ходов");
+                }
+                else
+                {
+                    string patnumbermove = @"\d+\.";
+                    string patmovesymbol = @"[KQRBNa-hO][a-h1-8\-x=\+#QRBN]+";
+                    string patresulte = @"1-0|0-1|1/2-1/2";
+                    string patprobelnost = @"\s+";
+                    Match aa = Regex.Match(issledo, patnumbermove, RegexOptions.RightToLeft);
+                    if (aa.Index > 0)
+                    {
+                        string zz = aa.Value;
+                    }
+                }
+            }
             return reto;
             }
 
