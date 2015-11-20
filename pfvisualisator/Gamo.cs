@@ -36,7 +36,7 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 12 ноября 2015 года
+        /// Модификация от 19 ноября 2015 года
         /// Заложен 8 ноября 2015 года
         /// </summary>
         /// <param name="vg"></param>
@@ -62,6 +62,9 @@ namespace pfVisualisator {
             FillMovesAndPozos(vg.OnlyMova);
             if (vg.AddAtr.Length > 0) {
                 FillAddingAttribute(vg.AddAtr);
+                }
+            if (vg.Timingo.Length > 0) {
+                FillListTimo(vg.Timingo);
                 }
             }
 
@@ -269,6 +272,119 @@ namespace pfVisualisator {
             }
 
         /// <summary>
+        /// Модификация от 20 ноября 2015 года
+        /// Заложен 19 ноября 2015 года
+        /// </summary>
+        /// <returns></returns>
+        public string VanStrokeTimingo() {
+            string reto = string.Empty;
+            if (flagTiming) {
+                StringBuilder bub = new StringBuilder();
+                const int STRTIMELENGTH = 80;
+                int i = 0;
+                foreach (gTimo aa in lTimos) {
+                    if (bub.Length > 0) {
+                        if (i > STRTIMELENGTH) {
+                            i = 0;
+                            bub.Append(Environment.NewLine);
+                        } else {
+                            bub.Append(" ");
+                            i++;
+                            }
+                        }
+                     bub.Append(aa.VanStroke);
+                     i += aa.VanStroke.Length;
+                     }
+                if (bub.Length > 0) { reto = bub.ToString(); }
+                }
+            return reto;
+            }
+
+        /// <summary>
+        /// Модификация от 20 ноября 2015 года
+        /// Заложен 20 ноября 2015 года
+        /// </summary>
+        /// <returns></returns>
+        public string VanStrokeTimoForView()
+        {
+            string reto = string.Empty;
+            if (flagTiming)
+            {
+                StringBuilder bub = new StringBuilder();
+                const int STRTIMELENGTH = 80;
+                int i = 0;
+                int k1 = 0;
+                string t1 = string.Empty;
+                string t2big = string.Empty;
+                bool beginoVan = true;  
+                foreach (gTimo aa in lTimos) {
+                    if( beginoVan ) {
+                        if( aa.ColorTimoIsWhite ) {
+                            k1 = aa.NumberForMove;
+                            t1 = aa.TimoValue;
+                            beginoVan = false;
+                            continue;
+                        } else {
+                            //Одиночное таймирование хода чёрных ??? Не знаю, возможно ли?
+                            beginoVan = false;
+                            k1 = aa.NumberForMove;
+                            }
+                    }
+                    if( ! beginoVan ) {
+                        if( k1 != aa.NumberForMove ) {
+                            bub.AppendFormat("НОНСЕНС VanStrokeTimoForView k1 - {0}, k2 - {1}",k1, aa.NumberForMove);
+                            break;
+                            }
+                        t2big = string.Format("{0}-{1}-{2}", k1, t1, aa.TimoValue);
+                        beginoVan = true;
+                        }
+                    if (bub.Length > 0)
+                    {
+                        if (i > STRTIMELENGTH)
+                        {
+                            i = 0;
+                            bub.Append(Environment.NewLine);
+                        }
+                        else
+                        {
+                            bub.Append(" ");
+                            i++;
+                        }
+                    }
+                    bub.Append(t2big);
+                    i += t2big.Length;
+                }
+                if (bub.Length > 0) { reto = bub.ToString(); }
+            }
+            return reto;
+        }
+
+        /// <summary>
+        /// Модификация от 16 ноября 2015 года
+        /// Заложен 16 ноября 2015 года
+        /// </summary>
+        /// <param name="nm"></param>
+        /// <param name="coloro"></param>
+        /// <returns></returns>
+        public pozo GetPozoAfterMove(int nm, string coloro) {
+            pozo reto = null;
+            bool wmv = true;
+            if (coloro == "b") { nm++; }
+            else { wmv = false; }
+            reto = lPozos.SingleOrDefault(F => F.NumberMove == nm && F.IsQueryMoveWhite == wmv);
+            return reto;
+            }
+
+        /// <summary>
+        /// Модификация от 16 ноября 2015 года
+        /// Заложен 16 ноября 2015 года
+        /// </summary>
+        /// <returns></returns>
+        public pozo GetFirstPozo() {
+            return lPozos[0];
+            }
+
+        /// <summary>
         /// Модификация от 22 июля 2015 года
         /// Заложен 22 июля 2015 года
         /// </summary>
@@ -325,6 +441,29 @@ namespace pfVisualisator {
                     string b2 = m1.Groups[2].Value;
                     gmAttro tatr = (gmAttro)Enum.Parse(typeof(gmAttro), b1);
                     datro.Add(tatr, b2);
+                    }
+                }
+            }
+
+        /// <summary>
+        /// Модификация от 19 ноября 2015 года
+        /// Заложен 19 ноября 2015 года
+        /// </summary>
+        /// <param name="timango"></param>
+        private void FillListTimo(string timango) {
+            if (lTimos == null) {
+                lTimos = new List<gTimo>();
+                string vnutr = @"(\d+)-([bw])-([:0-9]+)";
+                foreach (Match m1 in Regex.Matches(timango, vnutr)) {
+                    if (m1.Groups.Count > 3) {
+                        string b1 = m1.Groups[1].Value;
+                        string b2 = m1.Groups[2].Value;
+                        string b3 = m1.Groups[3].Value;
+                        lTimos.Add(new gTimo(b1, b2, b3));
+                        }
+                    }
+                if (lTimos.Count > 0) {
+                    flagTiming = true;
                     }
                 }
             }
@@ -747,6 +886,16 @@ namespace pfVisualisator {
             }
 
         public string VanStroke { get { return string.Format("{0}-{1}-{2}",movenumber,coloro,timostring); } }
+        public int NumberForMove {
+            get {
+                int nm = int.Parse(movenumber);
+                if (coloro == "w") { nm--; }
+                return nm;
+                }
+            }
+        public bool ColorTimoIsWhite { get { return (coloro == "b"); } }
+        public string TimoValue { get { return timostring; } }
+
         }
 #endregion-----------------------------ДРУГОЙ КЛАСС--gTimo------------------------
 

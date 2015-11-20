@@ -15,6 +15,7 @@
         <StackPanel Name="GInfo" Grid.Column="1">
             <TextBlock Name="Heado" Text="{Binding Path=BigNamo}" HorizontalAlignment="Center"></TextBlock>
             <TextBox Name="Parto" Text="{Binding Path=OnlyMova}" MouseDoubleClick="Parto_MouseDoubleClick"></TextBox>
+            <TextBox Name="Timoshka" Text="{Binding Path=TimoView, Mode=OneWay}"></TextBox>
         </StackPanel>
     </Grid>
 </Window>

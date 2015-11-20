@@ -27,6 +27,7 @@
             <DataGrid.ContextMenu>
                 <ContextMenu Name="cme">
                     <MenuItem Header="Сохранить текущий набор в XML файле" Click="SavoXMLListo_Click"/>
+                    <MenuItem Header="Сохранить выбранные элементы в БД" Click="SavoBDMultiSelect_Click"/>
                 </ContextMenu>
             </DataGrid.ContextMenu>
         </DataGrid>

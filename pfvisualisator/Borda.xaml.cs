@@ -485,16 +485,21 @@ namespace pfVisualisator
             }
         }
 
-
         /// <summary>
-        /// Gets the chess board associated with the control
+        /// По аналогии с Board и на нее (Board) перевесили перерисовку через внутренний вызов при изменении
+        /// Модификация от 16 ноября 2015 года
+        /// Заложен 16 ноября 2015 года
         /// </summary>
-        public Pieco[] ChessBoard
-        {
-            get {
-                return(m_board);
+        public pozo CurrentoPoza {
+            get { return currentopoza; }
+            set {
+                if (currentopoza != value) {
+                    currentopoza = value;
+                    Board = currentopoza.BoardoSet;
+                    }
+                }
             }
-        }
+
 
         /// <summary>
         /// Determine if the White are in the top or bottom of the draw board

@@ -214,6 +214,7 @@ namespace pfVisualisator {
                     reto.Add("OnlyMova");
                     reto.Add("AddAtr");
                     reto.Add("Описание");
+                    reto.Add("Timingo");
                     break;
                 default:
                     reto = null;
@@ -400,7 +401,7 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 8 января 2015 года
+        /// Модификация от 19 ноября 2015 года
         /// Заложен от 8 января 2015 года
         /// </summary>
         /// <param name="typo"></param>
@@ -411,7 +412,10 @@ namespace pfVisualisator {
                 case "OKPReport":
                     reto = leoType.OKPReport;
                     break;
-                }
+                case "Gamo":
+                    reto = leoType.Gamo;
+                    break;
+            }
             return reto;
             }
 

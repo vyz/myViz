@@ -19,6 +19,7 @@ namespace pfVisualisator {
         public GridoGamo()
         {
             InitializeComponent();
+            //GamoGrido.CanSelectMultipleItems = true;
         }
 
         private void GamoGrido_MouseDoubleClick(object sender, MouseButtonEventArgs e)
@@ -57,5 +58,29 @@ namespace pfVisualisator {
                 MessageBox.Show("Error: Could not wtite file on the disk. Original error: " + ex.Message);
                 }
             }
+
+        /// <summary>
+        /// Модификация от 18 ноября 2015 года
+        /// Заложен 18 ноября 2015 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SavoBDMultiSelect_Click(object sender, RoutedEventArgs e) {
+            int iza = 0;
+            bool badzap = false;
+
+            foreach (var aa in GamoGrido.SelectedItems) {
+                vGamo vg = (vGamo)aa;
+                if (vg.SaveInDB()) {
+                    iza++;
+                } else {
+                    badzap = true;
+                    }
+                }
+            if (badzap) {
+                //Плохо - Сообщаем
+                }
+            }
+
         }
     }

@@ -25,12 +25,12 @@ namespace pfVisualisator
         public vGamo()
             : base(leoType.Gamo) {
 
-            string[] akva = new string[15];
+            string[] akva = new string[16];
             ltexto = akva.ToList();
             }
 
         /// <summary>
-        /// Модификация от 6 октября 2015 года
+        /// Модификация от 19 ноября 2015 года
         /// Заложен 4 октября 2015 года
         /// </summary>
         /// <param name="gm"></param>
@@ -58,10 +58,11 @@ namespace pfVisualisator
                 OnlyMova = gm.VanStrokeMovaRegion();
                 AddAtr = gm.VanStrokeRestAttributes();
                 Descripto = string.Empty;
+                Timingo = gm.VanStrokeTimingo();
                 }
 
         /// <summary>
-        /// Модификация от 22 октября 2015 года
+        /// Модификация от 19 ноября 2015 года
         /// Заложен 11 октября 2015 года
         /// </summary>
         /// <param name="Elemo"></param>
@@ -72,10 +73,14 @@ namespace pfVisualisator
                 } else {
                     movacount = 0;
                     }
+                if (ltexto.Count < 16)
+                {
+                    ltexto.Add(string.Empty);
+                }
             }
 
         /// <summary>
-        /// Модификация от 10 ноября 2015 года
+        /// Модификация от 16 ноября 2015 года
         /// Заложен 8 ноября 2015 года
         /// </summary>
         /// <param name="offseto"></param>
@@ -86,27 +91,42 @@ namespace pfVisualisator
                 etalo = new Gamo(this);
                 }
             if( offseto <= 0 ) { //Это стартовая позиция - самое начало. Необязательно нулевая позиция
-                //reto = etalo
-                
+                reto = etalo.GetFirstPozo();                
             } else {
-                string issledo = this.OnlyMova.Substring(0, offseto + 1);
-                if (issledo.Length == 0)
-                {
+                string issledo = this.OnlyMova.Substring(0, offseto);
+                if (issledo.Length == 0) {
                     throw new VisualisatorException("vGamo-GetPozoOnOffset !!! Не существует набора ходов");
-                }
-                else
-                {
+                } else {
                     string patnumbermove = @"\d+\.";
                     string patmovesymbol = @"[KQRBNa-hO][a-h1-8\-x=\+#QRBN]+";
-                    string patresulte = @"1-0|0-1|1/2-1/2";
-                    string patprobelnost = @"\s+";
                     Match aa = Regex.Match(issledo, patnumbermove, RegexOptions.RightToLeft);
-                    if (aa.Index > 0)
-                    {
+                    if (aa.Index > 0) {
                         string zz = aa.Value;
+                        string zp = zz.Substring(0, zz.Length - 1);
+                        int nmove = int.Parse(zp);
+                        zz = issledo.Substring(aa.Index + zz.Length).TrimStart();
+                        MatchCollection bbc = Regex.Matches(zz, patmovesymbol);
+                        zp = (bbc.Count == 0) ? "w" : "b";
+                        reto = etalo.GetPozoAfterMove(nmove, zp);
+                    } else {
+                        reto = etalo.GetFirstPozo();
+                        }
                     }
                 }
+            return reto;
             }
+
+        /// <summary>
+        /// Модификация от 18 ноября 2015 года
+        /// Заложен 18 ноября 2015 года
+        /// </summary>
+        /// <returns></returns>
+        public bool SaveInDB() {
+            bool reto = false;
+            if (etalo == null) {
+                etalo = new Gamo(this);
+                }
+
             return reto;
             }
 
@@ -128,9 +148,16 @@ namespace pfVisualisator
         public string OnlyMova { get { return ltexto[12]; } set { ltexto[12] = value; } }
         public string AddAtr { get { return ltexto[13]; } set { ltexto[13] = value; } }
         public string Descripto { get { return ltexto[14]; } set { ltexto[14] = value; } }
+        public string Timingo { get { return ltexto[15]; } set { ltexto[15] = value; } }
         public int movoQvo { get { return movacount; } set { movacount = value; } }
         public myTago Tago { get { return tago; } }
         public string TagoTextStroke { get { return tago.TStroke; } }
+        public string TimoView { get { 
+            if (etalo == null) {
+                etalo = new Gamo(this);
+                }
+            return etalo.VanStrokeTimoForView(); 
+            } }
 #endregion-----------------------Свойства объекта-----------------------------------------
 
         private void OnPropertyChanged(string name) {
