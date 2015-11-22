@@ -24,7 +24,8 @@ namespace pfVisualisator {
         private List<pozo> lPozos;
         private List<gTimo> lTimos;
         private gmKorrAtr intellectoattr;
-
+        private int curpozoindex;
+        private pozo curpoza;
         private Dictionary<gmAttro, string> datro;
 
         public Gamo() { }
@@ -360,7 +361,7 @@ namespace pfVisualisator {
         }
 
         /// <summary>
-        /// Модификация от 16 ноября 2015 года
+        /// Модификация от 22 ноября 2015 года
         /// Заложен 16 ноября 2015 года
         /// </summary>
         /// <param name="nm"></param>
@@ -372,6 +373,9 @@ namespace pfVisualisator {
             if (coloro == "b") { nm++; }
             else { wmv = false; }
             reto = lPozos.SingleOrDefault(F => F.NumberMove == nm && F.IsQueryMoveWhite == wmv);
+            if (reto != null) {
+                curpoza = reto;
+                }
             return reto;
             }
 
@@ -381,7 +385,29 @@ namespace pfVisualisator {
         /// </summary>
         /// <returns></returns>
         public pozo GetFirstPozo() {
-            return lPozos[0];
+            curpoza = lPozos[0];
+            curpozoindex = 0;
+            return curpoza;
+            }
+
+        /// <summary>
+        /// Модификация от 22 ноября 2015 года
+        /// Заложен 22 ноября 2015 года
+        /// </summary>
+        /// <param name="aa"></param>
+        /// <returns></returns>
+        public pozo GetNextPozo(pozo aa)
+        {
+            pozo reto = null;
+
+            int iind = lPozos.FindIndex(F => F == aa);
+            iind++;
+            if (iind < lPozos.Count) {
+                curpozoindex = iind;
+                curpoza = lPozos[curpozoindex];
+                reto = curpoza;
+                }
+            return reto;
             }
 
         /// <summary>

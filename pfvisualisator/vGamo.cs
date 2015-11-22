@@ -17,6 +17,7 @@ namespace pfVisualisator
 
         private int movacount;
         private Gamo etalo;
+        private pozo currento;
 
         /// <summary>
         /// Модификация от 4 октября 2015 года
@@ -112,6 +113,26 @@ namespace pfVisualisator
                         reto = etalo.GetFirstPozo();
                         }
                     }
+                }
+            if (reto != null) {
+                currento = reto;
+                }
+            return reto;
+            }
+
+        /// <summary>
+        /// Модификация от 22 ноября 2015 года
+        /// Заложен 22 ноября 2015 года
+        /// </summary>
+        /// <returns></returns>
+        public pozo GetNextPozo() {
+            pozo reto = null;
+            if (etalo == null) {
+                etalo = new Gamo(this);
+                }
+            reto = etalo.GetNextPozo(currento);
+            if (reto != null) {
+                currento = reto;
                 }
             return reto;
             }
