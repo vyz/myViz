@@ -22,6 +22,19 @@ namespace pfVisualisator
             }
 
         /// <summary>
+        /// Модификация от 24 ноября 2015 года
+        /// Заложен 24 ноября 2015 года
+        /// </summary>
+        /// <param name="aa"></param>
+        public bido(leoType aa) {
+            string constr = string.Empty;
+            if (aa == leoType.Gamo) {
+                constr = Properties.Settings.Default.BidoGamos;
+                }
+            conq = new SqlConnection(constr);
+            }
+
+        /// <summary>
         /// Модификация от 17 декабря 2014 года
         /// Заложен 17 декабря 2014 года
         /// </summary>

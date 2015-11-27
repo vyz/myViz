@@ -121,7 +121,7 @@ namespace pfVisualisator
             }
 
         /// <summary>
-        /// Модификация от 22 ноября 2015 года
+        /// Модификация от 23 ноября 2015 года
         /// Заложен 22 ноября 2015 года
         /// </summary>
         /// <returns></returns>
@@ -129,6 +129,9 @@ namespace pfVisualisator
             pozo reto = null;
             if (etalo == null) {
                 etalo = new Gamo(this);
+                }
+            if (currento == null) {
+                currento = etalo.GetFirstPozo();
                 }
             reto = etalo.GetNextPozo(currento);
             if (reto != null) {
@@ -138,7 +141,29 @@ namespace pfVisualisator
             }
 
         /// <summary>
-        /// Модификация от 18 ноября 2015 года
+        /// Модификация от 23 ноября 2015 года
+        /// Заложен 23 ноября 2015 года
+        /// </summary>
+        /// <returns></returns>
+        public pozo GetPrevPozo() {
+            pozo reto = null;
+            if (etalo == null) {
+                etalo = new Gamo(this);
+                }
+            if (currento == null) {
+                currento = etalo.GetFirstPozo();
+                reto = currento;
+            } else {
+                reto = etalo.GetPrevPozo(currento);
+                if (reto != null) {
+                    currento = reto;
+                    }
+                }
+            return reto;
+            }
+
+        /// <summary>
+        /// Модификация от 24 ноября 2015 года
         /// Заложен 18 ноября 2015 года
         /// </summary>
         /// <returns></returns>
@@ -147,6 +172,9 @@ namespace pfVisualisator
             if (etalo == null) {
                 etalo = new Gamo(this);
                 }
+            bido dbisa = new bido(leoType.Gamo);
+                //bido dbisa = new bido(); Проверка для заброса Leo-объекта в базу. Прошла на ура.
+            dbisa.PutLeoRecord(this);
 
             return reto;
             }

@@ -396,13 +396,41 @@ namespace pfVisualisator {
         /// </summary>
         /// <param name="aa"></param>
         /// <returns></returns>
-        public pozo GetNextPozo(pozo aa)
-        {
+        public pozo GetNextPozo(pozo aa) {
             pozo reto = null;
+            int iind = 0;
 
-            int iind = lPozos.FindIndex(F => F == aa);
+            if (curpozoindex > 0) {
+                iind = curpozoindex;
+            } else {
+                iind = lPozos.FindIndex(F => F == aa);
+                }
             iind++;
             if (iind < lPozos.Count) {
+                curpozoindex = iind;
+                curpoza = lPozos[curpozoindex];
+                reto = curpoza;
+                }
+            return reto;
+            }
+
+        /// <summary>
+        /// Модификация от 23 ноября 2015 года
+        /// Заложен 23 ноября 2015 года
+        /// </summary>
+        /// <param name="aa"></param>
+        /// <returns></returns>
+        public pozo GetPrevPozo(pozo aa) {
+            pozo reto = null;
+            int iind = 0;
+
+            if (curpozoindex > 0) {
+                iind = curpozoindex;
+            } else {
+                iind = lPozos.FindIndex(F => F == aa);
+                }
+            iind--;
+            if( iind >= 0 ) {
                 curpozoindex = iind;
                 curpoza = lPozos[curpozoindex];
                 reto = curpoza;

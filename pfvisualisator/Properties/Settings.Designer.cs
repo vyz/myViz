@@ -86,5 +86,15 @@ namespace pfVisualisator.Properties {
                 return ((string)(this["GamoPGNStartDir"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Password=Petro;Persist Security Info=True;User ID=Petro;Initial Catalog=Gosoma;Da" +
+            "ta Source=vyz7;")]
+        public string BidoGamos {
+            get {
+                return ((string)(this["BidoGamos"]));
+            }
+        }
     }
 }

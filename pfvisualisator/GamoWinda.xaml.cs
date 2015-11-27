@@ -78,9 +78,17 @@ namespace pfVisualisator
                 }
             }
 
-        private void cmdPrevPosition()
-        {
-        }
+        /// <summary>
+        /// Модификация от 23 ноября 2015 года
+        /// Заложен 23 ноября 2015 года
+        /// </summary>
+        private void cmdPrevPosition() {
+            vGamo aa = (vGamo)Grido.DataContext;
+            pozo newposo = aa.GetPrevPozo();
+            if (newposo != null) {
+                pfBoard.CurrentoPoza = newposo;
+                }
+            }
 
 #endregion -------------------------------------Command Handling--------------------------------------------
 
