@@ -38,7 +38,7 @@ namespace pfVisualisator
         public vGamo(Gamo gm)
             : this() {
                 namo = gm.GamerWhite + " - " + gm.GamerBlack;
-                bignamo = namo + " " + gm.EventoDate + " " + gm.Resulto + " " + gm.ECO;
+                bignamo = namo + " " + gm.Date + " " + gm.Resulto + " " + gm.ECO;
                 White = gm.GamerWhite;
                 Black = gm.GamerBlack;
                 Result = gm.Resulto;

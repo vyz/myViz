@@ -408,7 +408,7 @@ namespace pfVisualisator
                     pst = pst.Substring(1);
                     }
                 if (pst.Length > 2) {
-                    throw new VisualisatorException("PozoUtils-Decode, pst.Length > 2");
+                    throw new VisualisatorException(string.Format("PozoUtils-Decode, pst.Length > 2 --{0}--", parst));
                     }
                 pt = ConvertStrFieldtoInt(pst);
                 //Из pgn-файла взятие на проходе просто так не читается.
@@ -447,7 +447,7 @@ namespace pfVisualisator
                             throw new VisualisatorException("PozoUtils-Decode, неправильный формат указания нального поля хода");
                             }
                     } else {
-                        throw new VisualisatorException("PozoUtils-Decode, неопределенность начального поля может не одна, но указаний нет");
+                        throw new VisualisatorException(string.Format("PozoUtils-Decode, неопределенность начального поля может не одна, но указаний нет --{0}--", parst));
                         }
                 } else {
                     pf = lifi[0];

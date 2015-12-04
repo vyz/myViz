@@ -237,6 +237,27 @@ namespace pfVisualisator {
             }
 
         /// <summary>
+        /// Задуман для отладочной информационной выдачи при крахе
+        /// Модификация от 3 декабря 2015 года
+        /// Заложен 3 декабря 2015 года
+        /// </summary>
+        /// <returns></returns>
+        public string VanStrokePgnMovaRegion() {
+            string reto = string.Empty;
+            StringBuilder sbb = new StringBuilder();
+            foreach (string aa in pgmova) {
+                if (sbb.Length > 0) {
+                    sbb.Append(Environment.NewLine);
+                    }
+                sbb.Append(aa);
+                }
+            if (sbb.Length > 0) {
+                reto = sbb.ToString();
+                }
+            return reto;
+            }
+
+        /// <summary>
         /// Модификация от 14 октября 2015 года
         /// Заложен 14 октября 2015 года
         /// </summary>
@@ -523,7 +544,7 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 21 октября 2015 года
+        /// Модификация от 4 декабря 2015 года
         /// Заложен 22 июля 2015 года
         /// </summary>
         /// <param name="vv"></param>
@@ -532,28 +553,40 @@ namespace pfVisualisator {
             List<string> reto = new List<string>();
 
             if (flagworkabigcomment) {
-                //Если на этой строке есть окончание комментария, то убираем этот хвостик
-                //иначе пропускаем целиком данную строку
-                string Patterno = @"\A.*}\s*";
-                if (Regex.IsMatch(vv, Patterno)) {
-                    vv = Regex.Replace(vv, Patterno, "");
+                //Возможно это и не комментарий вовсе :(, а начало тайминга
+                string pataddtimo = @"\A\s*\[%clk ([:0-9.]+)]\s*}";
+                if (Regex.IsMatch(vv, pataddtimo)) {
                     flagworkabigcomment = false;
+                    vv = Regex.Replace(vv, pataddtimo, "$$$1");
                 } else {
-                    vv = string.Empty;
+                    //Если на этой строке есть окончание комментария, то убираем этот хвостик
+                    //иначе пропускаем целиком данную строку
+                    string Patterno = @"\A[^}]*}\s*";
+                    if (Regex.IsMatch(vv, Patterno)) {
+                        vv = Regex.Replace(vv, Patterno, "");
+                        flagworkabigcomment = false;
+                    } else {
+                        vv = string.Empty;
+                        }
                     }
             } else if(flagworkabigtimo) {
-                string Patterno = @"\A\s*(\d:\d+:\d+)]}";
+                string Patterno = @"\A\s*([:0-9.]+)]\s*}";
                 if(Regex.IsMatch(vv, Patterno)) {
                     flagworkabigtimo = false;
                     vv = Regex.Replace(vv, Patterno, "$$$1");
                     }
                 }
-            string pattimo = @"{\[%clk (\d:\d+:\d+)]}";
+            string pattimo = @"{\s*\[%clk ([:0-9.]+)]\s*}";
             vv = Regex.Replace(vv, pattimo, "$$$1");
-            string pattimoRazryv = @"\s*{\[%clk\s*\z";
+            string pattimoRazryv = @"\s*{\s*\[%clk\s*\z";
             if( Regex.IsMatch(vv, pattimoRazryv)) {
                 flagworkabigtimo = true;
                 vv = Regex.Replace(vv, pattimoRazryv, ""); 
+                }
+            string pattimoRazryvDrugoy = @"{\s*\[%clk ([:0-9.]+)]\s*\Z";
+            if (Regex.IsMatch(vv, pattimoRazryvDrugoy)) {
+                flagworkabigcomment = true;
+                vv = Regex.Replace(vv, pattimoRazryvDrugoy, "$$$1");
                 }
             if (vv.Contains("{")) {
                 string Patterno = @"{.*}\s*";
@@ -577,9 +610,16 @@ namespace pfVisualisator {
                     if (aa.EndsWith(".")) {
                         continue;
                     } else {
-                        string[] bbkus = aa.Split('.');
-                        if( Regex.IsMatch(bbkus[1], patmovesymbol) ) {
-                            reto.Add(bbkus[1]);
+                        //Турки использовали точку как разделитель у секунд и она находится в середине :(
+                        //Поэтому проверим сначала на тайминг
+                        if (aa.StartsWith("$")) {
+                            reto.Add(aa);
+                            continue;
+                        } else {
+                            string[] bbkus = aa.Split('.');
+                            if (Regex.IsMatch(bbkus[1], patmovesymbol)) {
+                                reto.Add(bbkus[1]);
+                                }
                             }
                         }
                 } else if (Regex.IsMatch(aa, patmovesymbol)) {
@@ -697,6 +737,7 @@ namespace pfVisualisator {
         public string Fen { get { return GetAttro(gmAttro.Fen); } }
         public bool ImpossibleMoveFlag { get { return flagImpossibleMove; } }
         public string ImpossibleMoveString { get { return strimpossiblemove; } }
+        public bool TimingFlag { get { return flagTiming; } }
         public List<gTimo> ListoTimo { get { return lTimos; } }
         public gmKorrAtr KorrFlago { get { return intellectoattr; } }
 #endregion-----------------------Свойства объекта-----------------------------------------
@@ -709,6 +750,8 @@ namespace pfVisualisator {
         private string failonamo;
         private List<string> logomesso;
         private Dictionary<string,string> rondoeventdatelist;
+        private bool pvpustoline;
+
 
         public pgWoka() { }
         public pgWoka(string fnamo) {
@@ -717,6 +760,7 @@ namespace pfVisualisator {
             TextReader fafo = new StreamReader(File.Open(fnamo, FileMode.Open));
             lga = new List<Gamo>();
             string strLine;
+            pvpustoline = false;
           
             strLine = GetNextNonEmptyLine(fafo);
             while (strLine != null) {
@@ -728,8 +772,9 @@ namespace pfVisualisator {
                     }
                 if (strLine != null) {
                     mamov.Add(strLine);
+                    pvpustoline = true;
                     strLine = GetNextNonEmptyLine(fafo);
-                    while (strLine != null && strLine[0] != '[') {
+                    while (strLine != null && pvpustoline) {
                         mamov.Add(strLine);
                         strLine = GetNextNonEmptyLine(fafo);
                         }
@@ -742,7 +787,7 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 22 октября 2015 года
+        /// Модификация от 3 декабря 2015 года
         /// Заложен 31 августа 2015 года
         /// </summary>
         /// <param name="attrolist">Набор предустановленных атрибутов</param>
@@ -764,14 +809,21 @@ namespace pfVisualisator {
                         }
                     problemolist.Add(aa);
                     }
-                aa.MovaControlling();
-                progo = aa.CreateMovaRegionWithoutComments();
-                for (int i = 0; i < progo.Count; i++) {
-                    string vanProgo = progo[i];
-                    string twoFailo = aa.pgnMoveRegione[i];
-                    if (vanProgo != twoFailo) { //Пишем сообщение в лог
-                        string bblogo = string.Format("{0}-{1} Отличие:файл-прого${2}${3}$", aa.GamerWhite, aa.GamerBlack, twoFailo, vanProgo);
-                        logomesso.Add(bblogo);
+                try {
+                    aa.MovaControlling();
+                } catch (Exception ex) {
+                    throw new VisualisatorException(string.Format("Дополнительная инфо по партии: {0}-{1} {2} {3} {4}", aa.GamerWhite, aa.GamerBlack, 
+                                                    aa.VanStrokePgnMovaRegion(), Environment.NewLine, ex.Message ));
+                    }
+                if (!aa.TimingFlag) {
+                    progo = aa.CreateMovaRegionWithoutComments();
+                    for (int i = 0; i < progo.Count; i++) {
+                        string vanProgo = progo[i];
+                        string twoFailo = aa.pgnMoveRegione[i];
+                        if (vanProgo != twoFailo) { //Пишем сообщение в лог
+                            string bblogo = string.Format("{0}-{1} Отличие:файл-прого${2}${3}$", aa.GamerWhite, aa.GamerBlack, twoFailo, vanProgo);
+                            logomesso.Add(bblogo);
+                            }
                         }
                     }
                 if (aa.ImpossibleMoveFlag) {
@@ -828,6 +880,7 @@ namespace pfVisualisator {
 
             strRetVal = reader.ReadLine();
             while (strRetVal != null && strRetVal == String.Empty) {
+                pvpustoline = false;
                 strRetVal = reader.ReadLine();
                 }
             return (strRetVal);
@@ -987,7 +1040,12 @@ namespace pfVisualisator {
         EventCountry,
         Source,
         Annotator,
-        Remark
+        Remark,
+        Input,
+        Owner,
+        WhiteClock,
+        BlackClock,
+        Clock
         }
 
     public enum gmKorrAtr {

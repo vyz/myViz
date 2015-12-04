@@ -1,0 +1,276 @@
+[Event "2015 Turkiye Satranc Sampiyonasi"]
+[Site "ADANA"]
+[Date "2015.11.29"]
+[Round "3"]
+[White "Erdogdu, Aziz Mert"]
+[Black "Yelken, Mustafa"]
+[Result "1/2-1/2"]
+[Board "1"]
+[Input "DGT11050"]
+[Owner "Turkish Chess Federation"]
+[WhiteClock "1:30"]
+[BlackClock "1:30"]
+[Clock "W/0:11.14"]
+
+1. Nf3 { [%clk 1:30] } Nf6 { [%clk 1:30] } 2. c4 { [%clk 1:31] } e6 { [%clk
+1:29] } 3. g3 { [%clk 1:31] } b6 { [%clk 1:29] } 4. Bg2 { [%clk 1:31] } Bb7 {
+[%clk 1:29] } 5. O-O { [%clk 1:31] } Be7 { [%clk 1:28] } 6. Nc3 { [%clk 1:30]
+} O-O { [%clk 1:26] } 7. Re1 { [%clk 1:28] } d5 { [%clk 1:22] } 8. cxd5 {
+[%clk 1:25] } Nxd5 { [%clk 1:18] } 9. Nxd5 { [%clk 1:20] } Bxd5 { [%clk 1:16]
+} 10. d4 { [%clk 1:09] } Be4 { [%clk 1:10] } 11. Bf4 { [%clk 1:04] } Nd7 {
+[%clk 0:57] } 12. Qa4 { [%clk 1:01] } Nf6 { [%clk 0:48] } 13. Rac1 { [%clk
+0:57] } Nd5 { [%clk 0:40] } 14. Ne5 { [%clk 0:53] } Bxg2 { [%clk 0:38] } 15.
+Nc6 { [%clk 0:52] } Qe8 { [%clk 0:33] } 16. Kxg2 { [%clk 0:51] } Nxf4+ { [%clk
+0:34] } 17. gxf4 { [%clk 0:51] } Bd6 { [%clk 0:33] } 18. e3 { [%clk 0:51] } f6
+{ [%clk 0:32] } 19. Kh1 { [%clk 0:46] } Qh5 { [%clk 0:30] } 20. Rg1 { [%clk
+0:34] } Qd5+ { [%clk 0:26] } 21. Rg2 { [%clk 0:34] } Kh8 { [%clk 0:26] } 22.
+Qc4 { [%clk 0:33] } g5 { [%clk 0:18.18] } 23. Qxd5 { [%clk 0:33] } exd5 {
+[%clk 0:18.45] } 24. f5 { [%clk 0:33] } Rfe8 { [%clk 0:16.51] } 25. Re1 {
+[%clk 0:23] } Re4 { [%clk 0:04.29] } 26. f3 { [%clk 0:23] } Rh4 { [%clk
+0:04.58] } 27. b3 { [%clk 0:13.53] } Re8 { [%clk 0:04.20] } 28. Ree2 { [%clk
+0:07.46] } a6 { [%clk 0:04.32] } 29. Kg1 { [%clk 0:07.40] } h5 { [%clk
+0:04.31] } 30. Kf1 { [%clk 0:07.14] } g4 { [%clk 0:03.47] } 31. f4 { [%clk
+0:05.36] } Rh3 { [%clk 0:03.52] } 32. Rg3 { [%clk 0:05.52] } Rxg3 { [%clk
+0:03.59] } 33. hxg3 { [%clk 0:06.21] } Kg7 { [%clk 0:04.16] } 34. Kf2 { [%clk
+0:04.46] } Rh8 { [%clk 0:03.07] } 35. a4 { [%clk 0:04.19] } h4 { [%clk
+0:02.48] } 36. gxh4 { [%clk 0:02.44] } Rxh4 { [%clk 0:03.17] } 37. Kg3 { [%clk
+0:03.11] } Rh1 { [%clk 0:03.42] } 38. Kxg4 { [%clk 0:03.02] } Rb1 { [%clk
+0:04.01] } 39. Nd8 { [%clk 0:03.02] } Rxb3 { [%clk 0:03.31] } 40. Ne6+ { [%clk
+0:32] } Kf7 { [%clk 0:33] } 41. Kf3 { [%clk 0:30] } c5 { [%clk 0:27] } 42. a5
+{ [%clk 0:23] } c4 { [%clk 0:25] } 43. axb6 { [%clk 0:23] } Rxb6 { [%clk 0:25]
+} 44. Rh2 { [%clk 0:22] } c3 { [%clk 0:22] } 45. Rc2 { [%clk 0:17.42] } Rb3 {
+[%clk 0:22] } 46. Ke2 { [%clk 0:17.57] } Ke7 { [%clk 0:19.39] } 47. Kd3 {
+[%clk 0:17.40] } Kd7 { [%clk 0:13.13] } 1/2-1/2
+
+[Event "2015 Turkiye Satranc Sampiyonasi"]
+[Site "ADANA"]
+[Date "2015.11.29"]
+[Round "3"]
+[White "Esen, Baris"]
+[Black "Yildiz, Betul Cemre"]
+[Result "1/2-1/2"]
+[Board "2"]
+[Input "DGT11061"]
+[Owner "Turkish Chess Federation"]
+[WhiteClock "1:30"]
+[BlackClock "1:30"]
+[Clock "W/0:18.47"]
+
+1. d4 { [%clk 1:30] } d5 { [%clk 1:30] } 2. Nf3 { [%clk 1:31] } Nf6 { [%clk
+1:31] } 3. c4 { [%clk 1:31] } e6 { [%clk 1:31] } 4. Nc3 { [%clk 1:31] } Nbd7 {
+[%clk 1:31] } 5. cxd5 { [%clk 1:27] } exd5 { [%clk 1:31] } 6. Bg5 { [%clk
+1:27] } c6 { [%clk 1:31] } 7. e3 { [%clk 1:27] } Be7 { [%clk 1:31] } 8. Qc2 {
+[%clk 1:27] } O-O { [%clk 1:31] } 9. Bd3 { [%clk 1:27] } Re8 { [%clk 1:32] }
+10. O-O { [%clk 1:26] } Nf8 { [%clk 1:32] } 11. Rab1 { [%clk 1:24] } a5 {
+[%clk 1:28] } 12. Rbe1 { [%clk 1:22] } Be6 { [%clk 1:27] } 13. Ne5 { [%clk
+1:21] } N6d7 { [%clk 1:27] } 14. Bxe7 { [%clk 1:22] } Rxe7 { [%clk 1:27] } 15.
+f4 { [%clk 1:22] } f6 { [%clk 1:27] } 16. Nf3 { [%clk 1:22] } Nb6 { [%clk
+1:16] } 17. f5 { [%clk 1:21] } Bf7 { [%clk 1:15] } 18. g4 { [%clk 1:21] } Qc7
+{ [%clk 1:06] } 19. Qg2 { [%clk 1:15] } Rae8 { [%clk 0:55] } 20. Kf2 { [%clk
+1:15] } Kh8 { [%clk 0:47] } 21. Rg1 { [%clk 1:13] } Nfd7 { [%clk 0:45] } 22.
+Qh3 { [%clk 1:06] } c5 { [%clk 0:43] } 23. Qg3 { [%clk 1:05] } Qxg3+ { [%clk
+0:41] } 24. Rxg3 { [%clk 1:06] } cxd4 { [%clk 0:39] } 25. exd4 { [%clk 1:05] }
+Nc4 { [%clk 0:37] } 26. Rxe7 { [%clk 0:58] } Rxe7 { [%clk 0:37] } 27. b3 {
+[%clk 0:57] } Nd6 { [%clk 0:37] } 28. Ng1 { [%clk 0:56] } Nb8 { [%clk 0:34] }
+29. Nge2 { [%clk 0:54] } Nc6 30. Re3 { [%clk 0:54] } Rc7 { [%clk 0:30] } 31.
+Ke1 { [%clk 0:41] } Nxd4 { [%clk 0:23] } 32. Nxd4 { [%clk 0:33] } Rxc3 { [%clk
+0:24] } 33. Kd2 { [%clk 0:33] } Rc7 { [%clk 0:23] } 34. Nb5 { [%clk 0:34] }
+Nxb5 { [%clk 0:20] } 35. Bxb5 { [%clk 0:34] } h5 { [%clk 0:16.45] } 36. gxh5 {
+[%clk 0:17.14] } Kh7 { [%clk 0:15.34] } 37. h6 { [%clk 0:16.24] } Kxh6 { [%clk
+0:07.50] } 38. Rh3+ { [%clk 0:16.33] } Kg5 { [%clk 0:08.14] } 39. Rg3+ { [%clk
+0:16.39] } Kxf5 { [%clk 0:04.04] } 40. Rxg7 { [%clk 0:47] } Ke6 { [%clk 0:32]
+} 41. h4 { [%clk 0:35] } Re7 { [%clk 0:23] } 42. Bd3 { [%clk 0:31] } Re8 {
+[%clk 0:17.42] } 43. Ke3 { [%clk 0:25] } Rh8 { [%clk 0:16.01] } 44. Bh7 {
+[%clk 0:25] } b6 { [%clk 0:07.24] } 45. Kf4 { [%clk 0:25] } Be8 { [%clk
+0:06.12] } 46. Rb7 { [%clk 0:23] } Bc6 { [%clk 0:05.13] } 47. Rg7 { [%clk
+0:24] } d4 { [%clk 0:02.54] } 48. h5 { [%clk 0:23] } d3 { [%clk 0:01.17] } 49.
+Ke3 { [%clk 0:23] } f5 { [%clk 0:00.40] } 50. Kxd3 { [%clk 0:21] } Bf3 { [%clk
+0:01.00] } 51. h6 { [%clk 0:19.00] } Ke5 { [%clk 0:01.22] } 52. Ke3 { [%clk
+0:18.18] } Be4 { [%clk 0:01.43] } 53. Re7+ { [%clk 0:17.45] } Kf6 { [%clk
+0:01.54] } 54. Rg7 { [%clk 0:18.00] } Ke5 { [%clk 0:00.57] } 55. Re7+ { [%clk
+0:18.24] } Kf6 { [%clk 0:00.55] } 56. Rg7 { [%clk 0:18.47] } Ke5 { [%clk
+0:00.38] } 1/2-1/2
+
+[Event "2015 Turkiye Satranc Sampiyonasi"]
+[Site "ADANA"]
+[Date "2015.11.29"]
+[Round "3"]
+[White "Ipatov, Alexander"]
+[Black "Yelligedik, Murat"]
+[Result "1-0"]
+[Board "3"]
+[Input "DGT11018"]
+[Owner "Turkish Chess Federation"]
+[WhiteClock "1:30"]
+[BlackClock "1:30"]
+[Clock "B/0:00.03"]
+
+1. d4 { [%clk 1:30] } d5 { [%clk 1:30] } 2. Nf3 { [%clk 1:31] } Nf6 { [%clk
+1:30] } 3. c4 { [%clk 1:31] } e6 { [%clk 1:31] } 4. Bg5 { [%clk 1:30] } Be7 {
+[%clk 1:28] } 5. Nc3 { [%clk 1:30] } O-O { [%clk 1:28] } 6. e3 { [%clk 1:30] }
+c5 { [%clk 1:27] } 7. dxc5 { [%clk 1:24] } b6 { [%clk 1:17] } 8. cxd5 { [%clk
+1:17] } exd5 { [%clk 1:14] } 9. cxb6 { [%clk 1:17] } Qxb6 { [%clk 1:09] } 10.
+Bxf6 { [%clk 1:07] } Bxf6 { [%clk 1:08] } 11. Nxd5 { [%clk 1:08] } Qxb2 {
+[%clk 1:07] } 12. Nxf6+ { [%clk 1:08] } Qxf6 { [%clk 1:07] } 13. Qd4 { [%clk
+1:08] } Qe7 { [%clk 0:58] } 14. Bd3 { [%clk 1:08] } Bb7 { [%clk 0:53] } 15. Rb1
+{ [%clk 1:08] } Na6 { [%clk 0:44] } 16. O-O { [%clk 0:54] } Bxf3 { [%clk 0:41]
+} 17. gxf3 { [%clk 0:53] } Nc5 { [%clk 0:39] } 18. Bc4 { [%clk 0:52] } Rad8 {
+[%clk 0:36] } 19. Qf4 { [%clk 0:52] } Rd6 { [%clk 0:31] } 20. Kh1 { [%clk
+0:51] } Rf6 { [%clk 0:27] } 21. Qh4 { [%clk 0:47] } Qe5 { [%clk 0:18.59] } 22.
+Be2 { [%clk 0:38] } Rh6 { [%clk 0:05.10] } 23. Qg3 { [%clk 0:38] } Qe6 { [%clk
+0:04.46] } 24. Qf4 { [%clk 0:23] } Rf6 { [%clk 0:03.23] } 25. Qd4 { [%clk
+0:23] } Qh3 { [%clk 0:00.50] } 26. Qxc5 { [%clk 0:22] } Rxf3 { [%clk 0:00.33]
+} 27. Qg5 { [%clk 0:23] } Rf6 { [%clk 0:00.44] } 28. Bg4 { [%clk 0:23] } 1-0
+
+[Event "2015 Turkiye Satranc Sampiyonasi"]
+[Site "ADANA"]
+[Date "2015.11.29"]
+[Round "3"]
+[White "Yaran, Siar"]
+[Black "Haznedaroglu, Kivanc"]
+[Result "0-1"]
+[Board "4"]
+[Input "DGT11000"]
+[Owner "Turkish Chess Federation"]
+[WhiteClock "1:30"]
+[BlackClock "1:30"]
+[Clock "W/0:17.25"]
+
+1. e4 { [%clk 1:30] } Nc6 { [%clk 1:30] } 2. Nc3 { [%clk 1:29] } e6 { [%clk
+1:31] } 3. Nf3 { [%clk 1:26] } Bb4 { [%clk 1:31] } 4. a3 { [%clk 1:13] } Bxc3
+{ [%clk 1:31] } 5. dxc3 { [%clk 1:14] } d6 { [%clk 1:30] } 6. Bd3 { [%clk
+1:10] } Nge7 { [%clk 1:29] } 7. h4 { [%clk 0:58] } e5 { [%clk 1:25] } 8. h5 {
+[%clk 0:56] } h6 { [%clk 1:25] } 9. Nh4 { [%clk 0:50] } Be6 { [%clk 1:04] } 10.
+Nf5 { [%clk 0:37] } Bxf5 { [%clk 1:04] } 11. exf5 { [%clk 0:37] } Qd7 { [%clk
+1:04] } 12. Qg4 { [%clk 0:37] } Rg8 { [%clk 1:04] } 13. Be3 { [%clk 0:32] }
+O-O-O { [%clk 0:58] } 14. O-O-O { [%clk 0:32] } Kb8 { [%clk 0:43] } 15. Rh4 {
+[%clk 0:23] } d5 { [%clk 0:41] } 16. c4 { [%clk 0:20] } dxc4 { [%clk 0:34] }
+17. Be4 { [%clk 0:17.05] } Qxd1+ { [%clk 0:32] } 18. Qxd1 { [%clk 0:17.33] }
+Rxd1+ { [%clk 0:32] } 19. Kxd1 { [%clk 0:18.01] } Nd4 { [%clk 0:33] } 20. g4 {
+[%clk 0:16.39] } Rd8 { [%clk 0:30] } 21. Ke1 { [%clk 0:15.56] } f6 { [%clk
+0:30] } 22. c3 { [%clk 0:15.28] } Nb5 { [%clk 0:30] } 23. Ke2 { [%clk 0:14.18]
+} Nd6 { [%clk 0:29] } 24. Bg2 { [%clk 0:13.33] } c6 { [%clk 0:24] } 25. f4 {
+[%clk 0:10.51] } exf4 { [%clk 0:21] } 26. Bxf4 { [%clk 0:11.11] } Nd5 { [%clk
+0:22] } 27. Bg3 { [%clk 0:08.19] } Kc7 { [%clk 0:22] } 28. Rh1 { [%clk
+0:08.24] } Kd7 { [%clk 0:19.41] } 29. Re1 { [%clk 0:06.53] } Re8+ { [%clk
+0:18.38] } 30. Kf2 { [%clk 0:05.30] } Rxe1 { [%clk 0:19.01] } 31. Kxe1 { [%clk
+0:05.59] } Nf7 { [%clk 0:19.25] } 32. Bf1 { [%clk 0:04.44] } b5 { [%clk
+0:19.36] } 33. Be2 { [%clk 0:04.34] } Ne5 { [%clk 0:18.00] } 34. Bf2 { [%clk
+0:04.16] } Nf4 { [%clk 0:16.53] } 35. Bxa7 { [%clk 0:03.48] } c5 { [%clk
+0:15.15] } 36. Kd2 { [%clk 0:03.10] } Nxe2 { [%clk 0:11.16] } 37. Kxe2 { [%clk
+0:03.25] } Kc6 { [%clk 0:11.44] } 38. Bb8 { [%clk 0:03.06] } Nxg4 { [%clk
+0:12.10] } 39. Kf3 { [%clk 0:00.56] } Ne5+ { [%clk 0:12.39] } 40. Ke3 { [%clk
+0:30] } Kd5 { [%clk 0:40] } 41. Bc7 { [%clk 0:30] } Nc6 { [%clk 0:35] } 42. Kf4
+{ [%clk 0:30] } Ne7 { [%clk 0:35] } 43. Ba5 { [%clk 0:24] } Nc8 { [%clk 0:27]
+} 44. Bd8 { [%clk 0:25] } Kc6 { [%clk 0:17.45] } 45. Ke4 { [%clk 0:25] } Nd6+
+{ [%clk 0:18.00] } 46. Kf4 { [%clk 0:25] } Kd7 { [%clk 0:17.27] } 47. Bb6 {
+[%clk 0:25] } Nb7 { [%clk 0:17.44] } 48. Ke4 { [%clk 0:24] } Kc6 { [%clk
+0:17.55] } 49. Ba7 { [%clk 0:25] } Nd6+ { [%clk 0:18.17] } 50. Kf4 { [%clk
+0:25] } Nc8 { [%clk 0:18.19] } 51. Bb8 { [%clk 0:24] } Kb7 { [%clk 0:18.10] }
+52. Be5 { [%clk 0:25] } fxe5+ { [%clk 0:18.36] } 53. Kxe5 { [%clk 0:25] } Kc6
+{ [%clk 0:18.46] } 54. f6 { [%clk 0:25] } gxf6+ { [%clk 0:18.40] } 55. Kxf6 {
+[%clk 0:25] } Kd6 { [%clk 0:19.32] } 56. Kg6 { [%clk 0:26] } Ke6 { [%clk
+0:19.58] } 57. Kxh6 { [%clk 0:26] } Kf6 { [%clk 0:20] } 58. Kh7 { [%clk 0:26]
+} Ne7 { [%clk 0:20] } 59. Kh8 { [%clk 0:24] } Kf7 { [%clk 0:21] } 60. Kh7 {
+[%clk 0:21] } Ng8 { [%clk 0:21] } 0-1
+
+[Event "2015 Turkiye Satranc Sampiyonasi"]
+[Site "ADANA"]
+[Date "2015.11.29"]
+[Round "3"]
+[White "Ererdem, Gani Eren"]
+[Black "Eminov, Orkhan"]
+[Result "1/2-1/2"]
+[Board "5"]
+[Input "DGT11013"]
+[Owner "Turkish Chess Federation"]
+[WhiteClock "1:30"]
+[BlackClock "1:30"]
+[Clock "B/0:01.49"]
+
+1. d4 { [%clk 1:30] } Nf6 { [%clk 1:30] } 2. Nf3 { [%clk 1:31] } e6 { [%clk
+1:30] } 3. c4 { [%clk 1:31] } b6 { [%clk 1:30] } 4. g3 { [%clk 1:31] } Ba6 {
+[%clk 1:28] } 5. b3 { [%clk 1:30] } Bb4+ { [%clk 1:28] } 6. Bd2 { [%clk 1:30]
+} c5 { [%clk 1:26] } 7. Bg2 { [%clk 1:28] } Bb7 { [%clk 1:26] } 8. O-O { [%clk
+1:25] } Bxd2 { [%clk 1:27] } 9. Qxd2 { [%clk 1:25] } O-O { [%clk 1:21] } 10.
+Nc3 { [%clk 1:20] } cxd4 { [%clk 1:07] } 11. Qxd4 { [%clk 1:18] } Nc6 { [%clk
+1:05] } 12. Qf4 { [%clk 1:17] } Qe7 { [%clk 0:58] } 13. Rfd1 { [%clk 1:16] }
+Qb4 { [%clk 0:41] } 14. Nb5 { [%clk 1:08] } d5 { [%clk 0:40] } 15. Qc7 { [%clk
+0:53] } Rab8 { [%clk 0:35] } 16. Nd6 { [%clk 0:27] } Ba8 { [%clk 0:33] } 17.
+Ng5 { [%clk 0:28] } Ne5 { [%clk 0:13.13] } 18. Ndxf7 { [%clk 0:15.44] } Nxf7 {
+[%clk 0:12.38] } 19. Nxf7 { [%clk 0:16.12] } dxc4 { [%clk 0:09.54] } 20. Bxa8
+{ [%clk 0:12.19] } Rxa8 { [%clk 0:10.22] } 21. Ng5 { [%clk 0:12.25] } Rac8 {
+[%clk 0:07.59] } 22. Qe5 { [%clk 0:11.32] } Rce8 { [%clk 0:04.26] } 23. bxc4 {
+[%clk 0:08.59] } Ng4 { [%clk 0:04.24] } 24. Qe4 { [%clk 0:09.14] } Nf6 { [%clk
+0:04.28] } 25. Qd3 { [%clk 0:07.51] } h6 { [%clk 0:03.13] } 26. Ne4 { [%clk
+0:07.58] } Ng4 { [%clk 0:03.31] } 27. h3 { [%clk 0:07.21] } Ne5 { [%clk
+0:02.26] } 28. Qd6 { [%clk 0:07.49] } Qb2 { [%clk 0:02.35] } 29. Rab1 { [%clk
+0:07.34] } Qxe2 { [%clk 0:03.00] } 30. Qxe5 { [%clk 0:05.18] } Rxf2 { [%clk
+0:03.24] } 31. Rd2 { [%clk 0:00.44] } Rg2+ { [%clk 0:02.04] } 32. Kh1 { [%clk
+0:01.13] } 1/2-1/2
+
+[Event "2015 Turkiye Satranc Sampiyonasi"]
+[Site "ADANA"]
+[Date "2015.11.29"]
+[Round "3"]
+[White "Atakisi, Umut"]
+[Black "Ozen, Bahadir"]
+[Result "1/2-1/2"]
+[Board "6"]
+[Input "DGT11062"]
+[Owner "Turkish Chess Federation"]
+[WhiteClock "1:30"]
+[BlackClock "1:30"]
+[Clock "B/0:23"]
+
+1. e4 { [%clk 1:30] } e5 { [%clk 1:30] } 2. Nf3 { [%clk 1:31] } d6 { [%clk
+1:30] } 3. d4 { [%clk 1:31] } exd4 { [%clk 1:30] } 4. Nxd4 { [%clk 1:32] } Nf6
+{ [%clk 1:30] } 5. Nc3 { [%clk 1:32] } Be7 { [%clk 1:30] } 6. Be2 { [%clk
+1:32] } O-O { [%clk 1:31] } 7. Bf4 { [%clk 1:32] } c6 { [%clk 1:21] } 8. O-O {
+[%clk 1:26] } Re8 { [%clk 1:18] } 9. Re1 { [%clk 1:06] } Bf8 { [%clk 1:14] }
+10. Bf1 { [%clk 1:00] } Nbd7 { [%clk 1:10] } 11. h3 { [%clk 0:52] } Ne5 {
+[%clk 0:56] } 12. a4 { [%clk 0:46] } Be6 { [%clk 0:44] } 13. Nxe6 { [%clk
+0:43] } fxe6 { [%clk 0:44] } 14. a5 { [%clk 0:36] } Ng6 { [%clk 0:40] } 15. Bg3
+{ [%clk 0:36] } d5 { [%clk 0:38] } 16. e5 { [%clk 0:26] } Nd7 { [%clk 0:38] }
+17. Qg4 { [%clk 0:26] } Qc7 { [%clk 0:35] } 18. Bd3 { [%clk 0:24] } Nh8 {
+[%clk 0:34] } 19. f4 { [%clk 0:16.09] } Nc5 { [%clk 0:34] } 20. Bf1 { [%clk
+0:15.40] } Nf7 { [%clk 0:34] } 21. Qf3 { [%clk 0:15.09] } Nh6 { [%clk 0:34] }
+22. Bf2 { [%clk 0:15.24] } Nd7 { [%clk 0:34] } 23. Bd3 { [%clk 0:14.59] } Bc5
+{ [%clk 0:33] } 24. Ne2 { [%clk 0:14.23] } 1/2-1/2
+
+[Event "2015 Turkiye Satranc Sampiyonasi"]
+[Site "ADANA"]
+[Date "2015.11.29"]
+[Round "3"]
+[White "Solak, Dragan"]
+[Black "Kucuk, Dogan"]
+[Result "1-0"]
+[Board "7"]
+[Input "DGT10955"]
+[Owner "Turkish Chess Federation"]
+[WhiteClock "1:30"]
+[BlackClock "1:30"]
+[Clock "B/0:01.50"]
+
+1. e4 { [%clk 1:30] } d6 { [%clk 1:30] } 2. d4 { [%clk 1:30] } Nf6 { [%clk
+1:31] } 3. Nc3 { [%clk 1:30] } e5 { [%clk 1:31] } 4. Nf3 { [%clk 1:30] } Nbd7
+{ [%clk 1:31] } 5. Bc4 { [%clk 1:30] } Be7 { [%clk 1:31] } 6. O-O { [%clk
+1:30] } O-O { [%clk 1:31] } 7. a4 { [%clk 1:29] } c6 { [%clk 1:31] } 8. Re1 {
+[%clk 1:30] } exd4 { [%clk 1:31] } 9. Nxd4 { [%clk 1:27] } Ne5 { [%clk 1:29] }
+10. Bf1 { [%clk 1:18] } Ng6 { [%clk 1:25] } 11. g3 { [%clk 1:09] } Qb6 { [%clk
+1:14] } 12. a5 { [%clk 1:08] } Qc7 { [%clk 0:52] } 13. Nf5 { [%clk 0:59] } Re8
+{ [%clk 0:47] } 14. Nxe7+ { [%clk 0:59] } Qxe7 { [%clk 0:46] } 15. Bg2 { [%clk
+0:56] } h6 { [%clk 0:34] } 16. h3 { [%clk 0:54] } d5 { [%clk 0:31] } 17. Re3 {
+[%clk 0:36] } dxe4 { [%clk 0:19.47] } 18. Nxe4 { [%clk 0:36] } Be6 { [%clk
+0:19.07] } 19. Nxf6+ { [%clk 0:30] } Qxf6 { [%clk 0:19.00] } 20. a6 { [%clk
+0:31] } Red8 { [%clk 0:16.51] } 21. Qe2 { [%clk 0:21] } bxa6 { [%clk 0:14.21]
+} 22. Rxa6 { [%clk 0:21] } Rd4 { [%clk 0:06.57] } 23. Rxc6 { [%clk 0:16.13] }
+Rad8 { [%clk 0:06.40] } 24. Rd3 { [%clk 0:10.27] } Rxd3 { [%clk 0:05.03] } 25.
+cxd3 { [%clk 0:10.50] } Qd4 { [%clk 0:05.05] } 26. Rxe6 { [%clk 0:08.30] } fxe6
+{ [%clk 0:05.06] } 27. Qxe6+ { [%clk 0:08.55] } Kh7 { [%clk 0:05.03] } 28. Be4
+{ [%clk 0:09.17] } Qf6 { [%clk 0:05.18] } 29. Qg4 { [%clk 0:09.08] } Rd6 {
+[%clk 0:04.18] } 30. Bf4 { [%clk 0:07.57] } Rb6 { [%clk 0:03.33] } 31. Be3 {
+[%clk 0:07.56] } Ra6 { [%clk 0:02.41] } 32. Bd4 { [%clk 0:05.41] } Qg5 { [%clk
+0:02.29] } 33. Qd7 { [%clk 0:05.18] } Rf6 { [%clk 0:01.28] } 34. Bxf6 { [%clk
+0:04.43] } Qxf6 { [%clk 0:01.56] } 35. Qg4 { [%clk 0:04.28] } 1-0
+

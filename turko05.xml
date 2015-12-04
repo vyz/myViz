@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Набор партеечек от 4 декабря 2015 г. -->
+<Gamosyky>
+  <Leo lid="ce788306-4856-43aa-8b4d-40f1a73ece4d" typo="Gamo">
+    <Namo>Esen, Baris - Yelken, Mustafa</Namo>
+    <BigNamo>Esen, Baris - Yelken, Mustafa 2015.12.01 1-0 </BigNamo>
+    <Parameters>
+      <TParo>Esen, Baris</TParo>
+      <TParo>Yelken, Mustafa</TParo>
+      <TParo>1-0</TParo>
+      <TParo>2015.12.01</TParo>
+      <TParo>2015 Turkiye Satranc Sampiyonasi</TParo>
+      <TParo></TParo>
+      <TParo>163</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+      <TParo>ADANA</TParo>
+      <TParo>5</TParo>
+      <TParo></TParo>
+      <TParo>1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. g3 Bb7 5. Bg2 Bb4+ 6. Bd2 Qe7 7. O-O Bxd2 8.
+Qxd2 O-O 9. Nc3 d5 10. cxd5 exd5 11. Rac1 Nbd7 12. b3 c6 13. Qb2 Rfe8 14. e3
+Rac8 15. Rfe1 Ne4 16. Nd2 f5 17. f3 Nxc3 18. Qxc3 Nf6 19. b4 Qd6 20. Qb3 Kh8
+21. f4 Rc7 22. Nf3 Rce7 23. Ne5 Nd7 24. a4 Nxe5 25. dxe5 Qe6 26. a5 Ba6 27. Bf1
+Bxf1 28. Rxf1 Rb8 29. Qc3 Rc7 30. Rfd1 h6 31. Qd4 bxa5 32. bxa5 Qg6 33. Rd2 Rb5
+34. Rc5 Rxc5 35. Qxc5 Rb7 36. Rc2 Rb1+ 37. Kg2 Qh5 38. Qxc6 Re1 39. Rf2 Re2 40.
+Qxd5 Rxf2+ 41. Kxf2 Qxh2+ 42. Qg2 Qh5 43. Qa8+ Kh7 44. Qxa7 Qh2+ 45. Kf1 Qxg3
+46. Qc5 Qh3+ 47. Ke1 Qg3+ 48. Kd2 Qf2+ 49. Kc3 Qe1+ 50. Kc4 Qe2+ 51. Kd5 Qd3+
+52. Kc6 Qa6+ 53. Kd7 Qb7+ 54. Kd8 Qa8+ 55. Kc7 Qa6 56. Kb8 Qe6 57. Qb6 Qe8+ 58.
+Kc7 Qe7+ 59. Kc6 Qe8+ 60. Kd6 Qf8+ 61. Kd5 Qa8+ 62. Kc5 Qe4 63. Kd6 h5 64. e6
+h4 65. e7 h3 66. Qb5 h2 67. e8=Q h1=Q 68. Qxe4 Qxe4 69. Qe5 Qd3+ 70. Kc7 Qc4+
+71. Kb6 Qb3+ 72. Kc6 Qc4+ 73. Kb7 Qb3+ 74. Kc8 Qc4+ 75. Kd8 Qd3+ 76. Ke7 Qa3+
+77. Ke8 Qd3 78. Ke7 Qa3+ 79. Ke6 g6 80. Kf7 Qb3+ 81. Qe6 Qb7+ 82. Qe7 1-0</TParo>
+      <TParo>[Board] - [1]
+[Input] - [DGT11050]
+[Owner] - [Turkish Chess Federation]
+[WhiteClock] - [1:30]
+[BlackClock] - [1:30]
+[Clock] - [B/0:00.03]</TParo>
+      <TParo></TParo>
+      <TParo>1-b-1:30 2-w-1:30 2-b-1:31 3-w-1:30 3-b-1:31 4-w-1:30 4-b-1:30 5-w-1:30 5-b-1:30 6-w-1:28
+6-b-1:28 7-w-1:26 7-b-1:25 8-w-1:26 8-b-1:25 9-w-1:24 9-b-1:20 10-w-1:05 10-b-1:09
+11-w-1:02 11-b-1:07 12-w-0:56 12-b-1:01 13-w-0:48 13-b-0:58 14-w-0:46 14-b-0:55 15-w-0:36
+15-b-0:54 16-w-0:28 16-b-0:54 17-w-0:26 17-b-0:50 18-w-0:26 18-b-0:50 19-w-0:26 19-b-0:42
+20-w-0:25 20-b-0:39 21-w-0:25 21-b-0:39 22-w-0:18.01 22-b-0:39 23-w-0:17.22 23-b-0:39
+24-w-0:15.53 24-b-0:32 25-w-0:14.10 25-b-0:30 26-w-0:14.11 26-b-0:30 27-w-0:12.50
+27-b-0:29 28-w-0:12.53 28-b-0:30 29-w-0:12.51 29-b-0:26 30-w-0:12.42 30-b-0:26 31-w-0:11.45
+31-b-0:26 32-w-0:09.51 32-b-0:27 33-w-0:08.02 33-b-0:26 34-w-0:05.24 34-b-0:24 35-w-0:04.06
+35-b-0:24 36-w-0:04.26 36-b-0:23 37-w-0:04.02 37-b-0:22 38-w-0:02.53 38-b-0:21 39-w-0:01.52
+39-b-0:21 40-w-0:01.43 40-b-0:46 41-w-0:31 41-b-0:46 42-w-0:31 42-b-0:46 43-w-0:31
+43-b-0:27 44-w-0:31 44-b-0:27 45-w-4:05 45-b-0:25 46-w-0:24 46-b-0:24 47-w-0:20 47-b-0:23
+48-w-0:20 48-b-0:22 49-w-0:20 49-b-0:21 50-w-0:20 50-b-0:17.31 51-w-0:20 51-b-0:17.02
+52-w-0:20 52-b-0:16.34 53-w-0:20 53-b-0:13.15 54-w-0:19.55 54-b-0:11.40 55-w-0:19.10
+55-b-0:08.34 56-w-0:19.38 56-b-0:07.38 57-w-0:18.48 57-b-0:05.37 58-w-0:18.53 58-b-0:05.41
+59-w-0:16.59 59-b-0:05.55 60-w-0:17.12 60-b-0:06.03 61-w-0:13.42 61-b-0:04.42 62-w-0:11.45
+62-b-0:03.56 63-w-0:06.00 63-b-0:03.50 64-w-0:04.44 64-b-0:03.07 65-w-0:04.23 65-b-0:03.07
+66-w-0:04.34 66-b-0:02.31 67-w-0:03.03 67-b-0:02.55 68-w-0:02.45 68-b-0:02.41 69-w-0:03.08
+69-b-0:02.02 70-w-0:02.59 70-b-0:00.55 71-w-0:02.46 71-b-0:01.15 72-w-0:02.55 72-b-0:01.11
+73-w-0:03.23 73-b-0:00.42 74-w-0:03.17 74-b-0:00.49 75-w-0:03.23 75-b-0:00.57 76-w-0:03.32
+76-b-0:00.54 77-w-0:03.04 77-b-0:00.38 78-w-0:03.06 78-b-0:00.33 79-w-0:03.19 79-b-0:00.48
+80-w-0:02.06 80-b-0:00.50 81-w-0:01.32 81-b-0:01.03 82-w-0:01.47 82-b-0:01.29</TParo>
+    </Parameters>
+  </Leo>
+  <Leo lid="f9327bfb-52ba-4434-9eff-fd71c4e44c0c" typo="Gamo">
+    <Namo>Ipatov, Alexander - Erdogdu, Aziz Mert</Namo>
+    <BigNamo>Ipatov, Alexander - Erdogdu, Aziz Mert 2015.12.01 1-0 </BigNamo>
+    <Parameters>
+      <TParo>Ipatov, Alexander</TParo>
+      <TParo>Erdogdu, Aziz Mert</TParo>
+      <TParo>1-0</TParo>
+      <TParo>2015.12.01</TParo>
+      <TParo>2015 Turkiye Satranc Sampiyonasi</TParo>
+      <TParo></TParo>
+      <TParo>71</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+      <TParo>ADANA</TParo>
+      <TParo>5</TParo>
+      <TParo></TParo>
+      <TParo>1. d4 Nf6 2. c4 g6 3. g3 Bg7 4. Bg2 d5 5. cxd5 Nxd5 6. e4 Nb6 7. Ne2 c5 8. d5
+e6 9. O-O O-O 10. Nec3 exd5 11. exd5 Na6 12. Na3 Bf5 13. Be3 Re8 14. d6 Qd7 15.
+Qd2 Bh3 16. Bxh3 Qxh3 17. Rad1 Qd7 18. b3 Re6 19. Nab5 h5 20. h4 Kh7 21. a4 Qc6
+22. Nd5 Rd8 23. Bg5 Rd7 24. Ne7 Qf3 25. a5 Na8 26. Qf4 Qxf4 27. Bxf4 b6 28. Nd5
+Re8 29. Rfe1 Rxe1+ 30. Rxe1 bxa5 31. Re7 Nb8 32. Nxa7 g5 33. hxg5 Kg6 34. Nc6
+Rxd6 35. Bxd6 Nxc6 36. Re8 1-0</TParo>
+      <TParo>[Board] - [2]
+[Input] - [DGT11061]
+[Owner] - [Turkish Chess Federation]
+[WhiteClock] - [1:30]
+[BlackClock] - [1:30]
+[Clock] - [B/0:01.23]</TParo>
+      <TParo></TParo>
+      <TParo>1-b-1:30 2-w-1:30 2-b-1:31 3-w-1:31 3-b-1:30 4-w-1:30 4-b-1:30 5-w-1:30 5-b-1:28 6-w-1:31
+6-b-1:29 7-w-1:31 7-b-1:29 8-w-1:30 8-b-1:29 9-w-1:29 9-b-1:29 10-w-1:30 10-b-1:30
+11-w-1:29 11-b-1:30 12-w-1:29 12-b-1:28 13-w-1:27 13-b-1:28 14-w-1:25 14-b-1:26 15-w-1:21
+15-b-1:27 16-w-1:10 16-b-1:22 17-w-1:11 17-b-1:22 18-w-1:03 18-b-1:16 19-w-0:48 19-b-1:14
+20-w-0:30 20-b-1:12 21-w-0:28 21-b-1:10 22-w-0:27 22-b-1:03 23-w-0:19.48 23-b-0:58
+24-w-0:13.59 24-b-0:51 25-w-0:13.23 25-b-0:51 26-w-0:12.20 26-b-0:43 27-w-0:11.26
+27-b-0:43 28-w-0:05.17 28-b-0:43 29-w-0:01.23 29-b-0:37 30-w-0:01.15 30-b-0:37 31-w-0:01.27
+31-b-0:31 32-w-0:01.56 32-b-0:32 33-w-0:01.51 33-b-0:31 34-w-0:02.06 34-b-0:31 35-w-0:01.15
+35-b-0:31 36-w-0:01.41 36-b-0:31</TParo>
+    </Parameters>
+  </Leo>
+  <Leo lid="413e1901-e224-48d4-b067-dcf2f6bd5bcc" typo="Gamo">
+    <Namo>Yaran, Siar - Yildiz, Betul Cemre</Namo>
+    <BigNamo>Yaran, Siar - Yildiz, Betul Cemre 2015.12.01 1/2-1/2 </BigNamo>
+    <Parameters>
+      <TParo>Yaran, Siar</TParo>
+      <TParo>Yildiz, Betul Cemre</TParo>
+      <TParo>1/2-1/2</TParo>
+      <TParo>2015.12.01</TParo>
+      <TParo>2015 Turkiye Satranc Sampiyonasi</TParo>
+      <TParo></TParo>
+      <TParo>124</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+      <TParo>ADANA</TParo>
+      <TParo>5</TParo>
+      <TParo></TParo>
+      <TParo>1. e4 e5 2. f4 d5 3. exd5 exf4 4. Nf3 Nf6 5. Bc4 Nxd5 6. O-O Be6 7. Qe2 Be7 8.
+Nc3 Nc6 9. Nxd5 Bxd5 10. Bxd5 Qxd5 11. d4 g5 12. c4 Qe6 13. Qc2 O-O-O 14. d5
+Nb4 15. Qb3 Qf5 16. Bd2 Bc5+ 17. Kh1 Nd3 18. Bc3 Rhe8 19. Bd4 Bxd4 20. Nxd4 Qe4
+21. Rad1 Qxd4 22. Rxd3 Qc5 23. Qc2 Re4 24. Rg3 Rde8 25. Rxg5 Qd4 26. Qc1 Re2
+27. Rg4 Rf2 28. h3 Qe3 29. Qb1 Kd8 30. Kh2 h5 31. Rg7 Rxf1 32. Qxf1 h4 33. Qf3
+Qxf3 34. gxf3 Re2+ 35. Rg2 Re3 36. Rg8+ Kd7 37. Rf8 Ke7 38. Rc8 Kd7 39. Rf8
+Rxf3 40. Rxf7+ Kd6 41. Kg2 Rg3+ 42. Kf2 Rxh3 43. Rxf4 Rh2+ 44. Ke3 h3 45. Rh4
+Rh1 46. Kd3 Kc5 47. Kc3 a5 48. b3 b5 49. cxb5 Kxb5 50. Kb2 Kc5 51. Rc4+ Kxd5
+52. Rxc7 Rg1 53. Rh7 Rg2+ 54. Kc3 Rg3+ 55. Kb2 Rg2+ 56. Kc3 h2 57. a3 Ra2 58.
+b4 a4 59. b5 Rxa3+ 60. Kb4 Ra2 61. b6 Rb2+ 62. Ka3 Rxb6 1/2-1/2</TParo>
+      <TParo>[Board] - [3]
+[Input] - [DGT11018]
+[Owner] - [Turkish Chess Federation]
+[WhiteClock] - [1:30]
+[BlackClock] - [1:30]
+[Clock] - [W/0:13.36]</TParo>
+      <TParo></TParo>
+      <TParo>1-b-1:30 2-w-1:30 2-b-1:31 3-w-1:30 3-b-1:31 4-w-1:31 4-b-1:30 5-w-1:31 5-b-1:27 6-w-1:32
+6-b-1:27 7-w-1:32 7-b-1:20 8-w-1:32 8-b-1:13 9-w-1:25 9-b-0:45 10-w-1:26 10-b-0:45
+11-w-1:26 11-b-0:46 12-w-1:15 12-b-0:37 13-w-1:15 13-b-0:27 14-w-1:10 14-b-0:22 15-w-1:11
+15-b-0:18.57 16-w-1:04 16-b-0:16.30 17-w-1:00 17-b-0:16.59 18-w-1:00 18-b-0:16.42
+19-w-0:56 19-b-0:14.32 20-w-0:41 20-b-0:14.33 21-w-0:41 21-b-0:13.32 22-w-0:37 22-b-0:13.53
+23-w-0:37 23-b-0:09.05 24-w-0:35 24-b-0:09.28 25-w-0:35 25-b-0:08.46 26-w-0:28 26-b-0:07.16
+27-w-0:25 27-b-0:07.08 28-w-0:25 28-b-0:04.22 29-w-0:19.37 29-b-0:03.33 30-w-0:12.11
+30-b-0:02.54 31-w-0:09.17 31-b-0:02.05 32-w-0:05.09 32-b-0:02.34 33-w-0:03.16 33-b-0:01.22
+34-w-0:01.08 34-b-0:01.51 35-w-0:00.47 35-b-0:02.04 36-w-0:01.16 36-b-0:01.33 37-w-0:01.30
+37-b-0:01.50 38-w-0:00.59 38-b-0:02.15 39-w-0:00.39 39-b-0:02.40 40-w-0:00.35 40-b-0:33
+41-w-0:31 41-b-0:25 42-w-0:31 42-b-0:25 43-w-0:31 43-b-0:23 44-w-0:31 44-b-0:23 45-w-0:22
+45-b-0:23 46-w-0:09.21 46-b-0:20 47-w-0:07.33 47-b-0:19.19 48-w-0:04.26 48-b-0:19.40
+49-w-0:02.05 49-b-0:15.58 50-w-0:01.49 50-b-0:16.03 51-w-0:01.36 51-b-0:16.22 52-w-0:01.40
+52-b-0:16.47 53-w-0:01.57 53-b-0:17.04 54-w-0:02.25 54-b-0:16.49 55-w-0:01.34 55-b-0:15.45
+56-w-0:00.41 56-b-0:16.09 57-w-0:00.56 57-b-0:16.34 58-w-0:00.55 58-b-0:12.57 59-w-0:00.37
+59-b-0:13.23 60-w-0:00.37 60-b-0:13.45 61-w-0:00.35 61-b-0:14.07 62-w-0:00.34 62-b-0:13.41
+63-w-0:00.41</TParo>
+    </Parameters>
+  </Leo>
+  <Leo lid="72fa0bc3-24fa-4f90-beb7-2b2cf01e2f8d" typo="Gamo">
+    <Namo>Ererdem, Gani Eren - Yelligedik, Murat</Namo>
+    <BigNamo>Ererdem, Gani Eren - Yelligedik, Murat 2015.12.01 1-0 </BigNamo>
+    <Parameters>
+      <TParo>Ererdem, Gani Eren</TParo>
+      <TParo>Yelligedik, Murat</TParo>
+      <TParo>1-0</TParo>
+      <TParo>2015.12.01</TParo>
+      <TParo>2015 Turkiye Satranc Sampiyonasi</TParo>
+      <TParo></TParo>
+      <TParo>65</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+      <TParo>ADANA</TParo>
+      <TParo>5</TParo>
+      <TParo></TParo>
+      <TParo>1. d4 Nf6 2. Nf3 g6 3. Bg5 Bg7 4. Nbd2 d5 5. e3 O-O 6. c3 Nbd7 7. b4 Re8 8. Be2
+e5 9. O-O c6 10. Rc1 a5 11. b5 c5 12. dxe5 Nxe5 13. Nxe5 Rxe5 14. Nf3 Re8 15.
+c4 Be6 16. Ne5 Qc7 17. Bf4 g5 18. Bg3 Ne4 19. cxd5 Nxg3 20. hxg3 Rad8 21. dxe6
+Rxd1 22. exf7+ Kf8 23. fxe8=Q+ Kxe8 24. Rfxd1 Bxe5 25. Rd5 b6 26. Rc4 Kf7 27.
+Re4 Bxg3 28. fxg3 Qxg3 29. Rf5+ Kg6 30. Rf1 h5 31. Re6+ Kg7 32. Bxh5 Qb8 33.
+Re8 1-0</TParo>
+      <TParo>[Board] - [4]
+[Input] - [DGT11000]
+[Owner] - [Turkish Chess Federation]
+[WhiteClock] - [1:30]
+[BlackClock] - [1:30]
+[Clock] - [B/0:05.23]</TParo>
+      <TParo></TParo>
+      <TParo>1-b-1:30 2-w-1:30 2-b-1:31 3-w-1:31 3-b-1:29 4-w-1:31 4-b-1:29 5-w-1:32 5-b-1:29 6-w-1:32
+6-b-1:29 7-w-1:32 7-b-1:29 8-w-1:32 8-b-1:30 9-w-1:32 9-b-1:30 10-w-1:24 10-b-1:22
+11-w-1:11 11-b-1:20 12-w-1:05 12-b-0:49 13-w-1:06 13-b-0:49 14-w-1:06 14-b-0:50 15-w-1:03
+15-b-0:50 16-w-0:54 16-b-0:37 17-w-0:46 17-b-0:33 18-w-0:43 18-b-0:32 19-w-0:43 19-b-0:31
+20-w-0:42 20-b-0:30 21-w-0:39 21-b-0:26 22-w-0:39 22-b-0:26 23-w-0:39 23-b-0:26 24-w-0:40
+24-b-0:26 25-w-0:35 25-b-0:19.46 26-w-0:34 26-b-0:11.35 27-w-0:28 27-b-0:11.09 28-w-0:08.58
+28-b-0:08.42 29-w-0:14.48 29-b-0:08.31 30-w-0:09.17 30-b-0:08.58 31-w-0:07.45 31-b-0:09.08
+32-w-0:06.26 32-b-0:09.21 33-w-0:05.54 33-b-0:08.38</TParo>
+    </Parameters>
+  </Leo>
+  <Leo lid="7b9e8514-9479-4445-a1c6-6e377b48cafe" typo="Gamo">
+    <Namo>Atakisi, Umut - Haznedaroglu, Kivanc</Namo>
+    <BigNamo>Atakisi, Umut - Haznedaroglu, Kivanc 2015.12.01 1/2-1/2 </BigNamo>
+    <Parameters>
+      <TParo>Atakisi, Umut</TParo>
+      <TParo>Haznedaroglu, Kivanc</TParo>
+      <TParo>1/2-1/2</TParo>
+      <TParo>2015.12.01</TParo>
+      <TParo>2015 Turkiye Satranc Sampiyonasi</TParo>
+      <TParo></TParo>
+      <TParo>72</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+      <TParo>ADANA</TParo>
+      <TParo>5</TParo>
+      <TParo></TParo>
+      <TParo>1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 exd6 6. Nc3 Be7 7. h3 O-O 8. Nf3
+Bf6 9. Be2 Bf5 10. O-O c6 11. Bf4 Na6 12. a4 Nc7 13. a5 Nc8 14. Bd3 Ne6 15. Bh2
+Bg6 16. Bxg6 hxg6 17. d5 Nc5 18. Re1 Re8 19. Rxe8+ Qxe8 20. dxc6 Qxc6 21. Qc2
+Ne7 22. Rd1 Rd8 23. Nb5 d5 24. Nxa7 Qa6 25. Nb5 Nc6 26. cxd5 Qxb5 27. dxc6 bxc6
+28. Rxd8+ Bxd8 29. Bd6 Nb7 30. Ba3 Nxa5 31. Nd4 Qd5 32. Qc5 Qxc5 33. Bxc5 Bf6
+34. Kf1 Nb7 35. Bb6 c5 36. Nb3 Bxb2 1/2-1/2</TParo>
+      <TParo>[Board] - [5]
+[Input] - [DGT11013]
+[Owner] - [Turkish Chess Federation]
+[WhiteClock] - [1:30]
+[BlackClock] - [1:30]
+[Clock] - [W/0:00.53]</TParo>
+      <TParo></TParo>
+      <TParo>1-b-1:30 2-w-1:30 2-b-1:30 3-w-1:31 3-b-1:30 4-w-1:31 4-b-1:30 5-w-1:31 5-b-1:30 6-w-1:32
+6-b-1:30 7-w-1:32 7-b-1:29 8-w-1:29 8-b-1:29 9-w-1:28 9-b-1:29 10-w-1:27 10-b-1:29
+11-w-1:27 11-b-1:26 12-w-1:12 12-b-1:14 13-w-1:10 13-b-1:10 14-w-1:10 14-b-1:09 15-w-0:50
+15-b-0:57 16-w-0:50 16-b-0:48 17-w-0:51 17-b-0:48 18-w-0:46 18-b-0:32 19-w-0:25 19-b-0:28
+20-w-0:25 20-b-0:24 21-w-0:24 21-b-0:24 22-w-0:17.42 22-b-0:20 23-w-0:15.19 23-b-0:18.55
+24-w-0:09.09 24-b-0:18.04 25-w-0:05.31 25-b-0:18.07 26-w-0:06.00 26-b-0:06.46 27-w-0:06.09
+27-b-0:07.08 28-w-0:00.54 28-b-0:04.03 29-w-0:01.23 29-b-0:01.13 30-w-0:01.08 30-b-0:00.59
+31-w-0:00.51 31-b-0:00.52 32-w-0:00.52 32-b-0:00.59 33-w-0:00.58 33-b-0:01.27 34-w-0:01.21
+34-b-0:00.35 35-w-0:00.55 35-b-0:00.43 36-w-0:00.56 36-b-0:01.00 37-w-0:00.45</TParo>
+    </Parameters>
+  </Leo>
+  <Leo lid="0ba0b4d4-7467-4364-aebf-509a70bfc62c" typo="Gamo">
+    <Namo>Solak, Dragan - Eminov, Orkhan</Namo>
+    <BigNamo>Solak, Dragan - Eminov, Orkhan 2015.12.01 1-0 </BigNamo>
+    <Parameters>
+      <TParo>Solak, Dragan</TParo>
+      <TParo>Eminov, Orkhan</TParo>
+      <TParo>1-0</TParo>
+      <TParo>2015.12.01</TParo>
+      <TParo>2015 Turkiye Satranc Sampiyonasi</TParo>
+      <TParo></TParo>
+      <TParo>67</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+      <TParo>ADANA</TParo>
+      <TParo>5</TParo>
+      <TParo></TParo>
+      <TParo>1. g3 e5 2. Bg2 Nc6 3. c4 g6 4. Nc3 Bg7 5. Rb1 d6 6. b4 f5 7. b5 Nce7 8. d3 Nf6
+9. Nf3 O-O 10. O-O h6 11. c5 Be6 12. Ba3 Nfd5 13. Nxd5 Nxd5 14. Qc2 e4 15. Nh4
+Nc3 16. Nxg6 Nxb1 17. Rxb1 exd3 18. exd3 Re8 19. Bxb7 Rb8 20. Bc6 Bd7 21. Bd5+
+Kh7 22. c6 Kxg6 23. cxd7 Qxd7 24. Bc6 Qe6 25. Bxe8+ Rxe8 26. Bb4 Bd4 27. Re1
+Qxe1+ 28. Bxe1 Rxe1+ 29. Kg2 Bb6 30. a4 Ra1 31. h4 Re1 32. Qa2 Kg7 33. a5 Bd4
+34. Qc4 1-0</TParo>
+      <TParo>[Board] - [6]
+[Input] - [DGT11062]
+[Owner] - [Turkish Chess Federation]
+[WhiteClock] - [1:30]
+[BlackClock] - [1:30]
+[Clock] - [B/0:00.03]</TParo>
+      <TParo></TParo>
+      <TParo>1-b-1:30 2-w-1:29 2-b-1:31 3-w-1:29 3-b-1:28 4-w-1:29 4-b-1:27 5-w-1:29 5-b-1:25 6-w-1:28
+6-b-1:24 7-w-1:23 7-b-1:24 8-w-1:23 8-b-1:21 9-w-1:18 9-b-1:21 10-w-1:18 10-b-1:15
+11-w-1:18 11-b-1:12 12-w-1:13 12-b-1:03 13-w-0:59 13-b-1:00 14-w-0:53 14-b-0:58 15-w-0:34
+15-b-0:48 16-w-0:27 16-b-0:45 17-w-0:27 17-b-0:39 18-w-0:23 18-b-0:39 19-w-0:22 19-b-0:26
+20-w-0:21 20-b-0:26 21-w-0:15.00 21-b-0:22 22-w-0:12.28 22-b-0:22 23-w-0:10.30 23-b-0:22
+24-w-0:09.10 24-b-0:22 25-w-0:06.19 25-b-0:15.55 26-w-0:06.45 26-b-0:14.09 27-w-0:06.03
+27-b-0:13.41 28-w-0:02.18 28-b-0:14.04 29-w-0:02.46 29-b-0:14.21 30-w-0:03.04 30-b-0:13.39
+31-w-0:02.55 31-b-0:10.53 32-w-0:02.45 32-b-0:09.42 33-w-0:00.52 33-b-0:09.41 34-w-0:00.36
+34-b-0:09.46</TParo>
+    </Parameters>
+  </Leo>
+  <Leo lid="9b8f20bf-abd2-4b18-bd57-9c013470b92a" typo="Gamo">
+    <Namo>Kucuk, Dogan - Ozen, Bahadir</Namo>
+    <BigNamo>Kucuk, Dogan - Ozen, Bahadir 2015.12.01 0-1 </BigNamo>
+    <Parameters>
+      <TParo>Kucuk, Dogan</TParo>
+      <TParo>Ozen, Bahadir</TParo>
+      <TParo>0-1</TParo>
+      <TParo>2015.12.01</TParo>
+      <TParo>2015 Turkiye Satranc Sampiyonasi</TParo>
+      <TParo></TParo>
+      <TParo>80</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+      <TParo>ADANA</TParo>
+      <TParo>5</TParo>
+      <TParo></TParo>
+      <TParo>1. e4 g6 2. d4 Bg7 3. Nc3 c6 4. Nf3 d6 5. Bc4 Nf6 6. Bb3 O-O 7. O-O Bg4 8. h3
+Bxf3 9. Qxf3 Nbd7 10. Be3 e5 11. dxe5 dxe5 12. Rad1 Qe7 13. Rd2 Nc5 14. Bxc5
+Qxc5 15. Rfd1 Qe7 16. Qe3 Rfc8 17. Rd6 Rc7 18. Qd3 Rcc8 19. Qe3 Rcb8 20. Qf3
+Re8 21. Qe3 Rec8 22. Qf3 Rd8 23. Rxd8+ Rxd8 24. Rxd8+ Qxd8 25. Qd3 Qe7 26. Qe3
+a6 27. Qa7 Bh6 28. Bc4 Kf8 29. Qb8+ Kg7 30. Bd3 Bc1 31. b3 Ba3 32. Qc8 Bc5 33.
+Na4 Bb4 34. c3 Ba3 35. b4 Qd6 36. Bf1 Nxe4 37. Qxb7 Qd2 38. Qb6 c5 39. Qxa6
+Qxf2+ 40. Kh2 Bc1 0-1</TParo>
+      <TParo>[Board] - [7]
+[Input] - [DGT10955]
+[Owner] - [Turkish Chess Federation]
+[WhiteClock] - [1:30]
+[BlackClock] - [1:30]
+[Clock] - [W/0:30]</TParo>
+      <TParo></TParo>
+      <TParo>1-b-1:30 2-w-1:30 2-b-1:29 3-w-1:31 3-b-1:29 4-w-1:31 4-b-1:25 5-w-1:30 5-b-1:25 6-w-1:25
+6-b-1:21 7-w-1:21 7-b-1:20 8-w-1:18 8-b-1:18 9-w-1:18 9-b-1:18 10-w-1:18 10-b-1:03
+11-w-1:17 11-b-1:01 12-w-1:18 12-b-0:59 13-w-1:18 13-b-0:58 14-w-1:10 14-b-0:54 15-w-1:11
+15-b-0:54 16-w-1:10 16-b-0:53 17-w-1:06 17-b-0:27 18-w-1:01 18-b-0:25 19-w-1:00 19-b-0:24
+20-w-0:59 20-b-0:16.28 21-w-0:58 21-b-0:14.18 22-w-0:57 22-b-0:14.15 23-w-0:57 23-b-0:12.29
+24-w-0:58 24-b-0:11.37 25-w-0:58 25-b-0:10.40 26-w-0:58 26-b-0:09.04 27-w-0:57 27-b-0:07.36
+28-w-0:57 28-b-0:04.11 29-w-0:57 29-b-0:04.38 30-w-0:58 30-b-0:04.28 31-w-0:58 31-b-0:03.35
+32-w-0:59 32-b-0:03.09 33-w-0:59 33-b-0:02.58 34-w-0:57 34-b-0:01.34 35-w-0:58 35-b-0:01.45
+36-w-0:58 36-b-0:01.02 37-w-0:58 37-b-0:01.06 38-w-0:58 38-b-0:01.28 39-w-0:58 39-b-0:01.22
+40-w-0:59 40-b-0:31 41-w-1:29</TParo>
+    </Parameters>
+  </Leo>
+</Gamosyky>
