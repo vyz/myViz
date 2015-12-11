@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
+
 
 namespace pfVisualisator
 {
@@ -69,6 +71,23 @@ namespace pfVisualisator
             qava = -1;
             pzu = null;
             controllomova = null;
+            }
+
+        /// <summary>
+        /// Модификация от 10 декабря 2015 года
+        /// Заложен 10 декабря 2015 года
+        /// </summary>
+        /// <param name="van"></param>
+        /// <param name="twa"></param>
+        public pozo(Guid[] van, int twa) : this() {
+            BoardFromGvido(van);
+            PartFenFromInto(twa);
+            }
+
+        public pozo(string feno) : this() {
+            string[] masso = feno.Split(' ');
+            BoardFromFeno(masso[0]);
+
             }
 
         /// <summary>
@@ -195,6 +214,58 @@ namespace pfVisualisator
             }
 
         /// <summary>
+        /// Модификация от 11 декабря 2015 года
+        /// Заложен 11 декабря 2015 года
+        /// </summary>
+        /// <param name="aa"></param>
+        /// <returns></returns>
+        private Pieco PiecoFromSymbol(char aa) {
+            Pieco reto = Pieco.None;
+            switch (aa) {
+                    case 'P':
+                        reto = Pieco.Pawn;
+                        break;
+                    case 'p':
+                        reto = Pieco.Pawn | Pieco.Black;
+                        break;
+                    case 'N':
+                        reto = Pieco.Knight;
+                        break;
+                    case 'n':
+                        reto = Pieco.Knight | Pieco.Black;
+                        break;
+                    case 'B':
+                        reto = Pieco.Bishop;
+                        break;
+                    case 'b':
+                        reto = Pieco.Bishop | Pieco.Black;
+                        break;
+                    case 'R':
+                        reto = Pieco.Rook;
+                        break;
+                    case 'r':
+                        reto = Pieco.Rook | Pieco.Black;
+                        break;
+                    case 'Q':
+                        reto = Pieco.Queen;
+                        break;
+                    case 'q':
+                        reto = Pieco.Queen | Pieco.Black;
+                        break;
+                    case 'K':
+                        reto = Pieco.King;
+                        break;
+                    case 'k':
+                        reto = Pieco.King | Pieco.Black;
+                        break;
+                    default:
+                        reto = Pieco.None;
+                        break;
+                    }
+            return reto;
+            }
+
+        /// <summary>
         /// Модификация от 28 мая 2015 года
         /// Заложен 28 мая 2015 года
         /// </summary>
@@ -232,12 +303,181 @@ namespace pfVisualisator
             }
 
         /// <summary>
-        /// Модификация от 22 июля 2015 года
+        /// Модификация от 11 декабря 2015 года
         /// Заложен май 2015 года
         /// </summary>
-        private void AvailableFill() {
+        public void AvailableFill() {
             pzu = new PozoUtils(pBoard, whitomv, rokko, enpasso, enfield);
             limov = pzu.MovaFill();
+            foreach (Mova aa in limov) {
+                aa.FormShortoString(pzu);
+                }
+            }
+
+        /// <summary>
+        /// Модификация от 10 декабря 2015 года
+        /// Заложен 10 декабря 2015 года
+        /// </summary>
+        /// <returns>Массив из двух Гвидов</returns>
+        private Guid[] BoardToGvid() {
+            Guid[] reto = new Guid[2];
+            StringBuilder a1 = new StringBuilder(36);
+            StringBuilder a2 = new StringBuilder(36);
+
+            for (int i = 0; i < 32; i++) {
+                if( i == 8 || i == 12 || i == 16 || i == 20 ) {
+                    a1.Append('-');
+                    a2.Append('-');
+                    }
+                byte aa = (byte)pBoard[i * 2];
+                byte bb = (byte)pBoard[i * 2 + 1];
+                a1.AppendFormat("{0:X1}",aa);
+                a2.AppendFormat("{0:X1}",bb);
+                }
+            reto[0] = Guid.Parse(a1.ToString());
+            reto[1] = Guid.Parse(a2.ToString());
+            return reto;
+            }
+
+        /// <summary>
+        /// Модификация от 10 декабря 2015 года
+        /// Заложен 10 декабря 2015 года
+        /// </summary>
+        /// <param name="aa"></param>
+        private void BoardFromGvido(Guid[] aa ) {
+            string Patterno = "-";
+            string a1 = aa[0].ToString();
+            string a2 = aa[1].ToString();
+            a1 = Regex.Replace(a1, Patterno, "");
+            a2 = Regex.Replace(a2, Patterno, "");
+            char[] b1 = a1.ToCharArray();
+            char[] b2 = a2.ToCharArray();
+            for (int i = 0; i < 32; i++) {
+                Pieco pp = (Pieco)((byte)b1[i]);
+                pBoard[i * 2] = pp;
+                pp = (Pieco)((byte)b2[i]);
+                pBoard[i * 2 + 1] = pp;
+                }
+            }
+
+        /// <summary>
+        /// Модификация от 11 декабря 2015 года
+        /// Заложен 11 декабря 2015 года
+        /// </summary>
+        /// <param name="aa"></param>
+        private void BoardFromFeno(string aa) {
+            char[] masso = aa.ToCharArray();
+            int k = 63;
+
+            foreach (char bb in masso) {
+                if( bb == '/') continue;
+                if (bb >= '0' && bb <= '9') {
+                    int kp = k - (int)(bb - '0');
+                    for (; k > kp; k--) {
+                        pBoard[k] = Pieco.None;
+                        }
+                    continue;
+                    }
+                pBoard[k--] = PiecoFromSymbol(bb);
+                }
+            }
+
+        /// <summary>
+        /// Модификация от 11 декабря 2015 года
+        /// Заложен 11 декабря 2015 года
+        /// </summary>
+        /// <param name="mss"></param>
+        private void PropertyFromFeno(string[] mss) {
+            string wrs = mss[1];
+            switch (wrs[0]) {
+                case 'w':
+                    whitomv = true;
+                    break;
+                case 'b':
+                    whitomv = false;
+                    break;
+                default:
+                    throw new VisualisatorException(string.Format("Pozo-PropertyFromFeno, Очередь цвета --{0}--", wrs));
+                }
+            wrs = mss[2];
+            if (wrs == "-") {
+                rokko = Caslo.None;
+            } else {
+                char[] masso = wrs.ToCharArray();
+                Caslo zrokko = Caslo.None;
+                foreach (char bb in masso) {
+                    switch (bb) {
+                        case 'K':
+                            zrokko |= Caslo.KingWhite;
+                            break;
+                        case 'k':
+                            zrokko |= Caslo.KingBlack;
+                            break;
+                        case 'Q':
+                            zrokko |= Caslo.QueenWhite;
+                            break;
+                        case 'q':
+                            zrokko |= Caslo.QueenBlack;
+                            break;
+                        default:
+                            throw new VisualisatorException(string.Format("Pozo-PropertyFromFeno, Возможность рокировки --{0}--", wrs));
+                        }
+                    }
+                }
+            wrs = mss[3];
+            if (wrs == "-") {
+                enpasso = false;
+            } else {
+                enpasso = true;
+                char[] masso = wrs.ToCharArray();
+                int im = (int)('h' - masso[0]);
+                if (masso[1] == '6') {
+                    im += 8;
+                    }
+                enfield = im;
+                }
+            wrs = mss[4];
+            pustomv = int.Parse(wrs);
+            wrs = mss[5];
+            numbero = int.Parse(wrs);
+            }
+
+        /// <summary>
+        /// Модификация от 10 декабря 2015 года
+        /// Заложен 10 декабря 2015 года
+        /// </summary>
+        /// <returns></returns>
+        private int SvdbFwoInto()
+        {
+            int reto = 0;
+            int a1 = numbero << (9 + 4 + 1 + 4 + 1);
+            int a2 = pustomv << (4 + 1 + 4 + 1);
+            int a3 = (int)rokko << (1 + 4 + 1);
+            int a4 = enpasso ? 1 << (4 + 1) : 0;
+            int a5 = enfield << 1;
+            int a6 = whitomv ? 1 : 0;
+            reto = a1 | a2 | a3 | a4 | a5 | a6;
+            return reto;
+        }
+
+        /// <summary>
+        /// Модификация от 10 декабря 2015 года
+        /// Заложен 10 декабря 2015 года
+        /// </summary>
+        /// <param name="aa"></param>
+        private void PartFenFromInto( int aa ) {
+            int a1 = aa >> (9 + 4 + 1 + 4 + 1);
+            int a2 = (aa >> (4 + 1 + 4 + 1)) & 0x1FF;
+            int a3 = (aa >> (1 + 4 + 1)) & 0xF;
+            int a4 = (aa >> (4 + 1)) & 0x1;
+            int a5 = (aa >> 1) & 0xF;
+            int a6 = aa & 0x1;
+            numbero = a1;
+            pustomv = a2;
+            rokko = (Caslo)a3;
+            enpasso = a4 == 1;
+            enfield = a5;
+            whitomv = a6 == 1;
             }
 
         /// <summary>
@@ -296,17 +536,30 @@ namespace pfVisualisator
         /// Заложен 27 мая 2015 года
         /// </summary>
         /// <returns></returns>
-        public static pozo Starto()
-        {
+        public static pozo Starto() {
             pozo reto = new pozo();
             reto.startoinito();
             return reto;
-        }
+            }
+
+        /// <summary>
+        /// Модификация от 11 декабря 2015 года
+        /// Заложен 11 декабря 2015 года
+        /// </summary>
+        /// <returns></returns>
+        public static pozo SluchaynoPozo() {
+            string aa = "3rk2r/2q1bpp1/p2p1n2/2pP1n1p/PpN2B2/3P2P1/1PP1Q1BP/4RRK1 b k - 0 22";
+            pozo reto = new pozo(aa);
+            return reto;
+            }
 
         public Pieco[] BoardoSet { get { return pBoard; } }
         public bool IsQueryMoveWhite { get { return whitomv; } }
         public int NumberMove { get { return numbero; } }
+        public Guid[] VanBoardo { get { return BoardToGvid(); } }
+        public int TwaFeno { get { return SvdbFwoInto(); } }
+        public List<Mova> AvaList { get { return limov; } }
         }
 
     }
-    
+   

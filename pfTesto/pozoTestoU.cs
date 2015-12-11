@@ -1,6 +1,7 @@
 ﻿using pfVisualisator;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Collections.Generic;
 
 namespace pfTesto
 {
@@ -76,6 +77,37 @@ namespace pfTesto
             string actual;
             actual = target.fenout();
             Assert.AreEqual(expected, actual);
+            }
+
+        /// <summary>
+        ///Тест для VanBoardo
+        /// Модификация от 10 декабря 2015 года
+        /// Заложен 10 декабря 2015 года
+        ///</summary>
+        [TestMethod()]
+        public void VanBoardoTesto() {
+            pozo biba = pozo.Starto();
+            Guid[] actual = new Guid[2];
+            actual[0] = Guid.Parse("43521111-0000-0000-0000-00009999cbda");
+            actual[1] = Guid.Parse("26341111-0000-0000-0000-00009999aebc");
+            Guid[] target = biba.VanBoardo;
+            for (int i = 0; i < 2; i++) {
+                Assert.AreEqual(actual[i], target[i]);
+                }
+            }
+
+
+        /// <summary>
+        ///Тест для AvaList
+        ///</summary>
+        [TestMethod()]
+        public void AvaListTesto() {
+            pozo target = pozo.SluchaynoPozo();
+            target.AvailableFill();
+            List<Mova> actual;
+            actual = target.AvaList;
+            int sravo = 14;
+            Assert.AreEqual(actual.Count, sravo);
             }
         }
     }
