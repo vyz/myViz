@@ -184,7 +184,7 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 12 марта 2015 года
+        /// Модификация от 24 декабря 2015 года
         /// Заложен 12 марта 2015 года
         /// </summary>
         /// <returns></returns>
@@ -215,6 +215,11 @@ namespace pfVisualisator {
                     reto.Add("AddAtr");
                     reto.Add("Описание");
                     reto.Add("Timingo");
+                    break;
+                case leoType.Pozo:
+                    reto.Add("Fena");
+                    reto.Add("AnaRes");
+                    reto.Add("Описание");
                     break;
                 default:
                     reto = null;
@@ -415,6 +420,9 @@ namespace pfVisualisator {
                 case "Gamo":
                     reto = leoType.Gamo;
                     break;
+                case "Pozo":
+                    reto = leoType.Pozo;
+                    break;
             }
             return reto;
             }
@@ -449,6 +457,7 @@ namespace pfVisualisator {
     public enum leoType {
         OKPReport = 0,
         Gamo = 201,
+        Pozo = 202,
         None = 10001
         }
 

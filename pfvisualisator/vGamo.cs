@@ -74,11 +74,10 @@ namespace pfVisualisator
                 } else {
                     movacount = 0;
                     }
-                if (ltexto.Count < 16)
-                {
+                if (ltexto.Count < 16) {
                     ltexto.Add(string.Empty);
+                    }
                 }
-            }
 
         /// <summary>
         /// Модификация от 16 ноября 2015 года
@@ -174,8 +173,23 @@ namespace pfVisualisator
                 }
             bido dbisa = new bido(leoType.Gamo);
                 //bido dbisa = new bido(); Проверка для заброса Leo-объекта в базу. Прошла на ура.
-            dbisa.PutLeoRecord(this);
-
+                //dbisa.PutLeoRecord(this);
+            int vnutro = dbisa.PutGamoGam(this);
+            if(vnutro == 1) { //Этой гамы еще не было в базе. Вводим её внутренности 
+                bool firstpropusk = etalo.StartoFlag;
+                foreach (pozo aa in etalo.ListoPozo) {
+                    if(firstpropusk) {
+                        firstpropusk = false;
+                        continue;
+                        }
+                    dbisa.PutGamoPozo(LeoGuid, aa);
+                    }
+                if(etalo.TimingFlag) {
+                    foreach(gTimo aa in etalo.ListoTimo) {
+                        dbisa.PutGamoTimo(LeoGuid, aa);
+                        }
+                    }
+                }
             return reto;
             }
 
@@ -207,6 +221,9 @@ namespace pfVisualisator
                 }
             return etalo.VanStrokeTimoForView(); 
             } }
+        public int iflagStartPos { get { return (etalo != null) ? ((etalo.StartoFlag) ? 1 : 0) : 0; } }
+        public int iflagTiming { get { return (etalo != null) ? ((etalo.TimingFlag) ? 1 : 0) : 0; } }
+        public int iflagCommto { get { return (etalo != null) ? ((etalo.CommtoFlag) ? 1 : 0) : 0; } }
 #endregion-----------------------Свойства объекта-----------------------------------------
 
         private void OnPropertyChanged(string name) {

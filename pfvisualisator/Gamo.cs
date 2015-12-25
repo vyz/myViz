@@ -81,14 +81,11 @@ namespace pfVisualisator {
             string commento;
 
             string aa = GetAttro(gmAttro.Fen);
-            if (aa == string.Empty)
-            {
+            if (aa == string.Empty) {
                 tp = pozo.Starto();
                 flagFromStart = true;
-            }
-            else
-            {
-            }
+            } else {
+                }
             FillMainMoves();
             lFactMoves = new List<Mova>();
             lPozos = new List<pozo>();
@@ -738,7 +735,10 @@ namespace pfVisualisator {
         public bool ImpossibleMoveFlag { get { return flagImpossibleMove; } }
         public string ImpossibleMoveString { get { return strimpossiblemove; } }
         public bool TimingFlag { get { return flagTiming; } }
+        public bool StartoFlag { get { return flagFromStart; } }
+        public bool CommtoFlag { get { return flagComments; } }
         public List<gTimo> ListoTimo { get { return lTimos; } }
+        public List<pozo> ListoPozo { get { return lPozos; } }
         public gmKorrAtr KorrFlago { get { return intellectoattr; } }
 #endregion-----------------------Свойства объекта-----------------------------------------
     }
@@ -775,6 +775,12 @@ namespace pfVisualisator {
                     pvpustoline = true;
                     strLine = GetNextNonEmptyLine(fafo);
                     while (strLine != null && pvpustoline) {
+                        if (strLine[0] == '[') {
+                            string vnutr = @"\A\[(.*)\s""(.*)""\]\Z";
+                            if (Regex.IsMatch(strLine, vnutr)) {
+                                break;
+                                }
+                            }
                         mamov.Add(strLine);
                         strLine = GetNextNonEmptyLine(fafo);
                         }
@@ -819,7 +825,7 @@ namespace pfVisualisator {
                     progo = aa.CreateMovaRegionWithoutComments();
                     for (int i = 0; i < progo.Count; i++) {
                         string vanProgo = progo[i];
-                        string twoFailo = aa.pgnMoveRegione[i];
+                        string twoFailo = (i < aa.pgnMoveRegione.Count) ? aa.pgnMoveRegione[i] : string.Empty;
                         if (vanProgo != twoFailo) { //Пишем сообщение в лог
                             string bblogo = string.Format("{0}-{1} Отличие:файл-прого${2}${3}$", aa.GamerWhite, aa.GamerBlack, twoFailo, vanProgo);
                             logomesso.Add(bblogo);

@@ -38,12 +38,16 @@ namespace pfVisualisator
         /// </summary>
         private int qava;
         private List<Mova> limov;
+        private bool ForBaseSavingFlag;
+        private Guid[] bsg;
+        private int bstwa;
 
         public pozo() { 
             pBoard = new Pieco[64];
             qava = -1;
             pzu = null;
             controllomova = null;
+            ForBaseSavingFlag = false;
             }
 
         /// <summary>
@@ -84,10 +88,15 @@ namespace pfVisualisator
             PartFenFromInto(twa);
             }
 
+        /// <summary>
+        /// Модификация от 14 декабря 2015 года
+        /// Заложен 11 декабря 2015 года
+        /// </summary>
+        /// <param name="feno"></param>
         public pozo(string feno) : this() {
             string[] masso = feno.Split(' ');
             BoardFromFeno(masso[0]);
-
+            PropertyFromFeno(masso);
             }
 
         /// <summary>
@@ -137,6 +146,8 @@ namespace pfVisualisator
             bool benpass = (zenpass >= 0);
             if (benpass) { //Превращение из нормального целого поля в специальное короткое для позиции
                 zenpass -= (zenpass < 24) ? 16 : 40;
+            } else {
+                zenpass = 0;
                 }
             int ppustomv = pustomv + 1;
             if( (controllomova.Figura & Pieco.PieceMask) == Pieco.Pawn || (controllomova.MvType & MovoTypo.PieceEaten) > 0 ) { ppustomv = 0; }
@@ -303,7 +314,7 @@ namespace pfVisualisator
             }
 
         /// <summary>
-        /// Модификация от 11 декабря 2015 года
+        /// Модификация от 16 декабря 2015 года
         /// Заложен май 2015 года
         /// </summary>
         public void AvailableFill() {
@@ -312,6 +323,7 @@ namespace pfVisualisator
             foreach (Mova aa in limov) {
                 aa.FormShortoString(pzu);
                 }
+            qava = limov.Count;
             }
 
         /// <summary>
@@ -340,7 +352,7 @@ namespace pfVisualisator
             }
 
         /// <summary>
-        /// Модификация от 10 декабря 2015 года
+        /// Модификация от 16 декабря 2015 года
         /// Заложен 10 декабря 2015 года
         /// </summary>
         /// <param name="aa"></param>
@@ -353,9 +365,13 @@ namespace pfVisualisator
             char[] b1 = a1.ToCharArray();
             char[] b2 = a2.ToCharArray();
             for (int i = 0; i < 32; i++) {
-                Pieco pp = (Pieco)((byte)b1[i]);
+                string z = b1[i].ToString();
+                byte k = byte.Parse(z, System.Globalization.NumberStyles.AllowHexSpecifier);
+                Pieco pp = (Pieco)k;
                 pBoard[i * 2] = pp;
-                pp = (Pieco)((byte)b2[i]);
+                z = b2[i].ToString();
+                k = byte.Parse(z, System.Globalization.NumberStyles.AllowHexSpecifier);
+                pp = (Pieco)k;
                 pBoard[i * 2 + 1] = pp;
                 }
             }
@@ -481,6 +497,16 @@ namespace pfVisualisator
             }
 
         /// <summary>
+        /// Модификация от 23 декабря 2015 года
+        /// Заложен 23 декабря 2015 года
+        /// </summary>
+        private void BaseSavingPrepare() {
+            bsg = BoardToGvid();
+            bstwa = SvdbFwoInto();
+            ForBaseSavingFlag = true;
+            }
+
+        /// <summary>
         /// Модификация от 28 мая 2015 года
         /// Заложен 25 мая 2015 года
         /// Нотация Форсайта—Эдвардса (FEN)
@@ -556,9 +582,16 @@ namespace pfVisualisator
         public Pieco[] BoardoSet { get { return pBoard; } }
         public bool IsQueryMoveWhite { get { return whitomv; } }
         public int NumberMove { get { return numbero; } }
-        public Guid[] VanBoardo { get { return BoardToGvid(); } }
-        public int TwaFeno { get { return SvdbFwoInto(); } }
+        public Guid[] VanBoardo { get {
+            if (!ForBaseSavingFlag) { BaseSavingPrepare(); }
+            return bsg;
+            } }
+        public int TwaFeno { get {
+            if (!ForBaseSavingFlag) { BaseSavingPrepare(); }
+            return bstwa;
+            } }
         public List<Mova> AvaList { get { return limov; } }
+        public int AvaQvo { get { return qava; } }
         }
 
     }

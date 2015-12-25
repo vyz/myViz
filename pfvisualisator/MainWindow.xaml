@@ -17,6 +17,7 @@
                 <ContextMenu Name="stpme">
                     <MenuItem Header="Загрузка файла с предварительным логом" Click="GamoLoadFromFile_Click"/>
                     <MenuItem Header="Загрузка XML файла" Click="GamoLoadFromXMLFile_Click"/>
+                    <MenuItem Header="vPozaTesto" Click="vPozaTesto_Click"/>
                 </ContextMenu>
             </StackPanel.ContextMenu>
         </StackPanel>

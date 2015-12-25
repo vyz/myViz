@@ -114,5 +114,13 @@ namespace pfVisualisator {
                 }
             }
 
+        private void vPozaTesto_Click(object sender, RoutedEventArgs e) {
+            vPoza wrk = vPoza.CreateExemplarusForLife();
+            var winda = new PozoWinda();
+            winda.Grido.DataContext = wrk;
+            winda.pfBoard.CurrentoPoza = wrk.Selfa;
+            winda.Show();
+            }
+
         }
 }

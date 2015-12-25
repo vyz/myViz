@@ -109,5 +109,35 @@ namespace pfTesto
             int sravo = 14;
             Assert.AreEqual(actual.Count, sravo);
             }
+
+        /// <summary>
+        ///Тест для Конструктор pozo(string)
+        /// Модификация от 14 декабря 2015 года
+        /// Заложен 14 декабря 2015 года
+        ///</summary>
+        [TestMethod()]
+        public void pozoConstructorTestoStringo() {
+            pozo Isko = pozo.SluchaynoPozo();
+            string feno = Isko.fenout();
+            pozo target = new pozo(feno);
+            Assert.AreEqual(Isko.VanBoardo[0], target.VanBoardo[0]);
+            Assert.AreEqual(Isko.VanBoardo[1], target.VanBoardo[1]);
+            Assert.AreEqual(Isko.TwaFeno, target.TwaFeno);
+            }
+
+        /// <summary>
+        ///Тест для Конструктор pozo(Guid[] van, int twa)
+        /// Модификация от 14 декабря 2015 года
+        /// Заложен 14 декабря 2015 года
+        ///</summary>
+        [TestMethod()]
+        public void pozoConstructorTestoTwoVanoFeno() {
+            pozo Isko = pozo.SluchaynoPozo();
+            Guid[] va = Isko.VanBoardo;
+            int tw = Isko.TwaFeno;
+            pozo target = new pozo(va, tw);
+            Assert.AreEqual(Isko.fenout(), target.fenout());
+            }
+
         }
     }
