@@ -107,6 +107,8 @@
     <Compile Include="RepoNew.xaml.cs">
       <DependentUpon>RepoNew.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Valuing.cs" />
+    <Compile Include="Vario.cs" />
     <Compile Include="vGamo.cs" />
     <Compile Include="vOKPReport.cs" />
     <Compile Include="vpfGluka.cs" />

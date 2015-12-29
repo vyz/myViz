@@ -586,7 +586,7 @@ namespace pfVisualisator {
                 vv = Regex.Replace(vv, pattimoRazryvDrugoy, "$$$1");
                 }
             if (vv.Contains("{")) {
-                string Patterno = @"{.*}\s*";
+                string Patterno = @"{.*?}\s*";
                 vv = Regex.Replace(vv, Patterno, "");
 
                 string patcommentstartonthisstring = @"\s{.*\z";
@@ -1051,7 +1051,11 @@ namespace pfVisualisator {
         Owner,
         WhiteClock,
         BlackClock,
-        Clock
+        Clock,
+        GameDuration,
+        Opening,
+        Termination,
+        TerminationDetails
         }
 
     public enum gmKorrAtr {
