@@ -41,6 +41,8 @@ namespace pfVisualisator
         private bool ForBaseSavingFlag;
         private Guid[] bsg;
         private int bstwa;
+        private int setablack;
+        private int setawhite;
 
         public pozo() { 
             pBoard = new Pieco[64];
@@ -324,6 +326,7 @@ namespace pfVisualisator
                 aa.FormShortoString(pzu);
                 }
             qava = limov.Count;
+            CalculateSeta();
             }
 
         /// <summary>
@@ -507,6 +510,37 @@ namespace pfVisualisator
             }
 
         /// <summary>
+        /// Модификация от 13 января 2016 года
+        /// Заложен 13 января 2016 года
+        /// </summary>
+        private void CalculateSeta() {
+            this.setawhite = CalculateVanSeto(true);
+            this.setablack = CalculateVanSeto(false);
+            }
+
+        /// <summary>
+        /// Модификация от 13 января 2016 года
+        /// Заложен 13 января 2016 года
+        /// </summary>
+        /// <param name="ForWhite"></param>
+        /// <returns></returns>
+        private int CalculateVanSeto(bool ForWhite) {
+            int reto = 0;
+            Pieco aa = ForWhite ? Pieco.White : Pieco.Black;
+            int kv = pBoard.Count(F => F == (Pieco.Queen | aa));
+            reto = kv;
+            kv = pBoard.Count(F => F == (Pieco.Rook | aa));
+            reto = reto * 10 + kv;
+            kv = pBoard.Count(F => F == (Pieco.Bishop | aa));
+            reto = reto * 10 + kv;
+            kv = pBoard.Count(F => F == (Pieco.Knight | aa));
+            reto = reto * 10 + kv;
+            kv = pBoard.Count(F => F == (Pieco.Pawn | aa));
+            reto = reto * 10 + kv;
+            return reto;
+            }
+
+        /// <summary>
         /// Модификация от 28 мая 2015 года
         /// Заложен 25 мая 2015 года
         /// Нотация Форсайта—Эдвардса (FEN)
@@ -592,6 +626,8 @@ namespace pfVisualisator
             } }
         public List<Mova> AvaList { get { return limov; } }
         public int AvaQvo { get { return qava; } }
+        public int SetaWhite { get { return setawhite; } }
+        public int SetaBlack { get { return setablack; } }
         }
 
     }
