@@ -43,6 +43,7 @@ namespace pfVisualisator
         private int bstwa;
         private int setablack;
         private int setawhite;
+        private string avamova;
 
         public pozo() { 
             pBoard = new Pieco[64];
@@ -327,6 +328,7 @@ namespace pfVisualisator
                 }
             qava = limov.Count;
             CalculateSeta();
+            avamova = FillAvaMoveToVanStroke();
             }
 
         /// <summary>
@@ -541,6 +543,101 @@ namespace pfVisualisator
             }
 
         /// <summary>
+        /// Модификация от 22 января 2016 года
+        /// Заложен 21 января 2016 года
+        /// </summary>
+        /// <returns></returns>
+        private string FillAvaMoveToVanStroke() {
+            string reto = string.Empty;
+            StringBuilder vh = new StringBuilder();
+            Pieco aa = whitomv ? Pieco.White : Pieco.Black;
+            Pieco isco = Pieco.King | aa;
+            //Такая уверенная конструкция только для короля
+            int filda = limov.Where(F => F.Figura == isco).Select(F => F.FromField).Distinct().Single();
+            string vero = VanFigoMovaSorto(isco, filda);
+            vh.AppendLine(vero);
+            for (int ii = 0; ii < 5; ii++) {
+                isco = (ii == 0 ? Pieco.Queen : (ii == 1 ? Pieco.Rook : (ii == 2 ? Pieco.Bishop : (ii == 3 ? Pieco.Knight : Pieco.Pawn)))) | aa;
+                int[] msi = limov.Where(F => F.Figura == isco).Select(F => F.FromField).Distinct().ToArray();
+                if (msi != null) {
+                    if (msi.Length > 1) {
+                        msi = ((whitomv) ? msi.OrderBy(I=>I) : msi.OrderByDescending(I => I)).ToArray();
+                        }
+                    if( ii < 4 ) {
+                        foreach (int dd in msi) {
+                            vero = VanFigoMovaSorto(isco, dd);
+                            if (vero != string.Empty) {
+                                vh.AppendLine(vero);
+                                }
+                            }
+                     } else {
+                        StringBuilder pp = new StringBuilder();
+                        bool ab = false;
+                        int pqq = 0;
+                        int qq = 0;
+                        foreach (int dd in msi) {
+                            vero = VanFigoMovaSortoStrokeAndQvo(isco, dd, out qq);
+                            if (qq > 0) {
+                                pp.Append((ab ? " " : string.Empty) + vero);
+                                ab = true;
+                                pqq += qq;
+                                }
+                            }
+                        vh.AppendLine(string.Format("   ({0}) : {1}", pqq, pp.ToString()));
+                        }
+                    }
+                }
+            reto = vh.ToString();
+            return reto;
+            }
+
+        /// <summary>
+        /// Модификация от 22 января 2016 года
+        /// Заложен 22 января 2016 года
+        /// </summary>
+        /// <param name="aa"></param>
+        /// <param name="pole"></param>
+        /// <returns></returns>
+        private string VanFigoMovaSorto(Pieco aa, int pole) {
+            string reto = string.Empty;
+            int qq = 0;
+            string vera = VanFigoMovaSortoStrokeAndQvo(aa, pole, out qq);
+            if (qq > 0) {
+                reto = string.Format("{0}{1}({2}) : {3}", pozo.SymbolFigury(aa), pozo.ConvertIntFieldtoString(pole), qq, vera);
+                }
+            return reto;
+            }
+
+        /// <summary>
+        /// Модификация от 22 января 2016 года
+        /// Заложен 22 января 2016 года
+        /// </summary>
+        /// <param name="aa"></param>
+        /// <param name="pole"></param>
+        /// <param name="qvo"></param>
+        /// <returns></returns>
+        private string VanFigoMovaSortoStrokeAndQvo(Pieco aa, int pole, out int qvo) {
+            string reto = string.Empty;
+            qvo = 0;
+            Mova[] msi = limov.Where(F => F.Figura == aa && F.FromField == pole).ToArray();
+            if (msi != null) {
+                qvo = msi.Length;
+                if (qvo > 1) {
+                    msi = ((whitomv) ? msi.OrderBy(F => F.ToField) : msi.OrderByDescending(F => F.ToField)).ToArray();
+                    }
+                reto = msi[0].Shorto;
+                if (qvo > 1) {
+                    StringBuilder bb = new StringBuilder();
+                    for (int ii = 1; ii < qvo; ii++) {
+                        bb.AppendFormat(" {0}", msi[ii].Shorto);
+                        }
+                    reto = reto + bb.ToString();
+                    }
+                }
+            return reto;
+            }
+
+        /// <summary>
         /// Модификация от 28 мая 2015 года
         /// Заложен 25 мая 2015 года
         /// Нотация Форсайта—Эдвардса (FEN)
@@ -613,6 +710,53 @@ namespace pfVisualisator
             return reto;
             }
 
+        /// <summary>
+        /// Модификация от 22 января 2016 года
+        /// Заложен 22 января 2016 года
+        /// </summary>
+        /// <param name="fieldo"></param>
+        /// <returns></returns>
+        public static string ConvertIntFieldtoString(int fieldo) {
+            StringBuilder aa = new StringBuilder();
+            int rad = fieldo / 8;
+            int colo = fieldo % 8;
+            aa.Append(Convert.ToChar((int)'h' - colo));
+            aa.Append(Convert.ToChar((int)'1' + rad));
+            return aa.ToString();
+            }
+
+        /// <summary>
+        /// Модификация от 22 января 2016 года
+        /// Заложен 22 января 2016 года
+        /// </summary>
+        /// <param name="aa"></param>
+        /// <returns></returns>
+        public static char SymbolFigury(Pieco aa) {
+            char reto = '-';
+            Pieco swi = aa ^ Pieco.Black;
+            switch (swi) {
+                case Pieco.Knight:
+                    reto = 'N';
+                    break;
+                case Pieco.Bishop:
+                    reto = 'B';
+                    break;
+                case Pieco.Rook:
+                    reto = 'R';
+                    break;
+                case Pieco.Queen:
+                    reto = 'Q';
+                    break;
+                case Pieco.King:
+                    reto = 'K';
+                    break;
+                default:
+                    reto = '?';
+                    break;
+                }
+            return reto;
+            }
+
         public Pieco[] BoardoSet { get { return pBoard; } }
         public bool IsQueryMoveWhite { get { return whitomv; } }
         public int NumberMove { get { return numbero; } }
@@ -626,6 +770,7 @@ namespace pfVisualisator
             } }
         public List<Mova> AvaList { get { return limov; } }
         public int AvaQvo { get { return qava; } }
+        public string AvaMovo { get { return avamova; } }
         public int SetaWhite { get { return setawhite; } }
         public int SetaBlack { get { return setablack; } }
         }
