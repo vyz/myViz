@@ -107,7 +107,7 @@ namespace pfVisualisator {
                     bool curcolor = tp.IsQueryMoveWhite;
                     gTimo curTimo = new gTimo(curmove.ToString(), curcolor ? "w" : "b", timo);
                     lTimos.Add(curTimo);
-                } else if (tp.ContraMov(minimov)) {
+                } else if (tp.ContraMov(minimov, 1)) {
                     lFactMoves.Add(tp.GetFactMoveFilled());
                     tp = tp.GetPozoAfterControlMove();
                     lPozos.Add(tp);
@@ -676,16 +676,15 @@ namespace pfVisualisator {
         private void FillMovesAndPozos(string movazone) {
             pozo tp = null;
             FillMainMovesTrusted(movazone);
-            if (flagFromStart)
-            {
+            if (flagFromStart) {
                 tp = pozo.Starto();
-            }
+                }
             lFactMoves = new List<Mova>();
             lPozos = new List<pozo>();
 
             lPozos.Add(tp);
             foreach (string minimov in onlymainmoves) {
-                if (tp.ContraMov(minimov)) {
+                if (tp.ContraMov(minimov, 1)) {
                     lFactMoves.Add(tp.GetFactMoveFilled());
                     tp = tp.GetPozoAfterControlMove();
                     lPozos.Add(tp);

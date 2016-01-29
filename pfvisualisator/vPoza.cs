@@ -35,7 +35,7 @@ namespace pfVisualisator {
             : this() {
             pz.AvailableFill();
             namo = pz.NumberMove.ToString() + " ход " + (pz.IsQueryMoveWhite ? "белых" : "чёрных");
-            bignamo = namo + " доступно " + pz.AvaQvo.ToString();
+            bignamo = namo + ". Доступно " + pz.AvaQvo.ToString();
             Fena = pz.fenout();
             poza = pz;
             }   

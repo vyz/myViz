@@ -111,5 +111,24 @@ namespace pfVisualisator
         {
             cmdNextPosition();
         }
+
+        /// <summary>
+        /// Модификация от 26 января 2016 года
+        /// Заложен 25 января 2016 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void PosoWindo_Click(object sender, RoutedEventArgs e) {
+            try {
+                vPoza wrk = new vPoza(pfBoard.CurrentoPoza);
+                wrk.Descripto = this.Heado.Text;
+                var winda = new PozoWinda();
+                winda.Grido.DataContext = wrk;
+                winda.pfBoard.CurrentoPoza = wrk.Selfa;
+                winda.Show();
+            } catch (Exception ex) {
+                MessageBox.Show("Проблема с окном второй позиции " + ex.Message);
+                }
+            }
+        }
     }
-}

@@ -1,0 +1,21 @@
+Svidler, Peter-Trent, Lawrence Отличие:файл-прого$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Ngf6 5. Qe2 a6 6. Ba4 b5 7. Bc2 Bb7 8. O-O$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Nf6 5. Qe2 a6 6. Ba4 b5 7. Bc2 Bb7 8. O-O$
+Krupenski, Juri-Gelfand, Boris Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Nge2 d5 6. a3 Bd6 7. Ng3 c6 8. Be2$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Ne2 d5 6. a3 Bd6 7. Ng3 c6 8. Be2$
+Krupenski, Juri-Gelfand, Boris Отличие:файл-прого$Qg6+ fxg6 28. Bg8+ Kh8 29. Bf7+ 1-0$Qg6# fxg6 28. Bg8+ Kh8 29. Bf7+ 1-0$
+Motylev, Alexander-Svidler, Peter Отличие:файл-прого$Ndb5 Qa5 9. e5 Nd5 10. Bd2 Nxc3 11. Bxc3 O-O 12. Qd2 a6 13. Bxb4 Qxb4 14. Qxb4$Nb5 Qa5 9. e5 Nd5 10. Bd2 Nxc3 11. Bxc3 O-O 12. Qd2 a6 13. Bxb4 Qxb4 14. Qxb4$
+Karjakin, Sergey-Eljanov, Pavel Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. g3 Bb4+ 4. Nd2 d5 5. Bg2 O-O 6. Ngf3 b6 7. O-O Bb7 8. b3$1. d4 Nf6 2. c4 e6 3. g3 Bb4+ 4. Nd2 d5 5. Bg2 O-O 6. Nf3 b6 7. O-O Bb7 8. b3$
+Bischoff, Klaus-Shirov, Alexei ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Romanov, Evgeny-Li, Chao b ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Petenyi, Tamas-Rodshtein, Maxim ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Korobov, Anton-Luch, Michal ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Navara, David-Miton, Kamil ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Rodshtein, Maxim-Yemelin, Vasily ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Demidov, Mikhail-Korobov, Anton ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Mista, Alexander-Navara, David ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Shengelia, David-Pentala, Harikrishna ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Navara, David-Demidov, Mikhail ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Rodshtein, Maxim-Michalik, Peter ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Socko, Bartosz-Korobov, Anton ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Pentala, Harikrishna-Luch, Michal ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Studnicka, Tomas-Navara, David ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Korobov, Anton-Rodshtein, Maxim ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+

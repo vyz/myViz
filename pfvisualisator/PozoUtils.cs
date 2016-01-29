@@ -280,13 +280,13 @@ namespace pfVisualisator
         }
 
         /// <summary>
-        /// Модификация от 24 июля 2015 года
+        /// Модификация от 28 января 2016 года
         /// Заложен 24 июля 2015 года
         /// </summary>
         /// <param name="pst"></param>
         /// <returns></returns>
-        public Mova MovaProverka(string pst) {
-            Mova reto = Decode(pst);
+        public Mova MovaProverka(string pst, int typostring) {
+            Mova reto = typostring == 1 ? Decode(pst) : DecodeFromTo(pst);
             return reto;
             }
 
@@ -460,8 +460,78 @@ namespace pfVisualisator
             return reto;
             }
 
-        private List<Mova> MovaPawn(int pi)
-        {
+        /// <summary>
+        /// Модификация от 28 января 2016 года
+        /// Заложен 27 января 2016 года
+        /// </summary>
+        /// <param name="fromto"></param>
+        /// <returns></returns>
+        private Mova DecodeFromTo(string fromto) {
+            Mova reto = null;
+            MovoTypo eMoveType = MovoTypo.Normal;
+            Pieco Figura = Pieco.None;
+            int froma = ConvertStrFieldtoInt(fromto);
+            int toma = ConvertStrFieldtoInt(fromto.Substring(2));
+            Figura = pBoard[froma];
+            bool Zapret = false;
+            if( Figura == Pieco.King && froma == 3 ) {
+                if (toma == 1) {
+                    if ((rokko & Caslo.KingWhite) > 0) {
+                        eMoveType = MovoTypo.Castle;
+                    } else { 
+                        Zapret = true; 
+                        }
+                } else if (toma == 5) {
+                    if ((rokko & Caslo.QueenWhite) > 0) {
+                        eMoveType = MovoTypo.Castle;
+                    } else { 
+                        Zapret = true; 
+                        }      
+                    }
+            } else if (Figura == (Pieco.King | Pieco.Black) && froma == 59) {
+                if (toma == 57) {
+                    if ((rokko & Caslo.KingBlack) > 0) {
+                        eMoveType = MovoTypo.Castle;
+                    } else { 
+                        Zapret = true; 
+                        }
+                } else if (toma == 61) {
+                    if ((rokko & Caslo.QueenBlack) > 0) {
+                        eMoveType = MovoTypo.Castle;
+                    } else { Zapret = true; 
+                        }
+
+                    }
+                }
+            if( (Figura & Pieco.PieceMask) == Pieco.Pawn) { 
+                if(toma > 56 || toma < 8) { //Дыра с превращениями. Фигура превращения не влазит в четырехсимвольный формат. Требует будущей проработки
+                    Zapret = true;
+                    }
+                if( enpasso ) {
+                    int popo = (whitomv ? 32 : 16) + enfield;
+                    if( toma == popo ) {
+                        eMoveType = MovoTypo.EnPassant | MovoTypo.PieceEaten;
+                        }
+                    }
+                }
+            if (pBoard[toma] != Pieco.None) {
+                eMoveType |= MovoTypo.PieceEaten;
+                }
+            if (Zapret) {
+                throw new VisualisatorException("PozoUtils->DecodeFromTo, нарисовался ЗАПРЕТ");
+                }
+            reto = AddMoveIsNotCheck(froma, toma, eMoveType);
+            reto.FormShortoString(this);
+            return reto;
+            }
+
+        /// <summary>
+        /// Модификация от 29 января 2016 года
+        /// Заложен июль 2015 года
+        /// </summary>
+        /// <param name="pi"></param>
+        /// <returns></returns>
+        private List<Mova> MovaPawn(int pi) {
             List<Mova> reto = new List<Mova>();
             int iDir;
             int iNewPos;
@@ -473,110 +543,90 @@ namespace pfVisualisator
             bCanMove2Case = (whitomv) ? (iRowPos == 1) : (iRowPos == 6);
             iDir = (whitomv) ? 8 : -8;
             iNewPos = pi + iDir;
-            if (pBoard[iNewPos] == Pieco.None)
-            {
+            if (pBoard[iNewPos] == Pieco.None) {
                 iRowPos = (iNewPos >> 3);
-                if (iRowPos == 0 || iRowPos == 7)
-                {
+                if( iRowPos == 0 || iRowPos == 7 ) {
                     List<Mova> curli = AddPawnPromotion(pi, iNewPos, MovoTypo.Normal);
-                    if (curli != null)
-                    {
+                    if (curli != null) {
                         reto.AddRange(curli);
-                    }
-                }
-                else
-                {
+                        }
+                } else {
                     Mova aa = AddMoveIsNotCheck(pi, iNewPos, MovoTypo.Normal);
-                    if (null != aa)
-                    {
+                    if (null != aa) {
                         reto.Add(aa);
+                        }
+                    }
+                if( bCanMove2Case && pBoard[iNewPos + iDir] == Pieco.None ) {
+                    Mova aa = AddMoveIsNotCheck(pi, iNewPos + iDir, MovoTypo.Normal);
+                    if( null != aa ) {
+                        reto.Add(aa);
+                        }
                     }
                 }
-            }
-            if (bCanMove2Case && pBoard[iNewPos + iDir] == Pieco.None)
-            {
-                Mova aa = AddMoveIsNotCheck(pi, iNewPos + iDir, MovoTypo.Normal);
-                if (null != aa)
-                {
-                    reto.Add(aa);
-                }
-            }
             iNewColPos = iNewPos & 7;
             iRowPos = (iNewPos >> 3);
-            if (iNewColPos != 0 && pBoard[iNewPos - 1] != Pieco.None)
-            { //Проверка на взятие вправо
-                if (((pBoard[iNewPos - 1] & Pieco.Black) > 0) == whitomv)
-                {
-                    if (iRowPos == 0 || iRowPos == 7)
-                    { //Взятие и превращение
-                        List<Mova> curli = AddPawnPromotion(pi, iNewPos, MovoTypo.PieceEaten);
-                        if (curli != null)
-                        {
+            if (iNewColPos != 0 && pBoard[iNewPos - 1] != Pieco.None) { //Проверка на взятие вправо
+                if (((pBoard[iNewPos - 1] & Pieco.Black) > 0) == whitomv) {
+                    if (iRowPos == 0 || iRowPos == 7) { //Взятие и превращение
+                        List<Mova> curli = AddPawnPromotion(pi, iNewPos-1, MovoTypo.PieceEaten);
+                        if (curli != null) {
                             reto.AddRange(curli);
-                        }
-                    }
-                    else
-                    {
-                        Mova aa = AddMoveIsNotCheck(pi, iNewPos, MovoTypo.PieceEaten);
-                        if (null != aa)
-                        {
+                            }
+                    } else {
+                        Mova aa = AddMoveIsNotCheck(pi, iNewPos-1, MovoTypo.PieceEaten);
+                        if (null != aa) {
                             reto.Add(aa);
+                            }
                         }
                     }
                 }
-            }
-            if (iNewColPos != 7 && pBoard[iNewPos + 1] != Pieco.None)
-            { //Проверка на взятие влево
-                if (((pBoard[iNewPos + 1] & Pieco.Black) > 0) == whitomv)
-                {
-                    if (iRowPos == 0 || iRowPos == 7)
-                    { //Взятие и превращение
-                        List<Mova> curli = AddPawnPromotion(pi, iNewPos, MovoTypo.PieceEaten);
-                        if (curli != null)
-                        {
+            if (iNewColPos != 7 && pBoard[iNewPos + 1] != Pieco.None) { //Проверка на взятие влево
+                if (((pBoard[iNewPos + 1] & Pieco.Black) > 0) == whitomv) {
+                    if (iRowPos == 0 || iRowPos == 7) { //Взятие и превращение
+                        List<Mova> curli = AddPawnPromotion(pi, iNewPos+1, MovoTypo.PieceEaten);
+                        if (curli != null) {
                             reto.AddRange(curli);
-                        }
-                    }
-                    else
-                    {
-                        Mova aa = AddMoveIsNotCheck(pi, iNewPos, MovoTypo.PieceEaten);
-                        if (null != aa)
-                        {
+                            }
+                    } else {
+                        Mova aa = AddMoveIsNotCheck(pi, iNewPos+1, MovoTypo.PieceEaten);
+                        if (null != aa) {
                             reto.Add(aa);
+                            }
                         }
                     }
                 }
-            }
+            if (reto.Count == 0) {
+                reto = null;
+                }
             return reto;
-        }
+            }
 
         /// <summary>
-        /// Модификация от 20 июля 2015 года
+        /// Модификация от 26 января 2016 года
         /// Заложен 20 июля 2015 года
         /// </summary>
         /// <param name="pi"></param>
         /// <param name="piMoveList"></param>
         /// <returns></returns>
-        private List<Mova> MovaFromVanArray(int pi, int[] piMoveList)
-        {
+        private List<Mova> MovaFromVanArray(int pi, int[] piMoveList) {
             List<Mova> reto = new List<Mova>();
-            foreach (int iNewPos in piMoveList)
-            {
+            foreach( int iNewPos in piMoveList ) {
                 Mova aa = AddMoveIfEnemyOrEmptyAndNoCheck(pi, iNewPos);
-                if (null != aa)
-                {
+                if (null != aa) {
                     reto.Add(aa);
+                    if (pBoard[iNewPos] != Pieco.None) {
+                        break;
+                        }
+                    }
                 }
-            }
-            if (reto.Count == 0)
-            {
+            if (reto.Count == 0) {
                 reto = null;
-            }
+                }
             return reto;
-        }
+            }
 
         /// <summary>
-        /// Модификация от 20 июля 2015 года
+        /// Модификация от 26 января 2016 года
         /// Заложен 20 июля 2015 года
         /// </summary>
         /// <param name="pi"></param>
@@ -589,6 +639,9 @@ namespace pfVisualisator
                     Mova aa = AddMoveIfEnemyOrEmptyAndNoCheck(pi, iNewPos);
                     if (null != aa) {
                         reto.Add(aa);
+                        if( pBoard[iNewPos] != Pieco.None ) {
+                            break;
+                            }
                     } else {
                         break;
                         }
@@ -791,6 +844,21 @@ namespace pfVisualisator
             {
                 reto = null;
             }
+            return reto;
+        }
+
+        /// <summary>
+        /// Модификация от 28 января 2016 года
+        /// Заложен 24 июля 2015 года
+        /// </summary>
+        /// <param name="fieldo"></param>
+        /// <returns></returns>
+        static private int ConvertStrFieldtoInt(string fieldo)
+        {
+            int reto;
+            int van = (int)('h' - fieldo[0]);
+            int two = (int)(fieldo[1] - '1');
+            reto = two * 8 + van;
             return reto;
         }
 
@@ -1286,19 +1354,6 @@ namespace pfVisualisator
             return reto;
             }
 
-        /// <summary>
-        /// Модификация от 24 июля 2015 года
-        /// Заложен 24 июля 2015 года
-        /// </summary>
-        /// <param name="fieldo"></param>
-        /// <returns></returns>
-        private int ConvertStrFieldtoInt(string fieldo) {
-            int reto;
-            int van = (int)('h' - fieldo[0]);
-            int two = (int)(fieldo[1] - '1');
-            reto = two * 8 + van;
-            return reto;
-            }
 
         /// <summary>
         /// Перечень полей, откуда данная фигура может прийти (возможно и со взятием - смотри параметр pmt) на указанное поле
@@ -1383,6 +1438,7 @@ namespace pfVisualisator
                 }
             return reto;
             }
+
 
 #region------------------------------Публичные Свойства-----------------------------------------
         public Pieco[] Boardo { get { return pBoard; } }

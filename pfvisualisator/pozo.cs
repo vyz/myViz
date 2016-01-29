@@ -103,17 +103,17 @@ namespace pfVisualisator
             }
 
         /// <summary>
-        /// Модификация от 24 июля 2015 года
+        /// Модификация от 28 января 2016 года
         /// Заложен 24 июля 2015 года
         /// </summary>
         /// <param name="aa"></param>
         /// <returns></returns>
-        public bool ContraMov(string aa) {
+        public bool ContraMov(string aa, int typostring) {
             //AvailableFill();
             if (null == pzu) {
                 pzu = new PozoUtils(pBoard, whitomv, rokko, enpasso, enfield);
                 }
-            controllomova = pzu.MovaProverka(aa);
+            controllomova = pzu.MovaProverka(aa, typostring);
             bool reto = false;
             if( null != controllomova ) {
                 reto = true;
@@ -404,7 +404,7 @@ namespace pfVisualisator
             }
 
         /// <summary>
-        /// Модификация от 11 декабря 2015 года
+        /// Модификация от 25 января 2016 года
         /// Заложен 11 декабря 2015 года
         /// </summary>
         /// <param name="mss"></param>
@@ -444,6 +444,7 @@ namespace pfVisualisator
                             throw new VisualisatorException(string.Format("Pozo-PropertyFromFeno, Возможность рокировки --{0}--", wrs));
                         }
                     }
+                rokko = zrokko;
                 }
             wrs = mss[3];
             if (wrs == "-") {
@@ -583,7 +584,7 @@ namespace pfVisualisator
                                 pqq += qq;
                                 }
                             }
-                        vh.AppendLine(string.Format("   ({0}) : {1}", pqq, pp.ToString()));
+                        vh.AppendLine(string.Format("  {0}({1}) : {2}", (pqq >= 10) ? string.Empty : " ",pqq, pp.ToString()));
                         }
                     }
                 }
@@ -706,6 +707,7 @@ namespace pfVisualisator
         /// <returns></returns>
         public static pozo SluchaynoPozo() {
             string aa = "3rk2r/2q1bpp1/p2p1n2/2pP1n1p/PpN2B2/3P2P1/1PP1Q1BP/4RRK1 b k - 0 22";
+            //string aa = "rnbqk2r/pp2nppp/4p3/2ppP3/3P2Q1/P1P5/2P2PPP/R1B1KBNR b KQkq - 2 7";
             pozo reto = new pozo(aa);
             return reto;
             }
@@ -733,7 +735,7 @@ namespace pfVisualisator
         /// <returns></returns>
         public static char SymbolFigury(Pieco aa) {
             char reto = '-';
-            Pieco swi = aa ^ Pieco.Black;
+            Pieco swi = aa & Pieco.PieceMask;
             switch (swi) {
                 case Pieco.Knight:
                     reto = 'N';

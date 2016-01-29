@@ -11,6 +11,11 @@
         </Grid.ColumnDefinitions>
         <Viewbox Name="BxBoard" Grid.Column="0">
             <local:Borda x:Name="pfBoard"></local:Borda>
+            <Viewbox.ContextMenu>
+                <ContextMenu Name="vbme">
+                    <MenuItem Header="Открыть текущую позицию в отдельном окне" Click="PosoWindo_Click"/>
+                </ContextMenu>
+            </Viewbox.ContextMenu>
         </Viewbox>
         <GridSplitter Name="SplitIn1" Grid.Column="1" HorizontalAlignment="Left" Width="5"></GridSplitter>
         <StackPanel Name="GInfo" Grid.Column="1">
