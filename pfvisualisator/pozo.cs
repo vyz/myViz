@@ -706,7 +706,8 @@ namespace pfVisualisator
         /// </summary>
         /// <returns></returns>
         public static pozo SluchaynoPozo() {
-            string aa = "3rk2r/2q1bpp1/p2p1n2/2pP1n1p/PpN2B2/3P2P1/1PP1Q1BP/4RRK1 b k - 0 22";
+            string aa = "r1bqr1k1/ppp3p1/3b4/2p1p1BP/2NnP3/3P4/PPP2P2/2KQ2RR b - - 0 18";
+            //string aa = "3rk2r/2q1bpp1/p2p1n2/2pP1n1p/PpN2B2/3P2P1/1PP1Q1BP/4RRK1 b k - 0 22";
             //string aa = "rnbqk2r/pp2nppp/4p3/2ppP3/3P2Q1/P1P5/2P2PPP/R1B1KBNR b KQkq - 2 7";
             pozo reto = new pozo(aa);
             return reto;

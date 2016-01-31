@@ -50,6 +50,7 @@ namespace pfVisualisator {
         public myTago Tago { get { return tago; } }
         public string TagoTextStroke { get { return tago.TStroke; } }
         public pozo Selfa { get { return poza; } }
+        public string Material { get { return (poza == null) ? "Поза не зафиксена" : (poza.SetaWhite == poza.SetaBlack) ? "Материальное равенство" : string.Format("{0} : {1}", poza.SetaWhite, poza.SetaBlack); } }
         #endregion-----------------------Свойства объекта-----------------------------------------
 
         private void OnPropertyChanged(string name) {

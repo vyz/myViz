@@ -16,7 +16,9 @@
         <StackPanel Name="GInfo" Grid.Column="1">
             <TextBlock Name="Heado" Text="{Binding Path=BigNamo}" HorizontalAlignment="Center"></TextBlock>
             <TextBox Name="Fena" Text="{Binding Path=Fena}" ></TextBox>
+            <TextBox Name="Descro" Text="{Binding Path=Descripto}" ></TextBox>
             <TextBlock Name="AvaMove" Text="{Binding Path=Selfa.AvaMovo}" HorizontalAlignment="Left" FontFamily="Courier New"></TextBlock>
+            <TextBox Name="Material" Text="{Binding Mode=OneWay, Path=Material}" HorizontalAlignment="Center"></TextBox>
             <StackPanel HorizontalAlignment="Center" Name="sPanManagegViewPosition" VerticalAlignment="Top" Orientation="Horizontal">
                 <Button Content="Analizo" Name="AnaloBtn" Width="75" Click="AnaloBtn_Click" />
                 <Label Name="pSdvigLb1"></Label>

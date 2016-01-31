@@ -602,7 +602,7 @@ namespace pfVisualisator
             }
 
         /// <summary>
-        /// Модификация от 26 января 2016 года
+        /// Модификация от 30 января 2016 года
         /// Заложен 20 июля 2015 года
         /// </summary>
         /// <param name="pi"></param>
@@ -614,9 +614,6 @@ namespace pfVisualisator
                 Mova aa = AddMoveIfEnemyOrEmptyAndNoCheck(pi, iNewPos);
                 if (null != aa) {
                     reto.Add(aa);
-                    if (pBoard[iNewPos] != Pieco.None) {
-                        break;
-                        }
                     }
                 }
             if (reto.Count == 0) {
