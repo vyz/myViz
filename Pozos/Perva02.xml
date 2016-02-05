@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Одинокая поза от 3 февраля 2016 г. -->
+<vPoza>
+  <Leo lid="1b9cb9b4-5c16-4776-9a30-1ce48343567f" typo="Pozo">
+    <Namo>22 ход чёрных</Namo>
+    <BigNamo>22 ход чёрных. Доступно 35</BigNamo>
+    <Parameters>
+      <TParo>3rk2r/2q1bpp1/p2p1n2/2pP1n1p/PpN2B2/3P2P1/1PP1Q1BP/4RRK1 b k - 0 22</TParo>
+      <TParo>22. ... b3 23. c3 Kf8 24. Bd2 Nh6 25. Na5 Re8 26. Rxf6 gxf6 27. Qxh5 Kg7 28.
+Nc6 Ng8 29. Qg4+ Kf8 30. h4 f5 31. Qxf5 Bf6 32. Be4 Bg7 33. Bg5 Bh6 34. Rf1
+Bxg5 35. hxg5 Kg7 36. g4 Rf8 37. Kg2 Qc8 38. Qf4 Qc7 39. g6 f5 40. gxf5 Nf6 41.
+Re1 Re8</TParo>
+      <TParo>Искусственный член</TParo>
+    </Parameters>
+    <Dopico>
+      <ValuPrice Valo="-227" Dvig="Houdini_3a_Pro_w32" Glub="28" Tima="90" Rang="1" NDS="24894621412" Hlop="0" Mig="2016-02-03T16:42:03.969731+03:00">
+        <Moisha>4 processor(s) found, POPCNT available 512 MB Hash 3 threads used</Moisha>
+      </ValuPrice>
+      <ValuPrice Valo="-271" Dvig="Houdini_3a_Pro_w32" Glub="28" Tima="90" Rang="2" NDS="24894621412" Hlop="0" Mig="2016-02-03T16:42:03.9692309+03:00">
+        <Moisha>4 processor(s) found, POPCNT available 512 MB Hash 3 threads used</Moisha>
+      </ValuPrice>
+      <ValuPrice Valo="-274" Dvig="Houdini_3a_Pro_w32" Glub="27" Tima="90" Rang="3" NDS="24894621412" Hlop="0" Mig="2016-02-03T16:42:03.9692309+03:00">
+        <Moisha>4 processor(s) found, POPCNT available 512 MB Hash 3 threads used</Moisha>
+      </ValuPrice>
+      <ValuPrice Valo="-282" Dvig="Houdini_3a_Pro_w32" Glub="27" Tima="90" Rang="4" NDS="24894621412" Hlop="0" Mig="2016-02-03T16:42:03.9692309+03:00">
+        <Moisha>4 processor(s) found, POPCNT available 512 MB Hash 3 threads used</Moisha>
+      </ValuPrice>
+      <ValuPrice Valo="-284" Dvig="Houdini_3a_Pro_w32" Glub="27" Tima="90" Rang="5" NDS="24894621412" Hlop="0" Mig="2016-02-03T16:42:03.9687308+03:00">
+        <Moisha>4 processor(s) found, POPCNT available 512 MB Hash 3 threads used</Moisha>
+      </ValuPrice>
+    </Dopico>
+  </Leo>
+</vPoza>

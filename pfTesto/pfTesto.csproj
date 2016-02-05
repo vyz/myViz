@@ -63,6 +63,7 @@
     <Compile Include="pgWokaTestoU.cs" />
     <Compile Include="pozoTestoU.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValuWorkaTestoU.cs" />
     <Compile Include="VarioTestoU.cs" />
     <Compile Include="vGamoTestoU.cs" />
   </ItemGroup>
@@ -71,6 +72,9 @@
       <Project>{EC923EB9-ECB0-4E40-AE4A-52BB2F58C536}</Project>
       <Name>pfVisualisator</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Shadow Include="Тестовые ссылки\pfVisualisator.accessor" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

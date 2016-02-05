@@ -22,7 +22,7 @@
             <StackPanel HorizontalAlignment="Center" Name="sPanManagegViewPosition" VerticalAlignment="Top" Orientation="Horizontal">
                 <Button Content="Analizo" Name="AnaloBtn" Width="75" Click="AnaloBtn_Click" />
                 <Label Name="pSdvigLb1"></Label>
-                <Button Content="Next" Name="NextBtn" Width="75" />
+                <Button Content="SaveXML" Name="xSavoBtn" Width="75" Click="xSavoBtn_Click" />
             </StackPanel>
             <TextBox Name="AnaRes" Text="{Binding Path=AnaRes, Mode=OneWay}"></TextBox>
         </StackPanel>

@@ -124,10 +124,14 @@ namespace pfVisualisator {
                     tago.AddTag(bb.Value);
                     }
                 }
+            aa = Elemo.Element("Dopico");
+            if (aa != null) {
+                Dopico(aa);
+                }
             }
 
         /// <summary>
-        /// Модификация от 2 февраля 2015 года
+        /// Модификация от 3 февраля 2016 года
         /// Заложен 23 декабря 2014 года
         /// </summary>
         /// <returns></returns>
@@ -170,7 +174,29 @@ namespace pfVisualisator {
                     }
                 xRet.Add(aa);
                 }
+            XElement dopi = Dopico();
+            if (null != dopi) {
+                xRet.Add(dopi);
+                }
             return xRet;
+            }
+
+        /// <summary>
+        /// Модификация от 3 февраля 2016 года
+        /// Заложен 3 февраля 2016 года
+        /// </summary>
+        /// <returns></returns>
+        public virtual XElement Dopico() {
+            XElement reto = null;
+            return reto;
+            }
+
+        /// <summary>
+        /// Модификация от 5 февраля 2016 года
+        /// Заложен 5 февраля 2016 года
+        /// </summary>
+        /// <param name="xel"></param>
+        public virtual void Dopico(XElement xel) {
             }
 
         /// <summary>
@@ -406,24 +432,13 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 19 ноября 2015 года
+        /// Модификация от 4 февраля 2016 года
         /// Заложен от 8 января 2015 года
         /// </summary>
         /// <param name="typo"></param>
         /// <returns></returns>
         private leoType TypoFromString(string typo) {
-            leoType reto = leoType.None;
-            switch (typo) {
-                case "OKPReport":
-                    reto = leoType.OKPReport;
-                    break;
-                case "Gamo":
-                    reto = leoType.Gamo;
-                    break;
-                case "Pozo":
-                    reto = leoType.Pozo;
-                    break;
-            }
+            leoType reto = (leoType)Enum.Parse(typeof(leoType), typo);
             return reto;
             }
 

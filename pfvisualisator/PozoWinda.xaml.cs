@@ -18,14 +18,23 @@ namespace pfVisualisator
     /// </summary>
     public partial class PozoWinda : Window
     {
-        public PozoWinda()
-        {
+        public PozoWinda() {
             InitializeComponent();
         }
 
-        private void AnaloBtn_Click(object sender, RoutedEventArgs e)
-        {
+        private void AnaloBtn_Click(object sender, RoutedEventArgs e) {
 
         }
+
+        /// <summary>
+        /// Модификация от 3 февраля 2016 года
+        /// Заложен 3 февраля 2016 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void xSavoBtn_Click(object sender, RoutedEventArgs e) {
+            vPoza vp = (vPoza)Grido.DataContext;
+            vp.SavoInViborXmlFilo();
+            }
     }
 }

@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 
 
 namespace pfVisualisator {
-    /// Модификация от 26 января 2016 года
+    /// Модификация от 5 февраля 2016 года
     /// Заложен 28 декабря 2015 года
     public class Vario {
         private pozo bego;
@@ -47,18 +47,75 @@ namespace pfVisualisator {
         public Vario(pozo pp, List<XElement> lixmv) { 
             //
         }
-        public Vario(XElement varel) { }
+        
+        /// <summary>
+        /// Модификация от 5 февраля 2016 года
+        /// Заложен 4 февраля 2016 года
+        /// </summary>
+        /// <param name="varel"></param>
+        public Vario(XElement varel) {
+            bego = new pozo(varel.Element("Feno").Value);
+            notata = varel.Element("Tshepa").Value;
+            List<Mova> tmplist = new List<Mova>();
+            foreach (XElement aa in varel.Elements("Mova")) {//Порядок следования элементов обещан самой функцией
+                tmplist.Add(new Mova(aa));
+                }
+            if( tmplist.Count > 0 ) {
+                lima = tmplist;
+                pozo tpp = bego;
+                lipa = new List<pozo>();
+                foreach (Mova mv in lima) {
+                    if (tpp.ContraMov(mv.Shorto, 1)) {
+                        tpp = tpp.GetPozoAfterControlMove();
+                        lipa.Add(tpp);
+                    } else {
+                        throw new VisualisatorException(string.Format("Vario-Constructor(varel), Плохая мова  --{0}--{1}--", tpp.NumberMove, mv.Shorto));
+                        }
+                    }
+                }
+            List<VarQvant> tmpqva = new List<VarQvant>();
+            foreach (XElement aa in varel.Elements("VarQuant")) {//А здесь порядок не важен, всё равно ему не верят и сортируют перед выводом
+                tmpqva.Add(new VarQvant(aa));
+                }
+            if( tmpqva.Count > 0 ) {
+                liqva = tmpqva;
+                }
+            }
 
         /// <summary>
-        /// Модификация от 27 января 2016 года
+        /// Модификация от 4 февраля 2016 года
         /// Заложен 27 января 2016 года
         /// </summary>
         /// <returns></returns>
-        public XElement XMLOut()
-        {
+        public XElement XMLOut() {
             XElement reto = new XElement("Vario");
+            reto.Add(new XElement("Feno", bego.fenout()));
+            reto.Add(new XElement("Tshepa", notata));
+            int kavo = 0;
+            int fstop = 0;
+            int uqva = 0;
+            List<VarQvant> sorta = null;
+            if( null != lima ) {
+                kavo = lima.Count;
+                fstop = kavo;
+                }
+            if (null != liqva) {
+                sorta = liqva.OrderBy(F => F.Numa).ToList();
+                fstop = liqva[uqva].Numa;
+                }
+            for (int umo = 0; umo < kavo; umo++) {
+                while (fstop == umo) {
+                    reto.Add(sorta[uqva++].XMLOut());
+                    if (uqva < sorta.Count) {
+                        fstop = sorta[uqva].Numa;
+                    } else {
+                        fstop = kavo;
+                        }
+                    }
+                reto.Add(lima[umo].XMLOut());
+                }
             return reto;
-        }
+            }
 
         /// <summary>
         /// Модификация от 29 января 2016 года
@@ -129,7 +186,7 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 26 января 2016 года
+        /// Модификация от 4 февраля 2016 года
         /// Заложен 26 января 2016 года
         /// </summary>
         private class VarQvant {
@@ -148,11 +205,41 @@ namespace pfVisualisator {
                 como = ps;
                 vrvnu = pv;
                 }
-            
+
+            /// <summary>
+            /// Модификация от 4 февраля 2016 года
+            /// Заложен 4 февраля 2016 года
+            /// </summary>
+            /// <param name="xel"></param>
+            public VarQvant(XElement xel) {
+                numa = int.Parse(xel.Attribute("VarNumo").Value);
+                XElement aa = xel.Element("Commento");
+                como = (null == aa) ? string.Empty : aa.Value;
+                aa = xel.Element("Vario");
+                if (null != aa) {
+                    vrvnu = new Vario(aa);
+                    }
+                }
+
+            /// <summary>
+            /// Модификация от 4 февраля 2016 года
+            /// Заложен 4 февраля 2016 года
+            /// </summary>
+            /// <returns></returns>
+            public XElement XMLOut() {
+                XElement reto = new XElement("VarQuant");
+                reto.Add(new XAttribute("VarNumo", numa));
+                if(como.Length > 0) { reto.Add(new XElement("Commento", como)); }
+                if (null != vrvnu) { reto.Add(vrvnu.XMLOut()); }
+                return reto;
+                }
+
+            public int Numa { get { return numa; } }
             }
 
 #region--------------------------Свойства объекта-----------------------------------------
         public string OnlyMova { get { return notata; } }
+        public string Begino { get { return null == lima ? "Пусто" : lima[0].Shorto; } }
         public pozo LastPo { get { return lipa[lipa.Count - 1]; } }
 #endregion-----------------------Свойства объекта-----------------------------------------
 

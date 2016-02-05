@@ -122,5 +122,34 @@ namespace pfVisualisator {
             winda.Show();
             }
 
+        /// <summary>
+        /// Модификация от 5 февраля 2016 года
+        /// Заложен 5 февраля 2016 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void PozoLoadFromXMLFile_Click(object sender, RoutedEventArgs e) {
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+            // Set filter for file extension and default file extension
+            dlg.InitialDirectory = Properties.Settings.Default.GamoPGNStartDir;
+            dlg.Filter = "Стандартный (*.xml)|*.xml|All files (*.*)|*.*";
+            dlg.FilterIndex = 1;
+            dlg.RestoreDirectory = true;
+            try {
+                // Display OpenFileDialog by calling ShowDialog method
+                Nullable<bool> result = dlg.ShowDialog();
+                if (result == true) {
+                    string filename = dlg.FileName;
+                    vPoza wrk = vPoza.CreateExemparFromXmlFile(filename);
+                    var winda = new PozoWinda();
+                    winda.Grido.DataContext = wrk;
+                    winda.pfBoard.CurrentoPoza = wrk.Selfa;
+                    winda.Show();
+                    }
+            } catch (Exception ex) {
+                MessageBox.Show("Error: Could not read file from disk. Original error: " + ex.Message);
+                }
+            }
+
         }
 }

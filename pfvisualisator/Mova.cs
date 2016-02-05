@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Linq;
 using System.Text;
 
 namespace pfVisualisator {
@@ -21,6 +22,20 @@ namespace pfVisualisator {
             tomo = pit;
             typo = pmt;
             shorto = null;
+            }
+
+        /// <summary>
+        /// Модификация от 4 февраля 2016 года
+        /// Заложен 4 февраля 2016 года
+        /// </summary>
+        /// <param name="xel"></param>
+        public Mova(XElement xel) {
+            fromo = int.Parse(xel.Attribute("Fromo").Value);
+            tomo = int.Parse(xel.Attribute("Tomo").Value);
+            coala = xel.Attribute("Coala").Value == "W";
+            figo = (Pieco)Enum.Parse(typeof(Pieco), xel.Element("Zver").Value);
+            typo = (MovoTypo)Enum.Parse(typeof(MovoTypo), xel.Element("Typon").Value);
+            shorto = xel.Element("Nota").Value;
             }
 
         /// <summary>
@@ -99,6 +114,22 @@ namespace pfVisualisator {
                 fremo.Append('+');
                 }
             shorto = fremo.ToString();
+            }
+
+        /// <summary>
+        /// Модификация от 4 февраля 2016 года
+        /// Заложен 4 февраля 2016 года
+        /// </summary>
+        /// <returns></returns>
+        public XElement XMLOut() {
+            XElement reto = new XElement("Mova");
+            reto.Add(new XAttribute("Fromo", fromo));
+            reto.Add(new XAttribute("Tomo", tomo));
+            reto.Add(new XAttribute("Coala", coala ? "W" : "B"));
+            reto.Add(new XElement("Zver", figo));
+            reto.Add(new XElement("Typon", typo));
+            reto.Add(new XElement("Nota", shorto));
+            return reto;
             }
 
         public string Shorto { get { return shorto; } }
