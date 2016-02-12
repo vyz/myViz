@@ -118,6 +118,7 @@ namespace pfVisualisator {
             vPoza wrk = vPoza.CreateExemplarusForLife();
             var winda = new PozoWinda();
             winda.Grido.DataContext = wrk;
+            winda.ValueGrido.ItemsSource = wrk.SetoAnalo;
             winda.pfBoard.CurrentoPoza = wrk.Selfa;
             winda.Show();
             }
@@ -143,6 +144,7 @@ namespace pfVisualisator {
                     vPoza wrk = vPoza.CreateExemparFromXmlFile(filename);
                     var winda = new PozoWinda();
                     winda.Grido.DataContext = wrk;
+                    winda.ValueGrido.ItemsSource = wrk.SetoAnalo;
                     winda.pfBoard.CurrentoPoza = wrk.Selfa;
                     winda.Show();
                     }

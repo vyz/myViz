@@ -98,6 +98,7 @@ namespace pfVisualisator {
         public string Texa { get { return vara.OnlyMova; } }
         public pozo Finalo { get { return vara.LastPo; } }
         public string MovoVan { get { return vara.Begino; } }
+
 #endregion-----------------------Свойства объекта-----------------------------------------
 
         }

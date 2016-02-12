@@ -82,6 +82,21 @@ namespace pfVisualisator {
                 }
             }
 
+        /// <summary>
+        /// Модификация от 9 февраля 2016 года
+        /// Заложен 9 февраля 2016 года
+        /// </summary>
+        /// <param name="ptypo"></param>
+        /// <param name="minutka"></param>
+        /// <param name="pvarqvo"></param>
+        public void rasschet(vlEngino ptypo, int minutka, int pvarqvo) {
+            EngiPro aa = new EngiPro(this, ptypo, minutka, pvarqvo);
+            aa.Analase();
+            if (setoanalizo.Count > 0) {
+                AnaRes = setoanalizo.OrderBy(F => F.Rango).ToArray()[0].Texa;
+                OnPropertyChanged("Anares");
+                }
+            }
 
         /// <summary>
         /// Модификация от 3 февраля 2016 года

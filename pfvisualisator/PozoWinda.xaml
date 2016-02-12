@@ -25,6 +25,31 @@
                 <Button Content="SaveXML" Name="xSavoBtn" Width="75" Click="xSavoBtn_Click" />
             </StackPanel>
             <TextBox Name="AnaRes" Text="{Binding Path=AnaRes, Mode=OneWay}"></TextBox>
+            <StackPanel Name="stackPanelValues" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <DataGrid Name="ValueGrido" ItemsSource="{Binding Mode=OneWay, NotifyOnTargetUpdated=True}" AutoGenerateColumns="False" FrozenColumnCount="1" IsReadOnly="True"
+                  CanUserResizeRows="False" RowHeight="22">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Цифра" Binding="{Binding Valo}" />
+                        <DataGridTextColumn Header="Ранго" Binding="{Binding Rango}" />
+                        <DataGridTextColumn Header="Мова" Binding="{Binding MovoVan}" />
+                        <DataGridTextColumn Header="Глубь" Binding="{Binding Glub}" />
+                        <DataGridTextColumn Header="Узелки" Binding="{Binding Nody}" />
+                        <DataGridTextColumn Header="Минуто" Binding="{Binding Duma}" />
+                        <DataGridTextColumn Header="Двиго" Binding="{Binding Dvigatel}" />
+                        <DataGridTextColumn Header="Дато" Binding="{Binding DatoStroke}" />
+                    </DataGrid.Columns>
+                    <DataGrid.RowDetailsTemplate>
+                        <DataTemplate>
+                            <StackPanel Name="ValueGrTexo" CanVerticallyScroll="True">
+                                <Border Margin="10" Padding="10" BorderBrush="SteelBlue" BorderThickness="2" CornerRadius="5" MaxWidth="250" >
+                                    <TextBlock Name="VibroVara" Text="{Binding Texa}" TextWrapping="Wrap" FontSize="12" MaxWidth="240" MaxHeight="600"></TextBlock>
+                                </Border>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGrid.RowDetailsTemplate>
+                </DataGrid>
+            </StackPanel>
+
         </StackPanel>
     </Grid>       
 </Window>

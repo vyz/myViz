@@ -1,0 +1,807 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Одинокая поза от 9 февраля 2016 г. -->
+<vPoza>
+  <Leo lid="c26a6037-247b-4dfe-b037-ac8830925d0e" typo="Pozo">
+    <Namo>27 ход белых</Namo>
+    <BigNamo>27 ход белых. Доступно 37</BigNamo>
+    <Parameters>
+      <TParo>r4rk1/2qn2np/p1p1p1p1/1pPp4/1P1P1PP1/2NN2QP/P7/4RRK1 w - b3 0 27</TParo>
+      <TParo>27. a4 bxa4 28. Qe3 Rfb8 29. Re2 a3 30. Ra2 a5 31. Rxa3 axb4 32. Rxa8 Rxa8 33.
+Nxb4 h5 34. Kg2 Ra7 35. Rh1 Qc8 36. Rb1 Nf6 37. Qf3 Rb7 38. Qe2 Ra7 39. g5 Nd7
+40. Qe3 Rb7 41. Nd3 Rxb1 42. Nxb1 h4 43. Nd2</TParo>
+      <TParo>Valkov, Yury - Novikov, Maxim S  0-1 D15</TParo>
+    </Parameters>
+    <Dopico>
+      <ValuPrice Valo="56" Dvig="Houdini_3a_Pro_w32" Glub="24" Tima="5" Rang="1" NDS="1388667712" Hlop="0" Mig="2016-02-09T13:56:47.0552123+03:00">
+        <Moisha>4 processor(s) found, POPCNT available 512 MB Hash 3 threads used</Moisha>
+        <Vario>
+          <Feno>r4rk1/2qn2np/p1p1p1p1/1pPp4/1P1P1PP1/2NN2QP/P7/4RRK1 w - b3 0 27</Feno>
+          <Tshepa>27. a4 bxa4 28. Qe3 Rfb8 29. Re2 a3 30. Ra2 a5 31. Rxa3 axb4 32. Rxa8 Rxa8 33.
+Nxb4 h5 34. Kg2 Ra7 35. Rh1 Qc8 36. Rb1 Nf6 37. Qf3 Rb7 38. Qe2 Ra7 39. g5 Nd7
+40. Qe3 Rb7 41. Nd3 Rxb1 42. Nxb1 h4 43. Nd2</Tshepa>
+          <Mova Fromo="15" Tomo="31" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>a4</Nota>
+          </Mova>
+          <Mova Fromo="38" Tomo="31" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>bxa4</Nota>
+          </Mova>
+          <Mova Fromo="17" Tomo="19" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qe3</Nota>
+          </Mova>
+          <Mova Fromo="58" Tomo="62" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rfb8</Nota>
+          </Mova>
+          <Mova Fromo="3" Tomo="11" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Re2</Nota>
+          </Mova>
+          <Mova Fromo="31" Tomo="23" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>a3</Nota>
+          </Mova>
+          <Mova Fromo="11" Tomo="15" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ra2</Nota>
+          </Mova>
+          <Mova Fromo="47" Tomo="39" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>a5</Nota>
+          </Mova>
+          <Mova Fromo="15" Tomo="23" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxa3</Nota>
+          </Mova>
+          <Mova Fromo="39" Tomo="30" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>axb4</Nota>
+          </Mova>
+          <Mova Fromo="23" Tomo="63" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxa8</Nota>
+          </Mova>
+          <Mova Fromo="62" Tomo="63" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxa8</Nota>
+          </Mova>
+          <Mova Fromo="20" Tomo="30" Coala="W">
+            <Zver>None, Knight</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Nxb4</Nota>
+          </Mova>
+          <Mova Fromo="48" Tomo="32" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>h5</Nota>
+          </Mova>
+          <Mova Fromo="1" Tomo="9" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kg2</Nota>
+          </Mova>
+          <Mova Fromo="63" Tomo="55" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ra7</Nota>
+          </Mova>
+          <Mova Fromo="2" Tomo="0" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rh1</Nota>
+          </Mova>
+          <Mova Fromo="53" Tomo="61" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qc8</Nota>
+          </Mova>
+          <Mova Fromo="0" Tomo="6" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rb1</Nota>
+          </Mova>
+          <Mova Fromo="52" Tomo="42" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Nf6</Nota>
+          </Mova>
+          <Mova Fromo="19" Tomo="18" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qf3</Nota>
+          </Mova>
+          <Mova Fromo="55" Tomo="54" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rb7</Nota>
+          </Mova>
+          <Mova Fromo="18" Tomo="11" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qe2</Nota>
+          </Mova>
+          <Mova Fromo="54" Tomo="55" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ra7</Nota>
+          </Mova>
+          <Mova Fromo="25" Tomo="33" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>g5</Nota>
+          </Mova>
+          <Mova Fromo="42" Tomo="52" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Nd7</Nota>
+          </Mova>
+          <Mova Fromo="11" Tomo="19" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qe3</Nota>
+          </Mova>
+          <Mova Fromo="55" Tomo="54" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rb7</Nota>
+          </Mova>
+          <Mova Fromo="30" Tomo="20" Coala="W">
+            <Zver>None, Knight</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Nd3</Nota>
+          </Mova>
+          <Mova Fromo="54" Tomo="6" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxb1</Nota>
+          </Mova>
+          <Mova Fromo="21" Tomo="6" Coala="W">
+            <Zver>None, Knight</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Nxb1</Nota>
+          </Mova>
+          <Mova Fromo="32" Tomo="24" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>h4</Nota>
+          </Mova>
+          <Mova Fromo="6" Tomo="12" Coala="W">
+            <Zver>None, Knight</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Nd2</Nota>
+          </Mova>
+        </Vario>
+      </ValuPrice>
+      <ValuPrice Valo="42" Dvig="Houdini_3a_Pro_w32" Glub="24" Tima="5" Rang="2" NDS="1388667712" Hlop="0" Mig="2016-02-09T13:56:47.0412095+03:00">
+        <Moisha>4 processor(s) found, POPCNT available 512 MB Hash 3 threads used</Moisha>
+        <Vario>
+          <Feno>r4rk1/2qn2np/p1p1p1p1/1pPp4/1P1P1PP1/2NN2QP/P7/4RRK1 w - b3 0 27</Feno>
+          <Tshepa>27. Qg2 a5 28. a3 Ra7 29. Qb2 Rfa8 30. Ra1 Ne8 31. Kg2 Ndf6 32. Rfe1 Qc8 33.
+Kg1 Ng7 34. bxa5 Rxa5 35. a4 bxa4 36. Ra3 R5a7 37. Rb1 Qc7 38. Qc2 Rb7 39. Rxb7
+Qxb7 40. Rxa4 Rxa4 41. Qxa4</Tshepa>
+          <Mova Fromo="17" Tomo="9" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qg2</Nota>
+          </Mova>
+          <Mova Fromo="47" Tomo="39" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>a5</Nota>
+          </Mova>
+          <Mova Fromo="15" Tomo="23" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>a3</Nota>
+          </Mova>
+          <Mova Fromo="63" Tomo="55" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ra7</Nota>
+          </Mova>
+          <Mova Fromo="9" Tomo="14" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qb2</Nota>
+          </Mova>
+          <Mova Fromo="58" Tomo="63" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rfa8</Nota>
+          </Mova>
+          <Mova Fromo="3" Tomo="7" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ra1</Nota>
+          </Mova>
+          <Mova Fromo="49" Tomo="59" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ne8</Nota>
+          </Mova>
+          <Mova Fromo="1" Tomo="9" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kg2</Nota>
+          </Mova>
+          <Mova Fromo="52" Tomo="42" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ndf6</Nota>
+          </Mova>
+          <Mova Fromo="2" Tomo="3" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rfe1</Nota>
+          </Mova>
+          <Mova Fromo="53" Tomo="61" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qc8</Nota>
+          </Mova>
+          <Mova Fromo="9" Tomo="1" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kg1</Nota>
+          </Mova>
+          <Mova Fromo="59" Tomo="49" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ng7</Nota>
+          </Mova>
+          <Mova Fromo="30" Tomo="39" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>bxa5</Nota>
+          </Mova>
+          <Mova Fromo="55" Tomo="39" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxa5</Nota>
+          </Mova>
+          <Mova Fromo="23" Tomo="31" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>a4</Nota>
+          </Mova>
+          <Mova Fromo="38" Tomo="31" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>bxa4</Nota>
+          </Mova>
+          <Mova Fromo="7" Tomo="23" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ra3</Nota>
+          </Mova>
+          <Mova Fromo="39" Tomo="55" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>R5a7</Nota>
+          </Mova>
+          <Mova Fromo="3" Tomo="6" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rb1</Nota>
+          </Mova>
+          <Mova Fromo="61" Tomo="53" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qc7</Nota>
+          </Mova>
+          <Mova Fromo="14" Tomo="13" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qc2</Nota>
+          </Mova>
+          <Mova Fromo="55" Tomo="54" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rb7</Nota>
+          </Mova>
+          <Mova Fromo="6" Tomo="54" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxb7</Nota>
+          </Mova>
+          <Mova Fromo="53" Tomo="54" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxb7</Nota>
+          </Mova>
+          <Mova Fromo="23" Tomo="31" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxa4</Nota>
+          </Mova>
+          <Mova Fromo="63" Tomo="31" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxa4</Nota>
+          </Mova>
+          <Mova Fromo="13" Tomo="31" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxa4</Nota>
+          </Mova>
+        </Vario>
+      </ValuPrice>
+      <ValuPrice Valo="42" Dvig="Houdini_3a_Pro_w32" Glub="24" Tima="5" Rang="3" NDS="1388667712" Hlop="0" Mig="2016-02-09T13:56:47.0292071+03:00">
+        <Moisha>4 processor(s) found, POPCNT available 512 MB Hash 3 threads used</Moisha>
+        <Vario>
+          <Feno>r4rk1/2qn2np/p1p1p1p1/1pPp4/1P1P1PP1/2NN2QP/P7/4RRK1 w - b3 0 27</Feno>
+          <Tshepa>27. a3 a5 28. Qg2 Ra7 29. Qb2 Rfa8 30. Ra1 Ne8 31. Kg2 Ndf6 32. Rfe1 Qc8 33.
+Kg1 Ng7 34. bxa5 Rxa5 35. a4 bxa4 36. Ra3 R5a7 37. Rb1 Qc7 38. Qc2 Rb7 39. Rxb7
+Qxb7 40. Rxa4 Rxa4 41. Qxa4</Tshepa>
+          <Mova Fromo="15" Tomo="23" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>a3</Nota>
+          </Mova>
+          <Mova Fromo="47" Tomo="39" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>a5</Nota>
+          </Mova>
+          <Mova Fromo="17" Tomo="9" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qg2</Nota>
+          </Mova>
+          <Mova Fromo="63" Tomo="55" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ra7</Nota>
+          </Mova>
+          <Mova Fromo="9" Tomo="14" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qb2</Nota>
+          </Mova>
+          <Mova Fromo="58" Tomo="63" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rfa8</Nota>
+          </Mova>
+          <Mova Fromo="3" Tomo="7" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ra1</Nota>
+          </Mova>
+          <Mova Fromo="49" Tomo="59" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ne8</Nota>
+          </Mova>
+          <Mova Fromo="1" Tomo="9" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kg2</Nota>
+          </Mova>
+          <Mova Fromo="52" Tomo="42" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ndf6</Nota>
+          </Mova>
+          <Mova Fromo="2" Tomo="3" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rfe1</Nota>
+          </Mova>
+          <Mova Fromo="53" Tomo="61" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qc8</Nota>
+          </Mova>
+          <Mova Fromo="9" Tomo="1" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kg1</Nota>
+          </Mova>
+          <Mova Fromo="59" Tomo="49" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ng7</Nota>
+          </Mova>
+          <Mova Fromo="30" Tomo="39" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>bxa5</Nota>
+          </Mova>
+          <Mova Fromo="55" Tomo="39" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxa5</Nota>
+          </Mova>
+          <Mova Fromo="23" Tomo="31" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>a4</Nota>
+          </Mova>
+          <Mova Fromo="38" Tomo="31" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>bxa4</Nota>
+          </Mova>
+          <Mova Fromo="7" Tomo="23" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ra3</Nota>
+          </Mova>
+          <Mova Fromo="39" Tomo="55" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>R5a7</Nota>
+          </Mova>
+          <Mova Fromo="3" Tomo="6" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rb1</Nota>
+          </Mova>
+          <Mova Fromo="61" Tomo="53" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qc7</Nota>
+          </Mova>
+          <Mova Fromo="14" Tomo="13" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qc2</Nota>
+          </Mova>
+          <Mova Fromo="55" Tomo="54" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rb7</Nota>
+          </Mova>
+          <Mova Fromo="6" Tomo="54" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxb7</Nota>
+          </Mova>
+          <Mova Fromo="53" Tomo="54" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxb7</Nota>
+          </Mova>
+          <Mova Fromo="23" Tomo="31" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxa4</Nota>
+          </Mova>
+          <Mova Fromo="63" Tomo="31" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxa4</Nota>
+          </Mova>
+          <Mova Fromo="13" Tomo="31" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxa4</Nota>
+          </Mova>
+        </Vario>
+      </ValuPrice>
+      <ValuPrice Valo="42" Dvig="Houdini_3a_Pro_w32" Glub="24" Tima="5" Rang="4" NDS="1388667712" Hlop="0" Mig="2016-02-09T13:56:47.0172047+03:00">
+        <Moisha>4 processor(s) found, POPCNT available 512 MB Hash 3 threads used</Moisha>
+        <Vario>
+          <Feno>r4rk1/2qn2np/p1p1p1p1/1pPp4/1P1P1PP1/2NN2QP/P7/4RRK1 w - b3 0 27</Feno>
+          <Tshepa>27. Qf2 a5 28. a3 Ra7 29. Qb2 Rfa8 30. Ra1 Ne8 31. Kg2 Ndf6 32. Rfe1 Qc8 33.
+Kg1 Ng7 34. bxa5 Rxa5 35. a4 bxa4 36. Ra3 R5a7 37. Rb1 Qc7 38. Qc2 Rb7 39. Rxb7
+Qxb7 40. Rxa4 Rxa4 41. Qxa4</Tshepa>
+          <Mova Fromo="17" Tomo="10" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qf2</Nota>
+          </Mova>
+          <Mova Fromo="47" Tomo="39" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>a5</Nota>
+          </Mova>
+          <Mova Fromo="15" Tomo="23" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>a3</Nota>
+          </Mova>
+          <Mova Fromo="63" Tomo="55" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ra7</Nota>
+          </Mova>
+          <Mova Fromo="10" Tomo="14" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qb2</Nota>
+          </Mova>
+          <Mova Fromo="58" Tomo="63" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rfa8</Nota>
+          </Mova>
+          <Mova Fromo="3" Tomo="7" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ra1</Nota>
+          </Mova>
+          <Mova Fromo="49" Tomo="59" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ne8</Nota>
+          </Mova>
+          <Mova Fromo="1" Tomo="9" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kg2</Nota>
+          </Mova>
+          <Mova Fromo="52" Tomo="42" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ndf6</Nota>
+          </Mova>
+          <Mova Fromo="2" Tomo="3" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rfe1</Nota>
+          </Mova>
+          <Mova Fromo="53" Tomo="61" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qc8</Nota>
+          </Mova>
+          <Mova Fromo="9" Tomo="1" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kg1</Nota>
+          </Mova>
+          <Mova Fromo="59" Tomo="49" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ng7</Nota>
+          </Mova>
+          <Mova Fromo="30" Tomo="39" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>bxa5</Nota>
+          </Mova>
+          <Mova Fromo="55" Tomo="39" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxa5</Nota>
+          </Mova>
+          <Mova Fromo="23" Tomo="31" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>a4</Nota>
+          </Mova>
+          <Mova Fromo="38" Tomo="31" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>bxa4</Nota>
+          </Mova>
+          <Mova Fromo="7" Tomo="23" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ra3</Nota>
+          </Mova>
+          <Mova Fromo="39" Tomo="55" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>R5a7</Nota>
+          </Mova>
+          <Mova Fromo="3" Tomo="6" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rb1</Nota>
+          </Mova>
+          <Mova Fromo="61" Tomo="53" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qc7</Nota>
+          </Mova>
+          <Mova Fromo="14" Tomo="13" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qc2</Nota>
+          </Mova>
+          <Mova Fromo="55" Tomo="54" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rb7</Nota>
+          </Mova>
+          <Mova Fromo="6" Tomo="54" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxb7</Nota>
+          </Mova>
+          <Mova Fromo="53" Tomo="54" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxb7</Nota>
+          </Mova>
+          <Mova Fromo="23" Tomo="31" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxa4</Nota>
+          </Mova>
+          <Mova Fromo="63" Tomo="31" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxa4</Nota>
+          </Mova>
+          <Mova Fromo="13" Tomo="31" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxa4</Nota>
+          </Mova>
+        </Vario>
+      </ValuPrice>
+      <ValuPrice Valo="39" Dvig="Houdini_3a_Pro_w32" Glub="24" Tima="5" Rang="5" NDS="1388667712" Hlop="0" Mig="2016-02-09T13:56:46.9982009+03:00">
+        <Moisha>4 processor(s) found, POPCNT available 512 MB Hash 3 threads used</Moisha>
+        <Vario>
+          <Feno>r4rk1/2qn2np/p1p1p1p1/1pPp4/1P1P1PP1/2NN2QP/P7/4RRK1 w - b3 0 27</Feno>
+          <Tshepa>27. Ra1 a5 28. a3 Ra7 29. Qg2 Rfa8 30. Qb2 Ne8 31. Kg2 Ndf6 32. Rfe1 Qc8 33.
+Kg1 Ng7 34. bxa5 Rxa5 35. a4 bxa4 36. Ra3 R5a7 37. Rb1 Qc7 38. Qc2 Rb7 39. Rxb7
+Qxb7 40. Rxa4 Rxa4 41. Qxa4</Tshepa>
+          <Mova Fromo="3" Tomo="7" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ra1</Nota>
+          </Mova>
+          <Mova Fromo="47" Tomo="39" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>a5</Nota>
+          </Mova>
+          <Mova Fromo="15" Tomo="23" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>a3</Nota>
+          </Mova>
+          <Mova Fromo="63" Tomo="55" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ra7</Nota>
+          </Mova>
+          <Mova Fromo="17" Tomo="9" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qg2</Nota>
+          </Mova>
+          <Mova Fromo="58" Tomo="63" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rfa8</Nota>
+          </Mova>
+          <Mova Fromo="9" Tomo="14" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qb2</Nota>
+          </Mova>
+          <Mova Fromo="49" Tomo="59" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ne8</Nota>
+          </Mova>
+          <Mova Fromo="1" Tomo="9" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kg2</Nota>
+          </Mova>
+          <Mova Fromo="52" Tomo="42" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ndf6</Nota>
+          </Mova>
+          <Mova Fromo="2" Tomo="3" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rfe1</Nota>
+          </Mova>
+          <Mova Fromo="53" Tomo="61" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qc8</Nota>
+          </Mova>
+          <Mova Fromo="9" Tomo="1" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kg1</Nota>
+          </Mova>
+          <Mova Fromo="59" Tomo="49" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ng7</Nota>
+          </Mova>
+          <Mova Fromo="30" Tomo="39" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>bxa5</Nota>
+          </Mova>
+          <Mova Fromo="55" Tomo="39" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxa5</Nota>
+          </Mova>
+          <Mova Fromo="23" Tomo="31" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>a4</Nota>
+          </Mova>
+          <Mova Fromo="38" Tomo="31" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>bxa4</Nota>
+          </Mova>
+          <Mova Fromo="7" Tomo="23" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ra3</Nota>
+          </Mova>
+          <Mova Fromo="39" Tomo="55" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>R5a7</Nota>
+          </Mova>
+          <Mova Fromo="3" Tomo="6" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rb1</Nota>
+          </Mova>
+          <Mova Fromo="61" Tomo="53" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qc7</Nota>
+          </Mova>
+          <Mova Fromo="14" Tomo="13" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qc2</Nota>
+          </Mova>
+          <Mova Fromo="55" Tomo="54" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rb7</Nota>
+          </Mova>
+          <Mova Fromo="6" Tomo="54" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxb7</Nota>
+          </Mova>
+          <Mova Fromo="53" Tomo="54" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxb7</Nota>
+          </Mova>
+          <Mova Fromo="23" Tomo="31" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxa4</Nota>
+          </Mova>
+          <Mova Fromo="63" Tomo="31" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxa4</Nota>
+          </Mova>
+          <Mova Fromo="13" Tomo="31" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxa4</Nota>
+          </Mova>
+        </Vario>
+      </ValuPrice>
+    </Dopico>
+  </Leo>
+</vPoza>

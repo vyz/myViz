@@ -62,6 +62,7 @@
     <Compile Include="Borda.xaml.cs">
       <DependentUpon>Borda.xaml</DependentUpon>
     </Compile>
+    <Compile Include="EngiPro.cs" />
     <Compile Include="Gamo.cs" />
     <Compile Include="GamoWinda.xaml.cs">
       <DependentUpon>GamoWinda.xaml</DependentUpon>

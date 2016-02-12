@@ -47,7 +47,7 @@ namespace pfVisualisator
             {
                 conq.Open();
                 SqlCommand cmd = new SqlCommand(@"SELECT pointa, Name, scriptFileName, Comment, query, Comto
-                                                  FROM Reports
+                                                  FROM RepoTri
                                                   where uid = convert(uniqueidentifier, @pgvido)", conq);
                 cmd.CommandType = System.Data.CommandType.Text;
                 cmd.Parameters.AddWithValue("@pgvido", gvido);

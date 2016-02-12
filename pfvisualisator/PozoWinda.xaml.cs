@@ -22,9 +22,16 @@ namespace pfVisualisator
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Модификация от 9 февраля 2016 года
+        /// Заложен 9 февраля 2016 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AnaloBtn_Click(object sender, RoutedEventArgs e) {
-
-        }
+            vPoza vp = (vPoza)Grido.DataContext;
+            vp.rasschet(vlEngino.Houdini_3a_Pro_w32, 5, 5);
+            }
 
         /// <summary>
         /// Модификация от 3 февраля 2016 года

@@ -137,7 +137,7 @@ namespace pfVisualisator
         }
 
         /// <summary>
-        /// Модификация от 30 июля 2015 года
+        /// Модификация от 9 февраля 2016 года
         /// Заложен 29 июля 2015 года
         /// </summary>
         /// <returns></returns>
@@ -148,7 +148,7 @@ namespace pfVisualisator
             int zenpass = tmp.CanEnpasso(controllomova);
             bool benpass = (zenpass >= 0);
             if (benpass) { //Превращение из нормального целого поля в специальное короткое для позиции
-                zenpass -= (zenpass < 24) ? 16 : 40;
+                zenpass -= (zenpass < 24) ? 16 : 32;
             } else {
                 zenpass = 0;
                 }
