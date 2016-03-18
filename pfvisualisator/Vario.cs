@@ -241,6 +241,9 @@ namespace pfVisualisator {
         public string OnlyMova { get { return notata; } }
         public string Begino { get { return null == lima ? "Пусто" : lima[0].Shorto; } }
         public pozo LastPo { get { return lipa[lipa.Count - 1]; } }
+        public List<Mova> MovaList { get { return lima; } }
+        public List<pozo> PozoList { get { return lipa; } }
+        public int Numerok { get { return bego.NumberMove; } }
 #endregion-----------------------Свойства объекта-----------------------------------------
 
     }

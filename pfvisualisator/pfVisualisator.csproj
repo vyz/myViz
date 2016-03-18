@@ -115,6 +115,7 @@
     <Compile Include="vpfGluka.cs" />
     <Compile Include="vPicturePart.cs" />
     <Compile Include="vPoza.cs" />
+    <Compile Include="vrtVara.cs" />
     <Page Include="BigPicture.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -18,6 +18,7 @@ namespace pfVisualisator
     /// </summary>
     public partial class PozoWinda : Window
     {
+        private vrtVara pokazukha;
         public PozoWinda() {
             InitializeComponent();
         }
@@ -43,5 +44,69 @@ namespace pfVisualisator
             vPoza vp = (vPoza)Grido.DataContext;
             vp.SavoInViborXmlFilo();
             }
+
+        /// <summary>
+        /// Модификация от 18 марта 2016 года
+        /// Заложен 17 марта 2016 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void pzNextBtn_Click(object sender, RoutedEventArgs e) {
+            vvDNF(1);
+            }
+
+        /// <summary>
+        /// Модификация от 17 марта 2016 года
+        /// Заложен 17 марта 2016 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void pzPrevBtn_Click(object sender, RoutedEventArgs e) {
+            }
+
+        /// <summary>
+        /// Модификация от 18 марта 2016 года
+        /// Заложен 17 марта 2016 года
+        /// </summary>
+        /// <param name="dtl"></param>
+        private void vvDNF(int dtl) {
+            if (pokazukha == null) {
+                Vario aa = ((Valuing)ValueGrido.CurrentItem).SelfVarianto;
+                pokazukha = new vrtVara(aa);
+                if (dtl == 1 || dtl == -2) {
+                    pokazukha.ChangeCurrentNumber(dtl);
+                    vvOtrisovka(pokazukha.GetColoredParagraph(), pokazukha.GetCurrentPoza());
+                    }
+            } else {
+                pokazukha.ChangeCurrentNumber(dtl);
+                vvOtrisovka(pokazukha.GetColoredParagraph(), pokazukha.GetCurrentPoza());
+                }
+            }
+
+        /// <summary>
+        /// Модификация от 18 марта 2016 года
+        /// Заложен 18 марта 2016 года
+        /// </summary>
+        /// <param name="aa"></param>
+        /// <param name="bb"></param>
+        private void vvOtrisovka(Paragraph aa, pozo bb) {
+            FlowDocument wk = this.VibroVara.Document;
+            wk.Blocks.Clear();
+            wk.Blocks.Add(aa);
+            pfBoard.CurrentoPoza = bb;
+            }
+
+        /// <summary>
+        /// Модификация от 18 марта 2016 года
+        /// Заложен 18 марта 2016 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ValueGrido_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+            string aa = ((Valuing)((DataGrid)sender).CurrentItem).Texa;
+            pozo bb = ((vPoza)Grido.DataContext).Selfa;
+            vvOtrisovka(new Paragraph(new Run(aa)), bb);
+            }
+
     }
 }

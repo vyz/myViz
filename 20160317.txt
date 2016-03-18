@@ -1,0 +1,105 @@
+Svidler, Peter-Trent, Lawrence Отличие:файл-прого$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Ngf6 5. Qe2 a6 6. Ba4 b5 7. Bc2 Bb7 8. O-O$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. c3 Nf6 5. Qe2 a6 6. Ba4 b5 7. Bc2 Bb7 8. O-O$
+Krupenski, Juri-Gelfand, Boris Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Nge2 d5 6. a3 Bd6 7. Ng3 c6 8. Be2$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Ne2 d5 6. a3 Bd6 7. Ng3 c6 8. Be2$
+Krupenski, Juri-Gelfand, Boris Отличие:файл-прого$Qg6+ fxg6 28. Bg8+ Kh8 29. Bf7+ 1-0$Qg6# fxg6 28. Bg8+ Kh8 29. Bf7+ 1-0$
+Motylev, Alexander-Svidler, Peter Отличие:файл-прого$Ndb5 Qa5 9. e5 Nd5 10. Bd2 Nxc3 11. Bxc3 O-O 12. Qd2 a6 13. Bxb4 Qxb4 14. Qxb4$Nb5 Qa5 9. e5 Nd5 10. Bd2 Nxc3 11. Bxc3 O-O 12. Qd2 a6 13. Bxb4 Qxb4 14. Qxb4$
+Karjakin, Sergey-Eljanov, Pavel Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. g3 Bb4+ 4. Nd2 d5 5. Bg2 O-O 6. Ngf3 b6 7. O-O Bb7 8. b3$1. d4 Nf6 2. c4 e6 3. g3 Bb4+ 4. Nd2 d5 5. Bg2 O-O 6. Nf3 b6 7. O-O Bb7 8. b3$
+Lalith Babu M R-Wojtaszek, Radoslaw Отличие:файл-прого$e5 fxe5 15. Qh5 Nd7 16. Qg5+ Kf8 17. Rxc8+ Rxc8 18. Bxd7 Qd8 19. Nxe6+ fxe6 20.$e5 fxe5 15. Qh5 Nd7 16. Qg5+ Kf8 17. Rxc8+ Rxc8 18. Bxd7 Qd8 19. Nxe6# fxe6 20.$
+Nakamura, Hikaru-Muzychuk, Mariya Отличие:файл-прого$d6 Bxd6 23. Qxg6+ Kh8 24. Qxh6+ Nh7 25. Ng5 Ndf6 26. Rdf1 1-0$d6 Bxd6 23. Qxg6+ Kh8 24. Qxh6+ Nh7 25. Ng5 Nf6 26. Rdf1 1-0$
+Muzychuk, Anna-Yu, Yangyi Отличие:файл-прого$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. O-O Ngf6 5. Re1 a6 6. Bf1 b6 7. d4 cxd4 8.$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. O-O Nf6 5. Re1 a6 6. Bf1 b6 7. d4 cxd4 8.$
+Tomashevsky, E.-Caruana, F. Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 b6 5. Nge2 c5 6. a3 Ba5 7. Rb1 Na6 8. Ng3$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 b6 5. Ne2 c5 6. a3 Ba5 7. Rb1 Na6 8. Ng3$
+Nakamura, Hikaru-Lenic, Luka Отличие:файл-прого$Bb5 O-O 9. Bxc6 a5 10. Nge2 bxc6 11. O-O Ba6 12. Rd1 c5 13. Qc2 Nxc3 14. Nxc3$Bb5 O-O 9. Bxc6 a5 10. Ne2 bxc6 11. O-O Ba6 12. Rd1 c5 13. Qc2 Nxc3 14. Nxc3$
+Gupta, Abhijeet-Ni, Hua Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Bb4+ 5. Nd2 O-O 6. Ngf3 b6 7. O-O Bb7 8. a3$1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Bb4+ 5. Nd2 O-O 6. Nf3 b6 7. O-O Bb7 8. a3$
+Anand, Viswanathan-Nakamura, Hikaru Отличие:файл-прого$Rxe5 34. Rg1 Rfe8 35. Rxg6+ fxg6 36. Qxg6+ Kh8 1/2-1/2$Rxe5 34. Rg1 Rfe8 35. Rxg6# fxg6 36. Qxg6+ Kh8 1/2-1/2$
+Kasimdzhanov, Rustam-Graf, Felix Отличие:файл-прого$1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 Bb4 5. e5 h6 6. Bh4 g5 7. Bg3 Ne4 8. Nge2$1. e4 e6 2. d4 d5 3. Nc3 Nf6 4. Bg5 Bb4 5. e5 h6 6. Bh4 g5 7. Bg3 Ne4 8. Ne2 c5$
+Kasimdzhanov, Rustam-Graf, Felix Отличие:файл-прого$c5 9. a3 Bxc3+ 10. Nxc3 Nxc3 11. bxc3 Qa5 12. Qd2 Nc6 13. dxc5 Qxc5 14. Bd3 Bd7$9. a3 Bxc3+ 10. Nxc3 Nxc3 11. bxc3 Qa5 12. Qd2 Nc6 13. dxc5 Qxc5 14. Bd3 Bd7$
+Tomashevsky, Evgeny-Mamedov, Rauf Отличие:файл-прого$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. O-O Ngf6 5. Re1 a6 6. Bf1 b6 7. c3 Bb7 8. d3$1. e4 c5 2. Nf3 d6 3. Bb5+ Nd7 4. O-O Nf6 5. Re1 a6 6. Bf1 b6 7. c3 Bb7 8. d3$
+Sargissian, Gabriel-Ding, Liren Отличие:файл-прого$1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. b3 Bb4 6. Bb2 Ne4 7. Nge2 Qf6 8. f3$1. d4 d5 2. c4 c6 3. Nc3 Nf6 4. e3 e6 5. b3 Bb4 6. Bb2 Ne4 7. Ne2 Qf6 8. f3$
+Movsesian, Sergei-Ivanchuk, Vassily Отличие:файл-прого$Qf2+ R3c5 34. Qd4 R7c6 35. e5 fxe5 36. fxe5 Nxe5 37. Re2 Rc7 38. Qb4 Rb5 39.$Qf2+ R3c5 34. Qd4 Rc6 35. e5 fxe5 36. fxe5 Nxe5 37. Re2 Rc7 38. Qb4 Rb5 39.$
+Ivanchuk, Vassily-Wojtaszek, Radoslaw Отличие:файл-прого$Qa5 9. Bxd7+ Nxd7 10. Nge2 f6 11. Bf4 Ne5 12. a3 Bxc3+ 13. Nxc3 O-O 14. O-O Bf5$Qa5 9. Bxd7+ Nxd7 10. Ne2 f6 11. Bf4 Ne5 12. a3 Bxc3+ 13. Nxc3 O-O 14. O-O Bf5$
+Dominguez Perez, Leinier-Wang, Hao Отличие:файл-прого$Qc6 48. Ree5 1-0$Qc6 48. Re5 1-0$
+Ivanchuk, Vassily-Ding, Liren Отличие:файл-прого$Nge2 Bg4 9. Qd3 O-O 10. O-O f3 11. gxf3 Bh5 12. Bg5 Bg6 13. Qb5 Be7 14. Bxf6$Ne2 Bg4 9. Qd3 O-O 10. O-O f3 11. gxf3 Bh5 12. Bg5 Bg6 13. Qb5 Be7 14. Bxf6$
+Fier, Alexandr-Ivanchuk, Vassily Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 c5 5. Nge2 cxd4 6. exd4 d5 7. a3 Be7 8. Nf4$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 c5 5. Ne2 cxd4 6. exd4 d5 7. a3 Be7 8. Nf4$
+Ivanchuk, Vassily-Krivonosov, Oleg Отличие:файл-прого$8. Nc3 Bb4 9. Bxc6+ bxc6 10. Nge2 O-O 11. O-O Bg4 12. Qd3 Bf5 13. Qc4 Bxc2 14.$8. Nc3 Bb4 9. Bxc6+ bxc6 10. Ne2 O-O 11. O-O Bg4 12. Qd3 Bf5 13. Qc4 Bxc2 14.$
+Malakhov, Vladimir-Ulybin, Mikhail Отличие:файл-прого$gxf5+ gxf5 54. Nxf5 Kxf5 55. Kb5 {Ke5} 1/2-1/2$gxf5+ gxf5 54. Nxf5 Kxf5 55. Kb5 1/2-1/2$
+Movsesian, Sergei-Rapport, Richard Отличие:файл-прого$Kd8 28. Bxc6 Nhf8 29. Qe4 Kc7 30. Bb7 Qc5 31. Bxc8 Kxc8 32. Rd5 Qc7 33. Qxb4$Kd8 28. Bxc6 Nf8 29. Qe4 Kc7 30. Bb7 Qc5 31. Bxc8 Kxc8 32. Rd5 Qc7 33. Qxb4 1-0$
+Tregubov, Pavel V-Harikrishna, Pentala Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 c5 6. Nge2 d5 7. cxd5 cxd4 8.$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 c5 6. Ne2 d5 7. cxd5 cxd4 8.$
+Nguyen, Ngoc Truong Son-Wang, Hao Отличие:файл-прого$a5 47. h5 g5 {0[Event  "HDBank  Open} 0-1$a5 47. h5 g5 0-1$
+Bischoff, Klaus-Shirov, Alexei ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Romanov, Evgeny-Li, Chao b ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Petenyi, Tamas-Rodshtein, Maxim ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Korobov, Anton-Luch, Michal ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Navara, David-Miton, Kamil ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Rodshtein, Maxim-Yemelin, Vasily ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Demidov, Mikhail-Korobov, Anton ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Mista, Alexander-Navara, David ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Shengelia, David-Pentala, Harikrishna ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Navara, David-Demidov, Mikhail ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Rodshtein, Maxim-Michalik, Peter ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Socko, Bartosz-Korobov, Anton ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Pentala, Harikrishna-Luch, Michal ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Studnicka, Tomas-Navara, David ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Korobov, Anton-Rodshtein, Maxim ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2015.??.??$
+Wang Hao (CHN)-Movsesian Sergei (ARM) ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Dominguez Perez Leinier (CUB)-Navara David (CZE) ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Li Chao b (CHN)-Mamedov Rauf (AZE) ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Ding Liren (CHN)-Sargissian Gabriel (ARM) ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Ponomariov Ruslan (UKR)-Wojtaszek Radoslaw (POL) ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Tomashevsky Evgeny (RUS)-Mamedyarov Shakhriyar (AZE) ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Fressinet Laurent (FRA)-Harikrishna P. (IND) ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Wang Yue (CHN)-Ivanchuk Vassily (UKR) ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Molchanova, Tatjana-Ivanchuk, Vassily ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Ivanchuk, Vassily-Ladva, Ottomar ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Fier, Alexandr-Ivanchuk, Vassily ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Ivanchuk, Vassily-Aleksandrov, Aleksej ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Fedorov, Alexei-Ivanchuk, Vassily ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Ivanchuk, Vassily-Krivonosov, Oleg ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Hracek, Zbynek-Ivanchuk, Vassily ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Ivanchuk, Vassily-Gleizerov, Evgeny ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Bortnyk, Olexandr-Ivanchuk, Vassily ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Van Wely, Loek-Ivanchuk, Vassily ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Ivanchuk, Vassily-Vitiugov, Nikita ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Ivanchuk, Vassily-Naiditsch, Arkadij ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Kovalenko, Igor-Soot, Margus ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Sveshnikov, Evgeny-Kovalenko, Igor ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Kovalenko, Igor-Schlosser, Philipp ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Gunina, Valentina-Kovalenko, Igor ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Kovalenko, Igor-Kollars, Dmitrij ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Lintchevksi, Daniil-Kovalenko, Igor ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Kovalenko, Igor-Berzinsh, Roland ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Kovalenko, Igor-Piorun, Kacper ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Sveshnikov, Vladimir-Kovalenko, Igor ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Sotsky, Alexander-Zhigalko, Sergei ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Zhigalko, Sergei-Berzinsh, Roland ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Neiksans, Arturs-Zhigalko, Sergei ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Van Wely, Loek-Zhigalko, Sergei ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Zhigalko, Sergei-Krasenkow, Michal ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Zhigalko, Sergei-Alekseev, Evgeny ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Lintchevksi, Daniil-Zhigalko, Sergei ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Zhigalko, Sergei-Shabalov, Alexander ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Kantans, Toms-Zhigalko, Sergei ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Malakhov, Vladimir-Valgmae, Toomas ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Kollars, Dmitrij-Malakhov, Vladimir ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Malakhov, Vladimir-Ehlvest, Jaan ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Lintchevksi, Daniil-Malakhov, Vladimir ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Malakhov, Vladimir-Schlosser, Philipp ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Meskovs, Nikita-Malakhov, Vladimir ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Malakhov, Vladimir-Van Wely, Loek ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Piorun, Kacper-Malakhov, Vladimir ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Malakhov, Vladimir-Shabalov, Alexander ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Vitiugov, Nikita-Malakhov, Vladimir ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Malakhov, Vladimir-Ulybin, Mikhail ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Krivonosov, Oleg-Malakhov, Vladimir ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Mamedyarov, Shakhriyar-Har�arson, J�n Trausti ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Stray, Gunnar-Andreikin, Dmitry ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Rapport, Richard-Heimisson, Hilmir Freyr ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Ruonala, Robert-Sargissian, Gabriel ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Skousen, Nikolai-Mamedyarov, Shakhriyar ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Andreikin, Dmitry-Viana, Dirceu ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Pogan, Nikolas-Rapport, Richard ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Sargissian, Gabriel-Einarsson, Halldor Gretar ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Rapport, Richard-Esserman, Marc ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Holm, Kristian Stuvik-Sargissian, Gabriel ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Kjartansson, Gudmundur-Rapport, Richard ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Mamedyarov, Shakhriyar-Sarkar, Justin ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+Sargissian, Gabriel-Korley, Kassa ИнтеллиЧенж:Не удалось скорректировать значение EventDate $2016.??.??$
+

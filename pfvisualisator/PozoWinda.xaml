@@ -25,9 +25,19 @@
                 <Button Content="SaveXML" Name="xSavoBtn" Width="75" Click="xSavoBtn_Click" />
             </StackPanel>
             <TextBox Name="AnaRes" Text="{Binding Path=AnaRes, Mode=OneWay}"></TextBox>
+            <StackPanel Name="spVarainto" CanVerticallyScroll="True" Orientation="Horizontal">
+                <Button Name="pzNext"  Content="Next" Width="50" Click="pzNextBtn_Click" />
+                <Border Margin="10" Padding="10" BorderBrush="SteelBlue" BorderThickness="2" CornerRadius="5" MaxWidth="350" >
+                    <RichTextBox Name="VibroVara" FontSize="12" MaxWidth="240" MaxHeight="600">
+                        <FlowDocument Name="FloDoca">
+                        </FlowDocument>
+                    </RichTextBox>
+                </Border>
+                <Button Name="pzPrev"  Content="Prev" Width="50" Click="pzPrevBtn_Click" />
+            </StackPanel>
             <StackPanel Name="stackPanelValues" HorizontalAlignment="Center" VerticalAlignment="Top">
                 <DataGrid Name="ValueGrido" ItemsSource="{Binding Mode=OneWay, NotifyOnTargetUpdated=True}" AutoGenerateColumns="False" FrozenColumnCount="1" IsReadOnly="True"
-                  CanUserResizeRows="False" RowHeight="22">
+                  CanUserResizeRows="False" RowHeight="22" SelectionChanged="ValueGrido_SelectionChanged">
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Цифра" Binding="{Binding Valo}" />
                         <DataGridTextColumn Header="Ранго" Binding="{Binding Rango}" />
@@ -38,15 +48,6 @@
                         <DataGridTextColumn Header="Двиго" Binding="{Binding Dvigatel}" />
                         <DataGridTextColumn Header="Дато" Binding="{Binding DatoStroke}" />
                     </DataGrid.Columns>
-                    <DataGrid.RowDetailsTemplate>
-                        <DataTemplate>
-                            <StackPanel Name="ValueGrTexo" CanVerticallyScroll="True">
-                                <Border Margin="10" Padding="10" BorderBrush="SteelBlue" BorderThickness="2" CornerRadius="5" MaxWidth="250" >
-                                    <TextBlock Name="VibroVara" Text="{Binding Texa}" TextWrapping="Wrap" FontSize="12" MaxWidth="240" MaxHeight="600"></TextBlock>
-                                </Border>
-                            </StackPanel>
-                        </DataTemplate>
-                    </DataGrid.RowDetailsTemplate>
                 </DataGrid>
             </StackPanel>
 

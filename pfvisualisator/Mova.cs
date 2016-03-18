@@ -137,5 +137,6 @@ namespace pfVisualisator {
         public int ToField { get { return tomo; } }
         public Pieco Figura { get { return figo; } }
         public MovoTypo MvType { get { return typo; } }
+        public bool Koler { get { return coala; } }
         }
     }
