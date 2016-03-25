@@ -11,14 +11,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace pfVisualisator
-{
+namespace pfVisualisator {
     /// <summary>
     /// Логика взаимодействия для PozoWinda.xaml
     /// </summary>
-    public partial class PozoWinda : Window
-    {
+    public partial class PozoWinda : Window {
         private vrtVara pokazukha;
+        private Valuing currovalu;
+
         public PozoWinda() {
             InitializeComponent();
         }
@@ -62,21 +62,22 @@ namespace pfVisualisator
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void pzPrevBtn_Click(object sender, RoutedEventArgs e) {
+            vvDNF(-1);
             }
 
         /// <summary>
-        /// Модификация от 18 марта 2016 года
+        /// Модификация от 21 марта 2016 года
         /// Заложен 17 марта 2016 года
         /// </summary>
         /// <param name="dtl"></param>
         private void vvDNF(int dtl) {
-            if (pokazukha == null) {
-                Vario aa = ((Valuing)ValueGrido.CurrentItem).SelfVarianto;
-                pokazukha = new vrtVara(aa);
-                if (dtl == 1 || dtl == -2) {
+            if (pokazukha == null && currovalu != null) {
+                Vario aa = currovalu.SelfVarianto;
+                pokazukha = new vrtVara(aa, this);
+                if (dtl == -2) {
                     pokazukha.ChangeCurrentNumber(dtl);
-                    vvOtrisovka(pokazukha.GetColoredParagraph(), pokazukha.GetCurrentPoza());
                     }
+                vvOtrisovka(pokazukha.GetColoredParagraph(), pokazukha.GetCurrentPoza());
             } else {
                 pokazukha.ChangeCurrentNumber(dtl);
                 vvOtrisovka(pokazukha.GetColoredParagraph(), pokazukha.GetCurrentPoza());
@@ -89,7 +90,7 @@ namespace pfVisualisator
         /// </summary>
         /// <param name="aa"></param>
         /// <param name="bb"></param>
-        private void vvOtrisovka(Paragraph aa, pozo bb) {
+        public void vvOtrisovka(Paragraph aa, pozo bb) {
             FlowDocument wk = this.VibroVara.Document;
             wk.Blocks.Clear();
             wk.Blocks.Add(aa);
@@ -97,16 +98,60 @@ namespace pfVisualisator
             }
 
         /// <summary>
-        /// Модификация от 18 марта 2016 года
+        /// Модификация от 21 марта 2016 года
         /// Заложен 18 марта 2016 года
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void ValueGrido_SelectionChanged(object sender, SelectionChangedEventArgs e) {
-            string aa = ((Valuing)((DataGrid)sender).CurrentItem).Texa;
+            if (currovalu != (Valuing)((DataGrid)sender).CurrentItem) {
+                currovalu = (Valuing)((DataGrid)sender).CurrentItem;
+                pokazukha = null;
+                }
+            string aa = currovalu.Texa;
             pozo bb = ((vPoza)Grido.DataContext).Selfa;
             vvOtrisovka(new Paragraph(new Run(aa)), bb);
             }
 
+        /// <summary>
+        /// Модификация от 22 марта 2016 года
+        /// Заложен 22 марта 2016 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Spanio_MouseLeftButtonDown(object sender, MouseButtonEventArgs e) {
+            try { if (sender is Span) {
+                    Span aa = (Span)sender;
+                    if (aa.Name.StartsWith("spi")) {
+                        int k = int.Parse(aa.Name.Substring(3));
+                        pokazukha.SetCurrentNumber(k);
+                        vvOtrisovka(pokazukha.GetColoredParagraph(), pokazukha.GetCurrentPoza());
+                        }
+                    }
+            } catch (Exception ex) {
+                LogoCM.OutString(ex.Message);
+                }
+            }
+
+        private void AnaRes_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            vPoza wrk = (vPoza) Grido.DataContext;
+            ValueGrido.ItemsSource = wrk.SetoAnalo;
+        }
+
+        private void PosoWindo_Click(object sender, RoutedEventArgs e)
+        {
+            try {
+                vPoza wrk = new vPoza(pfBoard.CurrentoPoza);
+                wrk.Descripto = "Вариантная позиция - ";
+                var winda = new PozoWinda();
+                winda.Grido.DataContext = wrk;
+                winda.pfBoard.CurrentoPoza = wrk.Selfa;
+                winda.Show();
+            } catch (Exception ex) {
+                MessageBox.Show("Проблема с окном второй позиции " + ex.Message);
+                }
+            }
+
+        }
     }
-}

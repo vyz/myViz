@@ -82,6 +82,7 @@
     <Compile Include="HistoryElementView.xaml.cs">
       <DependentUpon>HistoryElementView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LogoCM.cs" />
     <Compile Include="Mova.cs" />
     <Compile Include="myBino.cs" />
     <Compile Include="myHistor.cs" />

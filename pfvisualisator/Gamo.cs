@@ -17,12 +17,17 @@ namespace pfVisualisator {
         private bool flagEndResulte;
         private bool flagworkabigcomment; //Комментарий на несколько строк
         private bool flagworkabigtimo;  //Таймовый коммент разбит концом строки (WorldCup 2015)
+        private bool flagworkabigVaro;
         private bool flagImpossibleMove;
         private string strimpossiblemove;
         private string strResulte;
+        private string bigCommento;
+        private string bigVaro;
+        private int stackBigVaro;
         private List<Mova> lFactMoves;
         private List<pozo> lPozos;
         private List<gTimo> lTimos;
+        private List<VarQvant> lVarQva;
         private gmKorrAtr intellectoattr;
         private int curpozoindex;
         private pozo curpoza;
@@ -548,90 +553,192 @@ namespace pfVisualisator {
         /// <returns></returns>
         private List<string> GetMovesFromString( string vv ) {
             List<string> reto = new List<string>();
-
-            if (flagworkabigcomment) {
-                //Возможно это и не комментарий вовсе :(, а начало тайминга
-                string pataddtimo = @"\A\s*\[%clk ([:0-9.]+)]\s*}";
-                if (Regex.IsMatch(vv, pataddtimo)) {
-                    flagworkabigcomment = false;
-                    vv = Regex.Replace(vv, pataddtimo, "$$$1");
-                } else {
-                    //Если на этой строке есть окончание комментария, то убираем этот хвостик
-                    //иначе пропускаем целиком данную строку
-                    string Patterno = @"\A[^}]*}\s*";
-                    if (Regex.IsMatch(vv, Patterno)) {
-                        vv = Regex.Replace(vv, Patterno, "");
-                        flagworkabigcomment = false;
+            List<string> kommy = null;
+            List<string> varry = null;
+            while(flagworkabigVaro) { //Может быть очень и очень длинная и с вложенными скобками :(
+                                      //В этом месте мы не строим иерархию. Задача вытащить целиком в одну строку самый внешний вариант.  
+                string patvaroendo = @"\A([^)]*)\)\s*";
+                Match regVaro = Regex.Match(vv, patvaroendo);
+                if (regVaro.Success) {
+                    string hvost = regVaro.Groups[1].Value;
+                    //А тута нужно проанализировать хвост на количество открывающихся скобок
+                    //
+                    //
+                    //
+                    if (stackBigVaro > 1) {
+                        bigVaro += ((bigVaro.Length > 0) ? " " : "") + hvost;
+                        stackBigVaro--;
                     } else {
-                        vv = string.Empty;
+                        bigVaro += ((bigVaro.Length > 0) ? " " : "") + hvost;
+                        stackBigVaro = 0;
+                        flagworkabigVaro = false;
+                        reto.Add("(" + bigVaro);
+                        }
+                    vv = Regex.Replace(vv, patvaroendo, "");
+                } else {
+                    bigVaro += ((bigVaro.Length > 0) ? " " : "") + vv;
+                    vv = string.Empty;
+                    }
+                }
+            if (vv.Length > 0) {
+                if (flagworkabigcomment) {
+                    //Возможно это и не комментарий вовсе :(, а начало тайминга
+                    string pataddtimo = @"\A\s*\[%clk ([:0-9.]+)]\s*}";
+                    if (Regex.IsMatch(vv, pataddtimo)) {
+                        flagworkabigcomment = false;
+                        vv = Regex.Replace(vv, pataddtimo, "$$$1");
+                    } else {
+                        //Если на этой строке есть окончание комментария, то убираем этот хвостик
+                        //иначе пропускаем целиком данную строку
+                        string Patterno = @"\A([^}]*)}\s*";
+                        Match regHvost = Regex.Match(vv, Patterno);
+                        if (regHvost.Success) {
+                            string hvost = regHvost.Groups[1].Value;
+                            reto.Add("{" + bigCommento + " " + hvost);
+                            vv = Regex.Replace(vv, Patterno, "");
+                            flagworkabigcomment = false;
+                        } else {
+                            bigCommento += ((bigCommento.Length > 0) ? " " : "") + vv;   //Бывает на предыдущей строке только одна фигурная скобка :(
+                            vv = string.Empty;
+                            }
                         }
                     }
-            } else if(flagworkabigtimo) {
-                string Patterno = @"\A\s*([:0-9.]+)]\s*}";
-                if(Regex.IsMatch(vv, Patterno)) {
-                    flagworkabigtimo = false;
-                    vv = Regex.Replace(vv, Patterno, "$$$1");
+                else if (flagworkabigtimo) {
+                    string Patterno = @"\A\s*([:0-9.]+)]\s*}";
+                    if (Regex.IsMatch(vv, Patterno)) {
+                        flagworkabigtimo = false;
+                        vv = Regex.Replace(vv, Patterno, "$$$1");
+                        }
                     }
-                }
-            string pattimo = @"{\s*\[%clk ([:0-9.]+)]\s*}";
-            vv = Regex.Replace(vv, pattimo, "$$$1");
-            string pattimoRazryv = @"\s*{\s*\[%clk\s*\z";
-            if( Regex.IsMatch(vv, pattimoRazryv)) {
-                flagworkabigtimo = true;
-                vv = Regex.Replace(vv, pattimoRazryv, ""); 
-                }
-            string pattimoRazryvDrugoy = @"{\s*\[%clk ([:0-9.]+)]\s*\Z";
-            if (Regex.IsMatch(vv, pattimoRazryvDrugoy)) {
-                flagworkabigcomment = true;
-                vv = Regex.Replace(vv, pattimoRazryvDrugoy, "$$$1");
-                }
-            if (vv.Contains("{")) {
-                string Patterno = @"{.*?}\s*";
-                vv = Regex.Replace(vv, Patterno, "");
+                if (vv.Length > 0)
+                {
+                    string pattimo = @"{\s*\[%clk ([:0-9.]+)]\s*}";
+                    vv = Regex.Replace(vv, pattimo, "$$$1");
+                    string pattimoRazryv = @"\s*{\s*\[%clk\s*\z";
+                    if (Regex.IsMatch(vv, pattimoRazryv))
+                    {
+                        flagworkabigtimo = true;
+                        vv = Regex.Replace(vv, pattimoRazryv, "");
+                    }
+                    string pattimoRazryvDrugoy = @"{\s*\[%clk ([:0-9.]+)]\s*\Z";
+                    if (Regex.IsMatch(vv, pattimoRazryvDrugoy))
+                    {
+                        flagworkabigcomment = true;
+                        vv = Regex.Replace(vv, pattimoRazryvDrugoy, "$$$1");
+                    }
+                    if (vv.Contains("("))
+                    {
+                        string Patterno = @"\((.*?)\)\s*";
+                        MatchCollection mcc = Regex.Matches(vv, Patterno);
+                        if (mcc.Count > 0)
+                        {
+                            varry = new List<string>();
+                            foreach (Match aa in mcc)
+                            {
+                                varry.Add(aa.Groups[1].Value);
+                            }
+                            vv = Regex.Replace(vv, Patterno, "& ");
+                        }
+                        string patvariostartonthisstring = @"\s*\((.*)\z";
+                        Match regVario = Regex.Match(vv, patvariostartonthisstring);
+                        if (regVario.Success)
+                        {
+                            bigVaro = ((flagworkabigVaro) ? bigVaro : "") + "(" + regVario.Groups[1].Value;
+                            flagworkabigVaro = true;
+                            stackBigVaro++;
+                            vv = Regex.Replace(vv, patvariostartonthisstring, "");
+                        }
+                    }
+                    if (vv.Length > 0)
+                    {
+                        if (vv.Contains("{"))
+                        {
+                            string Patterno = @"{(.*?)}\s*";
+                            MatchCollection mcc = Regex.Matches(vv, Patterno);
+                            if (mcc.Count > 0)
+                            {
+                                kommy = new List<string>();
+                                foreach (Match aa in mcc)
+                                {
+                                    kommy.Add(aa.Groups[1].Value);
+                                }
+                                vv = Regex.Replace(vv, Patterno, "@ ");
+                            }
 
-                string patcommentstartonthisstring = @"\s{.*\z";
-                if (Regex.IsMatch(vv, patcommentstartonthisstring)) {
-                    flagworkabigcomment = true;
-                    vv = Regex.Replace(vv, patcommentstartonthisstring, "");
-                    }
-                }
-            string[] arkus = vv.Split(' ');
-            string patnumbermove = @"\d+\.";
-            string patmovesymbol = @"[KQRBNa-hO][a-h1-8\-x=\+#QRBN]+";
-            string patresulte = @"1-0|0-1|1/2-1/2";
-            string patprobelnost = @"\s+";
-            foreach (string aa in arkus) {
-                if (Regex.IsMatch(aa, patnumbermove))
-                { //Бывает что после точки номера хода не стоит пробел (не по стандарту, но), а сразу следует ход белых (Кириши2014)
-                  //Поэтому нужно анализировать на наличие такого казуса
-                    if (aa.EndsWith(".")) {
-                        continue;
-                    } else {
-                        //Турки использовали точку как разделитель у секунд и она находится в середине :(
-                        //Поэтому проверим сначала на тайминг
-                        if (aa.StartsWith("$")) {
-                            reto.Add(aa);
-                            continue;
-                        } else {
-                            string[] bbkus = aa.Split('.');
-                            if (Regex.IsMatch(bbkus[1], patmovesymbol)) {
-                                reto.Add(bbkus[1]);
+                            string patcommentstartonthisstring = @"\s*{(.*)\z";
+                            Match regCommo = Regex.Match(vv, patcommentstartonthisstring);
+                            if (regCommo.Success)
+                            {
+                                flagworkabigcomment = true;
+                                bigCommento = regCommo.Groups[1].Value;
+                                vv = Regex.Replace(vv, patcommentstartonthisstring, "");
+                            }
+                        }
+                        if (vv.Length > 0)
+                        {
+                            string[] arkus = vv.Split(' ');
+                            string patnumbermove = @"\d+\.";
+                            string patmovesymbol = @"[KQRBNa-hO][a-h1-8\-x=\+#QRBN]+";
+                            string patresulte = @"1-0|0-1|1/2-1/2";
+                            string patprobelnost = @"\s+";
+                            int kk = 0;
+                            foreach (string aa in arkus)
+                            {
+                                if (Regex.IsMatch(aa, patnumbermove))
+                                { //Бывает что после точки номера хода не стоит пробел (не по стандарту, но), а сразу следует ход белых (Кириши2014)
+                                    //Поэтому нужно анализировать на наличие такого казуса
+                                    if (aa.EndsWith("."))
+                                    {
+                                        continue;
+                                    }
+                                    else
+                                    { //Турки использовали точку как разделитель у секунд и она находится в середине :(
+                                        //Поэтому проверим сначала на тайминг
+                                        if (aa.StartsWith("$"))
+                                        {
+                                            reto.Add(aa);
+                                            continue;
+                                        }
+                                        else
+                                        {
+                                            string[] bbkus = aa.Split('.');
+                                            if (Regex.IsMatch(bbkus[1], patmovesymbol))
+                                            {
+                                                reto.Add(bbkus[1]);
+                                            }
+                                        }
+                                    }
+                                }
+                                else if (Regex.IsMatch(aa, patmovesymbol))
+                                {
+                                    reto.Add(aa);
+                                }
+                                else if (Regex.IsMatch(aa, patresulte))
+                                {
+                                    flagEndResulte = true;
+                                    strResulte = aa;
+                                    continue;
+                                }
+                                else if (aa.StartsWith("$"))
+                                {
+                                    reto.Add(aa);
+                                }
+                                else if (aa.StartsWith("@"))
+                                {
+                                    reto.Add("{" + kommy[kk++]);
+                                }
+                                else if (Regex.IsMatch(aa, patprobelnost) || aa.Length == 0)
+                                {
+                                    continue; //Пустоту просто пропускаем
+                                }
+                                else
+                                {
+                                    reto.Add("ЖУЖАЖУЖУ");
                                 }
                             }
                         }
-                } else if (Regex.IsMatch(aa, patmovesymbol)) {
-                    reto.Add(aa);
-                } else if (Regex.IsMatch(aa, patresulte)) {
-                    flagEndResulte = true;
-                    strResulte = aa;
-                    continue;
-                } else if (aa.StartsWith("$")) {
-                    reto.Add(aa);
-                } else if (Regex.IsMatch(aa, patprobelnost) || aa.Length == 0) {
-                    continue; //Пустоту просто пропускаем
-                } else {
-                    reto.Add("ЖУЖАЖУЖУ");
                     }
+                }
                 }
             return reto;
             }

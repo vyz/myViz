@@ -11,6 +11,11 @@
         </Grid.ColumnDefinitions>
         <Viewbox Name="BxBoard" Grid.Column="0">
             <local:Borda x:Name="pfBoard"></local:Borda>
+            <Viewbox.ContextMenu>
+                <ContextMenu Name="vbme">
+                    <MenuItem Header="Открыть текущую позицию в отдельном окне" Click="PosoWindo_Click"/>
+                </ContextMenu>
+            </Viewbox.ContextMenu>
         </Viewbox>
         <GridSplitter Name="SplitIn1" Grid.Column="1" HorizontalAlignment="Left" Width="5"></GridSplitter>
         <StackPanel Name="GInfo" Grid.Column="1">
@@ -24,7 +29,7 @@
                 <Label Name="pSdvigLb1"></Label>
                 <Button Content="SaveXML" Name="xSavoBtn" Width="75" Click="xSavoBtn_Click" />
             </StackPanel>
-            <TextBox Name="AnaRes" Text="{Binding Path=AnaRes, Mode=OneWay}"></TextBox>
+            <TextBox Name="AnaRes" Text="{Binding Path=AnaRes, Mode=OneWay}" TextChanged="AnaRes_TextChanged"></TextBox>
             <StackPanel Name="spVarainto" CanVerticallyScroll="True" Orientation="Horizontal">
                 <Button Name="pzNext"  Content="Next" Width="50" Click="pzNextBtn_Click" />
                 <Border Margin="10" Padding="10" BorderBrush="SteelBlue" BorderThickness="2" CornerRadius="5" MaxWidth="350" >

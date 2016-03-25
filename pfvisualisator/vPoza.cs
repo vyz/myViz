@@ -83,7 +83,7 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 9 февраля 2016 года
+        /// Модификация от 22 марта 2016 года
         /// Заложен 9 февраля 2016 года
         /// </summary>
         /// <param name="ptypo"></param>
@@ -95,6 +95,7 @@ namespace pfVisualisator {
             if (setoanalizo.Count > 0) {
                 AnaRes = setoanalizo.OrderBy(F => F.Rango).ToArray()[0].Texa;
                 OnPropertyChanged("Anares");
+                OnPropertyChanged("SetoAnalo");
                 }
             }
 
