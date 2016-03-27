@@ -120,8 +120,9 @@ namespace pfVisualisator
         /// <param name="e"></param>
         private void PosoWindo_Click(object sender, RoutedEventArgs e) {
             try {
-                vPoza wrk = new vPoza(pfBoard.CurrentoPoza);
-                wrk.Descripto = this.Heado.Text;
+                vPoza wrk = new vPoza(pfBoard.CurrentoPoza, this.Heado.Text);
+                vGamo aa = (vGamo)Grido.DataContext;
+                wrk.Descripto = string.Format("Создано {0} из интерфейса для партии {1}", DateTime.Now.ToLongDateString(), aa.LeoGuid.ToString());
                 var winda = new PozoWinda();
                 winda.Grido.DataContext = wrk;
                 winda.pfBoard.CurrentoPoza = wrk.Selfa;

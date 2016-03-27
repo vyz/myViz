@@ -37,7 +37,7 @@ namespace pfVisualisator
         /// <param name="gm"></param>
         public vGamo(Gamo gm)
             : this() {
-                namo = gm.GamerWhite + " - " + gm.GamerBlack;
+                namo = gm.GamerWhite + ((gm.EloWhite.Length > 0) ? " (" + gm.EloWhite + ")" : "") + " - " + gm.GamerBlack + ((gm.EloBlack.Length > 0) ? " (" + gm.EloBlack + ")" : "");
                 bignamo = namo + " " + gm.Date + " " + gm.Resulto + " " + gm.ECO;
                 White = gm.GamerWhite;
                 Black = gm.GamerBlack;
@@ -221,6 +221,15 @@ namespace pfVisualisator
                 }
             return etalo.VanStrokeTimoForView(); 
             } }
+        public string BigAttroPerechen
+        {
+            get
+            {
+                return "Date - " + Date + Environment.NewLine + "Event - " + Event + Environment.NewLine + "ECO - " + ECO + Environment.NewLine
+                       + "PlyCount - " + PlyCount + Environment.NewLine + "WElo - " + WElo + Environment.NewLine + "BElo - " + BElo + Environment.NewLine
+                       + "Site - " + Site + Environment.NewLine + "Round - " + Round + Environment.NewLine + "AddAtr - " + AddAtr;
+            }
+        }
         public int iflagStartPos { get { return (etalo != null) ? ((etalo.StartoFlag) ? 1 : 0) : 0; } }
         public int iflagTiming { get { return (etalo != null) ? ((etalo.TimingFlag) ? 1 : 0) : 0; } }
         public int iflagCommto { get { return (etalo != null) ? ((etalo.CommtoFlag) ? 1 : 0) : 0; } }

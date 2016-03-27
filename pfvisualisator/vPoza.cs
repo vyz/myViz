@@ -45,6 +45,18 @@ namespace pfVisualisator {
             }
 
         /// <summary>
+        /// Модификация от 27 марта 2016 года
+        /// Заложен 27 марта 2016 года
+        /// </summary>
+        /// <param name="pz"></param>
+        /// <param name="bigonamo"></param>
+        public vPoza(pozo pz, string bigonamo)
+            : this(pz) {
+            bignamo = namo + " " + bigonamo;
+            }
+
+
+        /// <summary>
         /// Модификация от 5 февраля 2016 года
         /// Заложен 5 февраля 2016 года
         /// </summary>

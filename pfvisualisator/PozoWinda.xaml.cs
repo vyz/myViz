@@ -142,8 +142,9 @@ namespace pfVisualisator {
         private void PosoWindo_Click(object sender, RoutedEventArgs e)
         {
             try {
-                vPoza wrk = new vPoza(pfBoard.CurrentoPoza);
-                wrk.Descripto = "Вариантная позиция - ";
+                vPoza wrk = new vPoza(pfBoard.CurrentoPoza, this.Heado.Text);
+                vPoza vp = (vPoza)Grido.DataContext;
+                wrk.Descripto = string.Format("Создано {0} из варианта для позиции {1}", DateTime.Now.ToLongDateString(), vp.LeoGuid.ToString());
                 var winda = new PozoWinda();
                 winda.Grido.DataContext = wrk;
                 winda.pfBoard.CurrentoPoza = wrk.Selfa;

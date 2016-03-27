@@ -115,8 +115,10 @@ namespace pfVisualisator {
                 reto.Add(lima[umo].XMLOut());
                 }
             //Комменты и варианты могут быть и после всех ходиков варианта
-            for (; uqva < sorta.Count; uqva++) {
-                reto.Add(sorta[uqva].XMLOut());
+            if (sorta != null) {
+                for (; uqva < sorta.Count; uqva++) {
+                    reto.Add(sorta[uqva].XMLOut());
+                    }
                 }
             return reto;
             }

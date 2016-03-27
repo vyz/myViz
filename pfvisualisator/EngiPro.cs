@@ -57,9 +57,10 @@ namespace pfVisualisator {
         /// <returns></returns>
         private static string KonkretizationModulo( vlEngino aa ) {
             string reto = string.Empty;
+            string swita = Properties.Settings.Default.Zapuskatel;
             switch( aa ) {
                 case vlEngino.Houdini_3a_Pro_w32:
-                    reto = @"d:\Worka\Chaso\engino\Houdini3Prow32.exe";
+                    reto = (swita == "Homa") ? Properties.Settings.Default.Houdini : @"d:\Worka\Chaso\engino\Houdini3Prow32.exe";
                     break;
 
                 }

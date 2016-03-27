@@ -328,7 +328,7 @@ namespace pfVisualisator
                 }
             qava = limov.Count;
             CalculateSeta();
-            avamova = FillAvaMoveToVanStroke();
+            avamova = "Доступно " + qava.ToString() + Environment.NewLine + FillAvaMoveToVanStroke();
             }
 
         /// <summary>
