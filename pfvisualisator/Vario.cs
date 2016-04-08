@@ -44,9 +44,21 @@ namespace pfVisualisator {
             notata = VanStrokeMovaRegion();
             }
 
-        public Vario(pozo pp, List<XElement> lixmv) { 
-            //
-        }
+        /// <summary>
+        /// Модификация от 31 марта 2016 года
+        /// Заложен 31 марта 2016 года
+        /// </summary>
+        /// <param name="pp"></param>
+        /// <param name="limv"></param>
+        /// <param name="lipz"></param>
+        /// <param name="livq"></param>
+        public Vario(pozo pp, List<Mova> limv, List<pozo> lipz, List<VarQvant> livq ) {
+            bego = pp;
+            lima = limv;
+            lipa = lipz;
+            liqva = livq;
+            notata = VanStrokeMovaRegion();
+            }
         
         /// <summary>
         /// Модификация от 5 февраля 2016 года
@@ -221,7 +233,7 @@ namespace pfVisualisator {
 
         public VarQvant(int pi, string ps, Vario pv) {
             numa = pi;
-            como = ps;
+            como = (ps == null) ? string.Empty : ps;
             vrvnu = pv;
             }
 
@@ -230,17 +242,15 @@ namespace pfVisualisator {
         /// Заложен 4 февраля 2016 года
         /// </summary>
         /// <param name="xel"></param>
-        public VarQvant(XElement xel)
-        {
+        public VarQvant(XElement xel) {
             numa = int.Parse(xel.Attribute("VarNumo").Value);
             XElement aa = xel.Element("Commento");
             como = (null == aa) ? string.Empty : aa.Value;
             aa = xel.Element("Vario");
-            if (null != aa)
-            {
+            if (null != aa) {
                 vrvnu = new Vario(aa);
+                }
             }
-        }
 
         /// <summary>
         /// Модификация от 4 февраля 2016 года

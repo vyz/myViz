@@ -13,6 +13,7 @@ namespace pfVisualisator {
         private List<string> onlymainmoves;
         private bool flagComments;
         private bool flagTiming;
+        private bool flagVario;
         private bool flagFromStart;
         private bool flagEndResulte;
         private bool flagworkabigcomment; //Комментарий на несколько строк
@@ -75,15 +76,16 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 22 октября 2015 года
+        /// Модификация от 1 апреля 2016 года
         /// Заложен июнь 2015 года
         /// </summary>
         /// <returns></returns>
         public bool MovaControlling() {
             bool reto = false;
-            pozo tp = null; 
-            List<string> variantosy;
-            string commento;
+            pozo tp = null;
+            int kvaqva = 0;
+            VarQvant tvq = null;
+
 
             string aa = GetAttro(gmAttro.Fen);
             if (aa == string.Empty) {
@@ -94,13 +96,30 @@ namespace pfVisualisator {
             FillMainMoves();
             lFactMoves = new List<Mova>();
             lPozos = new List<pozo>();
-
             lPozos.Add(tp);
             foreach( string minimov in onlymainmoves ) {
-                if (minimov.StartsWith("{")) { //Это комментарий из текста, добавляем его непосредственно к позиции
-                                               //И в лист комментов с указанием ссылки на позу для обратного восстановления из сохраненного гамо
+                if( minimov.StartsWith("(") ) { //Это вариант. Может иметь вложенности. Требует отдельной проработки.
+                    flagVario = true;
+                    string doba = minimov.Substring(1);
+                    tvq = CreateFromVarioString(lPozos[kvaqva-1], doba, kvaqva); //Вариант следует уже после сделанного хода и tp уже ушла вперёд, поэтому надо использовать предыдущую позицию.
+                    if (tvq != null) {
+                        if( lVarQva == null ) {
+                            lVarQva = new List<VarQvant>();
+                            }
+                        lVarQva.Add(tvq);
+                        }
+                    }
+                else if( minimov.StartsWith("{") ) { //Это комментарий из текста, добавляем его непосредственно к позиции
+                                                     //И в лист комментов с указанием ссылки на позу для обратного восстановления из сохраненного гамо
                     flagComments = true;
                     string doba = minimov.Substring(1);
+                    tvq = CreateFromCommentoString(doba, kvaqva);
+                    if (tvq != null) {
+                        if (lVarQva == null) {
+                            lVarQva = new List<VarQvant>();
+                            }
+                        lVarQva.Add(tvq);
+                        }
                 } else if (minimov.StartsWith("$")) { //Это строка тайминга. Добавляем ее в лист таймингов с указанием позиции. 
                                                       //Так как возможен неполный, а только выборочный тайминг.
                     flagTiming = true;
@@ -116,6 +135,7 @@ namespace pfVisualisator {
                     lFactMoves.Add(tp.GetFactMoveFilled());
                     tp = tp.GetPozoAfterControlMove();
                     lPozos.Add(tp);
+                    kvaqva++;
                 } else { //раз дошли досюдова, то ход был, но он невозможный - фиксирукм это в гаму
                     flagImpossibleMove = true;
                     strimpossiblemove = string.Format("Невозможный ход {0} после {1} хода {2}", minimov, tp.NumberMove, !tp.IsQueryMoveWhite ? "белых" : "чёрных");
@@ -546,7 +566,7 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 4 декабря 2015 года
+        /// Модификация от 1 апреля 2016 года
         /// Заложен 22 июля 2015 года
         /// </summary>
         /// <param name="vv"></param>
@@ -555,18 +575,15 @@ namespace pfVisualisator {
             List<string> reto = new List<string>();
             List<string> kommy = null;
             List<string> varry = null;
-            while(flagworkabigVaro) { //Может быть очень и очень длинная и с вложенными скобками :(
+            int anticikl = 1000;
+            while(flagworkabigVaro && anticikl-- > 0) { //Может быть очень и очень длинная и с вложенными скобками :(
                                       //В этом месте мы не строим иерархию. Задача вытащить целиком в одну строку самый внешний вариант.  
-                string patvaroendo = @"\A([^)]*)\)\s*";
+                string patvaroendo = @"\A([^(^)]*)\)\s*";
                 Match regVaro = Regex.Match(vv, patvaroendo);
-                if (regVaro.Success) {
+                if (regVaro.Success) { 
                     string hvost = regVaro.Groups[1].Value;
-                    //А тута нужно проанализировать хвост на количество открывающихся скобок
-                    //
-                    //
-                    //
                     if (stackBigVaro > 1) {
-                        bigVaro += ((bigVaro.Length > 0) ? " " : "") + hvost;
+                        bigVaro += ((bigVaro.Length > 0) ? " " : "") + hvost + ")";
                         stackBigVaro--;
                     } else {
                         bigVaro += ((bigVaro.Length > 0) ? " " : "") + hvost;
@@ -576,9 +593,54 @@ namespace pfVisualisator {
                         }
                     vv = Regex.Replace(vv, patvaroendo, "");
                 } else {
-                    bigVaro += ((bigVaro.Length > 0) ? " " : "") + vv;
-                    vv = string.Empty;
+                    //А тута нужно проанализировать хвост на количество открывающихся скобок, но при этом не имеющих парных закрытий
+                    //Такой пример не поймался предыдущим ЗАХВАТЧИКОМ (....)...)
+                    bool probr = true;
+                    if (vv.Contains("(")) {
+                        int kop = vv.Count(S => S == '(');
+                        if (vv.Contains(")")) {
+                            //Т.е. это уже достаточно редкий гость и мы должны посчитать разницу между открывающимися и закрывающимися скобками.
+                            int kzak = vv.Count(S => S == ')');
+                            if (kop >= kzak) {
+                                stackBigVaro += kop - kzak;
+                            } else {
+                                stackBigVaro -= kzak - kop;
+                                if (stackBigVaro < 0) {
+                                    throw (new VisualisatorException(string.Format("Нонсенс. Gamo.GetMovesFromString. Отрицательный stackBigVaro - {0}", stackBigVaro)));
+                                    }
+                                else if (stackBigVaro == 0) {
+                                    //Тогда мы нашли окончание и надо используя жадный поиск схватить кусок и выплюнуть остаток по аналогии с верхним "хвостом"
+                                    string patvnvaroendo = @"\A(.*)\)\s*";
+                                    Match regvn = Regex.Match(vv, patvnvaroendo);
+                                    if (regvn.Success) {
+                                        string hhh = regVaro.Groups[1].Value;
+                                        bigVaro += ((bigVaro.Length > 0) ? " " : "") + hhh;
+                                        flagworkabigVaro = false;
+                                        reto.Add("(" + bigVaro);
+                                        vv = Regex.Replace(vv, patvaroendo, "");
+                                        probr = false;
+                                    } else {
+                                        throw (new VisualisatorException("МиниНонсенс. Должно было быть, а не нашлось Gamo.GetMovesFromString."));
+                                        }
+                                    }
+                                else {
+                                    //Всё нормально. Брейкуем как указано ниже.
+                                    }
+                                }
+
+                        } else {
+                            stackBigVaro += kop;
+                            }
+                        }
+                    if( probr ) {
+                        bigVaro += ((bigVaro.Length > 0) ? " " : "") + vv;
+                        vv = string.Empty;
+                        }
+                    break;
                     }
+                }
+            if( anticikl == 0 ) {
+                throw( new VisualisatorException("Сработал антицикл."));
                 }
             if (vv.Length > 0) {
                 if (flagworkabigcomment) {
@@ -610,135 +672,110 @@ namespace pfVisualisator {
                         vv = Regex.Replace(vv, Patterno, "$$$1");
                         }
                     }
-                if (vv.Length > 0)
-                {
+                if (vv.Length > 0) {
                     string pattimo = @"{\s*\[%clk ([:0-9.]+)]\s*}";
                     vv = Regex.Replace(vv, pattimo, "$$$1");
                     string pattimoRazryv = @"\s*{\s*\[%clk\s*\z";
-                    if (Regex.IsMatch(vv, pattimoRazryv))
-                    {
+                    if (Regex.IsMatch(vv, pattimoRazryv)) {
                         flagworkabigtimo = true;
                         vv = Regex.Replace(vv, pattimoRazryv, "");
-                    }
+                        }
                     string pattimoRazryvDrugoy = @"{\s*\[%clk ([:0-9.]+)]\s*\Z";
-                    if (Regex.IsMatch(vv, pattimoRazryvDrugoy))
-                    {
+                    if (Regex.IsMatch(vv, pattimoRazryvDrugoy)) {
                         flagworkabigcomment = true;
                         vv = Regex.Replace(vv, pattimoRazryvDrugoy, "$$$1");
-                    }
-                    if (vv.Contains("("))
-                    {
+                        }
+                    if (vv.Contains("(")) {
                         string Patterno = @"\((.*?)\)\s*";
                         MatchCollection mcc = Regex.Matches(vv, Patterno);
-                        if (mcc.Count > 0)
-                        {
+                        if (mcc.Count > 0) {
                             varry = new List<string>();
-                            foreach (Match aa in mcc)
-                            {
+                            foreach (Match aa in mcc) {
                                 varry.Add(aa.Groups[1].Value);
-                            }
+                                }
                             vv = Regex.Replace(vv, Patterno, "& ");
-                        }
+                            }
                         string patvariostartonthisstring = @"\s*\((.*)\z";
                         Match regVario = Regex.Match(vv, patvariostartonthisstring);
-                        if (regVario.Success)
-                        {
-                            bigVaro = ((flagworkabigVaro) ? bigVaro : "") + "(" + regVario.Groups[1].Value;
+                        if (regVario.Success) {
+                            bigVaro = ((flagworkabigVaro) ? bigVaro + "(" : "") + regVario.Groups[1].Value;
                             flagworkabigVaro = true;
                             stackBigVaro++;
                             vv = Regex.Replace(vv, patvariostartonthisstring, "");
+                            }
                         }
-                    }
-                    if (vv.Length > 0)
-                    {
-                        if (vv.Contains("{"))
-                        {
+                    if (vv.Length > 0) {
+                        if (vv.Contains("{")) {
                             string Patterno = @"{(.*?)}\s*";
                             MatchCollection mcc = Regex.Matches(vv, Patterno);
-                            if (mcc.Count > 0)
-                            {
+                            if (mcc.Count > 0) {
                                 kommy = new List<string>();
-                                foreach (Match aa in mcc)
-                                {
+                                foreach (Match aa in mcc) {
                                     kommy.Add(aa.Groups[1].Value);
-                                }
+                                    }
                                 vv = Regex.Replace(vv, Patterno, "@ ");
-                            }
-
+                                }
                             string patcommentstartonthisstring = @"\s*{(.*)\z";
                             Match regCommo = Regex.Match(vv, patcommentstartonthisstring);
-                            if (regCommo.Success)
-                            {
+                            if (regCommo.Success) {
                                 flagworkabigcomment = true;
                                 bigCommento = regCommo.Groups[1].Value;
                                 vv = Regex.Replace(vv, patcommentstartonthisstring, "");
+                                }
                             }
-                        }
-                        if (vv.Length > 0)
-                        {
+                        if (vv.Length > 0) {
                             string[] arkus = vv.Split(' ');
                             string patnumbermove = @"\d+\.";
                             string patmovesymbol = @"[KQRBNa-hO][a-h1-8\-x=\+#QRBN]+";
                             string patresulte = @"1-0|0-1|1/2-1/2";
                             string patprobelnost = @"\s+";
                             int kk = 0;
-                            foreach (string aa in arkus)
-                            {
-                                if (Regex.IsMatch(aa, patnumbermove))
-                                { //Бывает что после точки номера хода не стоит пробел (не по стандарту, но), а сразу следует ход белых (Кириши2014)
-                                    //Поэтому нужно анализировать на наличие такого казуса
-                                    if (aa.EndsWith("."))
-                                    {
+                            int kv = 0;
+                            foreach (string aa in arkus) {
+                                if (Regex.IsMatch(aa, patnumbermove)) { //Бывает что после точки номера хода не стоит пробел (не по стандарту, но), а сразу следует ход белых (Кириши2014)
+                                                                        //Поэтому нужно анализировать на наличие такого казуса
+                                    if( aa.EndsWith(".") ) {
                                         continue;
-                                    }
-                                    else
-                                    { //Турки использовали точку как разделитель у секунд и она находится в середине :(
+                                    } else { //Турки использовали точку как разделитель у секунд и она находится в середине :(
                                         //Поэтому проверим сначала на тайминг
-                                        if (aa.StartsWith("$"))
-                                        {
+                                        if( aa.StartsWith("$") ) {
                                             reto.Add(aa);
                                             continue;
-                                        }
-                                        else
-                                        {
+                                        } else {
                                             string[] bbkus = aa.Split('.');
-                                            if (Regex.IsMatch(bbkus[1], patmovesymbol))
-                                            {
+                                            if( Regex.IsMatch(bbkus[1], patmovesymbol) ) {
                                                 reto.Add(bbkus[1]);
+                                                }
                                             }
                                         }
-                                    }
-                                }
-                                else if (Regex.IsMatch(aa, patmovesymbol))
-                                {
+                                    } 
+                                else if (Regex.IsMatch(aa, patmovesymbol)) {
                                     reto.Add(aa);
-                                }
-                                else if (Regex.IsMatch(aa, patresulte))
-                                {
+                                    }
+                                else if (Regex.IsMatch(aa, patresulte)) {
                                     flagEndResulte = true;
                                     strResulte = aa;
                                     continue;
-                                }
-                                else if (aa.StartsWith("$"))
-                                {
+                                    }
+                                else if (aa.StartsWith("$")) {
                                     reto.Add(aa);
-                                }
-                                else if (aa.StartsWith("@"))
-                                {
+                                    }
+                                else if (aa.StartsWith("@")) {
                                     reto.Add("{" + kommy[kk++]);
-                                }
-                                else if (Regex.IsMatch(aa, patprobelnost) || aa.Length == 0)
-                                {
+                                    }
+                                else if (aa.StartsWith("&")) {
+                                    reto.Add("(" + varry[kv++]);
+                                    }
+                                else if (Regex.IsMatch(aa, patprobelnost) || aa.Length == 0) {
                                     continue; //Пустоту просто пропускаем
-                                }
-                                else
-                                {
+                                    }
+                                else {
                                     reto.Add("ЖУЖАЖУЖУ");
+                                    }
                                 }
                             }
                         }
                     }
-                }
                 }
             return reto;
             }
@@ -802,6 +839,178 @@ namespace pfVisualisator {
                 }
             }
 
+        /// <summary>
+        /// Модификация от 30 марта 2016 года
+        /// Заложен 30 марта 2016 года
+        /// </summary>
+        /// <param name="pcom"></param>
+        /// <param name="npoluhod"></param>
+        /// <returns></returns>
+        private VarQvant CreateFromCommentoString(string pcom, int npoluhod) {
+            VarQvant reto = new VarQvant(npoluhod, pcom, null);
+            return reto;
+            }
+
+        /// <summary>
+        /// Модификация от 1 апреля 2016 года
+        /// Заложен 30 марта 2016 года
+        /// </summary>
+        /// <param name="ap"></param>
+        /// <param name="pvar"></param>
+        /// <param name="npoluhod"></param>
+        /// <returns></returns>
+        private VarQvant CreateFromVarioString(pozo ap, string pvar, int npoluhod) {
+            VarQvant reto = null;
+            pozo tp = ap;
+            int kvaqva = 0;
+            VarQvant tvq = null;
+            List<string> movastringlist = null;
+            List<Mova> lFMova = new List<Mova>();
+            List<pozo> lNPozo = new List<pozo>();
+            List<VarQvant> lVQva = null;
+
+            bool vlogha = false;
+
+            vlogha = FillVarioMoves(pvar, out movastringlist);
+            if (vlogha) {
+                lVQva = new List<VarQvant>();
+                }
+            foreach( string minimov in movastringlist ) {
+                if( minimov.StartsWith("(") ) { //Это вариант. Может иметь вложенности. Требует отдельной проработки.
+                    string doba = minimov.Substring(1);
+                    tvq = CreateFromVarioString(lNPozo[kvaqva - 2], doba, kvaqva);   //Вариант следует уже после сделанного хода и tp уже ушла вперёд, поэтому надо использовать предыдущую позицию.
+                                                                                     //Но в подварианте позиции кладутся в лист уже после хода. Поэтому сдвигать надо на 2.   
+                    if (tvq != null) {
+                        lVQva.Add(tvq);
+                        }
+                    }
+                else if (minimov.StartsWith("{")) { //Это комментарий из текста, добавляем его непосредственно к позиции
+                                                    //И в лист комментов с указанием ссылки на позу для обратного восстановления из сохраненного гамо
+                    string doba = minimov.Substring(1);
+                    tvq = CreateFromCommentoString(doba, kvaqva);
+                    if (tvq != null) {
+                        lVQva.Add(tvq);
+                        }
+                    }
+                else if (tp.ContraMov(minimov, 1)) {
+                    lFMova.Add(tp.GetFactMoveFilled());
+                    tp = tp.GetPozoAfterControlMove();
+                    lNPozo.Add(tp);
+                    kvaqva++;
+                    }
+                else { //раз дошли досюдова, то ход был, но он невозможный - фиксирукм это в гаму
+                    flagImpossibleMove = true;
+                    strimpossiblemove = string.Format("Невозможный ход в варианте {0} после {1} хода {2}", minimov, tp.NumberMove, !tp.IsQueryMoveWhite ? "белых" : "чёрных");
+                    }
+                }
+            if( lFMova.Count > 0 ) {
+                Vario aa = new Vario(ap, lFMova, lNPozo, lVQva);
+                reto = new VarQvant(npoluhod, null, aa);
+                }
+            return reto;
+            }
+
+        /// <summary>
+        /// Модификация от 31 марта 2016 года
+        /// Заложен 31 марта 2016 года
+        /// </summary>
+        /// <param name="vv"></param>
+        /// <param name="naboro"></param>
+        /// <returns></returns>
+        private bool FillVarioMoves(string vv, out List<string> naboro) {
+            bool reto = false;
+            naboro = new List<string>();
+            List<string> kommy = null;
+            List<string> varry = null;
+
+            if (vv.Contains("(")) {
+//                string Patterno = @"(?<ALL>\((?>[^)(]+|(\k<ALL>))+\))\s*";
+                string Patterno = "(" +  
+                                          "(" +
+                                              @"(?'Open'\()" +
+                                              "[^(^)]*" +
+                                          ")+" +
+                                          @"(?'Close-Open'\))" +
+                                  @"(?(Open)(?!))" +
+                                 ")+";
+/*                string Patterno = "^[^()]*" +
+                                      "(" +
+                                          "(" +
+                                              @"(?'Open'\()" +
+                                              "[^()]*" +
+                                          ")+" +
+                                          @"(?'Close-Open'\)[^)(]*)+" +
+                                      ")+[^)(]*" +
+                                  @"(?(Open)(?!))$";
+ */
+                MatchCollection mcc = Regex.Matches(vv, Patterno);
+                if (mcc.Count > 0) {
+                    varry = new List<string>();
+                    foreach (Match aa in mcc) {
+                        foreach (Group bb in aa.Groups) {
+                            string cc = bb.Value;
+                            if (cc.Length > 0) {
+                                varry.Add(cc);
+                                }
+                            }
+                        }
+                    vv = Regex.Replace(vv, Patterno, "& ");
+                    }
+                }
+            if (vv.Contains("{")) {
+                string Patterno = @"{(.*?)}\s*";
+                MatchCollection mcc = Regex.Matches(vv, Patterno);
+                if (mcc.Count > 0) {
+                    kommy = new List<string>();
+                    foreach (Match aa in mcc) {
+                        kommy.Add(aa.Groups[1].Value);
+                        }
+                    vv = Regex.Replace(vv, Patterno, "@ ");
+                    }
+                }
+            string[] arkus = vv.Split(' ');
+            string patnumbermove = @"\d+\.";
+            string patmovesymbol = @"[KQRBNa-hO][a-h1-8\-x=\+#QRBN]+";
+            string patresulte = @"1-0|0-1|1/2-1/2";
+            string patprobelnost = @"\s+";
+            int kk = 0;
+            int kv = 0;
+            foreach (string aa in arkus) {
+                if( Regex.IsMatch(aa, patnumbermove) ) { //Бывает что после точки номера хода не стоит пробел (не по стандарту, но), а сразу следует ход белых (Кириши2014)
+                                                         //Поэтому нужно анализировать на наличие такого казуса
+                    if( aa.EndsWith(".") ) {
+                        continue;
+                    } else {
+                        string[] bbkus = aa.Split('.');
+                        if( Regex.IsMatch(bbkus[1], patmovesymbol) ) {
+                            naboro.Add(bbkus[1]);
+                            }
+                        }
+                    }
+                else if( Regex.IsMatch(aa, patmovesymbol) ) {
+                    naboro.Add(aa);
+                    }
+                else if( Regex.IsMatch(aa, patresulte) ) {
+                    naboro.Add("{" + aa);
+                    reto = true;
+                    }
+                else if( aa.StartsWith("@") ) {
+                    naboro.Add("{" + kommy[kk++]);
+                    reto = true;
+                    }
+                else if( aa.StartsWith("&") ) {
+                    naboro.Add("(" + varry[kv++]);
+                    reto = true;
+                    }
+                else if( Regex.IsMatch(aa, patprobelnost) || aa.Length == 0 ) {
+                    continue; //Пустоту просто пропускаем
+                    }
+                else {
+                    naboro.Add("ЖУЖАЖУЖУ");
+                    }
+                }
+            return reto;
+            }
 
         static public Dictionary<gmAttro, string> CreateDictoAttribute(List<string> aa) {
             Dictionary<gmAttro, string> reto = null;
@@ -843,8 +1052,10 @@ namespace pfVisualisator {
         public bool TimingFlag { get { return flagTiming; } }
         public bool StartoFlag { get { return flagFromStart; } }
         public bool CommtoFlag { get { return flagComments; } }
+        public bool VariantoFlag { get { return flagVario; } }
         public List<gTimo> ListoTimo { get { return lTimos; } }
         public List<pozo> ListoPozo { get { return lPozos; } }
+        public List<VarQvant> ListVaroCom { get { return lVarQva; } }
         public gmKorrAtr KorrFlago { get { return intellectoattr; } }
 #endregion-----------------------Свойства объекта-----------------------------------------
     }
