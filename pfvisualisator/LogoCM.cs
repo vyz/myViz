@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 
 namespace pfVisualisator
 {
@@ -9,6 +10,7 @@ namespace pfVisualisator
     {
         private static int swa = 0;
         private static bool inya = false;
+        private static StreamWriter vf = null;
 
         private LogoCM() { }
 
@@ -21,13 +23,30 @@ namespace pfVisualisator
         {
             if (!inya) {
                 initologo();
+                }
+            if (swa == 1) {
+                vf.WriteLine(string.Format("{0} --- {1}", DateTime.Now.ToString(), aa));
+                }
+
+        }
+
+        private static void initologo() {
+            swa = Properties.Settings.Default.LogoSwitcher;
+            if (swa == 1) {
+                string filoname = Properties.Settings.Default.LogoFilo;
+                vf = new StreamWriter(filoname, true);
+                inya = true;
+                }
             }
 
-        }
+        public static void finitalogo() {
+            if (inya) {
+                if (swa == 1) {
+                    vf.Close();
+                    }
+                }
+            }
 
-        private static void initologo()
-        {
-        }
     }
 
 /*

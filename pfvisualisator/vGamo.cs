@@ -9,7 +9,7 @@ using System.Text.RegularExpressions;
 namespace pfVisualisator
 {
     /// <summary>
-    /// Модификация от 21 октября 2015 года
+    /// Модификация от 14 апреля 2016 года
     /// Заложен 4 октября 2015 года
     /// </summary>
     public class vGamo : myleo, INotifyPropertyChanged {
@@ -18,6 +18,8 @@ namespace pfVisualisator
         private int movacount;
         private Gamo etalo;
         private pozo currento;
+        private List<VarQvant> lvaqv;
+
 
         /// <summary>
         /// Модификация от 4 октября 2015 года
@@ -31,7 +33,7 @@ namespace pfVisualisator
             }
 
         /// <summary>
-        /// Модификация от 19 ноября 2015 года
+        /// Модификация от 14 апреля 2016 года
         /// Заложен 4 октября 2015 года
         /// </summary>
         /// <param name="gm"></param>
@@ -60,6 +62,8 @@ namespace pfVisualisator
                 AddAtr = gm.VanStrokeRestAttributes();
                 Descripto = string.Empty;
                 Timingo = gm.VanStrokeTimingo();
+                etalo = gm;
+                lvaqv = gm.ListVaroCom;
                 }
 
         /// <summary>
@@ -78,6 +82,35 @@ namespace pfVisualisator
                     ltexto.Add(string.Empty);
                     }
                 }
+
+        /// <summary>
+        /// Модификация от 15 апреля 2016 года
+        /// Заложен 15 апреля 2016 года
+        /// </summary>
+        /// <param name="xel"></param>
+        public override void Dopico(XElement xel) {
+            foreach (XElement aa in xel.Elements("VarQuant")) {
+                if (null == lvaqv) { lvaqv = new List<VarQvant>(); }
+                lvaqv.Add(new VarQvant(aa));
+                }
+            }   
+
+        /// <summary>
+        /// Модификация от 15 апреля 2016 года
+        /// Заложен 15 апреля 2016 года
+        /// </summary>
+        /// <returns></returns>
+        public override XElement Dopico() {
+            XElement reto = new XElement("Dopico");
+            if (null != lvaqv) {
+                foreach (VarQvant aa in lvaqv) {
+                    reto.Add(aa.XMLOut());
+                    }
+                }
+            return reto;
+            }
+
+
 
         /// <summary>
         /// Модификация от 16 ноября 2015 года
@@ -233,6 +266,9 @@ namespace pfVisualisator
         public int iflagStartPos { get { return (etalo != null) ? ((etalo.StartoFlag) ? 1 : 0) : 0; } }
         public int iflagTiming { get { return (etalo != null) ? ((etalo.TimingFlag) ? 1 : 0) : 0; } }
         public int iflagCommto { get { return (etalo != null) ? ((etalo.CommtoFlag) ? 1 : 0) : 0; } }
+        public int iflagVario { get { return (etalo != null) ? ((etalo.VariantoFlag) ? 1 : 0) : 0; } }
+        public List<VarQvant> ListoVarCom { get { return lvaqv; } }
+
 #endregion-----------------------Свойства объекта-----------------------------------------
 
         private void OnPropertyChanged(string name) {

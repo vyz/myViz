@@ -43,7 +43,7 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 19 ноября 2015 года
+        /// Модификация от 14 апреля 2016 года
         /// Заложен 8 ноября 2015 года
         /// </summary>
         /// <param name="vg"></param>
@@ -72,6 +72,25 @@ namespace pfVisualisator {
                 }
             if (vg.Timingo.Length > 0) {
                 FillListTimo(vg.Timingo);
+                }
+            if (vg.ListoVarCom != null) {
+                lVarQva = vg.ListoVarCom;
+                foreach (VarQvant aa in lVarQva) {
+                    if (flagVario && flagComments) {
+                        break;
+                    } else {
+                        if (!flagVario) {
+                            if (aa.Varo != null) {
+                                flagVario = true;
+                                }
+                            }
+                        if (!flagComments) {
+                            if (aa.Commento.Length > 0) {
+                                flagComments = true;
+                                }
+                            }
+                        }
+                    }
                 }
             }
 
@@ -146,6 +165,9 @@ namespace pfVisualisator {
                 if (Qavo == string.Empty) {
                     SetAttro(gmAttro.PlyCount, lFactMoves.Count.ToString());
                     }
+                }
+            if (flagImpossibleMove) {
+                LogoCM.OutString(string.Format("{0} - {1} $$ {2}", GamerWhite, GamerBlack, strimpossiblemove));
                 }
             return reto;
             }
@@ -868,6 +890,7 @@ namespace pfVisualisator {
             List<Mova> lFMova = new List<Mova>();
             List<pozo> lNPozo = new List<pozo>();
             List<VarQvant> lVQva = null;
+            string exepostringo = string.Empty;
 
             bool vlogha = false;
 
@@ -875,37 +898,46 @@ namespace pfVisualisator {
             if (vlogha) {
                 lVQva = new List<VarQvant>();
                 }
-            foreach( string minimov in movastringlist ) {
-                if( minimov.StartsWith("(") ) { //Это вариант. Может иметь вложенности. Требует отдельной проработки.
-                    string doba = minimov.Substring(1);
-                    tvq = CreateFromVarioString(lNPozo[kvaqva - 2], doba, kvaqva);   //Вариант следует уже после сделанного хода и tp уже ушла вперёд, поэтому надо использовать предыдущую позицию.
-                                                                                     //Но в подварианте позиции кладутся в лист уже после хода. Поэтому сдвигать надо на 2.   
-                    if (tvq != null) {
-                        lVQva.Add(tvq);
+            try {
+                foreach (string minimov in movastringlist) {
+                    if (minimov.StartsWith("(")) { //Это вариант. Может иметь вложенности. Требует отдельной проработки.
+                        string doba = minimov.Substring(1);
+                        tvq = CreateFromVarioString(lNPozo[kvaqva - 2], doba, kvaqva);   //Вариант следует уже после сделанного хода и tp уже ушла вперёд, поэтому надо использовать предыдущую позицию.
+                                                                                         //Но в подварианте позиции кладутся в лист уже после хода. Поэтому сдвигать надо на 2.   
+                        if (tvq != null) {
+                            lVQva.Add(tvq);
+                            }
+                        }
+                    else if (minimov.StartsWith("{")) { //Это комментарий из текста, добавляем его непосредственно к позиции
+                                                        //И в лист комментов с указанием ссылки на позу для обратного восстановления из сохраненного гамо
+                        string doba = minimov.Substring(1);
+                        tvq = CreateFromCommentoString(doba, kvaqva);
+                        if (tvq != null) {
+                            lVQva.Add(tvq);
+                            }
+                        }
+                    else if (tp.ContraMov(minimov, 1)) {
+                        lFMova.Add(tp.GetFactMoveFilled());
+                        tp = tp.GetPozoAfterControlMove();
+                        lNPozo.Add(tp);
+                        kvaqva++;
+                        }
+                    else { //раз дошли досюдова, то ход был, но он невозможный - фиксирукм это в гаму
+                        flagImpossibleMove = true;
+                        strimpossiblemove = string.Format("Невозможный ход в варианте {0} после {1} хода {2}", minimov, tp.NumberMove, !tp.IsQueryMoveWhite ? "белых" : "чёрных");
                         }
                     }
-                else if (minimov.StartsWith("{")) { //Это комментарий из текста, добавляем его непосредственно к позиции
-                                                    //И в лист комментов с указанием ссылки на позу для обратного восстановления из сохраненного гамо
-                    string doba = minimov.Substring(1);
-                    tvq = CreateFromCommentoString(doba, kvaqva);
-                    if (tvq != null) {
-                        lVQva.Add(tvq);
-                        }
-                    }
-                else if (tp.ContraMov(minimov, 1)) {
-                    lFMova.Add(tp.GetFactMoveFilled());
-                    tp = tp.GetPozoAfterControlMove();
-                    lNPozo.Add(tp);
-                    kvaqva++;
-                    }
-                else { //раз дошли досюдова, то ход был, но он невозможный - фиксирукм это в гаму
-                    flagImpossibleMove = true;
-                    strimpossiblemove = string.Format("Невозможный ход в варианте {0} после {1} хода {2}", minimov, tp.NumberMove, !tp.IsQueryMoveWhite ? "белых" : "чёрных");
-                    }
+            } catch (Exception exepa) {
+                exepostringo = "КРАХ@@->Gamo][CreateFromVarioString " + exepa.Message;
+                LogoCM.OutString(exepostringo);
+                lFMova = new List<Mova>();
                 }
-            if( lFMova.Count > 0 ) {
+            if (lFMova.Count > 0) {
                 Vario aa = new Vario(ap, lFMova, lNPozo, lVQva);
                 reto = new VarQvant(npoluhod, null, aa);
+            } else {
+                Vario aa = new Vario(ap, false, exepostringo);
+                reto = new VarQvant(npoluhod, "Была строка " + pvar, aa);
                 }
             return reto;
             }
@@ -927,34 +959,21 @@ namespace pfVisualisator {
 //                string Patterno = @"(?<ALL>\((?>[^)(]+|(\k<ALL>))+\))\s*";
                 string Patterno = "(" +  
                                           "(" +
-                                              @"(?'Open'\()" +
-                                              "[^(^)]*" +
+                                              @"(?<Open> \()" +   //Пробел после опен смысловой!!!
+                                              "[^)(]*" +
                                           ")+" +
-                                          @"(?'Close-Open'\))" +
-                                  @"(?(Open)(?!))" +
-                                 ")+";
-/*                string Patterno = "^[^()]*" +
-                                      "(" +
-                                          "(" +
-                                              @"(?'Open'\()" +
-                                              "[^()]*" +
-                                          ")+" +
-                                          @"(?'Close-Open'\)[^)(]*)+" +
-                                      ")+[^)(]*" +
-                                  @"(?(Open)(?!))$";
- */
+                                          @"(?<Close-Open>\)\s*)+" +
+                                   ")+" +
+                                  @"(?(Open)(?!))";
                 MatchCollection mcc = Regex.Matches(vv, Patterno);
                 if (mcc.Count > 0) {
                     varry = new List<string>();
                     foreach (Match aa in mcc) {
-                        foreach (Group bb in aa.Groups) {
-                            string cc = bb.Value;
-                            if (cc.Length > 0) {
-                                varry.Add(cc);
-                                }
-                            }
+                        string bb = aa.Value.TrimEnd();
+                        vv = vv.Replace(bb, " &");
+                        varry.Add(bb.Substring(2, bb.Length - 3));
                         }
-                    vv = Regex.Replace(vv, Patterno, "& ");
+                    //vv = Regex.Replace(vv, Patterno, " &");
                     }
                 }
             if (vv.Contains("{")) {

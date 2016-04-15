@@ -153,5 +153,10 @@ namespace pfVisualisator {
                 }
             }
 
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            LogoCM.finitalogo();
+        }
+
         }
 }

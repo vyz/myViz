@@ -32,5 +32,11 @@
     <Setting Name="Houdini" Type="System.String" Scope="Application">
       <Value Profile="(Default)">E:\Chess\engine\Houdini3Prow32.exe</Value>
     </Setting>
+    <Setting Name="LogoSwitcher" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="LogoFilo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.\LogoInfo.log</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

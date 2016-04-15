@@ -1,0 +1,1630 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Набор партеечек от 15 апреля 2016 г. -->
+<Gamosyky>
+  <Leo lid="36e19367-acae-4511-bdf4-458357c1211e" typo="Gamo">
+    <Namo>Kotov, Alexander - Stahlberg, Gideon</Namo>
+    <BigNamo>Kotov, Alexander - Stahlberg, Gideon 1953.??.?? 0-1 D35</BigNamo>
+    <Parameters>
+      <TParo>Kotov, Alexander</TParo>
+      <TParo>Stahlberg, Gideon</TParo>
+      <TParo>0-1</TParo>
+      <TParo>1953.??.??</TParo>
+      <TParo>candidates tournament</TParo>
+      <TParo>D35</TParo>
+      <TParo>82</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+      <TParo>?</TParo>
+      <TParo>2</TParo>
+      <TParo></TParo>
+      <TParo>1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Be7 5. cxd5 exd5 6. Bf4 c6 7. Qc2 g6 8. e3
+Bf5 9. Bd3 Bxd3 10. Qxd3 Nbd7 11. h3 Nf8 12. g4 Ne6 13. Bg3 Qa5 14. Nd2 O-O 15.
+O-O-O Bb4 16. Kb1 Bxc3 17. Qxc3 Qxc3 18. bxc3 Ne4 19. Nxe4 dxe4 20. Kc2 Rad8
+21. a4 f5 22. gxf5 Rxf5 23. c4 Rd7 24. Kc3 Ng7 25. Rd2 Kf7 26. Bb8 b6 27. Ra2
+Ra5 28. Be5 Nf5 29. Rg1 h5 30. Bf4 Nh4 31. Rg5 Rxg5 32. Bxg5 Nf3 33. h4 Nxg5
+34. hxg5 Ke6 35. a5 h4 36. Ra1 bxa5 37. Kd2 h3 38. Ke2 h2 39. f3 Rh7 40. Rh1
+exf3+ 41. Kxf3 a4 0-1</TParo>
+      <TParo>[Annotator] - [Bronstein]
+[EventDate] - [1953.??.??]</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+    </Parameters>
+    <Dopico>
+      <VarQuant VarNumo="0">
+        <Commento>Разменный вариант белые обычно связывают с планом атаки пешечного меньшинства. они занимают ладьями линии "b" и "с", затем двигают пешку "b" и, разменяв е, на поле с6, создают ч,рным отсталую пешку. Этот слишком прямолинейный план, как показали многие партии, не опасен для черных. Располагая линией "е", они, в свою очередь, ведут активную фигурную игру на королевском фланге и достигают примерного равновесия.  В данной партии Котов далек был от мысли о ничьей и центральные пешки разменял с совершенно иной целью. Следуя традициям мастеров прошлого, он задумал длинную рокировку и пешечную атаку на королевском фланге. В течение ближайших 5-7 ходов белые искусно маскируют свой замысел.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="22">
+        <Commento>Последние 5 ходов черных -звенья одного плана. Штальберг, пожалуй, единственный из современных гроссмейстеров, сохранивший на вооружении ортодоксальную защиту, которую он разыгрывает виртуозно. Система с ходом 7. . . g6 и переводом коня на еб до рокировки - его изобретение. Ни Котову в настоящей партии, ни автору этих строк во 2-м круге турнира, ни даже чемпиону мира Ботвиннику в будапештском турнире 1952 года не удалось выявить теневые стороны любимой защиты шведского грос-смейстера.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="23">
+        <Commento>Котов долго хранил "военную тайну" и лишь теперь раскрыл свои действительные замыслы.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="25">
+        <Commento>Этот ход - из другого дебюта. Он хорош, когда белые проводят план атаки пешками ферзевого фланга, теперь же, после продвижения пешки на g4, лучше более агрессивное</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="25">
+        <Vario>
+          <Feno>r2qk2r/pp2bp1p/2p1nnp1/3p4/3P1BP1/2NQPN1P/PP3P2/R3K2R w KQkq - 1 13</Feno>
+          <Tshepa>13. Be5</Tshepa>
+          <Mova Fromo="26" Tomo="35" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Be5</Nota>
+          </Mova>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="28">
+        <Commento>Смело рокируя под вражеский огонь.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="29">
+        <Commento>Белые отвечают тем же. Сражение началось...</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="35">
+        <Commento>и тут же окончилось. В результате размена пешка b2 переместилась на сЗ. Обе стороны по-своему довольны изменением обстановки: белые получили новую линию и приблизили одну из пешек к центру; черные избавились от опасности пешечного штурма и контролируют узловое поле е4.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="41">
+        <Commento>Партия перешла в окончание, немного лучшее для белых. Черным надо играть аккуратно. </Commento>
+      </VarQuant>
+      <VarQuant VarNumo="41">
+        <Vario>
+          <Feno>3r1rk1/pp3p1p/2p1n1p1/8/3Pp1P1/2P1P1BP/P1K2P2/3R3R w - - 2 21</Feno>
+          <Tshepa>21. Rb1 Rd7 22. Rb2</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Вместо 21. а4 лучше было сыграть</Commento>
+          </VarQuant>
+          <Mova Fromo="4" Tomo="6" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rb1</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>чтобы на</Commento>
+          </VarQuant>
+          <Mova Fromo="60" Tomo="52" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rd7</Nota>
+          </Mova>
+          <VarQuant VarNumo="2">
+            <Commento>ответить</Commento>
+          </VarQuant>
+          <Mova Fromo="6" Tomo="14" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rb2</Nota>
+          </Mova>
+          <VarQuant VarNumo="3">
+            <Commento>Тогда к моменту открытия линии "b белые имели бы давление на пешку b7. Ход а2-а4 потребовался бы лишь в случае b7-b6.</Commento>
+          </VarQuant>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="54">
+        <Commento>В результате неуместно активной игры положение белых несколько ухудшилось.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="59">
+        <Vario>
+          <Feno>8/p2r1k2/1pp3p1/r3Bn1p/P1PPp3/2K1P2P/R4P2/6R1 w - - 0 30</Feno>
+          <Tshepa>30. Bg3 Nxg3</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Следовало играть</Commento>
+          </VarQuant>
+          <Mova Fromo="35" Tomo="17" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Bg3</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>Размен легких фигур</Commento>
+          </VarQuant>
+          <Mova Fromo="34" Tomo="17" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Nxg3</Nota>
+          </Mova>
+          <VarQuant VarNumo="2">
+            <Commento>не страшен белым. Теперь же конь через h4 проникает на f3, после чего позиция слона становится критической: и длинная диагональ может оказаться короткой.</Commento>
+          </VarQuant>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="65">
+        <Vario>
+          <Feno>8/p2r1k2/1pp3p1/6Bp/P1PPp3/2K1Pn1P/R4P2/8 w - - 1 33</Feno>
+          <Tshepa>33. Bf4 g5</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Если</Commento>
+          </VarQuant>
+          <Mova Fromo="33" Tomo="26" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Bf4</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>то</Commento>
+          </VarQuant>
+          <Mova Fromo="41" Tomo="33" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>g5</Nota>
+          </Mova>
+          <VarQuant VarNumo="2">
+            <Commento>и затем Kf3-g1.</Commento>
+          </VarQuant>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="71">
+        <Commento>Положение белых проиграно, им нечего противопоставить проходной пешке черных, однако был практический шанс на ничью в следующем варианте:</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="71">
+        <Vario>
+          <Feno>8/p2r4/1pp1k1p1/P5P1/2PPp2p/2K1P3/R4P2/8 w - - 0 36</Feno>
+          <Tshepa>36. axb6 axb6 37. Ra1 h3 38. Rh1 Rh7 39. Rh2 Kf5 40. Kb4 Kxg5 41. c5 bxc5+</Tshepa>
+          <Mova Fromo="39" Tomo="46" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>axb6</Nota>
+          </Mova>
+          <Mova Fromo="55" Tomo="46" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>axb6</Nota>
+          </Mova>
+          <Mova Fromo="15" Tomo="7" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ra1</Nota>
+          </Mova>
+          <Mova Fromo="24" Tomo="16" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>h3</Nota>
+          </Mova>
+          <Mova Fromo="7" Tomo="0" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rh1</Nota>
+          </Mova>
+          <Mova Fromo="52" Tomo="48" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rh7</Nota>
+          </Mova>
+          <Mova Fromo="0" Tomo="8" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rh2</Nota>
+          </Mova>
+          <VarQuant VarNumo="7">
+            <Commento> Пешек пока поровну, белая ладья неприступна, для борьбы за победу черный король должен идти к пешке g5. Этим могут воспользоваться белые и атаковать пешки "b" и "с":</Commento>
+          </VarQuant>
+          <Mova Fromo="43" Tomo="34" Coala="B">
+            <Zver>None, King, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kf5</Nota>
+          </Mova>
+          <Mova Fromo="21" Tomo="30" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kb4</Nota>
+          </Mova>
+          <Mova Fromo="34" Tomo="33" Coala="B">
+            <Zver>None, King, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Kxg5</Nota>
+          </Mova>
+          <Mova Fromo="29" Tomo="37" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>c5</Nota>
+          </Mova>
+          <VarQuant VarNumo="11">
+            <Commento>и если</Commento>
+          </VarQuant>
+          <Mova Fromo="46" Tomo="37" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>bxc5+</Nota>
+          </Mova>
+          <VarQuant VarNumo="12">
+            <Commento>то белые успеют сделать ничью</Commento>
+          </VarQuant>
+          <VarQuant VarNumo="12">
+            <Vario>
+              <Feno>8/7r/1pp3p1/2P3k1/1K1Pp3/4P2p/5P1R/8 b - - 0 41</Feno>
+              <Tshepa>41. ... b5 42. d5 cxd5 43. Kxb5 Kh4 44. c6</Tshepa>
+              <VarQuant VarNumo="0">
+                <Commento>но при</Commento>
+              </VarQuant>
+              <Mova Fromo="46" Tomo="38" Coala="B">
+                <Zver>None, Pawn, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>b5</Nota>
+              </Mova>
+              <VarQuant VarNumo="1">
+                <Commento>им не хватает для ничьей одного темпа:</Commento>
+              </VarQuant>
+              <Mova Fromo="28" Tomo="36" Coala="W">
+                <Zver>None, Pawn</Zver>
+                <Typon>Normal</Typon>
+                <Nota>d5</Nota>
+              </Mova>
+              <Mova Fromo="45" Tomo="36" Coala="B">
+                <Zver>None, Pawn, Black</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>cxd5</Nota>
+              </Mova>
+              <Mova Fromo="30" Tomo="38" Coala="W">
+                <Zver>None, King</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>Kxb5</Nota>
+              </Mova>
+              <Mova Fromo="33" Tomo="24" Coala="B">
+                <Zver>None, King, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Kh4</Nota>
+              </Mova>
+              <Mova Fromo="37" Tomo="45" Coala="W">
+                <Zver>None, Pawn</Zver>
+                <Typon>Normal</Typon>
+                <Nota>c6</Nota>
+              </Mova>
+              <VarQuant VarNumo="6">
+                <Commento>при положении белого короля на b6 была бы ничья. Этот шанс стоило испробовать, тем более что  события происходили перед контролем.</Commento>
+              </VarQuant>
+            </Vario>
+          </VarQuant>
+        </Vario>
+      </VarQuant>
+    </Dopico>
+  </Leo>
+  <Leo lid="8aa1cd5d-09ef-433a-a9de-271157116db2" typo="Gamo">
+    <Namo>Geller, Efim P - Euwe, Max</Namo>
+    <BigNamo>Geller, Efim P - Euwe, Max 1953.??.?? 0-1 E28</BigNamo>
+    <Parameters>
+      <TParo>Geller, Efim P</TParo>
+      <TParo>Euwe, Max</TParo>
+      <TParo>0-1</TParo>
+      <TParo>1953.??.??</TParo>
+      <TParo>candidates tournament</TParo>
+      <TParo>E28</TParo>
+      <TParo>52</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+      <TParo>?</TParo>
+      <TParo>2</TParo>
+      <TParo></TParo>
+      <TParo>1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 c5 5. a3 Bxc3+ 6. bxc3 b6 7. Bd3 Bb7 8. f3
+Nc6 9. Ne2 O-O 10. O-O Na5 11. e4 Ne8 12. Ng3 cxd4 13. cxd4 Rc8 14. f4 Nxc4 15.
+f5 f6 16. Rf4 b5 17. Rh4 Qb6 18. e5 Nxe5 19. fxe6 Nxd3 20. Qxd3 Qxe6 21. Qxh7+
+Kf7 22. Bh6 Rh8 23. Qxh8 Rc2 24. Rc1 Rxg2+ 25. Kf1 Qb3 26. Ke1 Qf3 0-1</TParo>
+      <TParo>[Annotator] - [Bronstein]
+[EventDate] - [1953.??.??]</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+    </Parameters>
+    <Dopico>
+      <VarQuant VarNumo="0">
+        <Commento>Одна из лучших партий турнира, получившая приз за красоту. Белые начали сильную атаку на короля, пожертвовав пешку с4. У Геллера были все шансы на успех, если бы черные по традиции контратаковали на ферзевом фланге. Однако Эйве реализовал две. замечательные идеи: 1) использование коммуникаций ферзевого фланга для атаки на королевском; 2) завлечение сил противника в свой глубокий тыл с целью отвлечь их от защиты короля.  Крайне интересно проследить, как белые фигуры прорывались все дальше и дальше в лобовой атаке на короля и зашли, наконец, туда, откуда нет возврата, а черные в это время перебрасывали свои силы обходными путями.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="15">
+        <Commento>Небольшая, но существенная тонкость дебюта: в результате перестановки пары ходов (b7- b6 й Сс8-b7 вместо обычных Кb8-сб и 0-0) белым, не сумевшим вовремя отреагировать правильным 7. Ке2, приходится затратить лишний темп на под-готовку еЗ-е4. Подобными ме-лочами нельзя пренебрегать, но не следует их и переоценивать. Иной раз говорят: преимущество белых состоит в праве первого хода; если они потеряли темп, то преимущество чуть ли не авто-матически должно перейти к черным. Однако преимущество игры белыми практически сводится к тому, что у них больше возможностей выбрать план игры по своему вкусу, а когда игра уже сложилась, потеря одного темпа не всегда бывает столь важна.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="22">
+        <Commento>Черные отвели коня, чтобы  не допустить связку Cel-g5 и на ход f3-f4 ответить f7-f5, блокируя королевский фланг. Поэтому белые, прежде чем на-двигать пешку "Ь, берут под контроль поле f5. Защищать пешку с4 бессмысленно: она была обречена уже 5-м ходом белых.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="31">
+        <Commento>Атака становится угрожающей Предыдущий ход черных был необходим, так как белые намеревались продвинуть пешку на f6, а в ответ на Ке8 : f6 все же связать коня и напасть на короля соединенными силами ферзя, ладьи и легких фигур. Но и теперь белым нужно всего два хода, чтобы перебросить ферзя и ладью на линию "И", после чего, кажется, ничто уже не спасет короля черных.  Но Эйве нелегко смутить. Вспомним, что он в своей жизни сыграл более 70 партий с Але-хиным, наиболее грозным из ата-кующих шахматистов нашего века.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="32">
+        <Commento>Начало замечательного плана. Ясно, что любые оборонительные маневры на королевском фланге при помощи фигур, имеющих ничтожный радиус действия - Л!8-f7, Od8-е7 ит. п., заранее обречены на неудачу. Но у черных есть другой ресурс - контратака! Слон Ь7, ладья с8 и конь с4 занимают хорошие исходные позиции, остается перебросить ферзя. Основа контратаки - преимущество черных на центральных полях. Сыграв b6-b5, черные еще больше укрепляют положение коня и открывают дорогу ферзю на b6. Все же впечатление таково, что их операции запаздывают. ..</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="34">
+        <Commento>Связывая ферзя защитой  пешки d4, черные препятствуют программному ходу Od1- h5. Впрочем, при 17. Фh5 Фb6 18. Ке2 Ке5 получался эхо-вариант - белые не успевали сыграть Лf4-h4.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="39">
+        <Vario>
+          <Feno>2r1nrk1/pb1p2pp/1q2Pp2/1p6/3P3R/P2n2N1/6PP/R1BQ2K1 w - - 0 20</Feno>
+          <Tshepa>20. exd7 Qe6</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Сейчас, например, не годилось естественное</Commento>
+          </VarQuant>
+          <Mova Fromo="43" Tomo="52" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>exd7</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>из-за</Commento>
+          </VarQuant>
+          <Mova Fromo="46" Tomo="43" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qe6</Nota>
+          </Mova>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="40">
+        <Commento>Все ходы белых требовали  тщательного и точного расчета.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="41">
+        <Commento>Итак, ценой небольших потерь белые все же прорвались. Положение черных снова кажется критическим.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="44">
+        <Commento>Если 16-й ход черных был  началом стратегического плана контратаки, то жертва ладьи - центральный тактический удар, имеющий целью заманить ферзя подальше, отвлечь от поля с2 и напасть в это время на короля.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="46">
+        <Commento>Грозит мат в несколько ходов: 24. . .Л : g2+, 25. . .Фс4-Ь и т.,д. Тщательный анализ, для которого потребовалась не одна неделя, показал, что белые могли спастись от мата, сделав несколько единственных и очень трудных ходов.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="47">
+        <Vario>
+          <Feno>4n2Q/pb1p1kp1/4qp1B/1p6/3P3R/P5N1/2r3PP/R5K1 w - - 1 24</Feno>
+          <Tshepa>24. d5 Qb6+ 25. Kh1 Qf2 26. Rg1 Bxd5 27. Re4</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Надо было играть</Commento>
+          </VarQuant>
+          <Mova Fromo="28" Tomo="36" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>d5</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>В случае</Commento>
+          </VarQuant>
+          <Mova Fromo="43" Tomo="46" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qb6+</Nota>
+          </Mova>
+          <VarQuant VarNumo="2">
+            <Vario>
+              <Feno>4n2Q/pb1p1kp1/4qp1B/1p1P4/7R/P5N1/2r3PP/R5K1 b - - 0 24</Feno>
+              <Tshepa>24. ... Bxd5 25. Rd4</Tshepa>
+              <VarQuant VarNumo="0">
+                <Commento>а если сразу</Commento>
+              </VarQuant>
+              <Mova Fromo="54" Tomo="36" Coala="B">
+                <Zver>None, Bishop, Black</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>Bxd5</Nota>
+              </Mova>
+              <VarQuant VarNumo="1">
+                <Commento>то не</Commento>
+              </VarQuant>
+              <Mova Fromo="24" Tomo="28" Coala="W">
+                <Zver>None, Rook</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Rd4</Nota>
+              </Mova>
+              <VarQuant VarNumo="2">
+                <Commento>Была строка {а только} 25. Rd1 { и после} Rxg2+ 26. Kf1 gxh6 {не годится ни} 27. Rxh6 ({ни} 27. Rxd5) ({, а нужно снова сделать единственный ход} 27. Qxh6 {И все равно у черных остается слон и две пешки за ладью, что при открытом положении вражеского короля дает им хорошие шансы на победу. Понятно, что у Геллера за доской не было практической возможности найти все эти ходы.}) </Commento>
+                <Vario>
+                  <Feno>4n2Q/p2p1kp1/4qp1B/1p1b4/7R/P5N1/2r3PP/R5K1 w - - 0 25</Feno>
+                  <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+                </Vario>
+              </VarQuant>
+            </Vario>
+          </VarQuant>
+          <Mova Fromo="1" Tomo="0" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kh1</Nota>
+          </Mova>
+          <Mova Fromo="46" Tomo="10" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qf2</Nota>
+          </Mova>
+          <Mova Fromo="7" Tomo="1" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rg1</Nota>
+          </Mova>
+          <Mova Fromo="54" Tomo="36" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxd5</Nota>
+          </Mova>
+          <VarQuant VarNumo="6">
+            <Commento> они спасались ходом</Commento>
+          </VarQuant>
+          <Mova Fromo="24" Tomo="27" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Re4</Nota>
+          </Mova>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="47">
+        <Commento>Аналитики доказали также, что идея Лf8-h8 вообще была преждевременна. Сначала лучше было сыграть Лс8-с4. Однако любителям шахмат трудно с этим согласиться. Такие ходы, как 22. . .Лh8, не забываются.</Commento>
+      </VarQuant>
+    </Dopico>
+  </Leo>
+  <Leo lid="84a22996-01ee-4392-966a-d7bb1dd0d5ed" typo="Gamo">
+    <Namo>Smyslov, Vassily - Szabo, Laszlo</Namo>
+    <BigNamo>Smyslov, Vassily - Szabo, Laszlo 1953.??.?? 1/2-1/2 A11</BigNamo>
+    <Parameters>
+      <TParo>Smyslov, Vassily</TParo>
+      <TParo>Szabo, Laszlo</TParo>
+      <TParo>1/2-1/2</TParo>
+      <TParo>1953.??.??</TParo>
+      <TParo>candidates tournament</TParo>
+      <TParo>A11</TParo>
+      <TParo>91</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+      <TParo>?</TParo>
+      <TParo>2</TParo>
+      <TParo></TParo>
+      <TParo>1. c4 Nf6 2. g3 c6 3. Nf3 d5 4. b3 g6 5. Bb2 Bg7 6. Bg2 Qb6 7. Qc1 O-O 8. O-O
+Nbd7 9. cxd5 cxd5 10. Bd4 Qd6 11. Qa3 Ne4 12. Bxg7 Kxg7 13. Qxd6 Nxd6 14. Rc1
+e6 15. Nc3 b6 16. d4 Ba6 17. Ne5 Nxe5 18. dxe5 Nb5 19. Nxb5 Bxb5 20. Rc2 Rfc8
+21. Rac1 Rxc2 22. Rxc2 Ba6 23. f4 Rc8 24. Rxc8 Bxc8 25. Kf2 Ba6 26. Ke3 h6 27.
+Bf3 f5 28. exf6+ Kxf6 29. Kd4 g5 30. fxg5+ hxg5 31. e4 dxe4 32. Kxe4 Bb5 33. h4
+gxh4 34. gxh4 a5 35. Kd4 a4 36. b4 a3 37. Be4 Be8 38. Bb1 Bf7 39. Kc3 e5 40. b5
+Bd5 41. Kb4 e4 42. Kxa3 e3 43. Bd3 Bf3 44. Kb4 e2 45. Bxe2 Bxe2 46. a4 1/2-1/2</TParo>
+      <TParo>[Annotator] - [Bronstein]
+[EventDate] - [1953.??.??]</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+    </Parameters>
+    <Dopico>
+      <VarQuant VarNumo="8">
+        <Commento>Неужели слон b2 так опасен, что надо терять два темпа (g7-g6 и Cf8-g7), чтобы в лучшем случае разменять слонов? Право, на диагонали f8-аЗ у черного слона больше перспектив.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="16">
+        <Commento>Белопольный слон у Сабо  на положении пасынка, до 37-го хода он побывает только на двух полях - а6 и b5.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="21">
+        <Commento>Белые намечают контуры сво-ей игры на долгосрочную пер-спективу, а сделанный ими ход основан на далекой надежде. В чем же она заключается? После размена ферзей, от которого черные уклониться не могут, Смыслов разменяет еще и чернопольных слонов, захватит ли-?  НИo/o "С", затем вынудит размен коней и постепенно переведет игру в окончание, где его слон, не стесненный пешками, окажется сильнее вражеского слона, а король будет искать дорогу 'на ферзевый фланг по черным полям. Удастся ли полностью реализовать этот план - трудно сказать, но сам факт наличия столь далекого и в то же время логичного прогноза характерен для Смыслова, эта черта делает его трудным партнером для любого противника, который вынужден обороняться.  В таких ситуациях, когда приходится долгое время бороться за ничью, легко можно допустить незаметную на первый взгляд ошибку; особенно это относится к активным шахматистам, любящим оживленную игру с контршансами.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="22">
+        <Commento>Отступать ферзем нехорошо, а самому брать .ферзя Сабо не хотелось, чтобы не помогать раз-витию белых.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="38">
+        <Commento>Дальнейшая часть плана белых складывается из следующих мероприятий: занять ладьями линию "с", разменять ладьи и отбросить слона на с8. Своего слона тем временем вывести на диагональ f1-а6, затем пройти королем на d4, угрожая прорывом f2-f4-f5 или вторжением короля на ферзевый фланг. Все это выглядит логичным и сильным, но при точной игре черных все же не приводило к победе.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="52">
+        <Commento>Позиция черных вполне надежна. Сабо не пропустил слона на диагональ f1-а6, и пока белый король не имеет дороги на ферзевый фланг. Теперь следовало поставить короля на е7 и не двигать пешки. Предпринятая черными демонстрация на королевском фланге приводит лишь к появлению у белых отдаленной проходной, а это - реальный шанс на победу.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="61">
+        <Commento>Этот сильный ход нередко делают в более ранней стадии партии, но и сейчас он очень хорош: белые разбивают центр черных и создают проходную.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="68">
+        <Commento>Преимущество белых заключается в том, что в случае размена слонов они легко выигрывают пешечный эндшпиль благодаря отдаленной проходной. Также и при слонах они продвижением пешки "h" могут отвлечь черного короля и забрать пешку "е", а затем пройти королем к пешкам ферзевого фланга. В свою очередь, и черные имеют контршанс - белопольный слон с пешкой "h" не выигрывают против одинокого короля, если тот попадет в район g7-h8. Итак, если черные разменяют одну из ферзевых пешек, то за вторую они могут отдать слона. Поэтому белые должны избегать пешечных раз-менов, с этой целью сейчас сле-довало сыграть а2-аЗ!, а затем h4-h5.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="73">
+        <Vario>
+          <Feno>8/8/1p2pk2/1b6/1P1K3P/p4B2/P7/8 w - - 0 37</Feno>
+          <Tshepa>37. Kc3 Ke5 38. Kb3 Kd4 39. Kxa3 Kc3</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento> Белые могут уничтожить  пешку аЗ, но тогда черный король попадает на сЗ, создавая массу неудобств для своего коллеги</Commento>
+          </VarQuant>
+          <Mova Fromo="28" Tomo="21" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kc3</Nota>
+          </Mova>
+          <Mova Fromo="42" Tomo="35" Coala="B">
+            <Zver>None, King, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ke5</Nota>
+          </Mova>
+          <Mova Fromo="21" Tomo="22" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kb3</Nota>
+          </Mova>
+          <Mova Fromo="35" Tomo="28" Coala="B">
+            <Zver>None, King, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kd4</Nota>
+          </Mova>
+          <Mova Fromo="22" Tomo="23" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Kxa3</Nota>
+          </Mova>
+          <Mova Fromo="28" Tomo="21" Coala="B">
+            <Zver>None, King, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kc3</Nota>
+          </Mova>
+        </Vario>
+      </VarQuant>
+    </Dopico>
+  </Leo>
+  <Leo lid="5887dd74-5f42-4fbc-abfa-698b71eff7ab" typo="Gamo">
+    <Namo>Keres, Paul - Averbakh, Yuri</Namo>
+    <BigNamo>Keres, Paul - Averbakh, Yuri 1953.??.?? 0-1 E58</BigNamo>
+    <Parameters>
+      <TParo>Keres, Paul</TParo>
+      <TParo>Averbakh, Yuri</TParo>
+      <TParo>0-1</TParo>
+      <TParo>1953.??.??</TParo>
+      <TParo>candidates tournament</TParo>
+      <TParo>E58</TParo>
+      <TParo>82</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+      <TParo>?</TParo>
+      <TParo>2</TParo>
+      <TParo></TParo>
+      <TParo>1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 d5 6. Nf3 c5 7. O-O Nc6 8. a3
+Bxc3 9. bxc3 b6 10. Ne5 Bb7 11. f4 Na5 12. cxd5 Qxd5 13. Qe2 cxd4 14. exd4 Nb3
+15. Rb1 Nxc1 16. Rbxc1 Rac8 17. Qb2 Qd6 18. f5 exf5 19. Bxf5 Rc7 20. c4 Rd8 21.
+Rf4 g5 22. Rf2 Qxd4 23. Qxd4 Rxd4 24. Rcf1 Rd6 25. h4 gxh4 26. Rf4 Rc5 27. Ng4
+Nxg4 28. Rxg4+ Kf8 29. Bxh7 Ba6 30. Rff4 Rh6 31. Bd3 h3 32. gxh3 Rxh3 33. Rd4
+Bc8 34. Rd8+ Ke7 35. Rgd4 Be6 36. Kg2 Rg5+ 37. Kf2 Ra5 38. Rb8 Rxa3 39. Be2
+Rh2+ 40. Ke1 Ra1+ 41. Rd1 Rxe2+ 0-1</TParo>
+      <TParo>[Annotator] - [Bronstein]
+[EventDate] - [1953.??.??]</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+    </Parameters>
+    <Dopico>
+      <VarQuant VarNumo="19">
+        <Commento>Новое &amp; продолжение, как видно подготовленное Кересом специально к турниру. Черным нет смысла вскрывать игру и менять ферзей, поскольку белые ладьи и слоны первыми захватывают открытые линии:</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="20">
+        <Vario>
+          <Feno>r1bq1rk1/p4ppp/1pn1pn2/2ppN3/2PP4/P1PBP3/5PPP/R1BQ1RK1 b - - 1 10</Feno>
+          <Tshepa>10. ... Nxe5 11. dxe5 dxc4 12. Bxc4 Qxd1 13. Rxd1</Tshepa>
+          <Mova Fromo="45" Tomo="35" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Nxe5</Nota>
+          </Mova>
+          <Mova Fromo="28" Tomo="35" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>dxe5</Nota>
+          </Mova>
+          <Mova Fromo="36" Tomo="29" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>dxc4</Nota>
+          </Mova>
+          <Mova Fromo="20" Tomo="29" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxc4</Nota>
+          </Mova>
+          <Mova Fromo="60" Tomo="4" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxd1</Nota>
+          </Mova>
+          <Mova Fromo="2" Tomo="4" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxd1</Nota>
+          </Mova>
+          <VarQuant VarNumo="6">
+            <Commento>и т. д.</Commento>
+          </VarQuant>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="21">
+        <Commento>Построение это неудачно, так как дает слишком большой простор слону Ь7 и ослабляет большую диагональ, чем искусно пользуется Авербах.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="22">
+        <Commento>В лагере белых есть слабые пешки и слабые пункты при достаточно статичной позиции; обстановка благоприятна для действия' черных коней. В част-ности, сейчас Авербах намерен играть 12. . .dc, чтобы на 13. К : с4 ответить 13. . Фd5 с нажимом на пункты g2 и с4. Керес отражает эту угрозу, но при этом лишается одного из слонов, а черные получают прочную и свободную позицию.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="40">
+        <Commento>В висячих белых пешках сочетаются сила и слабость. Они сильны, потому что черным все время нужно считаться с их стремлением к движению вперед, но они слабы, ибо нуждаются в защите фигур, которых не так-то уж много. Да и вообще не подходящее это дело для ладей стоять на страже своих пешек. Сейчас нормальным про-должением было 21. Лfd1, но Керес ищет путь для активизации игры и решает защитить пешку сбоку.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="42">
+        <Commento>Можно поручиться, что Керес даже не рассматривал этот ход. Обнажить позицию короля, оставить без пешечной защиты коня f6, ослабить открытую линию "f"- и все это ради одной пешки, которая, по всей вероятности, тут же отыгрывается... Однако Авербах, точно посчитав варианты, убедился, что, во- первых, пешка не отыгрывается, во-вторых, без ферзей открытое положение короля вовсе не опасно, в-третьих, у белых остаются изолированные пешки на ферзевом фланге. И вот он решился на "антипозиционный" ход g7-g5!, выигрывая сначала пешку, а затем и партию.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="48">
+        <Commento>Забавное положение. Белый слон имеет темп для нападения или для взятия, поскольку черный конь оказывается под ударом сдвоенных ладей. Однако слону нечего съесть и не на кого  напасть!</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="61">
+        <Vario>
+          <Feno>5k2/p4p1B/bp5r/2r5/2P2RRp/P7/6P1/6K1 w - - 3 31</Feno>
+          <Tshepa>31. Bg6 Bxc4</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>На</Commento>
+          </VarQuant>
+          <Mova Fromo="48" Tomo="41" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Bg6</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>последовало</Commento>
+          </VarQuant>
+          <Mova Fromo="47" Tomo="29" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxc4</Nota>
+          </Mova>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="63">
+        <Vario>
+          <Feno>5k2/p4p2/bp5r/2r5/2P2RR1/P2B3p/6P1/6K1 w - - 0 32</Feno>
+          <Tshepa>32. g3 h2+ 33. Kh1 Bb7+ 34. Be4 Rxc4 35. Bxb7 Rc1+</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Не проходит</Commento>
+          </VarQuant>
+          <Mova Fromo="9" Tomo="17" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>g3</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>ввиду</Commento>
+          </VarQuant>
+          <Mova Fromo="16" Tomo="8" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>h2+</Nota>
+          </Mova>
+          <Mova Fromo="1" Tomo="0" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kh1</Nota>
+          </Mova>
+          <Mova Fromo="47" Tomo="54" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Bb7+</Nota>
+          </Mova>
+          <Mova Fromo="20" Tomo="27" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Be4</Nota>
+          </Mova>
+          <Mova Fromo="37" Tomo="29" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxc4</Nota>
+          </Mova>
+          <Mova Fromo="27" Tomo="54" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxb7</Nota>
+          </Mova>
+          <Mova Fromo="29" Tomo="5" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rc1+</Nota>
+          </Mova>
+          <VarQuant VarNumo="8">
+            <Commento>+  - все время сказывается слабость большой диагонали!</Commento>
+          </VarQuant>
+        </Vario>
+      </VarQuant>
+    </Dopico>
+  </Leo>
+  <Leo lid="316e0453-3503-4419-b652-7d434f1e1483" typo="Gamo">
+    <Namo>Reshevsky, Samuel - Petrosian, Tigran V</Namo>
+    <BigNamo>Reshevsky, Samuel - Petrosian, Tigran V 1953.??.?? 1/2-1/2 E58</BigNamo>
+    <Parameters>
+      <TParo>Reshevsky, Samuel</TParo>
+      <TParo>Petrosian, Tigran V</TParo>
+      <TParo>1/2-1/2</TParo>
+      <TParo>1953.??.??</TParo>
+      <TParo>candidates tournament</TParo>
+      <TParo>E58</TParo>
+      <TParo>81</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+      <TParo>?</TParo>
+      <TParo>2</TParo>
+      <TParo></TParo>
+      <TParo>1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 O-O 5. Bd3 d5 6. Nf3 c5 7. O-O Nc6 8. a3
+Bxc3 9. bxc3 b6 10. cxd5 exd5 11. Bb2 c4 12. Bc2 Bg4 13. Qe1 Ne4 14. Nd2 Nxd2
+15. Qxd2 Bh5 16. f3 Bg6 17. e4 Qd7 18. Rae1 dxe4 19. fxe4 Rfe8 20. Qf4 b5 21.
+Bd1 Re7 22. Bg4 Qe8 23. e5 a5 24. Re3 Rd8 25. Rfe1 Re6 26. a4 Ne7 27. Bxe6 fxe6
+28. Qf1 Nd5 29. Rf3 Bd3 30. Rxd3 cxd3 31. Qxd3 b4 32. cxb4 axb4 33. a5 Ra8 34.
+Ra1 Qc6 35. Bc1 Qc7 36. a6 Qb6 37. Bd2 b3 38. Qc4 h6 39. h3 b2 40. Rb1 Kh8 41.
+Be1 1/2-1/2</TParo>
+      <TParo>[Annotator] - [Bronstein]
+[EventDate] - [1953.??.??]</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+    </Parameters>
+    <Dopico>
+      <VarQuant VarNumo="18">
+        <Commento>Считается, что ход в партии  дает черным стесненную игру, но если "стесненная" игра такого рода нравится шахматисту, то он достигнет в ней лучших результатов, чем в иной "свободной" игре. Вообще подобные оценки, хотя и господствуют в умах теоретиков, оказывают гораздо меньше влияния на практические партии, чем это принято думать.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="21">
+        <Commento>Одна из основ шахматной стратегии во всех стадиях партии - стремление усилить свою позицию и отыскать правильную идею . для осуществления этой цели. Большую роль играет также верный порядок ходов, и хотя это лишь тактическая детализация, от нее во многом зависит успех стратегического плана. В данном случае основная идея белых очевидна: им необходимо, чтобы оба слона были хорошо развиты. Для этого возможны два пути: сыграть аЗ-а4 с последующим Сс1- аЗ или побить на с5 и затем продвинуть пешку на с4. Однако белые, казалось бы вопреки логике, поставили слона на диагональ, занятую пешками, тем самым как бы приглашая черных сыграть с5-с4 и прочно его запереть.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="21">
+        <Vario>
+          <Feno>r1bq1rk1/p4ppp/1pn2n2/2pp4/3P4/P1PBPN2/5PPP/R1BQ1RK1 w - - 0 11</Feno>
+          <Tshepa>11. a4 cxd4 12. cxd4 Bg4</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>В чем же дело? Оказывается, на</Commento>
+          </VarQuant>
+          <Mova Fromo="23" Tomo="31" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>a4</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>последует</Commento>
+          </VarQuant>
+          <Mova Fromo="37" Tomo="28" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>cxd4</Nota>
+          </Mova>
+          <Mova Fromo="21" Tomo="28" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>cxd4</Nota>
+          </Mova>
+          <VarQuant VarNumo="3">
+            <Vario>
+              <Feno>r1bq1rk1/p4ppp/1pn2n2/3p4/P2p4/2PBPN2/5PPP/R1BQ1RK1 w - - 0 12</Feno>
+              <Tshepa>12. exd4 Ne4</Tshepa>
+              <VarQuant VarNumo="0">
+                <Commento>или</Commento>
+              </VarQuant>
+              <Mova Fromo="19" Tomo="28" Coala="W">
+                <Zver>None, Pawn</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>exd4</Nota>
+              </Mova>
+              <Mova Fromo="42" Tomo="27" Coala="B">
+                <Zver>None, Knight, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Ne4</Nota>
+              </Mova>
+              <VarQuant VarNumo="2">
+                <Commento>с атакой на пешку сЗ.</Commento>
+              </VarQuant>
+            </Vario>
+          </VarQuant>
+          <Mova Fromo="61" Tomo="25" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Bg4</Nota>
+          </Mova>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="21">
+        <Vario>
+          <Feno>r1bq1rk1/p4ppp/1pn2n2/2pp4/3P4/P1PBPN2/5PPP/R1BQ1RK1 w - - 0 11</Feno>
+          <Tshepa>11. dxc5 bxc5 12. c4</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>В случае же</Commento>
+          </VarQuant>
+          <Mova Fromo="28" Tomo="37" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>dxc5</Nota>
+          </Mova>
+          <Mova Fromo="46" Tomo="37" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>bxc5</Nota>
+          </Mova>
+          <Mova Fromo="21" Tomo="29" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>c4</Nota>
+          </Mova>
+          <VarQuant VarNumo="3">
+            <Commento>черные отвечают Ла8-Ь8, и нет хода Сс1- b2</Commento>
+          </VarQuant>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="21">
+        <Commento>После подготовительного хода слоном на b2 белые, уже ничего не опасаясь, могут играть сЗ-с4 (или сразу, или сначала разменявшись на сб). Поэтому ответ черных является не только полезным, но и почти обязательным. Дальнейшая борьба определяется создавшейся пешечной структурой, она уже гораздо меньше зависит от вкусов и желания партнеров, чем выбор дебютного варианта. Белые приводят в движение свои пешки "f" и "е" и создают проходную по линии "d", сочетая движение центральных пешек с атакой по линии "f".  Черные, имея три пешки про-тив двух на ферзевом фланге, не могут пока реализовать численный перевес, ибо им приходится бороться против пары слонов при превосходстве белых в центре.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="26">
+        <Commento>Здесь черные могли изменить характер борьбы, взяв коня</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="26">
+        <Vario>
+          <Feno>r2q1rk1/p4ppp/1pn2n2/3p4/2pP2b1/P1P1PN2/1BB2PPP/R3QRK1 b - - 3 13</Feno>
+          <Tshepa>13. ... Bxf3 14. gxf3 Nh5 15. e4 Nf4 16. Kh1 Re8 17. Bc1 Qh4 18. Rg1 Nd3 19.
+Bxd3 cxd3</Tshepa>
+          <Mova Fromo="25" Tomo="18" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxf3</Nota>
+          </Mova>
+          <Mova Fromo="9" Tomo="18" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>gxf3</Nota>
+          </Mova>
+          <Mova Fromo="42" Tomo="32" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Nh5</Nota>
+          </Mova>
+          <VarQuant VarNumo="3">
+            <Commento>но отказались от этого. Стандартная формула: у белых два слона при сильном пешечном центре и открытой линии "g" - мало их беспокоила, так как один слон забит своими же пешками, а пешечный центр пока не опасен</Commento>
+          </VarQuant>
+          <VarQuant VarNumo="3">
+            <Commento>Если, например</Commento>
+          </VarQuant>
+          <Mova Fromo="19" Tomo="27" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>e4</Nota>
+          </Mova>
+          <VarQuant VarNumo="4">
+            <Commento>то</Commento>
+          </VarQuant>
+          <Mova Fromo="32" Tomo="26" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Nf4</Nota>
+          </Mova>
+          <VarQuant VarNumo="5">
+            <Vario>
+              <Feno>r2q1rk1/p4ppp/1pn5/3p3n/2pPP3/P1P2P2/1BB2P1P/R3QRK1 b - - 0 15</Feno>
+              <Tshepa>15. ... Ne7</Tshepa>
+              <VarQuant VarNumo="0">
+                <Commento>или сразу</Commento>
+              </VarQuant>
+              <Mova Fromo="45" Tomo="51" Coala="B">
+                <Zver>None, Knight, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Ne7</Nota>
+              </Mova>
+              <VarQuant VarNumo="1">
+                <Commento>и 16... Фd7 </Commento>
+              </VarQuant>
+            </Vario>
+          </VarQuant>
+          <Mova Fromo="1" Tomo="0" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kh1</Nota>
+          </Mova>
+          <Mova Fromo="58" Tomo="59" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Re8</Nota>
+          </Mova>
+          <Mova Fromo="14" Tomo="5" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Bc1</Nota>
+          </Mova>
+          <Mova Fromo="60" Tomo="24" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qh4</Nota>
+          </Mova>
+          <Mova Fromo="2" Tomo="1" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rg1</Nota>
+          </Mova>
+          <Mova Fromo="26" Tomo="20" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Nd3</Nota>
+          </Mova>
+          <Mova Fromo="13" Tomo="20" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxd3</Nota>
+          </Mova>
+          <Mova Fromo="29" Tomo="20" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>cxd3</Nota>
+          </Mova>
+          <VarQuant VarNumo="13">
+            <Commento>и возникают проблемы с пешкой е4</Commento>
+          </VarQuant>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="26">
+        <Vario>
+          <Feno>r2q1rk1/p4ppp/1pn2n2/3p4/2pP2b1/P1P1PN2/1BB2PPP/R3QRK1 b - - 3 13</Feno>
+          <Tshepa>13. ... Bxf3 14. gxf3 Nh5</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Однако после</Commento>
+          </VarQuant>
+          <Mova Fromo="25" Tomo="18" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxf3</Nota>
+          </Mova>
+          <Mova Fromo="9" Tomo="18" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>gxf3</Nota>
+          </Mova>
+          <Mova Fromo="42" Tomo="32" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Nh5</Nota>
+          </Mova>
+          <VarQuant VarNumo="3">
+            <Commento>у белых была возмож  ность систематически усиливать свою позицию ходами f3- f4, f2-f3, Фе1-f2, Ла1-el,  Cb2-c1, Kpgl-h1, еЗ-e4 , которые надо делать в том или ином порядке в зависимости от игры черных &amp;. Черные могут противопоставить этому только прямую атаку на короля, имеющую очень мало шансов на успех, ибо маневренные возможности их ограниченны: пешечные заграждения стесняют коней.  Петросян продолжает вести свою логическую линию, считая, что, не сделав сомнительных или нарушающих равновесие ходов, он не должен прийти к проигрышной позиции.</Commento>
+          </VarQuant>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="39">
+        <Vario>
+          <Feno>r3r1k1/p2q1ppp/1pn3b1/8/2pPP3/P1P5/1BBQ2PP/4RRK1 w - - 1 20</Feno>
+          <Tshepa>20. a4 Ne5 21. Ba3 Nd3 22. Bxd3 cxd3 23. Qxd3 Qxa4</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>На</Commento>
+          </VarQuant>
+          <Mova Fromo="23" Tomo="31" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>a4</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>может последовать</Commento>
+          </VarQuant>
+          <Mova Fromo="45" Tomo="35" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ne5</Nota>
+          </Mova>
+          <Mova Fromo="14" Tomo="23" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ba3</Nota>
+          </Mova>
+          <Mova Fromo="35" Tomo="20" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Nd3</Nota>
+          </Mova>
+          <Mova Fromo="13" Tomo="20" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxd3</Nota>
+          </Mova>
+          <Mova Fromo="29" Tomo="20" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>cxd3</Nota>
+          </Mova>
+          <Mova Fromo="12" Tomo="20" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxd3</Nota>
+          </Mova>
+          <Mova Fromo="52" Tomo="31" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxa4</Nota>
+          </Mova>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="40">
+        <Commento>Черные защищаются от ма-невра аЗ-а4 и СЬ2-аЗ, вместе с тем напоминая о своем численном перевесе на фланге.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="41">
+        <Commento>Все мы привыкли, что при атаке на короля слон должен стоять на d3 или с2, в крайнем случае-на Ы. Решевский предпринимает обходный маневр, еще более усиливающий позицию белых и создающий предпосылки для движения пешек, которое пока было невозможно.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="50">
+        <Commento>Остроумные зигзаги Решевcкого и железная логика Петросяна делают эту партию одним из украшений турнира. Черным нужно блокировать белые пешки, и Петросян на ровном месте отдает качество, чтобы освободить поле е7 для перевода коня на d5. Правда, черные получают серьезную компенсацию: необычайно усиливается  конь, попадая на d5, а также и слон, лишенный, белопольного оппонента. Заметим, что белые теперь и даже на предыдущем ходу могли начать прямую атаку путем h2-h4 с последующим h4-h5 и ЛеЗ-g3, получая хорошие шансы на победу, но они рассчитывали выиграть иным путем.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="52">
+        <Vario>
+          <Feno>3rq1k1/5ppp/2n1r1b1/pp2P3/P1pP1QB1/2P1R3/1B4PP/4R1K1 b - - 0 26</Feno>
+          <Tshepa>26. ... b4 27. d5 Rxd5 28. Bxe6 fxe6 29. Qxc4</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Провоцируя</Commento>
+          </VarQuant>
+          <Mova Fromo="38" Tomo="30" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>b4</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>на что последует</Commento>
+          </VarQuant>
+          <Mova Fromo="28" Tomo="36" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>d5</Nota>
+          </Mova>
+          <Mova Fromo="60" Tomo="36" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxd5</Nota>
+          </Mova>
+          <Mova Fromo="25" Tomo="43" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxe6</Nota>
+          </Mova>
+          <VarQuant VarNumo="4">
+            <Vario>
+              <Feno>4q1k1/5ppp/2n1r1b1/p2rP3/Ppp2QB1/2P1R3/1B4PP/4R1K1 w - - 0 28</Feno>
+              <Tshepa>28. Qxc4 Rdxe5</Tshepa>
+              <VarQuant VarNumo="0">
+                <Commento>слабее</Commento>
+              </VarQuant>
+              <Mova Fromo="26" Tomo="29" Coala="W">
+                <Zver>None, Queen</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>Qxc4</Nota>
+              </Mova>
+              <Mova Fromo="36" Tomo="35" Coala="B">
+                <Zver>None, Rook, Black</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>Rdxe5</Nota>
+              </Mova>
+            </Vario>
+          </VarQuant>
+          <Mova Fromo="50" Tomo="43" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>fxe6</Nota>
+          </Mova>
+          <Mova Fromo="26" Tomo="29" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxc4</Nota>
+          </Mova>
+          <VarQuant VarNumo="6">
+            <Commento> но Петросян настойчиво проводит свой план.</Commento>
+          </VarQuant>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="55">
+        <Commento>Не спуская глаз с пешки с4 и подготавливая возврат качества за пешку.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="55">
+        <Vario>
+          <Feno>3rq1k1/4n1pp/4p1b1/pp2P3/P1pP1Q2/2P1R3/1B4PP/4R1K1 w - - 0 28</Feno>
+          <Tshepa>28. Qf2 Nd5 29. Rf3 b4</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>На</Commento>
+          </VarQuant>
+          <Mova Fromo="26" Tomo="10" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qf2</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>неприятно</Commento>
+          </VarQuant>
+          <Mova Fromo="51" Tomo="36" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Nd5</Nota>
+          </Mova>
+          <Mova Fromo="19" Tomo="18" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rf3</Nota>
+          </Mova>
+          <Mova Fromo="38" Tomo="30" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>b4</Nota>
+          </Mova>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="62">
+        <Commento>У черных, конечно, нет выбора. Брать пешку а4 бессмысленно. Зато теперь перед белыми стоит трудная психологическая задача: меняться на b4, что почти наверняка приведет к ничьей, или продвинуть пешку и прогнать коня, получая шансы на выигрыш... и на проигрыш.  Времени рассчитать варианты уже не было, поэтому понятно, что Решевский избирает наиболее простое продолжение. </Commento>
+      </VarQuant>
+      <VarQuant VarNumo="63">
+        <Commento>Была строка {В случае} 32. c4 Nb6 33. Rc1 ({или} 33. d5 exd5 34. c5 Nxa4 35. Bd4 Rc8 36. Qf3 Qe6 {белые пешки блокировались, а черные становились крайне опасными.}</Commento>
+        <Vario>
+          <Feno>3rq1k1/6pp/4p3/p2nP3/Pp1P4/2PQ4/1B4PP/4R1K1 w - - 0 32</Feno>
+          <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="64">
+        <Vario>
+          <Feno>3rq1k1/6pp/4p3/p2nP3/PP1P4/3Q4/1B4PP/4R1K1 b - - 0 32</Feno>
+          <Tshepa>32. ... Nxb4 33. Qb3 Nd5</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Можно было играть и</Commento>
+          </VarQuant>
+          <Mova Fromo="36" Tomo="30" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Nxb4</Nota>
+          </Mova>
+          <Mova Fromo="20" Tomo="22" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qb3</Nota>
+          </Mova>
+          <VarQuant VarNumo="2">
+            <Vario>
+              <Feno>3rq1k1/6pp/4p3/p3P3/Pn1P4/3Q4/1B4PP/4R1K1 w - - 0 33</Feno>
+              <Tshepa>33. Qb5 Qxb5 34. axb5 Nd3 35. Re2 Rb8 36. Rd2 Rxb5 37. Rxd3 Rxb2 38. d5</Tshepa>
+              <VarQuant VarNumo="0">
+                <Commento>или</Commento>
+              </VarQuant>
+              <Mova Fromo="20" Tomo="38" Coala="W">
+                <Zver>None, Queen</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Qb5</Nota>
+              </Mova>
+              <Mova Fromo="59" Tomo="38" Coala="B">
+                <Zver>None, Queen, Black</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>Qxb5</Nota>
+              </Mova>
+              <Mova Fromo="31" Tomo="38" Coala="W">
+                <Zver>None, Pawn</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>axb5</Nota>
+              </Mova>
+              <Mova Fromo="30" Tomo="20" Coala="B">
+                <Zver>None, Knight, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Nd3</Nota>
+              </Mova>
+              <Mova Fromo="3" Tomo="11" Coala="W">
+                <Zver>None, Rook</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Re2</Nota>
+              </Mova>
+              <Mova Fromo="60" Tomo="62" Coala="B">
+                <Zver>None, Rook, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Rb8</Nota>
+              </Mova>
+              <Mova Fromo="11" Tomo="12" Coala="W">
+                <Zver>None, Rook</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Rd2</Nota>
+              </Mova>
+              <Mova Fromo="62" Tomo="38" Coala="B">
+                <Zver>None, Rook, Black</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>Rxb5</Nota>
+              </Mova>
+              <Mova Fromo="12" Tomo="20" Coala="W">
+                <Zver>None, Rook</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>Rxd3</Nota>
+              </Mova>
+              <Mova Fromo="38" Tomo="14" Coala="B">
+                <Zver>None, Rook, Black</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>Rxb2</Nota>
+              </Mova>
+              <Mova Fromo="28" Tomo="36" Coala="W">
+                <Zver>None, Pawn</Zver>
+                <Typon>Normal</Typon>
+                <Nota>d5</Nota>
+              </Mova>
+              <VarQuant VarNumo="11">
+                <Commento>с ничьей</Commento>
+              </VarQuant>
+            </Vario>
+          </VarQuant>
+          <Mova Fromo="30" Tomo="36" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Nd5</Nota>
+          </Mova>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="69">
+        <Commento>Соблазняя черных на вариант с неясными последствиями</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="70">
+        <Commento>Была строка 35... Rxa5 $2 36. Rxa5 Qxc1+ 37. Qf1 Qe3+ 38. Kh1 h6 39. Ra8+ Kh7 40. Qb1+ g6 41. Ra7+ Kh8 42. h3 {но черным нет надобности рисковать - они стоят не хуже.}</Commento>
+        <Vario>
+          <Feno>r5k1/6pp/2q1p3/P2nP3/1p1P4/3Q4/6PP/R1B3K1 b - - 4 35</Feno>
+          <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="80">
+        <Commento>Небольшое преимущество на стороне черных, но вряд ли его можно реализовать. После домашнего анализа партнеры согласились на ничью.</Commento>
+      </VarQuant>
+    </Dopico>
+  </Leo>
+  <Leo lid="0814f064-b072-4c8e-8fb1-11038cb60d51" typo="Gamo">
+    <Namo>Bronstein, David I - Najdorf, Miguel</Namo>
+    <BigNamo>Bronstein, David I - Najdorf, Miguel 1953.??.?? 1/2-1/2 E70</BigNamo>
+    <Parameters>
+      <TParo>Bronstein, David I</TParo>
+      <TParo>Najdorf, Miguel</TParo>
+      <TParo>1/2-1/2</TParo>
+      <TParo>1953.??.??</TParo>
+      <TParo>candidates tournament</TParo>
+      <TParo>E70</TParo>
+      <TParo>81</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+      <TParo>?</TParo>
+      <TParo>2</TParo>
+      <TParo></TParo>
+      <TParo>1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Bg5 c5 6. d5 Na6 7. Bd3 Nc7 8. Nge2
+a6 9. a4 Rb8 10. O-O O-O 11. Qc2 Bd7 12. h3 b5 13. f4 Nfe8 14. axb5 axb5 15.
+Ra7 bxc4 16. Bxc4 Ra8 17. Rxa8 Nxa8 18. Qb3 f6 19. Bh4 Qb6 20. Qa3 Nec7 21. b3
+Nb5 22. Nxb5 Bxb5 23. f5 Bh6 24. fxg6 hxg6 25. e5 Bxc4 26. bxc4 dxe5 27. Qd3
+Kh7 28. Nc3 Qb3 29. Rb1 e4 30. Rxb3 exd3 31. Rb7 Kg8 32. Kf2 Bf4 33. Kf3 Rb8
+34. Rxb8+ Bxb8 35. Na4 Bd6 36. Bf2 Kf7 37. Ke3 Nc7 38. Kxd3 Na6 39. Ke4 f5+ 40.
+Kf3 e6 41. Nb6 1/2-1/2</TParo>
+      <TParo>[Annotator] - [Bronstein]
+[EventDate] - [1953.??.??]</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+    </Parameters>
+    <Dopico>
+      <VarQuant VarNumo="12">
+        <Commento>Сделано всего 6 ходов, но произошло уже много событий. Пользуясь тем, что слон вышел на g5, а не на еЗ, где он обычно принимает участие в борьбе за пункт d4, черные торопятся кон-тратаковать центр ходом с7- с5. Сыграв б. d5, белые не пропустили коня на сб, и Найдорф теперь переводит его на с7, чтобы затем ходом а7-а6 подготовить b7-b5. Однако на это уходит много времени, и достигнутый результат несоразмерно мал по сравнению с затраченными усилиями. Конь на с7 занимает пассивную позицию и долго не находит себе применения. В конце концов он едва не погубил черных.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="25">
+        <Commento>расположение черных фигур незольно вызывает у пешек "е" и "f" желание двинуться вперед. Белые завоевывают все больше пространства, тогда как пешка b5 не компенсирует стесненного положения черных; сравним, например, сонную ладью f8 с полной жизни ладьей f1.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="32">
+        <Commento>Нельзя допускать Лf1-a1,  но теперь белые разменивают единственную активную фигуру черных.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="36">
+        <Commento>Поскольку ферзь не может  вечно стоять на страже пешки е7, черные решаются на ответственный шаг, закрывая диагональ своему слону.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="45">
+        <Vario>
+          <Feno>n4rk1/4p1bp/1q1p1pp1/1bpP4/2B1PP1B/QP5P/4N1P1/5RK1 w - - 0 23</Feno>
+          <Tshepa>23. Ra1 f5 24. e5 dxe5 25. d6+ Kh8 26. dxe7</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Возможно было и</Commento>
+          </VarQuant>
+          <Mova Fromo="2" Tomo="7" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ra1</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>В этом случае не проходит сразу</Commento>
+          </VarQuant>
+          <Mova Fromo="42" Tomo="34" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>f5</Nota>
+          </Mova>
+          <VarQuant VarNumo="2">
+            <Commento>ввиду</Commento>
+          </VarQuant>
+          <Mova Fromo="27" Tomo="35" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>e5</Nota>
+          </Mova>
+          <Mova Fromo="44" Tomo="35" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>dxe5</Nota>
+          </Mova>
+          <Mova Fromo="36" Tomo="44" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>d6+</Nota>
+          </Mova>
+          <Mova Fromo="57" Tomo="56" Coala="B">
+            <Zver>None, King, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kh8</Nota>
+          </Mova>
+          <Mova Fromo="44" Tomo="51" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>dxe7</Nota>
+          </Mova>
+          <VarQuant VarNumo="7">
+            <Commento> и т. д., но белым все время пришлось бы в дальнейшем считаться с f6- f5.</Commento>
+          </VarQuant>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="47">
+        <Vario>
+          <Feno>n4rk1/4p2p/1q1p1ppb/1bpP1P2/2B1P2B/QP5P/4N1P1/5RK1 w - - 1 24</Feno>
+          <Tshepa>24. Nf4 g5 25. Ne6 gxh4 26. Nxf8</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Мелкие преимущества, постепенно накопившись, достигли заметной величины, и ходом в партии белые начинают искать пути решающего усиления позиции. Сейчас грозит</Commento>
+          </VarQuant>
+          <Mova Fromo="11" Tomo="26" Coala="W">
+            <Zver>None, Knight</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Nf4</Nota>
+          </Mova>
+          <Mova Fromo="41" Tomo="33" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>g5</Nota>
+          </Mova>
+          <Mova Fromo="26" Tomo="43" Coala="W">
+            <Zver>None, Knight</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ne6</Nota>
+          </Mova>
+          <Mova Fromo="33" Tomo="24" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>gxh4</Nota>
+          </Mova>
+          <Mova Fromo="43" Tomo="58" Coala="W">
+            <Zver>None, Knight</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Nxf8</Nota>
+          </Mova>
+          <VarQuant VarNumo="5">
+            <Commento>Кроме того, последний ход помогает зафиксировать пешки е7 и f6 на черных полях. И все же стоило подумать о том, чтобы перевести слона на Другую диагональ, здесь он уже сделал свое дело - вызвал f7- f6 и теперь мог бы причинить черным немало хлопот после Ch4-e1.</Commento>
+          </VarQuant>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="53">
+        <Commento>Ради чего белые пожертвовали пешку? Не могут ли черные перейти в контратаку? Пока не могут, а белым нужно всего 2- 3 хода, чтобы, сыграв, например, Ке2-сЗ и Лf1-b1, завладеть всеми командными пунктами на ферзевом фланге, а затем забрать пешку с5 или е7. Защита черных осложняется неудачным положением коня. </Commento>
+      </VarQuant>
+      <VarQuant VarNumo="53">
+        <Vario>
+          <Feno>n4rk1/4p3/1q3ppb/2pPp3/2P4B/Q6P/4N1P1/5RK1 w - - 0 27</Feno>
+          <Tshepa>27. Bf2 Rc8 28. Qd3 Kg7 29. h4</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>лучше, например</Commento>
+          </VarQuant>
+          <Mova Fromo="24" Tomo="10" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Bf2</Nota>
+          </Mova>
+          <Mova Fromo="58" Tomo="61" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rc8</Nota>
+          </Mova>
+          <Mova Fromo="23" Tomo="20" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qd3</Nota>
+          </Mova>
+          <Mova Fromo="57" Tomo="49" Coala="B">
+            <Zver>None, King, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kg7</Nota>
+          </Mova>
+          <Mova Fromo="16" Tomo="24" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>h4</Nota>
+          </Mova>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="56">
+        <Commento>Последние два хода белых не  плохи, но они могли быть несколько лучше. Теперь же Найдорф находит возможность тактически осложнить игру и, самое главное, разменять ферзей, что облегчает защиту.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="63">
+        <Commento>Белые, конечно, не берут пешку, что позволило бы коню наконец выбраться из угла.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="65">
+        <Commento>Самое лучшее было вместо  33. Kpf3 предложить обмен слонов</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="65">
+        <Vario>
+          <Feno>n4rk1/1R2p3/5pp1/2pP4/2P2b1B/2Np3P/5KP1/8 w - - 4 33</Feno>
+          <Tshepa>33. Bg3 Rb8</Tshepa>
+          <Mova Fromo="24" Tomo="17" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Bg3</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>Белые, однако, просмотрели ответ 3</Commento>
+          </VarQuant>
+          <Mova Fromo="58" Tomo="62" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rb8</Nota>
+          </Mova>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="67">
+        <Commento>После размена ладей почти все преимущество белых исчезает.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="67">
+        <Commento>Была строка {Лучше было} 34. Rxe7 Rb3 ({или} 34... Bd6 35. Re6 Be5 36. Bxf6 Bxc3 37. Bxc3 Rb3 38. Ba5 {Белые переоценили силу пешки d3 и не пошли на это продолжение, хотя пешка d5 становилась значительно опасней.}</Commento>
+        <Vario>
+          <Feno>nr4k1/1R2p3/5pp1/2pP4/2P2b1B/2Np1K1P/6P1/8 w - - 6 34</Feno>
+          <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+        </Vario>
+      </VarQuant>
+    </Dopico>
+  </Leo>
+  <Leo lid="6281dc42-368f-436c-84ba-37849c832f09" typo="Gamo">
+    <Namo>Gligoric, Svetozar - Taimanov, Mark</Namo>
+    <BigNamo>Gligoric, Svetozar - Taimanov, Mark 1953.??.?? 1/2-1/2 E13</BigNamo>
+    <Parameters>
+      <TParo>Gligoric, Svetozar</TParo>
+      <TParo>Taimanov, Mark</TParo>
+      <TParo>1/2-1/2</TParo>
+      <TParo>1953.??.??</TParo>
+      <TParo>candidates tournament</TParo>
+      <TParo>E13</TParo>
+      <TParo>69</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+      <TParo>?</TParo>
+      <TParo>2</TParo>
+      <TParo></TParo>
+      <TParo>1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Nf3 b6 5. Bg5 h6 6. Bh4 g5 7. Bg3 Ne4 8. Qc2
+Bb7 9. e3 d6 10. Bd3 Bxc3+ 11. bxc3 f5 12. O-O Nd7 13. Nd2 Ndf6 14. Nxe4 Bxe4
+15. Bxe4 Nxe4 16. f3 Nxg3 17. hxg3 Qd7 18. a4 a5 19. c5 bxc5 20. dxc5 O-O 21.
+Rfd1 Qc6 22. cxd6 cxd6 23. g4 Rac8 24. gxf5 Rxf5 25. e4 Rf7 26. Rd3 g4 27. fxg4
+Qxe4 28. Qd2 Qxg4 29. Re1 Rg7 30. Rxd6 Rxc3 31. Rdxe6 Rg3 32. R1e2 Rxg2+ 33.
+Rxg2 Qxe6 34. Rxg7+ Kxg7 35. Qxa5 1/2-1/2</TParo>
+      <TParo>[Annotator] - [Bronstein]
+[EventDate] - [1953.??.??]</TParo>
+      <TParo></TParo>
+      <TParo></TParo>
+    </Parameters>
+    <Dopico>
+      <VarQuant VarNumo="18">
+        <Commento>He зевнул ли Тайманов фигуру -10. Фа4+ Кеб 11. d5? Нет, ибо белый конь остался без достаточной защиты (11. . . К : сЗ).</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="23">
+        <Vario>
+          <Feno>rn1qk2r/pbp5/1p1pp2p/5pp1/2PPn3/2PBPNB1/P1Q2PPP/R3K2R w KQkq - 0 12</Feno>
+          <Tshepa>12. d5 exd5 13. Nd4</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Между тем белые могли поставить под сомнение всю систему развития черных, если бы вместо хитроумной рокировки действовали более определенно, а именно</Commento>
+          </VarQuant>
+          <Mova Fromo="28" Tomo="36" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>d5</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>прерывая коммуникацию между слоном b7 и конем е4.</Commento>
+          </VarQuant>
+          <VarQuant VarNumo="1">
+            <Commento>В случае</Commento>
+          </VarQuant>
+          <Mova Fromo="43" Tomo="36" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>exd5</Nota>
+          </Mova>
+          <VarQuant VarNumo="2">
+            <Commento>белые играют</Commento>
+          </VarQuant>
+          <Mova Fromo="18" Tomo="28" Coala="W">
+            <Zver>None, Knight</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Nd4</Nota>
+          </Mova>
+          <VarQuant VarNumo="3">
+            <Commento>(этот ход последовал бы и на многие другие ответы) с очень сильной атакой, ибо грозит, кроме всего прочего, простое f2-f3.</Commento>
+          </VarQuant>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="23">
+        <Vario>
+          <Feno>rn1qk2r/pbp5/1p1pp2p/5pp1/2PPn3/2PBPNB1/P1Q2PPP/R3K2R w KQkq - 0 12</Feno>
+          <Tshepa>12. d5 exd5 13. cxd5 Bxd5 14. Nd4 Nd7 15. f3 Nxg3 16. hxg3 Qf6 17. Bxf5 O-O-O
+18. Qa4</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Года через полтора после данной партии, в 22-м первенстве СССР &amp;, Тайманов получил точно такую же позицию    против Кереса, и эстонский гроссмейстер, как он сам рас-сказывает, заранее подготовил </Commento>
+          </VarQuant>
+          <Mova Fromo="28" Tomo="36" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>d5</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>Идеи Кереса и автора настоящей книги совпали но тут же разошлись: белые в ответ на</Commento>
+          </VarQuant>
+          <Mova Fromo="43" Tomo="36" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>exd5</Nota>
+          </Mova>
+          <VarQuant VarNumo="2">
+            <Commento>продолжали не 13. Kd4, а</Commento>
+          </VarQuant>
+          <Mova Fromo="29" Tomo="36" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>cxd5</Nota>
+          </Mova>
+          <Mova Fromo="54" Tomo="36" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxd5</Nota>
+          </Mova>
+          <VarQuant VarNumo="4">
+            <Commento>и лишь теперь</Commento>
+          </VarQuant>
+          <Mova Fromo="18" Tomo="28" Coala="W">
+            <Zver>None, Knight</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Nd4</Nota>
+          </Mova>
+          <Mova Fromo="62" Tomo="52" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Nd7</Nota>
+          </Mova>
+          <Mova Fromo="10" Tomo="18" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>f3</Nota>
+          </Mova>
+          <Mova Fromo="27" Tomo="17" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Nxg3</Nota>
+          </Mova>
+          <Mova Fromo="8" Tomo="17" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>hxg3</Nota>
+          </Mova>
+          <Mova Fromo="60" Tomo="42" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qf6</Nota>
+          </Mova>
+          <Mova Fromo="20" Tomo="34" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxf5</Nota>
+          </Mova>
+          <Mova Fromo="59" Tomo="61" Coala="B">
+            <Zver>None, King, Black</Zver>
+            <Typon>Castle</Typon>
+            <Nota>O-O-O</Nota>
+          </Mova>
+          <Mova Fromo="13" Tomo="31" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qa4</Nota>
+          </Mova>
+          <VarQuant VarNumo="13">
+            <Commento>с превосходной позицией. Черным пришлось сложить оружие уже на 29-м ходу.</Commento>
+          </VarQuant>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="24">
+        <Vario>
+          <Feno>rn1qk2r/pbp5/1p1pp2p/5pp1/2PPn3/2PBPNB1/P1Q2PPP/R4RK1 b kq - 1 12</Feno>
+          <Tshepa>12. ... h5 13. h4</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento> Глигорич не опасается дальнейшего движения черных пешек, правильно считая, что Тайманов этим лишь ослабил бы свою позицию. Он приглашает черных пойти h6-h5. Какой шахматист может удержаться от такого соблазна? Но Тайманов вовремя увидел, что после</Commento>
+          </VarQuant>
+          <Mova Fromo="40" Tomo="32" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>h5</Nota>
+          </Mova>
+          <Mova Fromo="8" Tomo="24" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>h4</Nota>
+          </Mova>
+          <VarQuant VarNumo="2">
+            <Commento>атака во всяком случае не у него. Спокойным маневром КЬ8-d7-f6 он усилил давление на пункт е4, что привело к некоторому перевесу черных.</Commento>
+          </VarQuant>
+        </Vario>
+      </VarQuant>
+      <VarQuant VarNumo="35">
+        <Commento>Тайманов сохранил в целости свою пешечную октаву, тогда как у белых клавиатура слегка повреждена в двух местах - этим и ограничивается позиционное преимущество черных. Если в предыдущей стадии были разменены все легкие фигуры, то теперь наступает фаза унич-тожения пешек. В течение следующих 12 ходов будет взято 12 пешек! Эта внешняя сторона в известной мере отражает и стратегическую идею белых - раскрыть черного короля, а также прорывом с4-с5 создать противнику слабости на ферзевом фланге.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="48">
+        <Commento>Пешечные стычки пошли на пользу белым - у соперника появилась слабость на d6 и при-открылся король. Однако это преимущество носит символичес-кий характер, реализовать его вряд ли возможно.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="50">
+        <Commento>Белые планировали дальней-шее движение пешки "е", чтобы открыть диагональ для вторжения ферзя на g6. Сразу это не получается, так как в случае 26. е5 черные дают шах и берут пешку ферзем. Между тем пешка сЗ взывает о защите, приходится перекрыть диагональ вторжения ладьей.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="62">
+        <Commento>Черные перебросили на линию "g" все фигуры, получилась картинная позиция, но и только.</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="64">
+        <Commento>Ничья, так как после</Commento>
+      </VarQuant>
+      <VarQuant VarNumo="69">
+        <Commento>на поле сражения остаются полководцы, а войск у них маловато. . .</Commento>
+      </VarQuant>
+    </Dopico>
+  </Leo>
+</Gamosyky>

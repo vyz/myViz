@@ -114,5 +114,26 @@ namespace pfVisualisator.Properties {
                 return ((string)(this["Houdini"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public int LogoSwitcher {
+            get {
+                return ((int)(this["LogoSwitcher"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute(".\\LogoInfo.log")]
+        public string LogoFilo {
+            get {
+                return ((string)(this["LogoFilo"]));
+            }
+            set {
+                this["LogoFilo"] = value;
+            }
+        }
     }
 }

@@ -59,6 +59,23 @@ namespace pfVisualisator {
             liqva = livq;
             notata = VanStrokeMovaRegion();
             }
+
+        /// <summary>
+        /// Неудачный вариант с целью прохождения парсинга
+        /// Модификация от 13 апреля 2016 года
+        /// Заложен 13 апреля 2016 года
+        /// </summary>
+        /// <param name="pp">Реальная позиция</param>
+        /// <param name="pb">Неважный параметр для отличия</param>
+        /// <param name="messa">Сообщение для потомков</param>
+        public Vario(pozo pp, bool pb, string messa) {
+            bego = pp;
+            notata = messa;
+            lima = null;
+            lipa = null;
+            liqva = null;
+            }
+
         
         /// <summary>
         /// Модификация от 5 февраля 2016 года
@@ -206,7 +223,7 @@ namespace pfVisualisator {
 #region--------------------------Свойства объекта-----------------------------------------
         public string OnlyMova { get { return notata; } }
         public string Begino { get { return null == lima ? "Пусто" : lima[0].Shorto; } }
-        public pozo LastPo { get { return lipa[lipa.Count - 1]; } }
+        public pozo LastPo { get { return null == lipa ? null : lipa[lipa.Count - 1]; } }
         public List<Mova> MovaList { get { return lima; } }
         public List<pozo> PozoList { get { return lipa; } }
         public int Numerok { get { return bego.NumberMove; } }
@@ -267,6 +284,8 @@ namespace pfVisualisator {
         }
 
         public int Numa { get { return numa; } }
+        public string Commento { get { return como; } }
+        public Vario Varo { get { return vrvnu; } }
         }
     
     }
