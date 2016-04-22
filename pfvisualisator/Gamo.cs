@@ -597,7 +597,7 @@ namespace pfVisualisator {
             List<string> reto = new List<string>();
             List<string> kommy = null;
             List<string> varry = null;
-            int anticikl = 1000;
+            int anticikl = 100;
             while(flagworkabigVaro && anticikl-- > 0) { //Может быть очень и очень длинная и с вложенными скобками :(
                                       //В этом месте мы не строим иерархию. Задача вытащить целиком в одну строку самый внешний вариант.  
                 string patvaroendo = @"\A([^(^)]*)\)\s*";
@@ -720,9 +720,17 @@ namespace pfVisualisator {
                         string patvariostartonthisstring = @"\s*\((.*)\z";
                         Match regVario = Regex.Match(vv, patvariostartonthisstring);
                         if (regVario.Success) {
-                            bigVaro = ((flagworkabigVaro) ? bigVaro + "(" : "") + regVario.Groups[1].Value;
+                            string ddst = regVario.Groups[1].Value;
+                            bigVaro = ((flagworkabigVaro) ? bigVaro + "(" : "") + ddst;
                             flagworkabigVaro = true;
                             stackBigVaro++;
+                            //Добавленный кусок мог и внутри себя содержать открывающиеся варианты, а мы пока про них ничего не знаем.
+                            //Закрывающую скобку варианта мы бы съели как парную предыдущим патерном.
+                            //Поэтому надо увеличивать стек на количество открывающихся скобок в добавленной строке.
+                            if( ddst.Contains("(") ) {
+                                int ddkvo = ddst.Count(S => S == '(');
+                                stackBigVaro += ddkvo;
+                                }
                             vv = Regex.Replace(vv, patvariostartonthisstring, "");
                             }
                         }
@@ -954,9 +962,10 @@ namespace pfVisualisator {
             naboro = new List<string>();
             List<string> kommy = null;
             List<string> varry = null;
+            int anticikl = 10;
 
-            if (vv.Contains("(")) {
-//                string Patterno = @"(?<ALL>\((?>[^)(]+|(\k<ALL>))+\))\s*";
+            while( vv.Contains("(") && anticikl-- > 0 ) {
+                //if (vv[0] == '(') { vv = " " + vv; }
                 string Patterno = "(" +  
                                           "(" +
                                               @"(?<Open> \()" +   //Пробел после опен смысловой!!!
@@ -967,13 +976,12 @@ namespace pfVisualisator {
                                   @"(?(Open)(?!))";
                 MatchCollection mcc = Regex.Matches(vv, Patterno);
                 if (mcc.Count > 0) {
-                    varry = new List<string>();
+                    if (varry == null) { varry = new List<string>(); }
                     foreach (Match aa in mcc) {
                         string bb = aa.Value.TrimEnd();
                         vv = vv.Replace(bb, " &");
                         varry.Add(bb.Substring(2, bb.Length - 3));
                         }
-                    //vv = Regex.Replace(vv, Patterno, " &");
                     }
                 }
             if (vv.Contains("{")) {
