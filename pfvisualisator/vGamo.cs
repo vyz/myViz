@@ -110,7 +110,16 @@ namespace pfVisualisator
             return reto;
             }
 
-
+        /// <summary>
+        /// Модификация от 29 апреля 2016 года
+        /// Заложен 29 апреля 2016 года
+        /// </summary>
+        public void EtaloCreate() {
+            if (etalo == null) {
+                etalo = new Gamo(this);
+                lvaqv = etalo.ListVaroCom;
+                }
+            }
 
         /// <summary>
         /// Модификация от 16 ноября 2015 года
@@ -268,6 +277,8 @@ namespace pfVisualisator
         public int iflagCommto { get { return (etalo != null) ? ((etalo.CommtoFlag) ? 1 : 0) : 0; } }
         public int iflagVario { get { return (etalo != null) ? ((etalo.VariantoFlag) ? 1 : 0) : 0; } }
         public List<VarQvant> ListoVarCom { get { return lvaqv; } }
+        public List<Mova> ListoMovo { get { return (etalo != null) ? etalo.ListoMovo : null; } }
+        public Gamo Gamma { get { return etalo; } }
 
 #endregion-----------------------Свойства объекта-----------------------------------------
 

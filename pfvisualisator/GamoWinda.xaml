@@ -20,7 +20,12 @@
         <GridSplitter Name="SplitIn1" Grid.Column="1" HorizontalAlignment="Left" Width="5"></GridSplitter>
         <StackPanel Name="GInfo" Grid.Column="1">
             <TextBlock Name="Heado" Text="{Binding Path=BigNamo}" HorizontalAlignment="Center"></TextBlock>
-            <TextBox Name="Parto" Text="{Binding Path=OnlyMova}" MouseDoubleClick="Parto_MouseDoubleClick"></TextBox>
+            <Border Margin="10" Padding="10" BorderBrush="SteelBlue" BorderThickness="2" CornerRadius="5" HorizontalAlignment="Stretch">
+                <RichTextBox Name="Parto" FontSize="12" MaxHeight="600" MinWidth="300" HorizontalAlignment="Center">
+                    <FlowDocument Name="FloDoca">
+                    </FlowDocument>
+                </RichTextBox>
+            </Border>
             <StackPanel HorizontalAlignment="Center" Name="sPanManagegViewPosition" VerticalAlignment="Top" Orientation="Horizontal">
                 <Button Content="Prev" Name="PrevBtn" Width="75" Click="PrevBtn_Click" />
                 <Label Name="pSdvigLb1"></Label>

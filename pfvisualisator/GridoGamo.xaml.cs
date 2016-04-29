@@ -22,15 +22,21 @@ namespace pfVisualisator {
             //GamoGrido.CanSelectMultipleItems = true;
         }
 
+        /// <summary>
+        /// Модификация от 29 апреля 2016 года
+        /// Заложен в ноябре 2015 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void GamoGrido_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             vGamo aa = (vGamo)this.GamoGrido.CurrentItem;
-            if (!(aa == null))
-            {
+            if (!(aa == null)) {
                 var winda = new GamoWinda();
-                winda.Grido.DataContext = aa;
+                aa.EtaloCreate();
+                winda.vvStartOtrisovka(aa);
                 winda.Show();
-            }
+                }
 
         }
 

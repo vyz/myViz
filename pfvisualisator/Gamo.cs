@@ -1082,6 +1082,7 @@ namespace pfVisualisator {
         public bool VariantoFlag { get { return flagVario; } }
         public List<gTimo> ListoTimo { get { return lTimos; } }
         public List<pozo> ListoPozo { get { return lPozos; } }
+        public List<Mova> ListoMovo { get { return lFactMoves; } }
         public List<VarQvant> ListVaroCom { get { return lVarQva; } }
         public gmKorrAtr KorrFlago { get { return intellectoattr; } }
 #endregion-----------------------Свойства объекта-----------------------------------------

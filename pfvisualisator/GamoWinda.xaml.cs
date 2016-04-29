@@ -18,8 +18,11 @@ namespace pfVisualisator
     /// </summary>
     public partial class GamoWinda : Window
     {
-        public GamoWinda()
-        {
+        private vrtGamo pokazukha;
+        private vGamo vPartia;
+
+        public GamoWinda() {
+
             ExecutedRoutedEventHandler onExecutedCmd;
             CanExecuteRoutedEventHandler onCanExecuteCmd;
 
@@ -30,7 +33,7 @@ namespace pfVisualisator
 
             CommandBindings.Add(new CommandBinding(NextMoveCommand, onExecutedCmd, onCanExecuteCmd));
             CommandBindings.Add(new CommandBinding(PrevMoveCommand, onExecutedCmd, onCanExecuteCmd));
-        }
+            }
 
         /// <summary>
         /// Модификация от 22 ноября 2015 года
@@ -71,11 +74,7 @@ namespace pfVisualisator
         /// Заложен 22 ноября 2015 года
         /// </summary>
         private void cmdNextPosition() {
-            vGamo aa = (vGamo)Grido.DataContext;
-            pozo newposo = aa.GetNextPozo();
-            if (newposo != null) {
-                pfBoard.CurrentoPoza = newposo;
-                }
+            vvDNF(1);
             }
 
         /// <summary>
@@ -83,24 +82,60 @@ namespace pfVisualisator
         /// Заложен 23 ноября 2015 года
         /// </summary>
         private void cmdPrevPosition() {
-            vGamo aa = (vGamo)Grido.DataContext;
-            pozo newposo = aa.GetPrevPozo();
-            if (newposo != null) {
-                pfBoard.CurrentoPoza = newposo;
-                }
+            vvDNF(-1);
             }
 
 #endregion -------------------------------------Command Handling--------------------------------------------
 
-        private void Parto_MouseDoubleClick(object sender, MouseButtonEventArgs e) {
-            TextBox curra = (TextBox)sender;
-            int ipos = curra.CaretIndex;
-            vGamo aa = (vGamo)Grido.DataContext;
-            pozo newposo = aa.GetPozoOnOffset(ipos);
-            if (newposo != null) {
-                pfBoard.CurrentoPoza = newposo;
+        /// <summary>
+        /// Модификация от 29 апреля 2016 года
+        /// Заложен 29 апреля 2016 года
+        /// </summary>
+        /// <param name="gg">Показываемая партия в виде vGamo</param>
+        public void vvStartOtrisovka(vGamo gg) {
+            vPartia = gg;
+            this.Grido.DataContext = gg;
+            pokazukha = new vrtGamo(vPartia.Gamma, this);
+            Parto.Document.Blocks.Add(pokazukha.GetoParagraph());
+            }
+
+        private void vvOtrisovka(pozo bb)
+        {
+            pfBoard.CurrentoPoza = bb;
+        }
+
+        private void vvDNF(int dtl)
+        {
+            pokazukha.ChangeCurrentNumber(dtl);
+            vvOtrisovka(pokazukha.GetCurrentPoza());
+        }
+
+
+        /// <summary>
+        /// Модификация от 29 апреля 2016 года
+        /// Заложен 29 апреля 2016 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public void Spanio_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            try
+            {
+                if (sender is Span)
+                {
+                    Span aa = (Span)sender;
+                    if (aa.Name.StartsWith("spi"))
+                    {
+                        int k = int.Parse(aa.Name.Substring(3));
+                        vvDNF(k+1000);
+                    } 
                 }
             }
+            catch (Exception ex)
+            {
+                LogoCM.OutString(ex.Message);
+            }
+        }
 
         private void PrevBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -131,5 +166,7 @@ namespace pfVisualisator
                 MessageBox.Show("Проблема с окном второй позиции " + ex.Message);
                 }
             }
+
+        //public vGamo Gamma { get { return vPartia; } set { vPartia = value; } }
         }
     }
