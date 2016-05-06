@@ -20,6 +20,7 @@ namespace pfVisualisator
     {
         private vrtGamo pokazukha;
         private vGamo vPartia;
+        private EnaBo feba = EnaBo.nona;
 
         public GamoWinda() {
 
@@ -137,15 +138,26 @@ namespace pfVisualisator
             }
         }
 
-        private void PrevBtn_Click(object sender, RoutedEventArgs e)
-        {
+        private void PrevBtn_Click(object sender, RoutedEventArgs e) {
             cmdPrevPosition();
-        }
+            }
 
-        private void NextBtn_Click(object sender, RoutedEventArgs e)
-        {
+        private void NextBtn_Click(object sender, RoutedEventArgs e) {
             cmdNextPosition();
-        }
+            }
+
+        private void BegoBtn_Click(object sender, RoutedEventArgs e) {
+            }
+
+        private void ExitBtn_Click(object sender, RoutedEventArgs e) {
+            }
+
+        private void EndoBtn_Click(object sender, RoutedEventArgs e) {
+
+            }
+
+        private void VaraBtn_Click(object sender, RoutedEventArgs e) {
+            }
 
         /// <summary>
         /// Модификация от 26 января 2016 года
@@ -167,6 +179,6 @@ namespace pfVisualisator
                 }
             }
 
-        //public vGamo Gamma { get { return vPartia; } set { vPartia = value; } }
+
         }
     }

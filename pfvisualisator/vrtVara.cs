@@ -6,6 +6,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 
 namespace pfVisualisator {
+#region--------------------------------ПЕРВЫЙ КЛАСС--vrtVara------------------------
     public class vrtVara {
         Vario varo;
         int numbero;
@@ -110,7 +111,9 @@ namespace pfVisualisator {
             }
 
         }
+#endregion-----------------------------ПЕРВЫЙ КЛАСС--vrtVara------------------------
 
+#region--------------------------------ДРУГОЙ КЛАСС--vrtGamo------------------------
     /// <summary>
     /// Модификация от 25 апреля 2016 года
     /// Заложен 25 апреля 2016 года
@@ -122,6 +125,7 @@ namespace pfVisualisator {
         List<vgElem> setoElem;
         int numbero;
         int makso;
+        EnaBo cureb;
         Gamo gz;
         GamoWinda refa;
         System.Windows.Media.Brush Stado = null;
@@ -148,6 +152,16 @@ namespace pfVisualisator {
         /// <returns></returns>
         public Paragraph GetoParagraph() {
             Paragraph reto = new Paragraph();
+
+            if (gz.VariantoFlag)
+            {
+                //Тогда другой путь
+            }
+            else
+            {
+                //Упрощенный параграф без вариантов. Отдельные комментарии не считаем. Комментарии без вариантов не рассматриваем.
+                cureb = EnaBo.next | EnaBo.endo;
+
             Span zz = null;
             Run zh = null;
             vgElem elema;
@@ -179,6 +193,7 @@ namespace pfVisualisator {
                 elema = new vgElem(pzcu, zz);
                 setoElem.Add(elema);
                 }
+            }
             return reto;
             }
 
@@ -200,6 +215,8 @@ namespace pfVisualisator {
             return reto;
             }
 
+        public EnaBo Knopki { get { return cureb; } }
+
         private class vgElem {
             pozo afterpos;
             Span spano;
@@ -216,6 +233,17 @@ namespace pfVisualisator {
             public pozo Pizza { get { return afterpos; } }
             }
 
+        }
+#endregion-----------------------------ДРУГОЙ КЛАСС--vrtGamo------------------------
+
+    public enum EnaBo : byte {
+        nona = 0,
+        bego = 1,
+        endo = 2,
+        prev = 4,
+        next = 8,
+        vara = 16,
+        exit = 32,
         }
 
     }
