@@ -3,7 +3,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:pfVisualisator"
-        Title="GamoWinda" Height="480" Width="1580">
+        Title="GamoWinda" Height="718" Width="1580">
     <Grid Name="Grido">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*" />
