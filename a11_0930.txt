@@ -1,0 +1,78 @@
+Nureev, Garun-Chupakhin, Evgeny Отличие:файл-прого$Rd2 34. Rxg6+ Kh7 35. Rg5 Rxa2 36. Rxh5+ Kg7 37. Rg5+ {Nh4 Rge5} 1-0$Rd2 34. Rxg6+ Kh7 35. Rg5 Rxa2 36. Rxh5+ Kg7 37. Rg5+ 1-0$
+Gilyazitdinov, Nikita-Yandemirov, Valeri Отличие:файл-прого$Bxc5 Re6 34. Bxd6 Kxd6 35. g5 fxg5 36. Rxe6+ Kxe6 37. c4 {Kd5} 1-0$Bxc5 Re6 34. Bxd6 Kxd6 35. g5 fxg5 36. Rxe6+ Kxe6 37. c4 1-0$
+Groshev, Dmitry-Islamov, Ilnaz Отличие:файл-прого$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 b6 5. Nge2 Bb7 6. a3 Bxc3+ 7. Nxc3 O-O 8.$1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. e3 b6 5. Ne2 Bb7 6. a3 Bxc3+ 7. Nxc3 O-O 8. f3$
+Groshev, Dmitry-Islamov, Ilnaz Отличие:файл-прого$f3 d5 9. cxd5 exd5 10. Bd3 Nbd7 11. O-O c5 12. Re1 Re8 13. Bc2 Ba6 14. e4 dxe4$d5 9. cxd5 exd5 10. Bd3 Nbd7 11. O-O c5 12. Re1 Re8 13. Bc2 Ba6 14. e4 dxe4 15.$
+Groshev, Dmitry-Islamov, Ilnaz Отличие:файл-прого$15. fxe4 cxd4 16. Qxd4 Ne5 17. Qa4 Nfg4 18. Bf4 Bc4 19. Bxe5 Nxe5 20. Bb3 Qd4+$fxe4 cxd4 16. Qxd4 Ne5 17. Qa4 Nfg4 18. Bf4 Bc4 19. Bxe5 Nxe5 20. Bb3 Qd4+ 21.$
+Groshev, Dmitry-Islamov, Ilnaz Отличие:файл-прого$21. Kh1 Ng4 22. h3 Nf2+ 23. Kh2 Qe5+ 24. g3 b5 25. Qa6 Bxb3 26. Nxb5 Bc4 27. a4$Kh1 Ng4 22. h3 Nf2+ 23. Kh2 Qe5+ 24. g3 b5 25. Qa6 Bxb3 26. Nxb5 Bc4 27. a4$
+Faizrakhmanov, Ramil-Korovin, Mikhail Отличие:файл-прого${Qf2 Qh1+} 0-1$0-1$
+Gabitov, Ruslan-Tsaregorodtsev, Mikhail Отличие:файл-прого$1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. exd5 exd5 5. Bd3 Ne7 6. Qh5 Nbc6 7. Nge2 Be6 8.$1. e4 e6 2. d4 d5 3. Nc3 Bb4 4. exd5 exd5 5. Bd3 Ne7 6. Qh5 Nbc6 7. Ne2 Be6 8.$
+Sadykov, Ramil-Nizamov, Ildar Отличие:файл-прого$1. e4 Nc6 2. d4 d5 3. Nc3 dxe4 4. d5 Nb8 5. Nxe4 Nf6 6. Nxf6+ exf6 7. Nf3 Be7$1. e4 Nc6 2. d4 d5 3. Nc3 dxe4 4. d5 Nb8 5. Nxe4 Nf6 6. Nxf6# exf6 7. Nf3 Be7$
+Sadykov, Ramil-Nureev, Garun Отличие:файл-прого$Kd5 {Ke4+} 0-1$Kd5 0-1$
+Faizrakhmanov, Ramil-Sadykov, Ramil Отличие:файл-прого$33. Bxe6 Kxe6 34. Kg2 Ke5 35. Kf3 Kd4 36. c4 Bf8 {Ke4+} 1-0$33. Bxe6 Kxe6 34. Kg2 Ke5 35. Kf3 Kd4 36. c4 Bf8 1-0$
+Toropov, Pavel-Ponfilenok, Vladimir Отличие:файл-прого$Kd6 Rb6+ 74. Kc5 Rb8 75. e5 Kf5 76. Kd6 {Kxe5+} 1/2-1/2$Kd6 Rb6+ 74. Kc5 Rb8 75. e5 Kf5 76. Kd6 1/2-1/2$
+Faizrakhmanov, Ramil-Murtazin, Ruslan ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Ponfilenok, Vladimir-Garafutdinov, Ainur ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Gabitov, Ruslan-Sadykov, Ramil ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Nureev, Garun-Chupakhin, Evgeny ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Murzin, Lenar-Murtazin, Bulat ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Toropov, Pavel-Sadykov, Mars ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Gilyazitdinov, Nikita-Yandemirov, Valeri ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Samusenko, Maksim-Sairanov, Talgat ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Tukaeva, Adelya-Rodchenkov, Vitaly ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Samusenko, Aleksandr-Shakirov, Rail ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Rodchenkov, Vitaly-Faizrakhmanov, Ramil ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Samusenko, Aleksandr-Ponfilenok, Vladimir ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Sadykov, Ramil-Ospennikov, Dmitry ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Tokarev, Ilya-Nureev, Garun ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Murtazin, Bulat-Glukhov, Alexander ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Korovin, Mikhail-Toropov, Pavel ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Gilyazitdinov, Nikita-Samusenko, Maksim ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Nizamov, Ildar-Makhmutov, Rail ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Ospennikov, Dmitry-Murtazin, Bulat ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.03
+Samusenko, Maksim-Tokarev, Ilya ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.03
+Faizrakhmanov, Ramil-Korovin, Mikhail ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.03
+Sharafiev, Azat-Samusenko, Aleksandr ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.03
+Ponfilenok, Vladimir-Rodchenkov, Vitaly ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.03
+Makhmutov, Rail-Sadykov, Mars ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.03
+Tukaeva, Adelya-Sadykov, Ramil ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.03
+Nureev, Garun-Shakirov, Rail ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.03
+Murtazin, Bulat-Korovin, Mikhail ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.04
+Tokarev, Ilya-Ponfilenok, Vladimir ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.04
+Makhmutov, Rail-Samusenko, Maksim ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.04
+Murtazin, Ruslan-Sharafiev, Azat ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.04
+Sadykov, Ramil-Nizamov, Ildar ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.04
+Samusenko, Aleksandr-Nureev, Garun ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.04
+Gilyazitdinov, Nikita-Toropov, Pavel ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.04
+Yandemirov, Valeri-Ospennikov, Dmitry ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.04
+Korovin, Mikhail-Tokarev, Ilya ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Nureev, Garun-Murtazin, Bulat ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Toropov, Pavel-Sharafiev, Azat ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Glukhov, Alexander-Sadykov, Ramil ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Samusenko, Maksim-Yandemirov, Valeri ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Faizrakhmanov, Ramil-Makhmutov, Rail ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Ponfilenok, Vladimir-Nizamov, Ildar ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Tukaeva, Adelya-Samusenko, Aleksandr ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Yandemirov, Valeri-Korovin, Mikhail ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Murtazin, Bulat-Tokarev, Ilya ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Sharafiev, Azat-Glukhov, Alexander ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Sadykov, Ramil-Nureev, Garun ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Makhmutov, Rail-Gabitov, Ruslan ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Garafutdinov, Ainur-Faizrakhmanov, Ramil ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Murtazin, Ruslan-Ponfilenok, Vladimir ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Korovin, Mikhail-Sharafiev, Azat ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Yandemirov, Valeri-Murtazin, Bulat ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Nureev, Garun-Makhmutov, Rail ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Ponfilenok, Vladimir-Tukaeva, Adelya ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Tokarev, Ilya-Toropov, Pavel ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Faizrakhmanov, Ramil-Sadykov, Ramil ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Samusenko, Maksim-Gabitov, Bulat ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Glukhov, Alexander-Nizamov, Ildar ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2016.09.16
+Korovin, Mikhail-Nureev, Garun ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.08
+Sharafiev, Azat-Yandemirov, Valeri ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.08
+Murtazin, Bulat-Faizrakhmanov, Ramil ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.08
+Toropov, Pavel-Ponfilenok, Vladimir ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.08
+Nizamov, Ildar-Samusenko, Maksim ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.08
+Garafutdinov, Ainur-Tokarev, Ilya ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.08
+Tukaeva, Adelya-Makhmutov, Rail ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.08
+Zhafyarov, Adel-Sairanov, Talgat ИнтеллиЧенж:Произведена замена с 2016.??.?? на 2015.06.08
+

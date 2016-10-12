@@ -20,7 +20,6 @@ namespace pfVisualisator
     {
         private vrtGamo pokazukha;
         private vGamo vPartia;
-        private EnaBo feba = EnaBo.nona;
 
         public GamoWinda() {
 
@@ -47,26 +46,57 @@ namespace pfVisualisator
 
         public static readonly RoutedUICommand NextMoveCommand = new RoutedUICommand("NextMove", "NextPosition", typeof(GamoWinda));
         public static readonly RoutedUICommand PrevMoveCommand = new RoutedUICommand("PrevMove", "PrevPosition", typeof(GamoWinda));
+        public static readonly RoutedUICommand BegoPosCommand  = new RoutedUICommand("BegoPos",  "BegoPosition", typeof(GamoWinda));
+        public static readonly RoutedUICommand EndoPosCommand  = new RoutedUICommand("EndoPos",  "EndoPosition", typeof(GamoWinda));
+        public static readonly RoutedUICommand IntoVaraCommand = new RoutedUICommand("IntoVara", "IntoVariant", typeof(GamoWinda));
+        public static readonly RoutedUICommand ExitVaraCommand = new RoutedUICommand("ExitVara", "ExitVariant", typeof(GamoWinda));
 
 #region -------------------------------------Command Handling--------------------------------------------
+        /// <summary>
+        /// Модификация от 7 октября 2016 года
+        /// Заложен в ноябре 2015 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public virtual void OnExecutedCmd(object sender, ExecutedRoutedEventArgs e) {
             if (e.Command == NextMoveCommand) {
                 cmdNextPosition();
             } else if (e.Command == PrevMoveCommand) {
                 cmdPrevPosition();
+            } else if (e.Command == BegoPosCommand) {
+                cmdBegoPosition();
+            } else if (e.Command == EndoPosCommand) {
+                cmdEndoPosition();
+            } else if (e.Command == IntoVaraCommand) {
+                cmdIntoVariant();
+            } else if (e.Command == ExitVaraCommand) {
+                cmdExitFromVariant();
                 }
             }
-        public virtual void OnCanExecuteCmd(object sender, CanExecuteRoutedEventArgs e)
-        {
-            if (e.Command == NextMoveCommand)
-            {
+
+        /// <summary>
+        /// Модификация от 7 октября 2016 года
+        /// Заложен в ноябре 2015 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        public virtual void OnCanExecuteCmd(object sender, CanExecuteRoutedEventArgs e) {
+            EnaBo feba = (pokazukha == null) ? EnaBo.nona : pokazukha.Knopki;
+
+            if (e.Command == NextMoveCommand) {
                 //Нужна проверка на последность позиции
-                e.CanExecute = true;
-            }
-            else if (e.Command == PrevMoveCommand)
-            {
+                e.CanExecute = (feba & EnaBo.next) > 0;
+            } else if (e.Command == PrevMoveCommand) {
                 //Нужна проверка на начальность позиции
-                e.CanExecute = true;
+                e.CanExecute = (feba & EnaBo.prev) > 0;
+            } else if (e.Command == BegoPosCommand) {
+                e.CanExecute = (feba & EnaBo.bego) > 0;
+            } else if (e.Command == EndoPosCommand) {
+                e.CanExecute = (feba & EnaBo.endo) > 0;
+            } else if (e.Command == IntoVaraCommand) {
+                e.CanExecute = (feba & EnaBo.vara) > 0;
+            } else if (e.Command == ExitVaraCommand) {
+                e.CanExecute = (feba & EnaBo.exit) > 0;
             }
         }
 
@@ -84,6 +114,34 @@ namespace pfVisualisator
         /// </summary>
         private void cmdPrevPosition() {
             vvDNF(-1);
+            }
+
+        /// <summary>
+        /// Модификация от 6 октября 2016 года
+        /// Заложен 6 октября 2016 года
+        /// </summary>
+        private void cmdBegoPosition() {
+            }
+
+        /// <summary>
+        /// Модификация от 6 октября 2016 года
+        /// Заложен 6 октября 2016 года
+        /// </summary>
+        private void cmdEndoPosition() {
+            }
+
+        /// <summary>
+        /// Модификация от 6 октября 2016 года
+        /// Заложен 6 октября 2016 года
+        /// </summary>
+        private void cmdIntoVariant() {
+            }
+
+        /// <summary>
+        /// Модификация от 6 октября 2016 года
+        /// Заложен 6 октября 2016 года
+        /// </summary>
+        private void cmdExitFromVariant() {
             }
 
 #endregion -------------------------------------Command Handling--------------------------------------------
