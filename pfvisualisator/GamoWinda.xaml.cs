@@ -33,7 +33,11 @@ namespace pfVisualisator
 
             CommandBindings.Add(new CommandBinding(NextMoveCommand, onExecutedCmd, onCanExecuteCmd));
             CommandBindings.Add(new CommandBinding(PrevMoveCommand, onExecutedCmd, onCanExecuteCmd));
-            }
+            CommandBindings.Add(new CommandBinding(BegoPosCommand, onExecutedCmd, onCanExecuteCmd));
+            CommandBindings.Add(new CommandBinding(EndoPosCommand, onExecutedCmd, onCanExecuteCmd));
+            CommandBindings.Add(new CommandBinding(IntoVaraCommand, onExecutedCmd, onCanExecuteCmd));
+            CommandBindings.Add(new CommandBinding(ExitVaraCommand, onExecutedCmd, onCanExecuteCmd));
+        }
 
         /// <summary>
         /// Модификация от 22 ноября 2015 года
