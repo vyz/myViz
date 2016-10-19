@@ -59,6 +59,7 @@
     <Compile Include="bidoTestoU.cs" />
     <Compile Include="GamoTest.cs" />
     <Compile Include="GamoTestoU.cs" />
+    <Compile Include="GamoWindaTest.cs" />
     <Compile Include="mybinoTestoU.cs" />
     <Compile Include="myleoTestoU.cs" />
     <Compile Include="pgWokaTestoU.cs" />
