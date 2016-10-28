@@ -19,6 +19,7 @@
                     <MenuItem Header="Загрузка XML файла" Click="GamoLoadFromXMLFile_Click"/>
                     <MenuItem Header="vPozaTesto" Click="vPozaTesto_Click"/>
                     <MenuItem Header="Загрузка XML позы" Click="PozoLoadFromXMLFile_Click"/>
+                    <MenuItem Header="vGamoWithVaraTesto" Click="vGamoWithVaraTesto_Click"/>
                 </ContextMenu>
             </StackPanel.ContextMenu>
         </StackPanel>

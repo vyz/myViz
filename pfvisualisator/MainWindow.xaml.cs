@@ -158,5 +158,19 @@ namespace pfVisualisator {
             LogoCM.finitalogo();
         }
 
+        /// <summary>
+        /// Модификация от 20 октября 2016 года
+        /// Заложен 20 октября 2016 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void vGamoWithVaraTesto_Click(object sender, RoutedEventArgs e) {
+            var winda = new GamoWinda();
+            vGamo aa = vGamo.CreateExempWithVariantoAndComments(); 
+            aa.EtaloCreate();
+            winda.vvStartOtrisovka(aa);
+            winda.Show();
+            }
+
         }
 }

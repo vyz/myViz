@@ -40,12 +40,16 @@ namespace pfVisualisator
         }
 
         /// <summary>
-        /// Модификация от 22 ноября 2015 года
+        /// Модификация от 28 октября 2016 года
         /// Заложен 22 ноября 2015 года
         /// </summary>
         static GamoWinda() {
             NextMoveCommand.InputGestures.Add(new KeyGesture(Key.Right));
             PrevMoveCommand.InputGestures.Add(new KeyGesture(Key.Left));
+            BegoPosCommand.InputGestures.Add(new KeyGesture(Key.Home));
+            EndoPosCommand.InputGestures.Add(new KeyGesture(Key.End));
+            IntoVaraCommand.InputGestures.Add(new KeyGesture(Key.Down));
+            ExitVaraCommand.InputGestures.Add(new KeyGesture(Key.Up));
             }
 
         public static readonly RoutedUICommand NextMoveCommand = new RoutedUICommand("NextMove", "NextPosition", typeof(GamoWinda));
@@ -209,16 +213,19 @@ namespace pfVisualisator
             }
 
         private void BegoBtn_Click(object sender, RoutedEventArgs e) {
+            cmdBegoPosition();
             }
 
         private void ExitBtn_Click(object sender, RoutedEventArgs e) {
+            cmdExitFromVariant();
             }
 
         private void EndoBtn_Click(object sender, RoutedEventArgs e) {
-
+            cmdEndoPosition();
             }
 
         private void VaraBtn_Click(object sender, RoutedEventArgs e) {
+            cmdIntoVariant();
             }
 
         /// <summary>

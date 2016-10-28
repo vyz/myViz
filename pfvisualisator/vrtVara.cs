@@ -123,6 +123,7 @@ namespace pfVisualisator {
     /// </summary>
     public class vrtGamo {
         List<vgElem> setoElem;
+        List<vgElem> setoVaroElem;
         int numbero;
         int makso;
         EnaBo cureb;
