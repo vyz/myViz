@@ -154,15 +154,6 @@ namespace pfVisualisator {
         public Paragraph GetoParagraph() {
             Paragraph reto = new Paragraph();
 
-            if (gz.VariantoFlag)
-            {
-                //Тогда другой путь
-            }
-            else
-            {
-                //Упрощенный параграф без вариантов. Отдельные комментарии не считаем. Комментарии без вариантов не рассматриваем.
-                cureb = EnaBo.next | EnaBo.endo;
-
             Span zz = null;
             Run zh = null;
             vgElem elema;
@@ -171,6 +162,49 @@ namespace pfVisualisator {
             numbero = 0;
             setoElem = new List<vgElem>(makso + 1);
             int numa = 0;
+
+            if (gz.VariantoFlag) {
+                //Тогда другой путь
+                int mvi = 0;
+                int mvmaks = gz.ListVaroCom.Count;
+                for (int i = 0; i <= makso; i++) {
+                    while(mvi < mvmaks && gz.ListVaroCom[mvi].Numa == i) {
+                        VarQvant curvar = gz.ListVaroCom[mvi];
+                        if (curvar.Commento.Length > 0) {
+                            zh = new Run(curvar.Commento);
+                            if (Stado == null) { Stado = zh.Background; }
+                            reto.Inlines.Add(zh);
+                            }
+                        if (curvar.Varo != null) {
+                            }
+                        mvi++;
+                        }
+                    pzcu = gz.ListoPozo[i];
+                    if (i == 0) {
+                        elema = new vgElem(pzcu, null);
+                        setoElem.Add(elema);
+                        continue;
+                        }
+                    Mova aa = gz.ListoMovo[i - 1];
+                    string doba = string.Empty;
+                    if (aa.Koler) {
+                        numa = pzcu.NumberMove;
+                        doba = string.Format("{0}. ", numa);
+                        }
+                     zh = new Run((i == 0 ? "" : " ") + doba);
+                     if (Stado == null) { Stado = zh.Background; }
+                     reto.Inlines.Add(zh);
+                     zz = new Span(new Run(aa.Shorto));
+                     zz.Name = "spi" + i.ToString();
+                     zz.MouseLeftButtonDown += new System.Windows.Input.MouseButtonEventHandler(refa.Spanio_MouseLeftButtonDown);
+                     reto.Inlines.Add(zz);
+                     elema = new vgElem(pzcu, zz);
+                     setoElem.Add(elema);
+                     }
+            } else {
+                //Упрощенный параграф без вариантов. Отдельные комментарии не считаем. Комментарии без вариантов не рассматриваем.
+                cureb = EnaBo.next | EnaBo.endo;
+
             for (int i = 0; i <= makso; i++) {
                 pzcu = gz.ListoPozo[i];
                 if( i == 0 ) {

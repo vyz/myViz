@@ -28,12 +28,14 @@
                     <Label Name="pSdvigLb2"></Label>
                     <Button Content="Exto" Name="ExitBtn" Width="75" Click="ExitBtn_Click" Visibility="Hidden" />
                 </StackPanel>
+                <StackPanel Name="spTextoGamo" Orientation="Vertical">
                 <Border Margin="10" Padding="10" BorderBrush="SteelBlue" BorderThickness="2" CornerRadius="5" HorizontalAlignment="Stretch">
-                <RichTextBox Name="Parto" FontSize="12" MaxHeight="600" MinWidth="300" HorizontalAlignment="Center">
+                <RichTextBox Name="Parto" FontSize="12" MaxHeight="600" MinWidth="400" HorizontalAlignment="Stretch" MaxWidth="500">
                     <FlowDocument Name="FloDoca">
                     </FlowDocument>
                 </RichTextBox>
                 </Border>
+                </StackPanel>
                 <StackPanel Name="spRButMan" Orientation="Vertical">
                     <Button Content="Next" Name="NextBtn" Width="75" Click="NextBtn_Click" />
                     <Label Name="pSdvigLb3"></Label>
