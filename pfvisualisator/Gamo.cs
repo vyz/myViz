@@ -1410,4 +1410,19 @@ namespace pfVisualisator {
         }
 #endregion-----------------------------ENUM------------------------
 
+    public class GamaException : Exception
+    {
+        public GamaException()
+        {
+        }
+        public GamaException(string message)
+            : base(message)
+        {
+        }
+        public GamaException(string message, Exception inner)
+            : base(message, inner)
+        {
+        }
+    }
+
     }

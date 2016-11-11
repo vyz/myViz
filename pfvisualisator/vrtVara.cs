@@ -131,7 +131,7 @@ namespace pfVisualisator {
         GamoWinda refa;
         System.Windows.Media.Brush Stado = null;
         System.Windows.Media.SolidColorBrush Videlo = System.Windows.Media.Brushes.DeepSkyBlue;
-
+        System.Windows.Media.SolidColorBrush VaroColorNotActive = System.Windows.Media.Brushes.Chocolate;
 
         /// <summary>
         /// Модификация от 28 апреля 2016 года
@@ -167,15 +167,21 @@ namespace pfVisualisator {
                 //Тогда другой путь
                 int mvi = 0;
                 int mvmaks = gz.ListVaroCom.Count;
+                int spvi = 0;
                 for (int i = 0; i <= makso; i++) {
                     while(mvi < mvmaks && gz.ListVaroCom[mvi].Numa == i) {
                         VarQvant curvar = gz.ListVaroCom[mvi];
-                        if (curvar.Commento.Length > 0) {
+                        if(curvar.Commento.Length > 0) {
                             zh = new Run(curvar.Commento);
                             if (Stado == null) { Stado = zh.Background; }
                             reto.Inlines.Add(zh);
                             }
-                        if (curvar.Varo != null) {
+                        if(curvar.Varo != null) {
+                            spvi++;
+                            if(spvi >= 100) { //Кричим об ужасе. Паникуем 
+                                throw new GamaException(string.Format("<<vrtVara:GetoParagraph>> spvi превысил 99 --> {0}", spvi.ToString()));
+                                }
+                            reto.Inlines.Add(VaraInToBigSpan(curvar.Varo, spvi));
                             }
                         mvi++;
                         }
@@ -229,6 +235,23 @@ namespace pfVisualisator {
                 setoElem.Add(elema);
                 }
             }
+            return reto;
+            }
+        
+        /// <summary>
+        /// Модификация от 11 ноября 2016 года
+        /// Заложен 11 ноября 2016 года
+        /// </summary>
+        /// <param name="pv"></param>
+        /// <param name="ima"></param>
+        /// <returns></returns>
+        private Span VaraInToBigSpan(Vario pv, int ima) {
+            Span reto = new Span();
+            Run zz;
+            string sfo = ima.ToString("00");
+            zz = new Run("(Вара" + sfo + ")");
+            zz.Foreground = VaroColorNotActive;
+            reto.Inlines.Add(zz);
             return reto;
             }
 
