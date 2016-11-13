@@ -168,6 +168,7 @@ namespace pfVisualisator {
                 int mvi = 0;
                 int mvmaks = gz.ListVaroCom.Count;
                 int spvi = 0;
+                System.Windows.FontWeight fonbold = System.Windows.FontWeights.Bold;
                 for (int i = 0; i <= makso; i++) {
                     while(mvi < mvmaks && gz.ListVaroCom[mvi].Numa == i) {
                         VarQvant curvar = gz.ListVaroCom[mvi];
@@ -197,16 +198,19 @@ namespace pfVisualisator {
                         numa = pzcu.NumberMove;
                         doba = string.Format("{0}. ", numa);
                         }
-                     zh = new Run((i == 0 ? "" : " ") + doba);
-                     if (Stado == null) { Stado = zh.Background; }
-                     reto.Inlines.Add(zh);
-                     zz = new Span(new Run(aa.Shorto));
-                     zz.Name = "spi" + i.ToString();
-                     zz.MouseLeftButtonDown += new System.Windows.Input.MouseButtonEventHandler(refa.Spanio_MouseLeftButtonDown);
-                     reto.Inlines.Add(zz);
-                     elema = new vgElem(pzcu, zz);
-                     setoElem.Add(elema);
-                     }
+                    zh = new Run((i == 0 ? "" : " ") + doba);
+                    if (Stado == null) { Stado = zh.Background; }
+                    zh.FontWeight = fonbold;
+                    reto.Inlines.Add(zh);
+                    zh = new Run(aa.Shorto);
+                    zh.FontWeight = fonbold;
+                    zz = new Span(zh);
+                    zz.Name = "spi" + i.ToString();
+                    zz.MouseLeftButtonDown += new System.Windows.Input.MouseButtonEventHandler(refa.Spanio_MouseLeftButtonDown);
+                    reto.Inlines.Add(zz);
+                    elema = new vgElem(pzcu, zz);
+                    setoElem.Add(elema);
+                    }
             } else {
                 //Упрощенный параграф без вариантов. Отдельные комментарии не считаем. Комментарии без вариантов не рассматриваем.
                 cureb = EnaBo.next | EnaBo.endo;

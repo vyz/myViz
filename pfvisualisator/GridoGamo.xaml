@@ -6,7 +6,8 @@
         <DataGrid Name="GamoGrido" ItemsSource="{Binding Mode=OneWay, NotifyOnTargetUpdated=True}" AutoGenerateColumns="False" IsReadOnly="True"
                   MouseDoubleClick="GamoGrido_MouseDoubleClick" CanUserResizeRows="False" RowHeight="22" RowHeaderWidth="35" LoadingRow="GamoGrido_LoadingRow">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Заголовок"  Binding="{Binding Namo}" />
+                <DataGridTextColumn Header="Белые" Binding="{Binding White}" />
+                <DataGridTextColumn Header="Красные" Binding="{Binding Black}" />
                 <DataGridTextColumn Header="Результ" Binding="{Binding Result}" />
                 <DataGridTextColumn Header="Эко" Binding="{Binding ECO}" />
                 <DataGridTextColumn Header="Каво" Binding="{Binding movoQvo}" />
