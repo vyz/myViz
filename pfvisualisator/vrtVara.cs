@@ -168,12 +168,13 @@ namespace pfVisualisator {
                 int mvi = 0;
                 int mvmaks = gz.ListVaroCom.Count;
                 int spvi = 0;
+                cureb = EnaBo.next | EnaBo.prev;
                 System.Windows.FontWeight fonbold = System.Windows.FontWeights.Bold;
                 for (int i = 0; i <= makso; i++) {
                     while(mvi < mvmaks && gz.ListVaroCom[mvi].Numa == i) {
                         VarQvant curvar = gz.ListVaroCom[mvi];
                         if(curvar.Commento.Length > 0) {
-                            zh = new Run(curvar.Commento);
+                            zh = new Run( (i > 0 ? " " : "") + curvar.Commento);
                             if (Stado == null) { Stado = zh.Background; }
                             reto.Inlines.Add(zh);
                             }

@@ -346,7 +346,7 @@ Kg8 28. Rh5 Ne6 29. Rg1 e4 30. Nh4 a4 31. b4 Bxb4 32. Rh6 Nd4+ 33. Bxd4 Rxd4
                     new XElement("TParo", "0-1"),
                     new XElement("TParo", "1953.??.??"),
                     new XElement("TParo", "candidates tournament"),
-                    new XElement("TParo", ">E28"),
+                    new XElement("TParo", "E28"),
                     new XElement("TParo", "52"),
                     new XElement("TParo", ""),
                     new XElement("TParo", ""),
