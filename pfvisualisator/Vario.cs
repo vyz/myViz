@@ -226,6 +226,7 @@ namespace pfVisualisator {
         public pozo LastPo { get { return null == lipa ? null : lipa[lipa.Count - 1]; } }
         public List<Mova> MovaList { get { return lima; } }
         public List<pozo> PozoList { get { return lipa; } }
+        public List<VarQvant> VaroCommoList { get { return liqva; } }
         public int Numerok { get { return bego.NumberMove; } }
 #endregion-----------------------Свойства объекта-----------------------------------------
 

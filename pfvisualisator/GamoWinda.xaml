@@ -22,6 +22,13 @@
             <TextBlock Name="Heado" Text="{Binding Path=BigNamo}" HorizontalAlignment="Center"></TextBlock>
             <StackPanel Name="spParaMan" CanVerticallyScroll="True" Orientation="Vertical" HorizontalAlignment="Center" MinHeight="150">
                 <StackPanel Name="spHorizButton" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <StackPanel.ContextMenu>
+                        <ContextMenu Name="spbutme">
+                            <MenuItem Header="Кино с диапазоном 1 секунда" Click="Kino1_Click"/>
+                            <MenuItem Header="Кино с диапазоном 5 секунд" Click="Kino2_Click"/>
+                            <MenuItem Header="Кино с диапазоном 10 секунд" Click="Kino3_Click"/>
+                        </ContextMenu>
+                    </StackPanel.ContextMenu>
                     <Button Content="Bego" Name="BegoBtn" Width="75" Click="BegoBtn_Click" />
                     <Label Name="pSdvigLb1"></Label>
                     <Button Content="Exto" Name="ExitBtn" Width="75" Click="ExitBtn_Click" Visibility="Hidden" />

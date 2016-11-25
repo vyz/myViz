@@ -20,6 +20,7 @@ namespace pfVisualisator
     {
         private vrtGamo pokazukha;
         private vGamo vPartia;
+        System.Windows.Threading.DispatcherTimer sptimer = null;
 
         public GamoWinda() {
 
@@ -204,6 +205,32 @@ namespace pfVisualisator
             }
         }
 
+        /// <summary>
+        /// Модификация от 23 ноября 2016 года
+        /// Модификация от 23 ноября 2016 года
+        /// </summary>
+        /// <param name="timovar"></param>
+        private void ZapuskKino(int timovar) {
+            if (sptimer == null) {
+                sptimer = new System.Windows.Threading.DispatcherTimer();
+                }
+            //Предположительно нужно и имзменение действующего таймера, т.е. ЭЛЬЗЕ
+            sptimer.Tick += new EventHandler(sptimerTick);
+            sptimer.Interval = new TimeSpan(0, 0, timovar);
+            sptimer.Start();
+            }
+
+        /// <summary>
+        /// Модификация от 23 ноября 2016 года
+        /// Модификация от 23 ноября 2016 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void sptimerTick(object sender, EventArgs e)
+        {
+            cmdNextPosition();
+        }
+
         private void PrevBtn_Click(object sender, RoutedEventArgs e) {
             cmdPrevPosition();
             }
@@ -246,6 +273,36 @@ namespace pfVisualisator
             } catch (Exception ex) {
                 MessageBox.Show("Проблема с окном второй позиции " + ex.Message);
                 }
+            }
+
+        /// <summary>
+        /// Модификация от 23 ноября 2016 года
+        /// Модификация от 23 ноября 2016 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Kino1_Click(object sender, RoutedEventArgs e) {
+            ZapuskKino(1);
+            }
+
+        /// <summary>
+        /// Модификация от 23 ноября 2016 года
+        /// Модификация от 23 ноября 2016 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Kino2_Click(object sender, RoutedEventArgs e) {
+            ZapuskKino(5);
+            }
+
+        /// <summary>
+        /// Модификация от 23 ноября 2016 года
+        /// Модификация от 23 ноября 2016 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Kino3_Click(object sender, RoutedEventArgs e) {
+            ZapuskKino(10);
             }
 
 
