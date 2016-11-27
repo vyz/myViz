@@ -252,7 +252,7 @@ namespace pfVisualisator {
         /// <returns>Тот самый кусочек параграфа</returns>
         private Span VaraInToBigSpan(Vario pv, int ima) {
             Span reto = new Span();
-            Run zz;
+            Span zz;
             Run zh = null;
             pozo pzcu = null;
             vgElem elema;
@@ -263,12 +263,14 @@ namespace pfVisualisator {
             int mvi = 0;
             int mvmaks = lnest.Count;
             int spvi = 0;
+            int numa = 0;
             for (int i = 0; i <= imx; i++) {
                 while (mvi < mvmaks && lnest[mvi].Numa == i) {
                     VarQvant curvar = lnest[mvi];
                     if (curvar.Commento.Length > 0) {
                         zh = new Run((i > 0 ? " " : "") + curvar.Commento);
                         if (Stado == null) { Stado = zh.Background; }
+                        zh.Foreground = VaroColorNotActive;
                         reto.Inlines.Add(zh);
                         }
                     if (curvar.Varo != null) {
@@ -280,13 +282,13 @@ namespace pfVisualisator {
                         }
                     mvi++;
                     }
-                pzcu = pv.PozoList[i];
+                pzcu = pv.PozoList[i-1];
                 if (i == 0) {
                     elema = new vgElem(pzcu, null);
                     setoElem.Add(elema);
                     continue;
                     }
-                Mova aa = gz.ListoMovo[i - 1];
+                Mova aa = lvrmo[i];
                 string doba = string.Empty;
                 if (aa.Koler)
                 {
@@ -294,22 +296,17 @@ namespace pfVisualisator {
                     doba = string.Format("{0}. ", numa);
                 }
                 zh = new Run((i == 0 ? "" : " ") + doba);
-                if (Stado == null) { Stado = zh.Background; }
-                zh.FontWeight = fonbold;
+                zh.Foreground = VaroColorNotActive;
                 reto.Inlines.Add(zh);
                 zh = new Run(aa.Shorto);
-                zh.FontWeight = fonbold;
                 zz = new Span(zh);
-                zz.Name = "spi" + i.ToString();
+                zz.Name = "varspi" + sfo + i.ToString();
+                zz.Foreground = VaroColorNotActive;
                 zz.MouseLeftButtonDown += new System.Windows.Input.MouseButtonEventHandler(refa.Spanio_MouseLeftButtonDown);
                 reto.Inlines.Add(zz);
                 elema = new vgElem(pzcu, zz);
                 setoElem.Add(elema);
             }
-
-            zz = new Run("(Вара" + sfo + ")");
-            zz.Foreground = VaroColorNotActive;
-            reto.Inlines.Add(zz);
             return reto;
             }
 
