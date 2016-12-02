@@ -123,7 +123,7 @@ namespace pfVisualisator {
     /// </summary>
     public class vrtGamo {
         List<vgElem> setoElem;
-        List<vgElem> setoVaroElem;
+        Dictionary <string, List<vgElem>> setoVaroElem;
         int numbero;
         int makso;
         EnaBo cureb;
@@ -168,6 +168,7 @@ namespace pfVisualisator {
                 int mvi = 0;
                 int mvmaks = gz.ListVaroCom.Count;
                 int spvi = 0;
+                setoVaroElem = new Dictionary<string, List<vgElem>>();
                 cureb = EnaBo.next | EnaBo.prev;
                 System.Windows.FontWeight fonbold = System.Windows.FontWeights.Bold;
                 for (int i = 0; i <= makso; i++) {
@@ -256,7 +257,8 @@ namespace pfVisualisator {
             Run zh = null;
             pozo pzcu = null;
             vgElem elema;
-            string sfo = ima.ToString("00");
+            List<vgElem> lelya = new List<vgElem>();
+            string sfo = "Vasp" + ima.ToString("00") + '_';
             List<Mova> lvrmo = pv.MovaList;
             List<VarQvant> lnest = pv.VaroCommoList;
             int imx = lvrmo.Count;
@@ -264,7 +266,7 @@ namespace pfVisualisator {
             int mvmaks = lnest.Count;
             int spvi = 0;
             int numa = 0;
-            for (int i = 0; i <= imx; i++) {
+            for (int i = 0; i < imx; i++) {
                 while (mvi < mvmaks && lnest[mvi].Numa == i) {
                     VarQvant curvar = lnest[mvi];
                     if (curvar.Commento.Length > 0) {
@@ -282,12 +284,13 @@ namespace pfVisualisator {
                         }
                     mvi++;
                     }
-                pzcu = pv.PozoList[i-1];
                 if (i == 0) {
-                    elema = new vgElem(pzcu, null);
-                    setoElem.Add(elema);
+                    elema = new vgElem(pv.BegoPo, null);
+                    lelya.Add(elema);
                     continue;
                     }
+
+                pzcu = pv.PozoList[i];
                 Mova aa = lvrmo[i];
                 string doba = string.Empty;
                 if (aa.Koler)
@@ -300,13 +303,14 @@ namespace pfVisualisator {
                 reto.Inlines.Add(zh);
                 zh = new Run(aa.Shorto);
                 zz = new Span(zh);
-                zz.Name = "varspi" + sfo + i.ToString();
+                zz.Name =  sfo + i.ToString();
                 zz.Foreground = VaroColorNotActive;
                 zz.MouseLeftButtonDown += new System.Windows.Input.MouseButtonEventHandler(refa.Spanio_MouseLeftButtonDown);
                 reto.Inlines.Add(zz);
                 elema = new vgElem(pzcu, zz);
-                setoElem.Add(elema);
+                lelya.Add(elema);
             }
+            setoVaroElem.Add(sfo,lelya);
             return reto;
             }
 

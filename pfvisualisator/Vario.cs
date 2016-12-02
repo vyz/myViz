@@ -223,6 +223,7 @@ namespace pfVisualisator {
 #region--------------------------Свойства объекта-----------------------------------------
         public string OnlyMova { get { return notata; } }
         public string Begino { get { return null == lima ? "Пусто" : lima[0].Shorto; } }
+        public pozo BegoPo { get { return bego; } }
         public pozo LastPo { get { return null == lipa ? null : lipa[lipa.Count - 1]; } }
         public List<Mova> MovaList { get { return lima; } }
         public List<pozo> PozoList { get { return lipa; } }
