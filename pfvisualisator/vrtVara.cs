@@ -258,7 +258,53 @@ namespace pfVisualisator {
             pozo pzcu = null;
             vgElem elema;
             List<vgElem> lelya = new List<vgElem>();
-            string sfo = "Vasp" + ima.ToString("00") + '_';
+            int iima = 0;
+            string simo = string.Empty;
+            if (ima > 100 * 10 * 10 * 10 * 10 * 10 * 10 * 10)
+            {//Кричим об ужасе. Паникуем 
+                throw new GamaException(string.Format("<<vrtVara:VaraInToBigSpan>> ima превысил 100 * 10 * 10 * 10 *10 * 10 * 10 * 10 --> {0}", ima.ToString()));
+            }
+            else if (ima > 100 * 10 * 10 * 10 * 10 * 10 * 10)
+            {
+                iima = ima * 10;
+                simo = "000000000"; 
+            }
+            else if (ima > 100 * 10 * 10 * 10 * 10 * 10)
+            {
+                iima = ima * 10;
+                simo = "00000000";
+            }
+            else if (ima > 100 * 10 * 10 * 10 * 10)
+            {
+                iima = ima * 10;
+                simo = "0000000";
+            }
+            else if (ima > 100 * 10 * 10 * 10)
+            {
+                iima = ima * 10;
+                simo = "000000";
+            }
+            else if (ima > 100 * 10 * 10)
+            {
+                iima = ima * 10;
+                simo = "00000";
+            }
+            else if (ima > 100 * 10)
+            {
+                iima = ima * 10;
+                simo = "0000";
+            }
+            else if (ima > 100)
+            {
+                iima = ima * 10;
+                simo = "000";
+            }
+            else
+            {
+                iima = ima * 100;
+                simo = "00";
+            }
+            string sfo = "Vasp" + ima.ToString(simo) + '_';
             List<Mova> lvrmo = pv.MovaList;
             List<VarQvant> lnest = pv.VaroCommoList;
             int imx = lvrmo.Count;
@@ -277,17 +323,16 @@ namespace pfVisualisator {
                         }
                     if (curvar.Varo != null) {
                         spvi++;
-                        if (spvi >= 100) { //Кричим об ужасе. Паникуем 
-                            throw new GamaException(string.Format("<<vrtVara:VaraInToBigSpan>> spvi превысил 99 --> {0}", spvi.ToString()));
+                        if (spvi >= 10) { //Кричим об ужасе. Паникуем 
+                            throw new GamaException(string.Format("<<vrtVara:VaraInToBigSpan>> внутренний spvi превысил 9 --> {0}", spvi.ToString()));
                             }
-                        reto.Inlines.Add(VaraInToBigSpan(curvar.Varo, spvi));
+                        reto.Inlines.Add(VaraInToBigSpan(curvar.Varo, iima + spvi));
                         }
                     mvi++;
                     }
                 if (i == 0) {
                     elema = new vgElem(pv.BegoPo, null);
                     lelya.Add(elema);
-                    continue;
                     }
 
                 pzcu = pv.PozoList[i];
