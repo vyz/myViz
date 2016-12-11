@@ -147,7 +147,7 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 29 апреля 2016 года
+        /// Модификация от 11 декабря 2016 года
         /// Заложен 28 апреля 2016 года
         /// </summary>
         /// <returns></returns>
@@ -168,6 +168,7 @@ namespace pfVisualisator {
                 int mvi = 0;
                 int mvmaks = gz.ListVaroCom.Count;
                 int spvi = 0;
+                bool netnachalniycomment = true;
                 setoVaroElem = new Dictionary<string, List<vgElem>>();
                 cureb = EnaBo.next | EnaBo.prev;
                 System.Windows.FontWeight fonbold = System.Windows.FontWeights.Bold;
@@ -178,6 +179,7 @@ namespace pfVisualisator {
                             zh = new Run( (i > 0 ? " " : "") + curvar.Commento);
                             if (Stado == null) { Stado = zh.Background; }
                             reto.Inlines.Add(zh);
+                            if (netnachalniycomment) { netnachalniycomment = false; }
                             }
                         if(curvar.Varo != null) {
                             spvi++;
@@ -188,43 +190,46 @@ namespace pfVisualisator {
                             }
                         mvi++;
                         }
-                    pzcu = gz.ListoPozo[i];
                     if (i == 0) {
+                        pzcu = gz.ListoPozo[i];
                         elema = new vgElem(pzcu, null);
                         setoElem.Add(elema);
-                        continue;
+//                        continue;
                         }
-                    Mova aa = gz.ListoMovo[i - 1];
-                    string doba = string.Empty;
-                    if (aa.Koler) {
-                        numa = pzcu.NumberMove;
-                        doba = string.Format("{0}. ", numa);
+                    if (i < makso) {
+                        pzcu = gz.ListoPozo[i+1];
+                        Mova aa = gz.ListoMovo[i];
+                        string doba = string.Empty;
+                        if (aa.Koler) {
+                            numa = pzcu.NumberMove;
+                            doba = string.Format("{0}. ", numa);
+                            }
+                        zh = new Run(((i == 0 && netnachalniycomment) ? "" : " ") + doba);
+                        if (Stado == null) { Stado = zh.Background; }
+                        zh.FontWeight = fonbold;
+                        reto.Inlines.Add(zh);
+                        zh = new Run(aa.Shorto);
+                        zh.FontWeight = fonbold;
+                        zz = new Span(zh);
+                        zz.Name = "spi" + (i+1).ToString();
+                        zz.MouseLeftButtonDown += new System.Windows.Input.MouseButtonEventHandler(refa.Spanio_MouseLeftButtonDown);
+                        reto.Inlines.Add(zz);
+                        elema = new vgElem(pzcu, zz);
+                        setoElem.Add(elema);
                         }
-                    zh = new Run((i == 0 ? "" : " ") + doba);
-                    if (Stado == null) { Stado = zh.Background; }
-                    zh.FontWeight = fonbold;
-                    reto.Inlines.Add(zh);
-                    zh = new Run(aa.Shorto);
-                    zh.FontWeight = fonbold;
-                    zz = new Span(zh);
-                    zz.Name = "spi" + i.ToString();
-                    zz.MouseLeftButtonDown += new System.Windows.Input.MouseButtonEventHandler(refa.Spanio_MouseLeftButtonDown);
-                    reto.Inlines.Add(zz);
-                    elema = new vgElem(pzcu, zz);
-                    setoElem.Add(elema);
                     }
             } else {
                 //Упрощенный параграф без вариантов. Отдельные комментарии не считаем. Комментарии без вариантов не рассматриваем.
                 cureb = EnaBo.next | EnaBo.endo;
 
-            for (int i = 0; i <= makso; i++) {
-                pzcu = gz.ListoPozo[i];
+            for (int i = 0; i < makso; i++) {
                 if( i == 0 ) {
+                    pzcu = gz.ListoPozo[i];
                     elema = new vgElem(pzcu, null);
                     setoElem.Add(elema);
-                    continue;
                     }
-                Mova aa = gz.ListoMovo[i - 1];
+                pzcu = gz.ListoPozo[i+1];
+                Mova aa = gz.ListoMovo[i];
                 string doba = string.Empty;
                 if (aa.Koler) {
                     numa = pzcu.NumberMove;
@@ -234,7 +239,7 @@ namespace pfVisualisator {
                 if (Stado == null) { Stado = zh.Background; }
                 reto.Inlines.Add(zh);
                 zz = new Span(new Run(aa.Shorto));
-                zz.Name = "spi" + i.ToString();
+                zz.Name = "spi" + (i+1).ToString();
                 zz.MouseLeftButtonDown += new System.Windows.Input.MouseButtonEventHandler(refa.Spanio_MouseLeftButtonDown);
                 reto.Inlines.Add(zz);
                 elema = new vgElem(pzcu, zz);
@@ -245,7 +250,7 @@ namespace pfVisualisator {
             }
         
         /// <summary>
-        /// Модификация от 11 ноября 2016 года
+        /// Модификация от 9 декабря 2016 года
         /// Заложен 11 ноября 2016 года
         /// </summary>
         /// <param name="pv">Это сам Варио, который надо превратить в кусочек параграфа(спан)</param>
