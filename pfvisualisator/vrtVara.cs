@@ -194,7 +194,6 @@ namespace pfVisualisator {
                         pzcu = gz.ListoPozo[i];
                         elema = new vgElem(pzcu, null);
                         setoElem.Add(elema);
-//                        continue;
                         }
                     if (i < makso) {
                         pzcu = gz.ListoPozo[i+1];
@@ -250,7 +249,7 @@ namespace pfVisualisator {
             }
         
         /// <summary>
-        /// Модификация от 9 декабря 2016 года
+        /// Модификация от 12 декабря 2016 года
         /// Заложен 11 ноября 2016 года
         /// </summary>
         /// <param name="pv">Это сам Варио, который надо превратить в кусочек параграфа(спан)</param>
@@ -265,50 +264,33 @@ namespace pfVisualisator {
             List<vgElem> lelya = new List<vgElem>();
             int iima = 0;
             string simo = string.Empty;
-            if (ima > 100 * 10 * 10 * 10 * 10 * 10 * 10 * 10)
-            {//Кричим об ужасе. Паникуем 
+            if(ima > 100 * 10 * 10 * 10 * 10 * 10 * 10 * 10) {//Кричим об ужасе. Паникуем 
                 throw new GamaException(string.Format("<<vrtVara:VaraInToBigSpan>> ima превысил 100 * 10 * 10 * 10 *10 * 10 * 10 * 10 --> {0}", ima.ToString()));
-            }
-            else if (ima > 100 * 10 * 10 * 10 * 10 * 10 * 10)
-            {
+            } else if (ima > 100 * 10 * 10 * 10 * 10 * 10 * 10) {
                 iima = ima * 10;
                 simo = "000000000"; 
-            }
-            else if (ima > 100 * 10 * 10 * 10 * 10 * 10)
-            {
+            } else if (ima > 100 * 10 * 10 * 10 * 10 * 10) {
                 iima = ima * 10;
                 simo = "00000000";
-            }
-            else if (ima > 100 * 10 * 10 * 10 * 10)
-            {
+            } else if (ima > 100 * 10 * 10 * 10 * 10) {
                 iima = ima * 10;
                 simo = "0000000";
-            }
-            else if (ima > 100 * 10 * 10 * 10)
-            {
+            } else if (ima > 100 * 10 * 10 * 10) {
                 iima = ima * 10;
                 simo = "000000";
-            }
-            else if (ima > 100 * 10 * 10)
-            {
+            } else if (ima > 100 * 10 * 10) {
                 iima = ima * 10;
                 simo = "00000";
-            }
-            else if (ima > 100 * 10)
-            {
+            } else if (ima > 100 * 10) {
                 iima = ima * 10;
                 simo = "0000";
-            }
-            else if (ima > 100)
-            {
+            } else if (ima > 100) {
                 iima = ima * 10;
                 simo = "000";
-            }
-            else
-            {
+            } else {
                 iima = ima * 100;
                 simo = "00";
-            }
+                }
             string sfo = "Vasp" + ima.ToString(simo) + '_';
             List<Mova> lvrmo = pv.MovaList;
             List<VarQvant> lnest = pv.VaroCommoList;
@@ -317,14 +299,18 @@ namespace pfVisualisator {
             int mvmaks = lnest.Count;
             int spvi = 0;
             int numa = 0;
+            bool netnachalniycomment = true;
+            zh = new Run(" (");
+            zh.Foreground = VaroColorNotActive;
+            reto.Inlines.Add(zh);
             for (int i = 0; i < imx; i++) {
                 while (mvi < mvmaks && lnest[mvi].Numa == i) {
                     VarQvant curvar = lnest[mvi];
                     if (curvar.Commento.Length > 0) {
                         zh = new Run((i > 0 ? " " : "") + curvar.Commento);
-                        if (Stado == null) { Stado = zh.Background; }
                         zh.Foreground = VaroColorNotActive;
                         reto.Inlines.Add(zh);
+                        if( netnachalniycomment ) { netnachalniycomment = false; }
                         }
                     if (curvar.Varo != null) {
                         spvi++;
@@ -339,16 +325,14 @@ namespace pfVisualisator {
                     elema = new vgElem(pv.BegoPo, null);
                     lelya.Add(elema);
                     }
-
                 pzcu = pv.PozoList[i];
                 Mova aa = lvrmo[i];
                 string doba = string.Empty;
-                if (aa.Koler)
-                {
+                if (aa.Koler) {
                     numa = pzcu.NumberMove;
                     doba = string.Format("{0}. ", numa);
-                }
-                zh = new Run((i == 0 ? "" : " ") + doba);
+                    }
+                zh = new Run(((i == 0 && netnachalniycomment) ? "" : " ") + doba);
                 zh.Foreground = VaroColorNotActive;
                 reto.Inlines.Add(zh);
                 zh = new Run(aa.Shorto);
@@ -359,8 +343,11 @@ namespace pfVisualisator {
                 reto.Inlines.Add(zz);
                 elema = new vgElem(pzcu, zz);
                 lelya.Add(elema);
-            }
+                }
             setoVaroElem.Add(sfo,lelya);
+            zh = new Run(")");
+            zh.Foreground = VaroColorNotActive;
+            reto.Inlines.Add(zh);
             return reto;
             }
 
