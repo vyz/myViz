@@ -95,7 +95,7 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 1 апреля 2016 года
+        /// Модификация от 3 января 2017 года
         /// Заложен июнь 2015 года
         /// </summary>
         /// <returns></returns>
@@ -119,25 +119,28 @@ namespace pfVisualisator {
             foreach( string minimov in onlymainmoves ) {
                 if( minimov.StartsWith("(") ) { //Это вариант. Может иметь вложенности. Требует отдельной проработки.
                     flagVario = true;
-                    string doba = minimov.Substring(1);
-                    tvq = CreateFromVarioString(lPozos[kvaqva-1], doba, kvaqva); //Вариант следует уже после сделанного хода и tp уже ушла вперёд, поэтому надо использовать предыдущую позицию.
-                    if (tvq != null) {
-                        if( lVarQva == null ) {
-                            lVarQva = new List<VarQvant>();
+                    string doba = DopFiltroForCommentAnaVariant(minimov.Substring(1), 2);
+                    if (doba.Length > 0) {
+                        tvq = CreateFromVarioString(lPozos[kvaqva - 1], doba, kvaqva); //Вариант следует уже после сделанного хода и tp уже ушла вперёд, поэтому надо использовать предыдущую позицию.
+                        if (tvq != null) {
+                            if (lVarQva == null) {
+                                lVarQva = new List<VarQvant>();
+                                }
+                            lVarQva.Add(tvq);
                             }
-                        lVarQva.Add(tvq);
                         }
-                    }
-                else if( minimov.StartsWith("{") ) { //Это комментарий из текста, добавляем его непосредственно к позиции
-                                                     //И в лист комментов с указанием ссылки на позу для обратного восстановления из сохраненного гамо
+                } else if( minimov.StartsWith("{") ) { //Это комментарий из текста, добавляем его непосредственно к позиции
+                                                       //И в лист комментов с указанием ссылки на позу для обратного восстановления из сохраненного гамо
                     flagComments = true;
-                    string doba = minimov.Substring(1);
-                    tvq = CreateFromCommentoString(doba, kvaqva);
-                    if (tvq != null) {
-                        if (lVarQva == null) {
-                            lVarQva = new List<VarQvant>();
+                    string doba = DopFiltroForCommentAnaVariant(minimov.Substring(1), 1);
+                    if (doba.Length > 0) {
+                        tvq = CreateFromCommentoString(doba, kvaqva);
+                        if (tvq != null) {
+                            if (lVarQva == null) {
+                                lVarQva = new List<VarQvant>();
+                                }
+                            lVarQva.Add(tvq);
                             }
-                        lVarQva.Add(tvq);
                         }
                 } else if (minimov.StartsWith("$")) { //Это строка тайминга. Добавляем ее в лист таймингов с указанием позиции. 
                                                       //Так как возможен неполный, а только выборочный тайминг.
@@ -170,6 +173,31 @@ namespace pfVisualisator {
                 LogoCM.OutString(string.Format("{0} - {1} $$ {2}", GamerWhite, GamerBlack, strimpossiblemove));
                 }
             return reto;
+            }
+
+        /// <summary>
+        /// Очистка комментариев и вариантов от специальных символов 
+        /// $dd
+        /// Модификация от 3 января 2017 года
+        /// Заложен 3 января 2017 года
+        /// </summary>
+        /// <param name="obra">Обрабатываемая строка для миничистки</param>
+        /// <param name="typo">1 - это комментарий; 2 - это вариант</param>
+        /// <returns></returns>
+        public string DopFiltroForCommentAnaVariant(string obra, int typo) {
+            string reto = obra;
+            string sty = (typo == 1) ? "Como" : "Varo";
+            string patero1 = @"\$\d+";
+            string patero2 = @"\x7F";
+            if (Regex.IsMatch(reto, patero1)) {
+                LogoCM.OutString(string.Format("Gamo:CAVFiltro-{0}->$\\d+ {1}", sty, reto));
+                reto = Regex.Replace(reto, patero1, "");
+                }
+            if (Regex.IsMatch(reto, patero2)) {
+                LogoCM.OutString(string.Format("Gamo:CAVFiltro-{0}->127 {1}", sty, reto));
+                Regex.Replace(reto, patero2, "");
+                }
+            return reto.Trim();
             }
 
         /// <summary>
@@ -910,10 +938,19 @@ namespace pfVisualisator {
                 foreach (string minimov in movastringlist) {
                     if (minimov.StartsWith("(")) { //Это вариант. Может иметь вложенности. Требует отдельной проработки.
                         string doba = minimov.Substring(1);
-                        tvq = CreateFromVarioString(lNPozo[kvaqva - 2], doba, kvaqva);   //Вариант следует уже после сделанного хода и tp уже ушла вперёд, поэтому надо использовать предыдущую позицию.
-                                                                                         //Но в подварианте позиции кладутся в лист уже после хода. Поэтому сдвигать надо на 2.   
-                        if (tvq != null) {
-                            lVQva.Add(tvq);
+                        if (doba.Length > 0) {
+                            //Предполагается, что это вариант, но встречается и просто комментарий без ходов вообще, но в нужных скобках. Обычно это происходит в теле варокоммента.
+                            //Поэтому следует проверить на наличие ходов. А при их отсутствии отнести к комментарию
+                            string patmovesymbol = @"[KQRBNa-hO][a-h1-8\-x=\+#QRBN]+";
+                            if (Regex.IsMatch(doba, patmovesymbol)) {
+                                tvq = CreateFromVarioString(lNPozo[kvaqva - 2], doba, kvaqva);   //Вариант следует уже после сделанного хода и tp уже ушла вперёд, поэтому надо использовать предыдущую позицию.
+                                //Но в подварианте позиции кладутся в лист уже после хода. Поэтому сдвигать надо на 2.   
+                            } else {
+                                tvq = CreateFromCommentoString(doba, kvaqva);
+                                }
+                            if (tvq != null) {
+                                lVQva.Add(tvq);
+                                }
                             }
                         }
                     else if (minimov.StartsWith("{")) { //Это комментарий из текста, добавляем его непосредственно к позиции
@@ -968,7 +1005,8 @@ namespace pfVisualisator {
                 //if (vv[0] == '(') { vv = " " + vv; }
                 string Patterno = "(" +  
                                           "(" +
-                                              @"(?<Open> \()" +   //Пробел после опен смысловой!!!
+                                              @"(?<Open>\s*\()" +   //Пробел после опен смысловой!!!
+                                              /*@"(?<Open> \()" +   //Пробел после опен смысловой!!!*/
                                               "[^)(]*" +
                                           ")+" +
                                           @"(?<Close-Open>\)\s*)+" +
@@ -980,7 +1018,7 @@ namespace pfVisualisator {
                     foreach (Match aa in mcc) {
                         string bb = aa.Value.TrimEnd();
                         vv = vv.Replace(bb, " &");
-                        varry.Add(bb.Substring(2, bb.Length - 3));
+                        varry.Add(bb.Substring(1, bb.Length - 2).TrimStart());
                         }
                     }
                 }
@@ -1022,11 +1060,21 @@ namespace pfVisualisator {
                     reto = true;
                     }
                 else if( aa.StartsWith("@") ) {
-                    naboro.Add("{" + kommy[kk++]);
+                    string sko = kommy[kk++];
+                    anticikl = 10;
+                    while( sko.Contains("&") && anticikl-- > 0) {
+                        int ia = sko.IndexOf("&");
+                        string svar = varry[kv++];
+                        string svar2 = (svar.StartsWith("(") ? "" : "(") + svar + ")";
+                        sko = sko.Substring(0, ia) + svar2 + sko.Substring(ia + 1);
+                        }
+                    naboro.Add("{" + sko);
                     reto = true;
                     }
                 else if( aa.StartsWith("&") ) {
-                    naboro.Add("(" + varry[kv++]);
+                    string svar = varry[kv++];
+                    string svar2 = (svar.StartsWith("(") ? "" : "(") + svar;
+                    naboro.Add(svar2);
                     reto = true;
                     }
                 else if( Regex.IsMatch(aa, patprobelnost) || aa.Length == 0 ) {

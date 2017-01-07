@@ -249,7 +249,7 @@ namespace pfVisualisator {
             }
         
         /// <summary>
-        /// Модификация от 12 декабря 2016 года
+        /// Модификация от 7 января 2017 года
         /// Заложен 11 ноября 2016 года
         /// </summary>
         /// <param name="pv">Это сам Варио, который надо превратить в кусочек параграфа(спан)</param>
@@ -296,7 +296,7 @@ namespace pfVisualisator {
             List<VarQvant> lnest = pv.VaroCommoList;
             int imx = lvrmo.Count;
             int mvi = 0;
-            int mvmaks = lnest.Count;
+            int mvmaks = (lnest == null) ? 0 : lnest.Count;
             int spvi = 0;
             int numa = 0;
             bool netnachalniycomment = true;

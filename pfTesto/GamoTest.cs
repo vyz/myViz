@@ -131,5 +131,24 @@ namespace pfTesto
                 Assert.AreEqual(twoEtalon, vanTarget);
                 }
             }
+
+        /// <summary>
+        ///Тест для FillVarioMoves
+        ///</summary>
+        [TestMethod()]
+        [DeploymentItem("pfVisualisator.exe")]
+        public void FillVarioMovesTest()
+        {
+            Gamo_Accessor target = new Gamo_Accessor(); 
+            string vv = "{Однако и после корчновского } 15. Nxf8 {инициатива в руках чёрных. И инициатива эта имеет тенденцию к наращиванию мускулов. Например,} Bxf8 16. exd4  { (опять ход логичнее не придумаешь)} Ndf6  17. h3 {(единственное!)} Qxd4+ 18. Kh1 Nh5  19. hxg4  Ng3+ 20. Kh2 Nxf1+ 21. Bxf1 Bc5  22. Qe2  ({или} 22. Kg3 g5  ) 22... g5  23. Be3 {(возвращая всё назад)} Qxe3 24. Qxe3 Bxe3  {. К тому же нехорошо здесь} 25. Nxb5  ({ещё хуже} 25. Bxb5  Kg7   ) 25... Bxf4+ 26. Kg1 Rc2 {с полной доминацией.}";
+            List<string> naboro = null;
+            List<string> naboroExpected = null; 
+            bool expected = false; 
+            bool actual;
+            actual = target.FillVarioMoves(vv, out naboro);
+            Assert.AreEqual(naboroExpected, naboro);
+            Assert.AreEqual(expected, actual);
+            Assert.Inconclusive("Проверьте правильность этого метода теста.");
+        }
         }
     }
