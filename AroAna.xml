@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--Набор партеечек от 18 декабря 2016 г. -->
+<!--Набор партеечек от 12 января 2017 г. -->
 <Gamosyky>
-  <Leo lid="3ad11fbb-6b9c-460c-b477-1f0cb73a2807" typo="Gamo">
+  <Leo lid="7c631a4e-8b07-4ac4-a09e-f65e88d7ed18" typo="Gamo">
     <Namo>Aronian, Levon (2815) - Anand, Viswanathan (2775)</Namo>
     <BigNamo>Aronian, Levon (2815) - Anand, Viswanathan (2775) 2013.01.15 0-1 D46</BigNamo>
     <Parameters>
@@ -28,52 +28,231 @@ h3 Qxg6 22. Qe2 Qh5 23. Qd3 Be3 0-1</TParo>
     </Parameters>
     <Dopico>
       <VarQuant VarNumo="0">
-        <Commento>Давным-давно, в одной шахматной галактике, когда супертурнир в Линарес ещё был жив (anno Domini 2009), играли под испанским солнцем чудо-богатыри шахматные - Ананд (белые)  с Ароняном (чёрные). Играли «славянку», играли интересно и ярко... Прошли годы, сменился цвет времени (то есть Левон теперь за белых), не состоялся конец света (ГК не вернулся в большие шахматы). Но что мы видим? Повторение того, что было. Разумеется, до поры, до времени.... </Commento>
+        <Commento>Давным-давно, в одной шахматной галактике, когда супертурнир в Линарес ещё был жив (anno Domini 2009), играли под испанским солнцем чудо-богатыри шахматные - Ананд (белые)  с Ароняном (чёрные). Играли «славянку», играли интересно и ярко... Прошли годы, сменился цвет времени (то есть Левон теперь за белых), не состоялся конец света (ГК не вернулся в большие шахматы). Но что мы видим? Повторение того, что было. Разумеется, до поры, до времени....</Commento>
       </VarQuant>
       <VarQuant VarNumo="15">
         <Commento></Commento>
       </VarQuant>
       <VarQuant VarNumo="16">
-        <Commento>&amp; </Commento>
+        <Commento>(ход Вадима Звягинцева)</Commento>
       </VarQuant>
       <VarQuant VarNumo="21">
-        <Commento>Была строка { На перворазрядный взгляд напрашивается «активное»} 11. Ne4 $6 {, однако путём } Nxe4 12. Bxe4 f5 $1 13. Bd3 c5 $1 { чёрные (для начала) как минимум перехватывают инициативу. Так, к примеру,} 14. Bxb5 $4 {проигрывает сразу:} Bxf3 15. gxf3 Qg5+ 16. Kh1 Qh5 17. f4 Qf3+ 18. Kg1 Rf6 $1 {и т.д.}</Commento>
         <Vario>
           <Feno>r2q1rk1/pb1n1ppp/2pbpn2/1p6/3P4/2NBPN2/PPQ2PPP/R1B2RK1 w - - 6 11</Feno>
-          <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+          <Tshepa>11. Ne4 Nxe4 12. Bxe4 f5 13. Bd3 c5 14. Bxb5 Bxf3 15. gxf3 Qg5+ 16. Kh1 Qh5 17.
+f4 Qf3+ 18. Kg1 Rf6</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento> На перворазрядный взгляд напрашивается «активное»</Commento>
+          </VarQuant>
+          <Mova Fromo="21" Tomo="27" Coala="W">
+            <Zver>None, Knight</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ne4</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>, однако путём </Commento>
+          </VarQuant>
+          <Mova Fromo="42" Tomo="27" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Nxe4</Nota>
+          </Mova>
+          <Mova Fromo="20" Tomo="27" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxe4</Nota>
+          </Mova>
+          <Mova Fromo="50" Tomo="34" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>f5</Nota>
+          </Mova>
+          <Mova Fromo="27" Tomo="20" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Bd3</Nota>
+          </Mova>
+          <Mova Fromo="45" Tomo="37" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>c5</Nota>
+          </Mova>
+          <VarQuant VarNumo="6">
+            <Commento> чёрные (для начала) как минимум перехватывают инициативу. Так, к примеру,</Commento>
+          </VarQuant>
+          <Mova Fromo="20" Tomo="38" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxb5</Nota>
+          </Mova>
+          <VarQuant VarNumo="7">
+            <Commento>проигрывает сразу:</Commento>
+          </VarQuant>
+          <Mova Fromo="54" Tomo="18" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxf3</Nota>
+          </Mova>
+          <Mova Fromo="9" Tomo="18" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>gxf3</Nota>
+          </Mova>
+          <Mova Fromo="60" Tomo="33" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qg5+</Nota>
+          </Mova>
+          <Mova Fromo="1" Tomo="0" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kh1</Nota>
+          </Mova>
+          <Mova Fromo="33" Tomo="32" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qh5</Nota>
+          </Mova>
+          <Mova Fromo="18" Tomo="26" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>f4</Nota>
+          </Mova>
+          <Mova Fromo="32" Tomo="18" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qf3+</Nota>
+          </Mova>
+          <Mova Fromo="0" Tomo="1" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kg1</Nota>
+          </Mova>
+          <Mova Fromo="58" Tomo="42" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rf6</Nota>
+          </Mova>
+          <VarQuant VarNumo="16">
+            <Commento>и т.д.</Commento>
+          </VarQuant>
         </Vario>
       </VarQuant>
       <VarQuant VarNumo="22">
-        <Commento> Чёрные своих намерений не скрывают: с6-с5 и никаких гвоздей!</Commento>
+        <Commento>Чёрные своих намерений не скрывают: с6-с5 и никаких гвоздей!</Commento>
       </VarQuant>
       <VarQuant VarNumo="22">
-        <Commento>Была строка { Давным-давно, в уже упоминавшейся партии здесь было сыграно} 11... a6 { и в ответ последовало} 12. Ng5 $5 {. Все перипетии (а заодно и дебютные тонкости) интереснейшей схватки Anand,V (2791) - Aronian,L (2750)/Linares 2009 см. тут: http://online.crestbook.com/viewer/2009/anand-aronian-linares-2009-02. htm. Согласитесь, выпад конём на g5 наверняка отложился в памяти армянского шахматиста, Ведь, несмотря на то, что ту партию он счастливейшим образом выиграл, по дебюту у него была очень трудная позиция.}</Commento>
         <Vario>
           <Feno>r2q1rk1/pb1n1ppp/2pbpn2/1p6/3P4/P1NBPN2/1PQ2PPP/R1B2RK1 b - - 0 11</Feno>
-          <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+          <Tshepa>11. ... a6 12. Ng5</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento> Давным-давно, в уже упоминавшейся партии здесь было сыграно</Commento>
+          </VarQuant>
+          <Mova Fromo="55" Tomo="47" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>a6</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento> и в ответ последовало</Commento>
+          </VarQuant>
+          <Mova Fromo="18" Tomo="33" Coala="W">
+            <Zver>None, Knight</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ng5</Nota>
+          </Mova>
+          <VarQuant VarNumo="2">
+            <Commento>. Все перипетии (а заодно и дебютные тонкости) интереснейшей схватки Anand,V (2791) - Aronian,L (2750)/Linares 2009 см. тут: http://online.crestbook.com/viewer/2009/anand-aronian-linares-2009-02. htm. Согласитесь, выпад конём на g5 наверняка отложился в памяти армянского шахматиста, Ведь, несмотря на то, что ту партию он счастливейшим образом выиграл, по дебюту у него была очень трудная позиция.</Commento>
+          </VarQuant>
         </Vario>
       </VarQuant>
       <VarQuant VarNumo="23">
         <Commento>Левон играет как Виши, однако, когда двое делают одно и то же, получается не одно и то же. Новинка, которая, как мне думается, последователей не найдёт.</Commento>
       </VarQuant>
       <VarQuant VarNumo="23">
-        <Commento>Была строка { Самым популярным продолжением за белых здесь, судя по Мегабазе, является «логичное»} 12. b4 {, как бы заставляющее задуматься слона на b7 о жизни своей, такой непростой. Однако в прошлом году здесь активно применялся ход} c5 $1 {, который, в частности, позволил в Лондоне устоять Касымжанову против Топалова. В общем, мяч сейчас на стороне белых и давайте по возможности следить за развитием плодотворной теоретической мысли в этом варианте.}</Commento>
         <Vario>
           <Feno>2rq1rk1/pb1n1ppp/2pbpn2/1p6/3P4/P1NBPN2/1PQ2PPP/R1B2RK1 w - - 1 12</Feno>
-          <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+          <Tshepa>12. b4 c5</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento> Самым популярным продолжением за белых здесь, судя по Мегабазе, является «логичное»</Commento>
+          </VarQuant>
+          <Mova Fromo="14" Tomo="30" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>b4</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>, как бы заставляющее задуматься слона на b7 о жизни своей, такой непростой. Однако в прошлом году здесь активно применялся ход</Commento>
+          </VarQuant>
+          <Mova Fromo="45" Tomo="37" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>c5</Nota>
+          </Mova>
+          <VarQuant VarNumo="2">
+            <Commento>, который, в частности, позволил в Лондоне устоять Касымжанову против Топалова. В общем, мяч сейчас на стороне белых и давайте по возможности следить за развитием плодотворной теоретической мысли в этом варианте.</Commento>
+          </VarQuant>
         </Vario>
       </VarQuant>
       <VarQuant VarNumo="24">
         <Commento> Дебютные проблемы чёрных решены!</Commento>
       </VarQuant>
       <VarQuant VarNumo="25">
-        <Commento> Сказав «а», обычно говорят и «б».</Commento>
+        <Commento>Сказав «а», обычно говорят и «б».</Commento>
       </VarQuant>
       <VarQuant VarNumo="25">
-        <Commento>Была строка {Слабовато} 13. Nxb5 $6 {ввиду} Bxh2+ $1 14. Kxh2 Ng4+ 15. Kg1 Qxg5 16. Bxh7+ Kh8 $44 {Как минимум!}</Commento>
         <Vario>
           <Feno>2rq1rk1/pb1n1ppp/3bpn2/1pp3N1/3P4/P1NBP3/1PQ2PPP/R1B2RK1 w - - 0 13</Feno>
-          <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+          <Tshepa>13. Nxb5 Bxh2+ 14. Kxh2 Ng4+ 15. Kg1 Qxg5 16. Bxh7+ Kh8</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Слабовато</Commento>
+          </VarQuant>
+          <Mova Fromo="21" Tomo="38" Coala="W">
+            <Zver>None, Knight</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Nxb5</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>ввиду</Commento>
+          </VarQuant>
+          <Mova Fromo="44" Tomo="8" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxh2+</Nota>
+          </Mova>
+          <Mova Fromo="1" Tomo="8" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Kxh2</Nota>
+          </Mova>
+          <Mova Fromo="42" Tomo="25" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ng4+</Nota>
+          </Mova>
+          <Mova Fromo="8" Tomo="1" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kg1</Nota>
+          </Mova>
+          <Mova Fromo="60" Tomo="33" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxg5</Nota>
+          </Mova>
+          <Mova Fromo="20" Tomo="48" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxh7+</Nota>
+          </Mova>
+          <Mova Fromo="57" Tomo="56" Coala="B">
+            <Zver>None, King, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kh8</Nota>
+          </Mova>
+          <VarQuant VarNumo="8">
+            <Commento>Как минимум!</Commento>
+          </VarQuant>
         </Vario>
       </VarQuant>
       <VarQuant VarNumo="25">
@@ -102,10 +281,19 @@ h3 Qxg6 22. Qe2 Qh5 23. Qd3 Be3 0-1</TParo>
             <Nota>f4</Nota>
           </Mova>
           <VarQuant VarNumo="3">
-            <Commento>Была строка 14. Bd3 Bxh2+ $1</Commento>
             <Vario>
               <Feno>2rq1r1k/pb1n1ppB/3bpn2/1pp3N1/3P4/P1N1P3/1PQ2PPP/R1B2RK1 w - - 1 14</Feno>
-              <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+              <Tshepa>14. Bd3 Bxh2+</Tshepa>
+              <Mova Fromo="48" Tomo="20" Coala="W">
+                <Zver>None, Bishop</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Bd3</Nota>
+              </Mova>
+              <Mova Fromo="44" Tomo="8" Coala="B">
+                <Zver>None, Bishop, Black</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>Bxh2+</Nota>
+              </Mova>
             </Vario>
           </VarQuant>
           <Mova Fromo="60" Tomo="46" Coala="B">
@@ -122,40 +310,391 @@ h3 Qxg6 22. Qe2 Qh5 23. Qd3 Be3 0-1</TParo>
         <Commento>Печёнкой чую, что игра идёт по домашнему анализу чемпиона мира!</Commento>
       </VarQuant>
       <VarQuant VarNumo="26">
-        <Commento>Была строка { Конечно, не} 13... Bxh2+ $2 {из-за} 14. Kxh2 Ng4+ $140 15. Kg3 $1 { , и у чёрных большие неприятности, первая из которых - отсутствие фигуры.}</Commento>
         <Vario>
           <Feno>2rq1rk1/pb1n1ppN/3bpn2/1pp5/3P4/P1NBP3/1PQ2PPP/R1B2RK1 b - - 0 13</Feno>
-          <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+          <Tshepa>13. ... Bxh2+ 14. Kxh2 Ng4+ 15. Kg3</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento> Конечно, не</Commento>
+          </VarQuant>
+          <Mova Fromo="44" Tomo="8" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxh2+</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>из-за</Commento>
+          </VarQuant>
+          <Mova Fromo="1" Tomo="8" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Kxh2</Nota>
+          </Mova>
+          <Mova Fromo="42" Tomo="25" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ng4+</Nota>
+          </Mova>
+          <Mova Fromo="8" Tomo="17" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kg3</Nota>
+          </Mova>
+          <VarQuant VarNumo="4">
+            <Commento> , и у чёрных большие неприятности, первая из которых - отсутствие фигуры.</Commento>
+          </VarQuant>
         </Vario>
       </VarQuant>
       <VarQuant VarNumo="27">
         <Commento>Такой естественный ход, прикрывающий пункт h2 и стоящую на нём белую пешку, трудно не сделать... Однако тут-то и взорвалась дебютная бомба!</Commento>
       </VarQuant>
       <VarQuant VarNumo="27">
-        <Commento>Была строка { Итого моего ночного анализа -  такая «рыба»:} 14. h3 Bh2+ 15. Kh1 Qh4 $1 {} 16. Be4 $5 (16. d5 Rfd8 $13) 16... Bxe4 17. Qxe4 f5 18. Qxe6+ Kxh7 19. Qxd7 cxd4 20. exd4 Bb8 21. Kg1 Bh2+ 22. Kh1 Bb8 $11 {. Быть может, в этом и заключается великая сермяжная правда в данной позиции. Но на счастье любителей шахмат (за вычетом болельщиков Левона) в партии случилось всё иначе.}</Commento>
         <Vario>
           <Feno>2rq1rk1/pb1n1ppN/3bp3/1pp5/3P2n1/P1NBP3/1PQ2PPP/R1B2RK1 w - - 1 14</Feno>
-          <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+          <Tshepa>14. h3 Bh2+ 15. Kh1 Qh4 16. Be4 Bxe4 17. Qxe4 f5 18. Qxe6+ Kxh7 19. Qxd7 cxd4
+20. exd4 Bb8 21. Kg1 Bh2+ 22. Kh1 Bb8</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento> Итого моего ночного анализа -  такая «рыба»:</Commento>
+          </VarQuant>
+          <Mova Fromo="8" Tomo="16" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>h3</Nota>
+          </Mova>
+          <Mova Fromo="44" Tomo="8" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Bh2+</Nota>
+          </Mova>
+          <Mova Fromo="1" Tomo="0" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kh1</Nota>
+          </Mova>
+          <Mova Fromo="60" Tomo="24" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qh4</Nota>
+          </Mova>
+          <VarQuant VarNumo="4">
+            <Commento></Commento>
+          </VarQuant>
+          <Mova Fromo="20" Tomo="27" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Be4</Nota>
+          </Mova>
+          <VarQuant VarNumo="5">
+            <Vario>
+              <Feno>2r2rk1/pb1n1ppN/4p3/1pp5/3P2nq/P1NBP2P/1PQ2PPb/R1B2R1K w - - 3 16</Feno>
+              <Tshepa>16. d5 Rfd8</Tshepa>
+              <Mova Fromo="28" Tomo="36" Coala="W">
+                <Zver>None, Pawn</Zver>
+                <Typon>Normal</Typon>
+                <Nota>d5</Nota>
+              </Mova>
+              <Mova Fromo="58" Tomo="60" Coala="B">
+                <Zver>None, Rook, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Rfd8</Nota>
+              </Mova>
+            </Vario>
+          </VarQuant>
+          <Mova Fromo="54" Tomo="27" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxe4</Nota>
+          </Mova>
+          <Mova Fromo="13" Tomo="27" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxe4</Nota>
+          </Mova>
+          <Mova Fromo="50" Tomo="34" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>f5</Nota>
+          </Mova>
+          <Mova Fromo="27" Tomo="43" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxe6+</Nota>
+          </Mova>
+          <Mova Fromo="57" Tomo="48" Coala="B">
+            <Zver>None, King, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Kxh7</Nota>
+          </Mova>
+          <Mova Fromo="43" Tomo="52" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxd7</Nota>
+          </Mova>
+          <Mova Fromo="37" Tomo="28" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>cxd4</Nota>
+          </Mova>
+          <Mova Fromo="19" Tomo="28" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>exd4</Nota>
+          </Mova>
+          <Mova Fromo="8" Tomo="62" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Bb8</Nota>
+          </Mova>
+          <Mova Fromo="0" Tomo="1" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kg1</Nota>
+          </Mova>
+          <Mova Fromo="62" Tomo="8" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Bh2+</Nota>
+          </Mova>
+          <Mova Fromo="1" Tomo="0" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kh1</Nota>
+          </Mova>
+          <Mova Fromo="8" Tomo="62" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Bb8</Nota>
+          </Mova>
+          <VarQuant VarNumo="18">
+            <Commento>. Быть может, в этом и заключается великая сермяжная правда в данной позиции. Но на счастье любителей шахмат (за вычетом болельщиков Левона) в партии случилось всё иначе.</Commento>
+          </VarQuant>
         </Vario>
       </VarQuant>
       <VarQuant VarNumo="27">
-        <Commento>Была строка {Естественно, нельзя играть} 14. Nxf8 $4 {по причине} Bxh2+ 15. Kh1 Qh4 $19 {.}</Commento>
         <Vario>
           <Feno>2rq1rk1/pb1n1ppN/3bp3/1pp5/3P2n1/P1NBP3/1PQ2PPP/R1B2RK1 w - - 1 14</Feno>
-          <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+          <Tshepa>14. Nxf8 Bxh2+ 15. Kh1 Qh4</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Естественно, нельзя играть</Commento>
+          </VarQuant>
+          <Mova Fromo="48" Tomo="58" Coala="W">
+            <Zver>None, Knight</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Nxf8</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>по причине</Commento>
+          </VarQuant>
+          <Mova Fromo="44" Tomo="8" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxh2+</Nota>
+          </Mova>
+          <Mova Fromo="1" Tomo="0" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kh1</Nota>
+          </Mova>
+          <Mova Fromo="60" Tomo="24" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qh4</Nota>
+          </Mova>
+          <VarQuant VarNumo="4">
+            <Commento>.</Commento>
+          </VarQuant>
         </Vario>
       </VarQuant>
       <VarQuant VarNumo="28">
         <Commento></Commento>
       </VarQuant>
       <VarQuant VarNumo="29">
-        <Commento> Опять естественный ход и напрашивающийся ход.</Commento>
+        <Commento>Опять естественный ход и напрашивающийся ход.</Commento>
       </VarQuant>
       <VarQuant VarNumo="29">
-        <Commento>Была строка {Однако и после корчновского } 15. Nxf8 {инициатива в руках чёрных. И инициатива эта имеет тенденцию к наращиванию мускулов. Например,} Bxf8 16. exd4 $6 { (опять ход логичнее не придумаешь)} Ndf6 $1 17. h3 {(единственное!)} Qxd4+ 18. Kh1 Nh5 $1 19. hxg4 $8 Ng3+ 20. Kh2 Nxf1+ 21. Bxf1 Bc5 $1 22. Qe2 $8 ({или} 22. Kg3 g5 $1 $40) 22... g5 $1 23. Be3 {(возвращая всё назад)} Qxe3 24. Qxe3 Bxe3 $15 {. К тому же нехорошо здесь} 25. Nxb5 $2 ({ещё хуже} 25. Bxb5 $4 Kg7 $1 $19 ) 25... Bxf4+ 26. Kg1 Rc2 {с полной доминацией.}</Commento>
         <Vario>
           <Feno>2rq1rk1/pb1n1ppN/3bp3/1p6/3p1Pn1/P1NBP3/1PQ3PP/R1B2RK1 w - - 0 15</Feno>
-          <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+          <Tshepa>15. Nxf8 Bxf8 16. exd4 Ndf6 17. h3 Qxd4+ 18. Kh1 Nh5 19. hxg4 Ng3+ 20. Kh2
+Nxf1+ 21. Bxf1 Bc5 22. Qe2 g5 23. Be3 Qxe3 24. Qxe3 Bxe3 25. Nxb5 Bxf4+ 26. Kg1
+Rc2</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Однако и после корчновского </Commento>
+          </VarQuant>
+          <Mova Fromo="48" Tomo="58" Coala="W">
+            <Zver>None, Knight</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Nxf8</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>инициатива в руках чёрных. И инициатива эта имеет тенденцию к наращиванию мускулов. Например,</Commento>
+          </VarQuant>
+          <Mova Fromo="44" Tomo="58" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxf8</Nota>
+          </Mova>
+          <Mova Fromo="19" Tomo="28" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>exd4</Nota>
+          </Mova>
+          <VarQuant VarNumo="3">
+            <Commento> (опять ход логичнее не придумаешь)</Commento>
+          </VarQuant>
+          <Mova Fromo="52" Tomo="42" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ndf6</Nota>
+          </Mova>
+          <Mova Fromo="8" Tomo="16" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>h3</Nota>
+          </Mova>
+          <VarQuant VarNumo="5">
+            <Commento> (единственное!)</Commento>
+          </VarQuant>
+          <Mova Fromo="60" Tomo="28" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxd4+</Nota>
+          </Mova>
+          <Mova Fromo="1" Tomo="0" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kh1</Nota>
+          </Mova>
+          <Mova Fromo="42" Tomo="32" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Nh5</Nota>
+          </Mova>
+          <Mova Fromo="16" Tomo="25" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>hxg4</Nota>
+          </Mova>
+          <Mova Fromo="32" Tomo="17" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ng3+</Nota>
+          </Mova>
+          <Mova Fromo="0" Tomo="8" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kh2</Nota>
+          </Mova>
+          <Mova Fromo="17" Tomo="2" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Nxf1+</Nota>
+          </Mova>
+          <Mova Fromo="20" Tomo="2" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxf1</Nota>
+          </Mova>
+          <Mova Fromo="58" Tomo="37" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Bc5</Nota>
+          </Mova>
+          <Mova Fromo="13" Tomo="11" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qe2</Nota>
+          </Mova>
+          <VarQuant VarNumo="15">
+            <Vario>
+              <Feno>2r3k1/pb3pp1/4p3/1pb5/3q1PP1/P1N5/1PQ3PK/R1B2B2 w - - 1 22</Feno>
+              <Tshepa>22. Kg3 g5</Tshepa>
+              <VarQuant VarNumo="0">
+                <Commento>или</Commento>
+              </VarQuant>
+              <Mova Fromo="8" Tomo="17" Coala="W">
+                <Zver>None, King</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Kg3</Nota>
+              </Mova>
+              <Mova Fromo="49" Tomo="33" Coala="B">
+                <Zver>None, Pawn, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>g5</Nota>
+              </Mova>
+            </Vario>
+          </VarQuant>
+          <Mova Fromo="49" Tomo="33" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>g5</Nota>
+          </Mova>
+          <Mova Fromo="5" Tomo="19" Coala="W">
+            <Zver>None, Bishop</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Be3</Nota>
+          </Mova>
+          <VarQuant VarNumo="17">
+            <Commento> (возвращая всё назад)</Commento>
+          </VarQuant>
+          <Mova Fromo="28" Tomo="19" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxe3</Nota>
+          </Mova>
+          <Mova Fromo="11" Tomo="19" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxe3</Nota>
+          </Mova>
+          <Mova Fromo="37" Tomo="19" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxe3</Nota>
+          </Mova>
+          <VarQuant VarNumo="20">
+            <Commento>. К тому же нехорошо здесь</Commento>
+          </VarQuant>
+          <Mova Fromo="21" Tomo="38" Coala="W">
+            <Zver>None, Knight</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Nxb5</Nota>
+          </Mova>
+          <VarQuant VarNumo="21">
+            <Vario>
+              <Feno>2r3k1/pb3p2/4p3/1p4p1/5PP1/P1N1b3/1P4PK/R4B2 w - - 0 25</Feno>
+              <Tshepa>25. Bxb5 Kg7</Tshepa>
+              <VarQuant VarNumo="0">
+                <Commento>ещё хуже</Commento>
+              </VarQuant>
+              <Mova Fromo="2" Tomo="38" Coala="W">
+                <Zver>None, Bishop</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>Bxb5</Nota>
+              </Mova>
+              <Mova Fromo="57" Tomo="49" Coala="B">
+                <Zver>None, King, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Kg7</Nota>
+              </Mova>
+            </Vario>
+          </VarQuant>
+          <Mova Fromo="19" Tomo="26" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxf4+</Nota>
+          </Mova>
+          <Mova Fromo="8" Tomo="1" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kg1</Nota>
+          </Mova>
+          <Mova Fromo="61" Tomo="13" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rc2</Nota>
+          </Mova>
+          <VarQuant VarNumo="24">
+            <Commento>с полной доминацией.</Commento>
+          </VarQuant>
         </Vario>
       </VarQuant>
       <VarQuant VarNumo="30">
@@ -165,33 +704,173 @@ h3 Qxg6 22. Qe2 Qh5 23. Qd3 Be3 0-1</TParo>
         <Commento>Решающая ошибка, проигрывающая партию и к тому же позволяющая чёрным продолжить феерию.</Commento>
       </VarQuant>
       <VarQuant VarNumo="31">
-        <Commento>Была строка { А какие ещё есть у белых продолжения, не проигрывающие сразу? Разве что} 16. dxc5 {, но тогда} Nxc5 {Далее возможно} 17. h3 Qd4+ 18. Kh1 Nxd3 19. Nxf8 Ndf2+ 20. Rxf2 Nxf2+ 21. Kh2 Kxf8 22. Qh7 $132 { фигуры чёрных явно активнее, но материалу-то поровну!}</Commento>
         <Vario>
           <Feno>2rq1rk1/pb1n1ppN/4p3/1pb5/3P1Pn1/P1NB4/1PQ3PP/R1B2RK1 w - - 1 16</Feno>
-          <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+          <Tshepa>16. dxc5 Nxc5 17. h3 Qd4+ 18. Kh1 Nxd3 19. Nxf8 Ndf2+ 20. Rxf2 Nxf2+ 21. Kh2
+Kxf8 22. Qh7</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento> А какие ещё есть у белых продолжения, не проигрывающие сразу? Разве что</Commento>
+          </VarQuant>
+          <Mova Fromo="28" Tomo="37" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>dxc5</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>, но тогда</Commento>
+          </VarQuant>
+          <Mova Fromo="52" Tomo="37" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Nxc5</Nota>
+          </Mova>
+          <VarQuant VarNumo="2">
+            <Commento>Далее возможно</Commento>
+          </VarQuant>
+          <Mova Fromo="8" Tomo="16" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>h3</Nota>
+          </Mova>
+          <Mova Fromo="60" Tomo="28" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qd4+</Nota>
+          </Mova>
+          <Mova Fromo="1" Tomo="0" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kh1</Nota>
+          </Mova>
+          <Mova Fromo="37" Tomo="20" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Nxd3</Nota>
+          </Mova>
+          <Mova Fromo="48" Tomo="58" Coala="W">
+            <Zver>None, Knight</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Nxf8</Nota>
+          </Mova>
+          <Mova Fromo="20" Tomo="10" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ndf2+</Nota>
+          </Mova>
+          <Mova Fromo="2" Tomo="10" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxf2</Nota>
+          </Mova>
+          <Mova Fromo="25" Tomo="10" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Nxf2+</Nota>
+          </Mova>
+          <Mova Fromo="0" Tomo="8" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kh2</Nota>
+          </Mova>
+          <Mova Fromo="57" Tomo="58" Coala="B">
+            <Zver>None, King, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Kxf8</Nota>
+          </Mova>
+          <Mova Fromo="13" Tomo="48" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qh7</Nota>
+          </Mova>
+          <VarQuant VarNumo="13">
+            <Commento> фигуры чёрных явно активнее, но материалу-то поровну!</Commento>
+          </VarQuant>
         </Vario>
       </VarQuant>
       <VarQuant VarNumo="32">
-        <Commento> Ах! Впечатлительные барышни штабелями падают в обморок! </Commento>
+        <Commento>Ах! Впечатлительные барышни штабелями падают в обморок! </Commento>
       </VarQuant>
       <VarQuant VarNumo="33">
-        <Commento>Была строка { В парке на лавочке вполне мог случиться такой вариант -} 17. fxe5 $4 Qxd4+ 18. Kh1 Qg1+ $1 19. Rxg1 Nf2# {.  Но у нас тут серьёзные, солидные люди играют...}</Commento>
         <Vario>
           <Feno>2rq1rk1/pb3ppN/4p3/1pb1n3/3P1Pn1/P1N5/1PQ1B1PP/R1B2RK1 w - - 3 17</Feno>
-          <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+          <Tshepa>17. fxe5 Qxd4+ 18. Kh1 Qg1+ 19. Rxg1 Nf2#</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento> В парке на лавочке вполне мог случиться такой вариант -</Commento>
+          </VarQuant>
+          <Mova Fromo="26" Tomo="35" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>fxe5</Nota>
+          </Mova>
+          <Mova Fromo="60" Tomo="28" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxd4+</Nota>
+          </Mova>
+          <Mova Fromo="1" Tomo="0" Coala="W">
+            <Zver>None, King</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Kh1</Nota>
+          </Mova>
+          <Mova Fromo="28" Tomo="1" Coala="B">
+            <Zver>None, Queen, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Qg1+</Nota>
+          </Mova>
+          <Mova Fromo="2" Tomo="1" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Rxg1</Nota>
+          </Mova>
+          <Mova Fromo="25" Tomo="10" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Nf2#</Nota>
+          </Mova>
+          <VarQuant VarNumo="6">
+            <Commento>.  Но у нас тут серьёзные, солидные люди играют...</Commento>
+          </VarQuant>
         </Vario>
       </VarQuant>
       <VarQuant VarNumo="36">
-        <Commento> </Commento>
+        <Commento></Commento>
       </VarQuant>
       <VarQuant VarNumo="37">
         <Commento>Конь доскакал до своей цели. Но мечты в этом мире и у «Газпрома» не всегда сбываются...</Commento>
       </VarQuant>
       <VarQuant VarNumo="37">
-        <Commento>Была строка {Если } 19. Ng5 {, то} f5 20. h3 $140 Rf6 $1 {И на h6!}</Commento>
         <Vario>
           <Feno>2rq1rk1/pb3ppN/4p3/1p6/3b1Pn1/P1N5/1PQ3PP/R1B2R1K w - - 0 19</Feno>
-          <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+          <Tshepa>19. Ng5 f5 20. h3 Rf6</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Если </Commento>
+          </VarQuant>
+          <Mova Fromo="48" Tomo="33" Coala="W">
+            <Zver>None, Knight</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ng5</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>, то</Commento>
+          </VarQuant>
+          <Mova Fromo="50" Tomo="34" Coala="B">
+            <Zver>None, Pawn, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>f5</Nota>
+          </Mova>
+          <Mova Fromo="8" Tomo="16" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>Normal</Typon>
+            <Nota>h3</Nota>
+          </Mova>
+          <Mova Fromo="58" Tomo="42" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rf6</Nota>
+          </Mova>
+          <VarQuant VarNumo="4">
+            <Commento>И на h6!</Commento>
+          </VarQuant>
         </Vario>
       </VarQuant>
       <VarQuant VarNumo="38">
@@ -244,7 +923,7 @@ h3 Qxg6 22. Qe2 Qh5 23. Qd3 Be3 0-1</TParo>
             <Nota>Kxf8</Nota>
           </Mova>
           <VarQuant VarNumo="6">
-            <Commento>, и белым ввиду угрозы Rc8-h8# &amp; надо просто сдаться.</Commento>
+            <Commento>, и белым ввиду угрозы Rc8-h8# (после ухода короля с 8-й горизонтали) надо просто сдаться.</Commento>
           </VarQuant>
         </Vario>
       </VarQuant>
@@ -252,10 +931,28 @@ h3 Qxg6 22. Qe2 Qh5 23. Qd3 Be3 0-1</TParo>
         <Commento></Commento>
       </VarQuant>
       <VarQuant VarNumo="41">
-        <Commento>Была строка {Убежать не удастся - на} 21. Ne5 {следует} Nxh2 $1 {с разгромом.}</Commento>
         <Vario>
           <Feno>2r3k1/pb4p1/4pqN1/1p3p2/3b1Pn1/P1N5/1PQ3PP/R1B2R1K w - - 2 21</Feno>
-          <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+          <Tshepa>21. Ne5 Nxh2</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Убежать не удастся - на</Commento>
+          </VarQuant>
+          <Mova Fromo="41" Tomo="35" Coala="W">
+            <Zver>None, Knight</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Ne5</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento>следует</Commento>
+          </VarQuant>
+          <Mova Fromo="25" Tomo="8" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Nxh2</Nota>
+          </Mova>
+          <VarQuant VarNumo="2">
+            <Commento>с разгромом.</Commento>
+          </VarQuant>
         </Vario>
       </VarQuant>
       <VarQuant VarNumo="41">
@@ -311,10 +1008,73 @@ h3 Qxg6 22. Qe2 Qh5 23. Qd3 Be3 0-1</TParo>
             <Nota>Nf2+</Nota>
           </Mova>
           <VarQuant VarNumo="4">
-            <Commento>Была строка {или } 22... Kf7 {с таким компьютерным выигрышем:} 23. h3 Rh8 24. Nd1 Qh5 25. Rf3 Rh6 26. Rd3 Nf2+ $1 27. Nxf2 Rg6 {и т.д.}</Commento>
             <Vario>
               <Feno>2r3k1/pb4p1/4p1q1/1p3p2/3b1Pn1/P1N3Q1/1P4PP/R1B2R1K b - - 1 22</Feno>
-              <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+              <Tshepa>22. ... Kf7 23. h3 Rh8 24. Nd1 Qh5 25. Rf3 Rh6 26. Rd3 Nf2+ 27. Nxf2 Rg6</Tshepa>
+              <VarQuant VarNumo="0">
+                <Commento>или </Commento>
+              </VarQuant>
+              <Mova Fromo="57" Tomo="50" Coala="B">
+                <Zver>None, King, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Kf7</Nota>
+              </Mova>
+              <VarQuant VarNumo="1">
+                <Commento>с таким компьютерным выигрышем:</Commento>
+              </VarQuant>
+              <Mova Fromo="8" Tomo="16" Coala="W">
+                <Zver>None, Pawn</Zver>
+                <Typon>Normal</Typon>
+                <Nota>h3</Nota>
+              </Mova>
+              <Mova Fromo="61" Tomo="56" Coala="B">
+                <Zver>None, Rook, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Rh8</Nota>
+              </Mova>
+              <Mova Fromo="21" Tomo="4" Coala="W">
+                <Zver>None, Knight</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Nd1</Nota>
+              </Mova>
+              <Mova Fromo="41" Tomo="32" Coala="B">
+                <Zver>None, Queen, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Qh5</Nota>
+              </Mova>
+              <Mova Fromo="2" Tomo="18" Coala="W">
+                <Zver>None, Rook</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Rf3</Nota>
+              </Mova>
+              <Mova Fromo="56" Tomo="40" Coala="B">
+                <Zver>None, Rook, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Rh6</Nota>
+              </Mova>
+              <Mova Fromo="18" Tomo="20" Coala="W">
+                <Zver>None, Rook</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Rd3</Nota>
+              </Mova>
+              <Mova Fromo="25" Tomo="10" Coala="B">
+                <Zver>None, Knight, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Nf2+</Nota>
+              </Mova>
+              <Mova Fromo="4" Tomo="10" Coala="W">
+                <Zver>None, Knight</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>Nxf2</Nota>
+              </Mova>
+              <Mova Fromo="40" Tomo="41" Coala="B">
+                <Zver>None, Rook, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Rg6</Nota>
+              </Mova>
+              <VarQuant VarNumo="11">
+                <Commento>и т.д.</Commento>
+              </VarQuant>
             </Vario>
           </VarQuant>
           <Mova Fromo="2" Tomo="10" Coala="W">
@@ -378,14 +1138,141 @@ h3 Qxg6 22. Qe2 Qh5 23. Qd3 Be3 0-1</TParo>
         </Vario>
       </VarQuant>
       <VarQuant VarNumo="44">
-        <Commento>Была строка {Видимо, чётче было} 22... Rd8 $5 { с такими идеями:} 23. Rf3 ({или} 23. Nxb5 Qh5 {и т.д.}) 23... Bxf3 24. Qxf3 Bxc3 25. bxc3 ({или} 25. hxg4 fxg4 26. Qxc3 Rd1+ 27. Kh2 Qh7+ 28. Kg3 Rd3+ { и т.д.}) 25... Rd1+ $1 26. Qxd1 Nf2+ {Занавес!}</Commento>
         <Vario>
           <Feno>2r3k1/pb4p1/4p1q1/1p3p2/3b1Pn1/P1N4P/1P2Q1P1/R1B2R1K b - - 1 22</Feno>
-          <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+          <Tshepa>22. ... Rd8 23. Rf3 Bxf3 24. Qxf3 Bxc3 25. bxc3 Rd1+ 26. Qxd1 Nf2+</Tshepa>
+          <VarQuant VarNumo="0">
+            <Commento>Видимо, чётче было</Commento>
+          </VarQuant>
+          <Mova Fromo="61" Tomo="60" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rd8</Nota>
+          </Mova>
+          <VarQuant VarNumo="1">
+            <Commento> с такими идеями:</Commento>
+          </VarQuant>
+          <Mova Fromo="2" Tomo="18" Coala="W">
+            <Zver>None, Rook</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rf3</Nota>
+          </Mova>
+          <VarQuant VarNumo="2">
+            <Vario>
+              <Feno>3r2k1/pb4p1/4p1q1/1p3p2/3b1Pn1/P1N4P/1P2Q1P1/R1B2R1K w - - 2 23</Feno>
+              <Tshepa>23. Nxb5 Qh5</Tshepa>
+              <VarQuant VarNumo="0">
+                <Commento>или</Commento>
+              </VarQuant>
+              <Mova Fromo="21" Tomo="38" Coala="W">
+                <Zver>None, Knight</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>Nxb5</Nota>
+              </Mova>
+              <Mova Fromo="41" Tomo="32" Coala="B">
+                <Zver>None, Queen, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Qh5</Nota>
+              </Mova>
+              <VarQuant VarNumo="2">
+                <Commento>и т.д.</Commento>
+              </VarQuant>
+            </Vario>
+          </VarQuant>
+          <Mova Fromo="54" Tomo="18" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxf3</Nota>
+          </Mova>
+          <Mova Fromo="11" Tomo="18" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxf3</Nota>
+          </Mova>
+          <Mova Fromo="28" Tomo="21" Coala="B">
+            <Zver>None, Bishop, Black</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Bxc3</Nota>
+          </Mova>
+          <Mova Fromo="14" Tomo="21" Coala="W">
+            <Zver>None, Pawn</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>bxc3</Nota>
+          </Mova>
+          <VarQuant VarNumo="6">
+            <Vario>
+              <Feno>3r2k1/p5p1/4p1q1/1p3p2/5Pn1/P1b2Q1P/1P4P1/R1B4K w - - 0 25</Feno>
+              <Tshepa>25. hxg4 fxg4 26. Qxc3 Rd1+ 27. Kh2 Qh7+ 28. Kg3 Rd3+</Tshepa>
+              <VarQuant VarNumo="0">
+                <Commento>или</Commento>
+              </VarQuant>
+              <Mova Fromo="16" Tomo="25" Coala="W">
+                <Zver>None, Pawn</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>hxg4</Nota>
+              </Mova>
+              <Mova Fromo="34" Tomo="25" Coala="B">
+                <Zver>None, Pawn, Black</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>fxg4</Nota>
+              </Mova>
+              <Mova Fromo="18" Tomo="21" Coala="W">
+                <Zver>None, Queen</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>Qxc3</Nota>
+              </Mova>
+              <Mova Fromo="60" Tomo="4" Coala="B">
+                <Zver>None, Rook, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Rd1+</Nota>
+              </Mova>
+              <Mova Fromo="0" Tomo="8" Coala="W">
+                <Zver>None, King</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Kh2</Nota>
+              </Mova>
+              <Mova Fromo="41" Tomo="48" Coala="B">
+                <Zver>None, Queen, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Qh7+</Nota>
+              </Mova>
+              <Mova Fromo="8" Tomo="17" Coala="W">
+                <Zver>None, King</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Kg3</Nota>
+              </Mova>
+              <Mova Fromo="4" Tomo="20" Coala="B">
+                <Zver>None, Rook, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Rd3+</Nota>
+              </Mova>
+              <VarQuant VarNumo="8">
+                <Commento> и т.д.</Commento>
+              </VarQuant>
+            </Vario>
+          </VarQuant>
+          <Mova Fromo="60" Tomo="4" Coala="B">
+            <Zver>None, Rook, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Rd1+</Nota>
+          </Mova>
+          <Mova Fromo="18" Tomo="4" Coala="W">
+            <Zver>None, Queen</Zver>
+            <Typon>PieceEaten</Typon>
+            <Nota>Qxd1</Nota>
+          </Mova>
+          <Mova Fromo="25" Tomo="10" Coala="B">
+            <Zver>None, Knight, Black</Zver>
+            <Typon>Normal</Typon>
+            <Nota>Nf2+</Nota>
+          </Mova>
+          <VarQuant VarNumo="9">
+            <Commento>Занавес!</Commento>
+          </VarQuant>
         </Vario>
       </VarQuant>
       <VarQuant VarNumo="45">
-        <Commento> Белые решают прекратить всё ЭТО.</Commento>
+        <Commento>Белые решают прекратить всё ЭТО.</Commento>
       </VarQuant>
       <VarQuant VarNumo="45">
         <Vario>
@@ -449,10 +1336,35 @@ h3 Qxg6 22. Qe2 Qh5 23. Qd3 Be3 0-1</TParo>
             <Nota>Qxf3</Nota>
           </Mova>
           <VarQuant VarNumo="5">
-            <Commento>Была строка  {или} 25. Qxe6+ Kh7 26. Qxc8 Bxg2 $1 {, и как вещает Гудини, мат неизбежен!}</Commento>
             <Vario>
               <Feno>2r3k1/p5p1/4p3/1p3p1q/3b1P2/P1N2b1P/1P2QnPK/R1B5 w - - 0 25</Feno>
-              <Tshepa>КРАХ@@-&gt;Gamo][CreateFromVarioString PozoUtils-Decode, pst.Length &gt; 2 --ЖУЖАЖУЖУ--</Tshepa>
+              <Tshepa>25. Qxe6+ Kh7 26. Qxc8 Bxg2</Tshepa>
+              <VarQuant VarNumo="0">
+                <Commento>или</Commento>
+              </VarQuant>
+              <Mova Fromo="11" Tomo="43" Coala="W">
+                <Zver>None, Queen</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>Qxe6+</Nota>
+              </Mova>
+              <Mova Fromo="57" Tomo="48" Coala="B">
+                <Zver>None, King, Black</Zver>
+                <Typon>Normal</Typon>
+                <Nota>Kh7</Nota>
+              </Mova>
+              <Mova Fromo="43" Tomo="61" Coala="W">
+                <Zver>None, Queen</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>Qxc8</Nota>
+              </Mova>
+              <Mova Fromo="18" Tomo="9" Coala="B">
+                <Zver>None, Bishop, Black</Zver>
+                <Typon>PieceEaten</Typon>
+                <Nota>Bxg2</Nota>
+              </Mova>
+              <VarQuant VarNumo="4">
+                <Commento>, и как вещает Гудини, мат неизбежен!</Commento>
+              </VarQuant>
             </Vario>
           </VarQuant>
           <Mova Fromo="32" Tomo="18" Coala="B">

@@ -115,7 +115,7 @@ namespace pfVisualisator {
 
 #region--------------------------------ДРУГОЙ КЛАСС--vrtGamo------------------------
     /// <summary>
-    /// Модификация от 25 апреля 2016 года
+    /// Модификация от 12 января 2017 года
     /// Заложен 25 апреля 2016 года
     /// 6 кнопок: также надо посадить на клавиши
     /// В начало; В конец; Вперед; Назад; В ближайший вариант вперед; Выход назад из варианта на один уровень.
@@ -129,6 +129,9 @@ namespace pfVisualisator {
         EnaBo cureb;
         Gamo gz;
         GamoWinda refa;
+        string kupol = string.Empty; //Зверская строка. Отвечает за текущее месторасположение.
+                                     //Одновременно, будучи пустой, сигнализирует о безвариантности.
+        Dictionary<string, List<string>> DiEntry;
         System.Windows.Media.Brush Stado = null;
         System.Windows.Media.SolidColorBrush Videlo = System.Windows.Media.Brushes.DeepSkyBlue;
         System.Windows.Media.SolidColorBrush VaroColorNotActive = System.Windows.Media.Brushes.Chocolate;
@@ -147,7 +150,7 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 11 декабря 2016 года
+        /// Модификация от 12 января 2017 года
         /// Заложен 28 апреля 2016 года
         /// </summary>
         /// <returns></returns>
@@ -165,12 +168,13 @@ namespace pfVisualisator {
 
             if (gz.VariantoFlag) {
                 //Тогда другой путь
+                this.kupol = "manna";
+                DiEntry = new Dictionary<string, List<string>>();
                 int mvi = 0;
                 int mvmaks = gz.ListVaroCom.Count;
                 int spvi = 0;
                 bool netnachalniycomment = true;
                 setoVaroElem = new Dictionary<string, List<vgElem>>();
-                cureb = EnaBo.next | EnaBo.prev;
                 System.Windows.FontWeight fonbold = System.Windows.FontWeights.Bold;
                 for (int i = 0; i <= makso; i++) {
                     while(mvi < mvmaks && gz.ListVaroCom[mvi].Numa == i) {
@@ -186,7 +190,8 @@ namespace pfVisualisator {
                             if(spvi >= 100) { //Кричим об ужасе. Паникуем 
                                 throw new GamaException(string.Format("<<vrtVara:GetoParagraph>> spvi превысил 99 --> {0}", spvi.ToString()));
                                 }
-                            reto.Inlines.Add(VaraInToBigSpan(curvar.Varo, spvi));
+                            reto.Inlines.Add(VaraInToBigSpan(curvar.Varo, spvi, i));
+                            this.kupol = "manna";
                             }
                         mvi++;
                         }
@@ -216,6 +221,10 @@ namespace pfVisualisator {
                         elema = new vgElem(pzcu, zz);
                         setoElem.Add(elema);
                         }
+                    }
+                cureb = EnaBo.next | EnaBo.endo;
+                if (DiEntry.Count > 0) {
+                    cureb |= EnaBo.vara;
                     }
             } else {
                 //Упрощенный параграф без вариантов. Отдельные комментарии не считаем. Комментарии без вариантов не рассматриваем.
@@ -249,13 +258,14 @@ namespace pfVisualisator {
             }
         
         /// <summary>
-        /// Модификация от 7 января 2017 года
+        /// Модификация от 12 января 2017 года
         /// Заложен 11 ноября 2016 года
         /// </summary>
         /// <param name="pv">Это сам Варио, который надо превратить в кусочек параграфа(спан)</param>
         /// <param name="ima">Порядковый номер варианта на верхнем уровне</param>
+        /// <param name="ipo">Переменная цикла по ходопозам. Нужна для заполнения массива навигации для прихода в данный вариант по кнопке входа</param>
         /// <returns>Тот самый кусочек параграфа</returns>
-        private Span VaraInToBigSpan(Vario pv, int ima) {
+        private Span VaraInToBigSpan(Vario pv, int ima, int ipo) {
             Span reto = new Span();
             Span zz;
             Run zh = null;
@@ -292,6 +302,16 @@ namespace pfVisualisator {
                 simo = "00";
                 }
             string sfo = "Vasp" + ima.ToString(simo) + '_';
+            int idie = 0;
+            if( DiEntry.Keys.Contains(this.kupol) ) {
+                idie = DiEntry[this.kupol].Count;
+            } else {
+                DiEntry[this.kupol] = new List<string>();
+                }
+            for (; idie < ipo; idie++) {
+                DiEntry[this.kupol].Add(sfo);
+                }
+            this.kupol = sfo;
             List<Mova> lvrmo = pv.MovaList;
             List<VarQvant> lnest = pv.VaroCommoList;
             int imx = lvrmo.Count;
@@ -317,7 +337,8 @@ namespace pfVisualisator {
                         if (spvi >= 10) { //Кричим об ужасе. Паникуем 
                             throw new GamaException(string.Format("<<vrtVara:VaraInToBigSpan>> внутренний spvi превысил 9 --> {0}", spvi.ToString()));
                             }
-                        reto.Inlines.Add(VaraInToBigSpan(curvar.Varo, iima + spvi));
+                        reto.Inlines.Add(VaraInToBigSpan(curvar.Varo, iima + spvi, i));
+                        this.kupol = sfo;
                         }
                     mvi++;
                     }
@@ -351,6 +372,11 @@ namespace pfVisualisator {
             return reto;
             }
 
+        /// <summary>
+        /// Модификация от 13 января 2017 года
+        /// Заложен в апреле 2016 года
+        /// </summary>
+        /// <param name="delto"></param>
         public void ChangeCurrentNumber(int delto) {
             int nova = (delto > 1000) ? delto - 1000 : numbero + delto;
             if (nova >= 0 && nova <= makso) {
@@ -362,7 +388,47 @@ namespace pfVisualisator {
                     setoElem[numbero].Spano.Background = Videlo;
                     }
                 }
+            cureb = EnaBo.nona;
+            if(numbero > 0) {
+                cureb |= (EnaBo.prev | EnaBo.bego);
+                }
+            if(numbero < makso) {
+                cureb |= (EnaBo.next | EnaBo.endo);
+                }
+            if( kupol.Length > 0 ) {
+                if (DiEntry.Keys.Contains(kupol)) {
+                    if (numbero < DiEntry[kupol].Count) {
+                        cureb |= EnaBo.vara;
+                        }
+                    }
+                }
+            if (kupol.StartsWith("Vasp")) {
+                cureb |= EnaBo.exit;
+                }
             }
+
+        /// <summary>
+        /// Модификация от 13 января 2017 года
+        /// Заложен 13 января 2017 года
+        /// </summary>
+        /// <param name="delto"></param>
+        /// <param name="kuvar"></param>
+        public void ChangeCurrentNumber(int delto, string kuvar)
+        {
+            int nova = (delto > 1000) ? delto - 1000 : numbero + delto;
+            if (nova >= 0 && nova <= makso)
+            {
+                if (setoElem[numbero].Spano != null)
+                {
+                    setoElem[numbero].Spano.Background = Stado;
+                }
+                numbero = nova;
+                if (setoElem[numbero].Spano != null)
+                {
+                    setoElem[numbero].Spano.Background = Videlo;
+                }
+            }
+        }
 
         public pozo GetCurrentPoza() {
             pozo reto = setoElem[numbero].Pizza;

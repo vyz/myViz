@@ -178,9 +178,21 @@ namespace pfVisualisator
             vvOtrisovka(pokazukha.GetCurrentPoza());
         }
 
+        /// <summary>
+        /// Модификация от 13 января 2017 года
+        /// Заложен 13 января 2017 года
+        /// </summary>
+        /// <param name="dtl"></param>
+        /// <param name="kuvar"></param>
+        private void vvDNF(int dtl, string kuvar)
+        {
+            pokazukha.ChangeCurrentNumber(dtl, kuvar);
+            vvOtrisovka(pokazukha.GetCurrentPoza());
+        }
+
 
         /// <summary>
-        /// Модификация от 29 апреля 2016 года
+        /// Модификация от 13 января 2017 года
         /// Заложен 29 апреля 2016 года
         /// </summary>
         /// <param name="sender"></param>
@@ -195,8 +207,14 @@ namespace pfVisualisator
                     if (aa.Name.StartsWith("spi"))
                     {
                         int k = int.Parse(aa.Name.Substring(3));
-                        vvDNF(k+1000);
-                    } 
+                        vvDNF(k + 1000);
+                    }
+                    else if (aa.Name.StartsWith("Vasp"))
+                    {
+                        int ipro = aa.Name.IndexOf("_");
+                        int k = int.Parse(aa.Name.Substring(ipro + 1));
+                        vvDNF(k + 1000, aa.Name.Substring(0, ipro));
+                    }
                 }
             }
             catch (Exception ex)

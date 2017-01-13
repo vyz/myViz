@@ -616,7 +616,7 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 1 апреля 2016 года
+        /// Модификация от 11 января 2017 года
         /// Заложен 22 июля 2015 года
         /// </summary>
         /// <param name="vv"></param>
@@ -819,7 +819,15 @@ namespace pfVisualisator {
                                     reto.Add(aa);
                                     }
                                 else if (aa.StartsWith("@")) {
-                                    reto.Add("{" + kommy[kk++]);
+                                    string skma = kommy[kk++];
+                                    anticikl = 10;
+                                    while( skma.Contains("&") && anticikl-- > 0) {
+                                        int ia = skma.IndexOf("&");
+                                        string svar = varry[kv++];
+                                        string svar2 = (svar.StartsWith("(") ? "" : "(") + svar + ")";
+                                        skma = skma.Substring(0, ia) + svar2 + skma.Substring(ia + 1);
+                                        }
+                                    reto.Add("{" + skma);                                    
                                     }
                                 else if (aa.StartsWith("&")) {
                                     reto.Add("(" + varry[kv++]);
