@@ -127,10 +127,12 @@ namespace pfVisualisator {
         int numbero;
         int makso;
         EnaBo cureb;
+        bool nalvara;                //Cигнализирует о безвариантности -> false.
         Gamo gz;
         GamoWinda refa;
         string kupol = string.Empty; //Зверская строка. Отвечает за текущее месторасположение.
                                      //Одновременно, будучи пустой, сигнализирует о безвариантности.
+                                     //Отказался от идеи многофункциональности. Ввёл переменную nalvara. 2017-01-17.  
         Dictionary<string, List<string>> DiEntry;
         System.Windows.Media.Brush Stado = null;
         System.Windows.Media.SolidColorBrush Videlo = System.Windows.Media.Brushes.DeepSkyBlue;
@@ -150,7 +152,7 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 12 января 2017 года
+        /// Модификация от 17 января 2017 года
         /// Заложен 28 апреля 2016 года
         /// </summary>
         /// <returns></returns>
@@ -168,6 +170,7 @@ namespace pfVisualisator {
 
             if (gz.VariantoFlag) {
                 //Тогда другой путь
+                nalvara = true;
                 this.kupol = "manna";
                 DiEntry = new Dictionary<string, List<string>>();
                 int mvi = 0;
@@ -229,6 +232,7 @@ namespace pfVisualisator {
             } else {
                 //Упрощенный параграф без вариантов. Отдельные комментарии не считаем. Комментарии без вариантов не рассматриваем.
                 cureb = EnaBo.next | EnaBo.endo;
+                nalvara = false;
 
             for (int i = 0; i < makso; i++) {
                 if( i == 0 ) {
@@ -373,7 +377,7 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 13 января 2017 года
+        /// Модификация от 17 января 2017 года
         /// Заложен в апреле 2016 года
         /// </summary>
         /// <param name="delto"></param>
@@ -395,7 +399,7 @@ namespace pfVisualisator {
             if(numbero < makso) {
                 cureb |= (EnaBo.next | EnaBo.endo);
                 }
-            if( kupol.Length > 0 ) {
+            if( nalvara ) {
                 if (DiEntry.Keys.Contains(kupol)) {
                     if (numbero < DiEntry[kupol].Count) {
                         cureb |= EnaBo.vara;
@@ -436,6 +440,7 @@ namespace pfVisualisator {
             }
 
         public EnaBo Knopki { get { return cureb; } }
+        public bool VaraExist { get { return nalvara; } }
 
         private class vgElem {
             pozo afterpos;

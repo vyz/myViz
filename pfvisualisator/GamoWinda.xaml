@@ -29,17 +29,17 @@
                             <MenuItem Header="Кино с диапазоном 10 секунд" Click="Kino3_Click"/>
                         </ContextMenu>
                     </StackPanel.ContextMenu>
-                    <Button Content="Bego" Name="BegoBtn" Width="75" Click="BegoBtn_Click" />
+                    <Button Content="Bego" Name="BegoBtn" Width="75"/>
                     <Label Name="pSdvigLb1"></Label>
-                    <Button Content="Exto" Name="ExitBtn" Width="75" Click="ExitBtn_Click" Visibility="Hidden" />
+                    <Button Content="Exto" Name="ExitBtn" Width="75"/>
                     <Label Name="pSdvigLb2"></Label>
-                    <Button Content="Prev" Name="PrevBtn" Width="75" Click="PrevBtn_Click" />
+                    <Button Content="Prev" Name="PrevBtn" Width="75"/>
                     <Label Name="pSdvigLb3"></Label>
-                    <Button Content="Next" Name="NextBtn" Width="75" Click="NextBtn_Click" />
+                    <Button Content="Next" Name="NextBtn" Width="75"/>
                     <Label Name="pSdvigLb4"></Label>
-                    <Button Content="Vara" Name="VaraBtn" Width="75" Click="VaraBtn_Click" Visibility="Hidden" />
+                    <Button Content="Vara" Name="VaraBtn" Width="75"/>
                     <Label Name="pSdvigLb5"></Label>
-                    <Button Content="Endo" Name="EndoBtn" Width="75" Click="EndoBtn_Click" />
+                    <Button Content="Endo" Name="EndoBtn" Width="75"/>
                 </StackPanel>
                 <StackPanel Name="spTextoGamo" Orientation="Vertical">
                 <Border Margin="10" Padding="10" BorderBrush="SteelBlue" BorderThickness="2" CornerRadius="5" HorizontalAlignment="Stretch">

@@ -38,6 +38,13 @@ namespace pfVisualisator
             CommandBindings.Add(new CommandBinding(EndoPosCommand, onExecutedCmd, onCanExecuteCmd));
             CommandBindings.Add(new CommandBinding(IntoVaraCommand, onExecutedCmd, onCanExecuteCmd));
             CommandBindings.Add(new CommandBinding(ExitVaraCommand, onExecutedCmd, onCanExecuteCmd));
+
+            PrevBtn.Command = PrevMoveCommand;
+            NextBtn.Command = NextMoveCommand;
+            BegoBtn.Command = BegoPosCommand;
+            EndoBtn.Command = EndoPosCommand;
+            VaraBtn.Command = IntoVaraCommand;
+            ExitBtn.Command = ExitVaraCommand;
         }
 
         /// <summary>
@@ -156,7 +163,7 @@ namespace pfVisualisator
 #endregion -------------------------------------Command Handling--------------------------------------------
 
         /// <summary>
-        /// Модификация от 29 апреля 2016 года
+        /// Модификация от 17 января 2017 года
         /// Заложен 29 апреля 2016 года
         /// </summary>
         /// <param name="gg">Показываемая партия в виде vGamo</param>
@@ -164,6 +171,10 @@ namespace pfVisualisator
             vPartia = gg;
             this.Grido.DataContext = gg;
             pokazukha = new vrtGamo(vPartia.Gamma, this);
+            if (!pokazukha.VaraExist) {
+                VaraBtn.Visibility = System.Windows.Visibility.Hidden;
+                ExitBtn.Visibility = System.Windows.Visibility.Hidden;
+                }
             Parto.Document.Blocks.Add(pokazukha.GetoParagraph());
             }
 
@@ -249,6 +260,7 @@ namespace pfVisualisator
             cmdNextPosition();
         }
 
+/*
         private void PrevBtn_Click(object sender, RoutedEventArgs e) {
             cmdPrevPosition();
             }
@@ -272,7 +284,7 @@ namespace pfVisualisator
         private void VaraBtn_Click(object sender, RoutedEventArgs e) {
             cmdIntoVariant();
             }
-
+*/
         /// <summary>
         /// Модификация от 26 января 2016 года
         /// Заложен 25 января 2016 года
