@@ -126,6 +126,7 @@ namespace pfVisualisator {
         Dictionary <string, List<vgElem>> setoVaroElem;
         int numbero;
         int makso;
+        int manmakso;
         EnaBo cureb;
         bool nalvara;                //Cигнализирует о безвариантности -> false.
         Gamo gz;
@@ -134,12 +135,16 @@ namespace pfVisualisator {
                                      //Одновременно, будучи пустой, сигнализирует о безвариантности.
                                      //Отказался от идеи многофункциональности. Ввёл переменную nalvara. 2017-01-17.  
         Dictionary<string, List<string>> DiEntry;
+        Dictionary<string, int> DiMakso;
+        Dictionary<string, string> DiParento;
+
+
         System.Windows.Media.Brush Stado = null;
         System.Windows.Media.SolidColorBrush Videlo = System.Windows.Media.Brushes.DeepSkyBlue;
         System.Windows.Media.SolidColorBrush VaroColorNotActive = System.Windows.Media.Brushes.Chocolate;
 
         /// <summary>
-        /// Модификация от 28 апреля 2016 года
+        /// Модификация от 25 января 2017 года
         /// Заложен 28 апреля 2016 года
         /// </summary>
         /// <param name="plm"></param>
@@ -147,12 +152,12 @@ namespace pfVisualisator {
         public vrtGamo(Gamo pgm, GamoWinda pgw) {
             gz = pgm;
             numbero = -1;
-            makso = pgm.ListoMovo.Count;
+            manmakso = makso = pgm.ListoMovo.Count;
             refa = pgw;
             }
 
         /// <summary>
-        /// Модификация от 17 января 2017 года
+        /// Модификация от 25 января 2017 года
         /// Заложен 28 апреля 2016 года
         /// </summary>
         /// <returns></returns>
@@ -173,6 +178,8 @@ namespace pfVisualisator {
                 nalvara = true;
                 this.kupol = "manna";
                 DiEntry = new Dictionary<string, List<string>>();
+                DiMakso = new Dictionary<string, int>();
+                DiParento = new Dictionary<string, string>();
                 int mvi = 0;
                 int mvmaks = gz.ListVaroCom.Count;
                 int spvi = 0;
@@ -193,7 +200,7 @@ namespace pfVisualisator {
                             if(spvi >= 100) { //Кричим об ужасе. Паникуем 
                                 throw new GamaException(string.Format("<<vrtVara:GetoParagraph>> spvi превысил 99 --> {0}", spvi.ToString()));
                                 }
-                            reto.Inlines.Add(VaraInToBigSpan(curvar.Varo, spvi, i));
+                            reto.Inlines.Add(VaraInToBigSpan(curvar.Varo, spvi, i, "manna"));
                             this.kupol = "manna";
                             }
                         mvi++;
@@ -262,14 +269,15 @@ namespace pfVisualisator {
             }
         
         /// <summary>
-        /// Модификация от 12 января 2017 года
+        /// Модификация от 25 января 2017 года
         /// Заложен 11 ноября 2016 года
         /// </summary>
         /// <param name="pv">Это сам Варио, который надо превратить в кусочек параграфа(спан)</param>
         /// <param name="ima">Порядковый номер варианта на верхнем уровне</param>
         /// <param name="ipo">Переменная цикла по ходопозам. Нужна для заполнения массива навигации для прихода в данный вариант по кнопке входа</param>
+        /// <param name="papa">Тег вызвавшего родителя, для будущего возвращения</param>
         /// <returns>Тот самый кусочек параграфа</returns>
-        private Span VaraInToBigSpan(Vario pv, int ima, int ipo) {
+        private Span VaraInToBigSpan(Vario pv, int ima, int ipo, string papa) {
             Span reto = new Span();
             Span zz;
             Run zh = null;
@@ -319,6 +327,8 @@ namespace pfVisualisator {
             List<Mova> lvrmo = pv.MovaList;
             List<VarQvant> lnest = pv.VaroCommoList;
             int imx = lvrmo.Count;
+            DiMakso.Add(sfo, imx);
+            DiParento.Add(sfo, papa);
             int mvi = 0;
             int mvmaks = (lnest == null) ? 0 : lnest.Count;
             int spvi = 0;
@@ -341,7 +351,7 @@ namespace pfVisualisator {
                         if (spvi >= 10) { //Кричим об ужасе. Паникуем 
                             throw new GamaException(string.Format("<<vrtVara:VaraInToBigSpan>> внутренний spvi превысил 9 --> {0}", spvi.ToString()));
                             }
-                        reto.Inlines.Add(VaraInToBigSpan(curvar.Varo, iima + spvi, i));
+                        reto.Inlines.Add(VaraInToBigSpan(curvar.Varo, iima + spvi, i, sfo));
                         this.kupol = sfo;
                         }
                     mvi++;
@@ -382,7 +392,20 @@ namespace pfVisualisator {
         /// </summary>
         /// <param name="delto"></param>
         public void ChangeCurrentNumber(int delto) {
+            if( delto < -1 ) {
+                if( delto == -25 ) { //Выход из варианта
+                    ChangeExitFromVariant();
+                    return;
+                    }
+
+
+            }
+
             int nova = (delto > 1000) ? delto - 1000 : numbero + delto;
+            if (kupol.StartsWith("Vasp")) {
+                ChangeCurrentNumber(nova, kupol);
+                return;
+                }
             if (nova >= 0 && nova <= makso) {
                 if (setoElem[numbero].Spano != null) {
                     setoElem[numbero].Spano.Background = Stado;
@@ -412,27 +435,70 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 13 января 2017 года
+        /// Модификация от 25 января 2017 года
         /// Заложен 13 января 2017 года
         /// </summary>
         /// <param name="delto"></param>
         /// <param name="kuvar"></param>
-        public void ChangeCurrentNumber(int delto, string kuvar)
-        {
-            int nova = (delto > 1000) ? delto - 1000 : numbero + delto;
-            if (nova >= 0 && nova <= makso)
-            {
-                if (setoElem[numbero].Spano != null)
-                {
-                    setoElem[numbero].Spano.Background = Stado;
-                }
+        public void ChangeCurrentNumber(int delto, string kuvar) {
+            makso = DiMakso[kuvar];
+            int nova = delto;
+            if (nova >= 0 && nova <= makso) {
+                if (this.kupol == "manna") {
+                    if (setoElem[numbero].Spano != null) {
+                        setoElem[numbero].Spano.Background = Stado;
+                        }
+                } else {
+                    if (setoVaroElem[this.kupol][numbero].Spano != null) {
+                        setoVaroElem[this.kupol][numbero].Spano.Background = VaroColorNotActive;
+                        }
+                    }
                 numbero = nova;
-                if (setoElem[numbero].Spano != null)
-                {
-                    setoElem[numbero].Spano.Background = Videlo;
+                this.kupol = kuvar;
+                if (this.kupol == "manna") {
+                    if (setoElem[numbero].Spano != null) {
+                        setoElem[numbero].Spano.Background = Videlo;
+                        }
+                } else {
+                    if (setoVaroElem[this.kupol][numbero].Spano != null) {
+                        setoVaroElem[this.kupol][numbero].Spano.Background = Videlo;
+                        }
+                    }
+                }
+            cureb = EnaBo.nona;
+            if (numbero > 0) {
+                cureb |= (EnaBo.prev | EnaBo.bego);
+                }
+            if (numbero < makso) {
+                cureb |= (EnaBo.next | EnaBo.endo);
+                }
+            if (DiEntry.Keys.Contains(kupol)) {
+                if(numbero < DiEntry[kupol].Count) {
+                    cureb |= EnaBo.vara;
+                    }
+                }
+            if (kupol.StartsWith("Vasp")) {
+                cureb |= EnaBo.exit;
                 }
             }
-        }
+
+        /// <summary>
+        /// Модификация от 25 января 2017 года
+        /// Заложен 25 января 2017 года
+        /// </summary>
+        private void ChangeExitFromVariant() {
+            if (DiParento.Keys.Contains(this.kupol)) {
+                string papa = DiParento[this.kupol];
+                List<string> lisa = DiEntry[papa];
+                int i = lisa.Count - 1;
+                for(; i > 0; i--) {
+                    if( lisa[i] == papa ) {
+                        break;
+                        }
+                    }
+                ChangeCurrentNumber(i, papa);
+                }
+            }
 
         public pozo GetCurrentPoza() {
             pozo reto = setoElem[numbero].Pizza;

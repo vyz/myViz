@@ -158,12 +158,13 @@ namespace pfVisualisator
         /// Заложен 6 октября 2016 года
         /// </summary>
         private void cmdExitFromVariant() {
+            vvDNF(-25);
             }
 
 #endregion -------------------------------------Command Handling--------------------------------------------
 
         /// <summary>
-        /// Модификация от 17 января 2017 года
+        /// Модификация от 24 января 2017 года
         /// Заложен 29 апреля 2016 года
         /// </summary>
         /// <param name="gg">Показываемая партия в виде vGamo</param>
@@ -171,11 +172,11 @@ namespace pfVisualisator
             vPartia = gg;
             this.Grido.DataContext = gg;
             pokazukha = new vrtGamo(vPartia.Gamma, this);
+            Parto.Document.Blocks.Add(pokazukha.GetoParagraph());
             if (!pokazukha.VaraExist) {
                 VaraBtn.Visibility = System.Windows.Visibility.Hidden;
                 ExitBtn.Visibility = System.Windows.Visibility.Hidden;
                 }
-            Parto.Document.Blocks.Add(pokazukha.GetoParagraph());
             }
 
         private void vvOtrisovka(pozo bb)
@@ -203,36 +204,28 @@ namespace pfVisualisator
 
 
         /// <summary>
-        /// Модификация от 13 января 2017 года
+        /// Модификация от 25 января 2017 года
         /// Заложен 29 апреля 2016 года
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        public void Spanio_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            try
-            {
-                if (sender is Span)
-                {
+        public void Spanio_MouseLeftButtonDown(object sender, MouseButtonEventArgs e) {
+            try {
+                if (sender is Span) {
                     Span aa = (Span)sender;
-                    if (aa.Name.StartsWith("spi"))
-                    {
+                    if (aa.Name.StartsWith("spi")) {
                         int k = int.Parse(aa.Name.Substring(3));
                         vvDNF(k + 1000);
-                    }
-                    else if (aa.Name.StartsWith("Vasp"))
-                    {
+                    } else if (aa.Name.StartsWith("Vasp")) {
                         int ipro = aa.Name.IndexOf("_");
                         int k = int.Parse(aa.Name.Substring(ipro + 1));
-                        vvDNF(k + 1000, aa.Name.Substring(0, ipro));
+                        vvDNF(k, aa.Name.Substring(0, ipro));
+                        }
                     }
+            } catch (Exception ex) {
+                LogoCM.OutString(ex.Message);
                 }
             }
-            catch (Exception ex)
-            {
-                LogoCM.OutString(ex.Message);
-            }
-        }
 
         /// <summary>
         /// Модификация от 23 ноября 2016 года
