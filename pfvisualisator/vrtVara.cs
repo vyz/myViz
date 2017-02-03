@@ -313,7 +313,7 @@ namespace pfVisualisator {
                 iima = ima * 100;
                 simo = "00";
                 }
-            string sfo = "Vasp" + ima.ToString(simo) + '_';
+            string sfo = "Vasp" + ima.ToString(simo);
             int idie = 0;
             if( DiEntry.Keys.Contains(this.kupol) ) {
                 idie = DiEntry[this.kupol].Count;
@@ -372,7 +372,7 @@ namespace pfVisualisator {
                 reto.Inlines.Add(zh);
                 zh = new Run(aa.Shorto);
                 zz = new Span(zh);
-                zz.Name =  sfo + i.ToString();
+                zz.Name =  sfo + "_" + i.ToString();
                 zz.Foreground = VaroColorNotActive;
                 zz.MouseLeftButtonDown += new System.Windows.Input.MouseButtonEventHandler(refa.Spanio_MouseLeftButtonDown);
                 reto.Inlines.Add(zz);
@@ -397,6 +397,11 @@ namespace pfVisualisator {
                     ChangeExitFromVariant();
                     return;
                     }
+                if (delto == -48)
+                { //Вход вовнутрь варианта
+                    ChangeEntranceToVariant();
+                    return;
+                }
 
 
             }
@@ -435,13 +440,13 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 25 января 2017 года
+        /// Модификация от 1 февраля 2017 года
         /// Заложен 13 января 2017 года
         /// </summary>
         /// <param name="delto"></param>
         /// <param name="kuvar"></param>
         public void ChangeCurrentNumber(int delto, string kuvar) {
-            makso = DiMakso[kuvar];
+            makso = kuvar == "manna" ? manmakso : DiMakso[kuvar];
             int nova = delto;
             if (nova >= 0 && nova <= makso) {
                 if (this.kupol == "manna") {
@@ -450,7 +455,8 @@ namespace pfVisualisator {
                         }
                 } else {
                     if (setoVaroElem[this.kupol][numbero].Spano != null) {
-                        setoVaroElem[this.kupol][numbero].Spano.Background = VaroColorNotActive;
+                        setoVaroElem[this.kupol][numbero].Spano.Foreground = VaroColorNotActive;
+                        setoVaroElem[this.kupol][numbero].Spano.Background = Stado;
                         }
                     }
                 numbero = nova;
@@ -500,8 +506,22 @@ namespace pfVisualisator {
                 }
             }
 
+        /// <summary>
+        /// Модификация от 2 февраля 2017 года
+        /// Заложен 1 февраля 2017 года
+        /// </summary>
+        private void ChangeEntranceToVariant() {
+            string whera = DiEntry[kupol][numbero];
+            ChangeCurrentNumber(0, whera);
+            }
+
+        /// <summary>
+        /// Модификация от 2 февраля 2017 года
+        /// Заложен в 2016 году
+        /// </summary>
+        /// <returns></returns>
         public pozo GetCurrentPoza() {
-            pozo reto = setoElem[numbero].Pizza;
+            pozo reto = (this.kupol == "manna") ? setoElem[numbero].Pizza : setoVaroElem[this.kupol][numbero].Pizza;
             return reto;
             }
 

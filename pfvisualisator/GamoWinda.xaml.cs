@@ -147,10 +147,11 @@ namespace pfVisualisator
             }
 
         /// <summary>
-        /// Модификация от 6 октября 2016 года
+        /// Модификация от 1 февраля 2017 года
         /// Заложен 6 октября 2016 года
         /// </summary>
         private void cmdIntoVariant() {
+            vvDNF(-48);
             }
 
         /// <summary>
