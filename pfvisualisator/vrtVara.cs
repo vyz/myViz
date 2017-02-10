@@ -387,7 +387,7 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 17 января 2017 года
+        /// Модификация от 9 февраля 2017 года
         /// Заложен в апреле 2016 года
         /// </summary>
         /// <param name="delto"></param>
@@ -397,15 +397,19 @@ namespace pfVisualisator {
                     ChangeExitFromVariant();
                     return;
                     }
-                if (delto == -48)
-                { //Вход вовнутрь варианта
+                if (delto == -48) { //Вход вовнутрь варианта
                     ChangeEntranceToVariant();
                     return;
+                    }
+                if (delto == -52) { //Переход в начало то ли партии, то ли варианта
+                    ChangeCurrentNumber(0, this.kupol);
+                    return;
+                    }
+                if (delto == -57) { //Переход в хвост то ли партии, то ли варианта
+                    ChangeCurrentNumber(delto, this.kupol);
+                    return;
+                    }
                 }
-
-
-            }
-
             int nova = (delto > 1000) ? delto - 1000 : numbero + delto;
             if (kupol.StartsWith("Vasp")) {
                 ChangeCurrentNumber(nova, kupol);
@@ -440,14 +444,14 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 1 февраля 2017 года
+        /// Модификация от 9 февраля 2017 года
         /// Заложен 13 января 2017 года
         /// </summary>
         /// <param name="delto"></param>
         /// <param name="kuvar"></param>
         public void ChangeCurrentNumber(int delto, string kuvar) {
             makso = kuvar == "manna" ? manmakso : DiMakso[kuvar];
-            int nova = delto;
+            int nova = delto != -57 ? delto : makso;
             if (nova >= 0 && nova <= makso) {
                 if (this.kupol == "manna") {
                     if (setoElem[numbero].Spano != null) {
@@ -489,7 +493,7 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 25 января 2017 года
+        /// Модификация от 9 февраля 2017 года
         /// Заложен 25 января 2017 года
         /// </summary>
         private void ChangeExitFromVariant() {
@@ -498,7 +502,7 @@ namespace pfVisualisator {
                 List<string> lisa = DiEntry[papa];
                 int i = lisa.Count - 1;
                 for(; i > 0; i--) {
-                    if( lisa[i] == papa ) {
+                    if( lisa[i] == this.kupol ) {
                         break;
                         }
                     }
@@ -507,12 +511,12 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 2 февраля 2017 года
+        /// Модификация от 9 февраля 2017 года
         /// Заложен 1 февраля 2017 года
         /// </summary>
         private void ChangeEntranceToVariant() {
             string whera = DiEntry[kupol][numbero];
-            ChangeCurrentNumber(0, whera);
+            ChangeCurrentNumber(1, whera);
             }
 
         /// <summary>

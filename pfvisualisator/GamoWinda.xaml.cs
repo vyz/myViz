@@ -133,17 +133,19 @@ namespace pfVisualisator
             }
 
         /// <summary>
-        /// Модификация от 6 октября 2016 года
+        /// Модификация от 9 февраля 2017 года
         /// Заложен 6 октября 2016 года
         /// </summary>
         private void cmdBegoPosition() {
+            vvDNF(-52);
             }
 
         /// <summary>
-        /// Модификация от 6 октября 2016 года
+        /// Модификация от 9 февраля 2017 года
         /// Заложен 6 октября 2016 года
         /// </summary>
         private void cmdEndoPosition() {
+            vvDNF(-57);
             }
 
         /// <summary>
@@ -155,7 +157,7 @@ namespace pfVisualisator
             }
 
         /// <summary>
-        /// Модификация от 6 октября 2016 года
+        /// Модификация от 1 февраля 2017 года
         /// Заложен 6 октября 2016 года
         /// </summary>
         private void cmdExitFromVariant() {
@@ -205,7 +207,7 @@ namespace pfVisualisator
 
 
         /// <summary>
-        /// Модификация от 25 января 2017 года
+        /// Модификация от 9 февраля 2017 года
         /// Заложен 29 апреля 2016 года
         /// </summary>
         /// <param name="sender"></param>
@@ -220,7 +222,7 @@ namespace pfVisualisator
                     } else if (aa.Name.StartsWith("Vasp")) {
                         int ipro = aa.Name.IndexOf("_");
                         int k = int.Parse(aa.Name.Substring(ipro + 1));
-                        vvDNF(k, aa.Name.Substring(0, ipro));
+                        vvDNF(k+1, aa.Name.Substring(0, ipro));
                         }
                     }
             } catch (Exception ex) {
