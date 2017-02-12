@@ -520,12 +520,17 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 2 февраля 2017 года
+        /// Модификация от 12 февраля 2017 года
         /// Заложен в 2016 году
         /// </summary>
         /// <returns></returns>
         public pozo GetCurrentPoza() {
-            pozo reto = (this.kupol == "manna") ? setoElem[numbero].Pizza : setoVaroElem[this.kupol][numbero].Pizza;
+            pozo reto = null;
+            if (this.VaraExist) {
+                reto = (this.kupol == "manna") ? setoElem[numbero].Pizza : setoVaroElem[this.kupol][numbero].Pizza;
+            } else {
+                reto = setoElem[numbero].Pizza;
+                }
             return reto;
             }
 

@@ -636,11 +636,9 @@ namespace pfVisualisator
                     Mova aa = AddMoveIfEnemyOrEmptyAndNoCheck(pi, iNewPos);
                     if (null != aa) {
                         reto.Add(aa);
-                        if( pBoard[iNewPos] != Pieco.None ) {
-                            break;
-                            }
-                    } else {
-                        break;  //Брейк не подходит, но он не странный. Надо отличать наличие другой фигуры, мешающей движению и невозможности данного хода из-за шаха, но при пустом поле. 2017.02.10
+                        }
+                    if( pBoard[iNewPos] != Pieco.None ) {
+                        break;
                         }
                     }
                 }

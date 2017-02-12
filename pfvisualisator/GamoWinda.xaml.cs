@@ -207,7 +207,7 @@ namespace pfVisualisator
 
 
         /// <summary>
-        /// Модификация от 9 февраля 2017 года
+        /// Модификация от 12 февраля 2017 года
         /// Заложен 29 апреля 2016 года
         /// </summary>
         /// <param name="sender"></param>
@@ -218,7 +218,8 @@ namespace pfVisualisator
                     Span aa = (Span)sender;
                     if (aa.Name.StartsWith("spi")) {
                         int k = int.Parse(aa.Name.Substring(3));
-                        vvDNF(k + 1000);
+                        if (pokazukha.VaraExist) { vvDNF(k, "manna"); }
+                        else { vvDNF(k + 1000); }
                     } else if (aa.Name.StartsWith("Vasp")) {
                         int ipro = aa.Name.IndexOf("_");
                         int k = int.Parse(aa.Name.Substring(ipro + 1));
