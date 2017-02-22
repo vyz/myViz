@@ -38,5 +38,11 @@
     <Setting Name="LogoFilo" Type="System.String" Scope="User">
       <Value Profile="(Default)">.\LogoInfo.log</Value>
     </Setting>
+    <Setting Name="MinoKvo" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="ValuiKvo" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

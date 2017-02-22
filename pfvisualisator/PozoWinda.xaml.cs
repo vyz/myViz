@@ -18,10 +18,19 @@ namespace pfVisualisator {
     public partial class PozoWinda : Window {
         private vrtVara pokazukha;
         private Valuing currovalu;
+        private int KvoIngMinuty;
+        private int KvoVariantov;
 
+        /// <summary>
+        /// Модификация от 22 февраля 2017 года
+        /// Заложен в феврале 2016 года
+        /// </summary>
         public PozoWinda() {
             InitializeComponent();
-        }
+            KvoIngMinuty = Properties.Settings.Default.MinoKvo;
+            KvoVariantov = Properties.Settings.Default.ValuiKvo;
+            AnaloBtn.Content = KvoIngMinuty.ToString() + "м Анализ " + KvoVariantov + "в";
+            }
 
         /// <summary>
         /// Модификация от 9 февраля 2016 года
@@ -31,7 +40,7 @@ namespace pfVisualisator {
         /// <param name="e"></param>
         private void AnaloBtn_Click(object sender, RoutedEventArgs e) {
             vPoza vp = (vPoza)Grido.DataContext;
-            vp.rasschet(vlEngino.Houdini_3a_Pro_w32, 5, 5);
+            vp.rasschet(vlEngino.Houdini_3a_Pro_w32, KvoIngMinuty, KvoVariantov);
             }
 
         /// <summary>
