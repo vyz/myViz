@@ -257,31 +257,7 @@ namespace pfVisualisator
             cmdNextPosition();
         }
 
-/*
-        private void PrevBtn_Click(object sender, RoutedEventArgs e) {
-            cmdPrevPosition();
-            }
 
-        private void NextBtn_Click(object sender, RoutedEventArgs e) {
-            cmdNextPosition();
-            }
-
-        private void BegoBtn_Click(object sender, RoutedEventArgs e) {
-            cmdBegoPosition();
-            }
-
-        private void ExitBtn_Click(object sender, RoutedEventArgs e) {
-            cmdExitFromVariant();
-            }
-
-        private void EndoBtn_Click(object sender, RoutedEventArgs e) {
-            cmdEndoPosition();
-            }
-
-        private void VaraBtn_Click(object sender, RoutedEventArgs e) {
-            cmdIntoVariant();
-            }
-*/
         /// <summary>
         /// Модификация от 26 января 2016 года
         /// Заложен 25 января 2016 года

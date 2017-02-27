@@ -19,27 +19,33 @@ namespace pfVisualisator {
         /// <summary>
         /// Простейший вариант варианта
         /// liqva быть не может. Они считаются нулевыми. liqva = null
-        /// Модификация от 29 января 2016 года
+        /// Модификация от 26 февраля 2017 года
         /// Заложен 26 января 2016 года
         /// </summary>
         /// <param name="pp">Экземпляр позы</param>
-        /// <param name="mvlist">Содержит только одни хода в нотации [a-h][1-8][a-h][1-8]</param>
+        /// <param name="mvlist">Содержит только одни хода в нотации [a-h][1-8][a-h][1-8][qrbn]?</param>
         public Vario(pozo pp, string mvlist) {
             bego = pp;
             liqva = null;
             Mova mva; 
             pozo tpp = bego;
-            string vnutr = @"([a-h][1-8][a-h][1-8])";
-            foreach (Match m1 in Regex.Matches(mvlist, vnutr)) {
-                string mv = m1.Groups[1].Value;
-                if(tpp.ContraMov(mv, 2)) {
-                    mva = tpp.GetFactMoveFilled();
-                    if (lima == null) { lima = new List<Mova>(); }
-                    lima.Add(mva);
-                    tpp = tpp.GetPozoAfterControlMove();
-                    if (lipa == null) { lipa = new List<pozo>(); }
-                    lipa.Add(tpp);
+            string vnutr = @"([a-h][1-8][a-h][1-8][qrbn]?)";
+            try {
+                foreach (Match m1 in Regex.Matches(mvlist, vnutr)) {
+                    string mv = m1.Groups[1].Value;
+                    if (tpp.ContraMov(mv, 2)) {
+                        mva = tpp.GetFactMoveFilled();
+                        if (lima == null) { lima = new List<Mova>(); }
+                        lima.Add(mva);
+                        tpp = tpp.GetPozoAfterControlMove();
+                        if (lipa == null) { lipa = new List<pozo>(); }
+                        lipa.Add(tpp);
+                        }
                     }
+            } catch (Exception ex) {
+                string erre = string.Format("Vario->Constr({0},{1}){2} Message: {3}", pp.fenout(), mvlist, Environment.NewLine, ex.Message);
+                LogoCM.OutString(erre);
+                throw new VisualisatorException(erre);
                 }
             notata = VanStrokeMovaRegion();
             }

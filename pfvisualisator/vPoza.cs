@@ -95,7 +95,7 @@ namespace pfVisualisator {
             }
 
         /// <summary>
-        /// Модификация от 22 февраля 2017 года
+        /// Модификация от 26 февраля 2017 года
         /// Заложен 9 февраля 2016 года
         /// </summary>
         /// <param name="ptypo"></param>
@@ -103,6 +103,7 @@ namespace pfVisualisator {
         /// <param name="pvarqvo"></param>
         public void rasschet(vlEngino ptypo, int minutka, int pvarqvo) {
             try  {
+                if (poza.AvaQvo < pvarqvo) { pvarqvo = poza.AvaQvo; }
                 EngiPro aa = new EngiPro(this, ptypo, minutka, pvarqvo);
                 aa.Analase();
                 if (setoanalizo.Count > 0) {

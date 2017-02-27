@@ -461,7 +461,7 @@ namespace pfVisualisator
             }
 
         /// <summary>
-        /// Модификация от 28 января 2016 года
+        /// Модификация от 26 февраля 2017 года
         /// Заложен 27 января 2016 года
         /// </summary>
         /// <param name="fromto"></param>
@@ -471,9 +471,10 @@ namespace pfVisualisator
             MovoTypo eMoveType = MovoTypo.Normal;
             Pieco Figura = Pieco.None;
             int froma = ConvertStrFieldtoInt(fromto);
-            int toma = ConvertStrFieldtoInt(fromto.Substring(2));
+            int toma = ConvertStrFieldtoInt(fromto.Substring(2,2));
             Figura = pBoard[froma];
             bool Zapret = false;
+            string ZapretDescription = string.Empty;
             if( Figura == Pieco.King && froma == 3 ) {
                 if (toma == 1) {
                     if ((rokko & Caslo.KingWhite) > 0) {
@@ -500,12 +501,31 @@ namespace pfVisualisator
                         eMoveType = MovoTypo.Castle;
                     } else { Zapret = true; 
                         }
-
                     }
                 }
             if( (Figura & Pieco.PieceMask) == Pieco.Pawn) { 
-                if(toma > 56 || toma < 8) { //Дыра с превращениями. Фигура превращения не влазит в четырехсимвольный формат. Требует будущей проработки
-                    Zapret = true;
+                if(toma > 56 || toma < 8) { 
+                    //Предполагавшаяся дыра с превращениями. Фигура превращения не влазит в четырехсимвольный формат. Требует будущей проработки 
+                    //В реале фигура превращения идёт 5 символом
+                    if( fromto.Length > 4 ) {
+                        switch(fromto[4]) {
+                            case 'q':
+                                eMoveType = MovoTypo.PawnPromotionToQueen;
+                                break;
+                            case 'r':
+                                eMoveType = MovoTypo.PawnPromotionToRook;
+                                break;
+                            case 'b':
+                                eMoveType = MovoTypo.PawnPromotionToBishop;
+                                break;
+                            case 'n':
+                                eMoveType = MovoTypo.PawnPromotionToKnight;
+                                break;
+                            }
+                    } else {
+                        Zapret = true;
+                        ZapretDescription = "Отсутствует фигура превращения! Длина не больше 4";
+                        }
                     }
                 if( enpasso ) {
                     int popo = (whitomv ? 32 : 16) + enfield;
@@ -518,7 +538,9 @@ namespace pfVisualisator
                 eMoveType |= MovoTypo.PieceEaten;
                 }
             if (Zapret) {
-                throw new VisualisatorException("PozoUtils->DecodeFromTo, нарисовался ЗАПРЕТ");
+                string erre = string.Format("PozoUtils->DecodeFromTo({0}), нарисовался ЗАПРЕТ {1}", fromto, ZapretDescription);
+                LogoCM.OutString(erre);
+                throw new VisualisatorException(erre);
                 }
             reto = AddMoveIsNotCheck(froma, toma, eMoveType);
             reto.FormShortoString(this);

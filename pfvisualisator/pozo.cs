@@ -544,19 +544,24 @@ namespace pfVisualisator
             }
 
         /// <summary>
-        /// Модификация от 22 января 2016 года
+        /// Модификация от 25 февраля 2016 года
         /// Заложен 21 января 2016 года
         /// </summary>
         /// <returns></returns>
         private string FillAvaMoveToVanStroke() {
             string reto = string.Empty;
+            string vero = string.Empty;
+            int filda = -1;
             StringBuilder vh = new StringBuilder();
             Pieco aa = whitomv ? Pieco.White : Pieco.Black;
             Pieco isco = Pieco.King | aa;
             //Такая уверенная конструкция только для короля
-            int filda = limov.Where(F => F.Figura == isco).Select(F => F.FromField).Distinct().Single();
-            string vero = VanFigoMovaSorto(isco, filda);
-            vh.AppendLine(vero);
+            //Король иногда не имеет ни одного хода и поэтому отсутствует в данном множестве
+            if( limov.Where(F => F.Figura == isco).Count() > 0) {
+                filda = limov.Where(F => F.Figura == isco).Select(F => F.FromField).Distinct().SingleOrDefault();
+                vero = VanFigoMovaSorto(isco, filda);
+                vh.AppendLine(vero);
+                }
             for (int ii = 0; ii < 5; ii++) {
                 isco = (ii == 0 ? Pieco.Queen : (ii == 1 ? Pieco.Rook : (ii == 2 ? Pieco.Bishop : (ii == 3 ? Pieco.Knight : Pieco.Pawn)))) | aa;
                 int[] msi = limov.Where(F => F.Figura == isco).Select(F => F.FromField).Distinct().ToArray();
