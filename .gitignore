@@ -1,10 +1,11 @@
-pfVisualisator/obj/*
-pfVisualisator/bin/*
-pfTesto/obj/*
-pfTesto/bin/*
+OnlyWorko/obj/*
+OnlyWorko/bin/*
+TeVifa/obj/*
+TeVifa/bin/*
+Vifa/obj/*
+Vifa/bin/*
 TestResults/*
 *.suo
-*.vsmdi
 *.sln
 *.testsettings
 

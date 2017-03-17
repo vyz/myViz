@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestLists xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestList name="Внешнефайлозависимые" id="082b7eff-71c6-4d97-8b68-248e007998f5" parentListId="44acc462-385e-41e1-9a52-c359d3caefad">
+    <Description>Есть конкретный файл вне проекта, нужный для запуска.</Description>
+    <TestLinks>
+      <TestLink id="67193d77-2b94-ef4b-52be-aaaee77e4141" name="FullListControlTesto" storage="tevifa\bin\release\tevifa.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="e47c1d2d-8acd-b928-4f53-ec9611815130" name="pgWokaConstructorTesto" storage="tevifa\bin\release\tevifa.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+  <TestList name="Частично проверяющие" id="3b4565ce-16e8-4bfd-bf68-bba112a5f3e6" parentListId="d5193ad8-558e-4640-a1b0-0f9da8be40c4">
+    <TestLinks>
+      <TestLink id="95935955-a460-6efa-1d0d-c69a5006b894" name="AvailableFillTesto" storage="tevifa\bin\release\tevifa.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="7fd8a6fd-dd50-640c-e506-4631fb255577" name="FillVarioMovesTesto" storage="tevifa\bin\release\tevifa.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+  <TestList name="Отладочные" id="44acc462-385e-41e1-9a52-c359d3caefad" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <Description>Первый групп</Description>
+  </TestList>
+  <TestList name="Списки тестов" id="8c43106b-9dc1-4907-a29f-aa66a61bf5b6" />
+  <TestList name="Проверочные" id="d5193ad8-558e-4640-a1b0-0f9da8be40c4" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6" />
+</TestLists>
