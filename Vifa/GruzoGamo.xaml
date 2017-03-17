@@ -1,0 +1,20 @@
+﻿<Window x:Class="Vifa.GruzoGamo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:onw="clr-namespace:OnlyWorko;assembly=OnlyWorko"
+        Title="GruzoGamo" Height="374" Width="1256">
+    <Window.Resources>
+        <ObjectDataProvider x:Key="Obgo" ObjectType="{x:Type onw:pgWoka}"></ObjectDataProvider>
+    </Window.Resources>
+    <DockPanel Name="Mano" DataContext="{Binding Source={StaticResource Obgo}}">
+        <StackPanel DockPanel.Dock="Top" HorizontalAlignment="Center" Name="spForButtons" VerticalAlignment="Top" Orientation="Horizontal">
+            <Button Content="Grido" Name="GridBtn" Width="75" Click="GridBtn_Click"/>
+            <Label Name="pSdvigLb1"></Label>
+            <Button Content="SaveLog" Name="SavoBtn" Width="75" Click="SavoBtn_Click"/>
+        </StackPanel>
+        <ScrollViewer>
+            <TextBlock Name="Logo" Text="{Binding Path=LogoMesso}"></TextBlock>
+        </ScrollViewer>
+
+    </DockPanel>
+</Window>

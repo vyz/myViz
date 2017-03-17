@@ -1,0 +1,61 @@
+﻿<Window x:Class="Vifa.PozoWinda"
+        x:Name="wPozoinda"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Vifa"
+        Title="PozoWinda" Height="438" Width="1180">
+    <Grid Name="Grido">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+        <Viewbox Name="BxBoard" Grid.Column="0">
+            <local:Borda x:Name="pfBoard"></local:Borda>
+            <Viewbox.ContextMenu>
+                <ContextMenu Name="vbme">
+                    <MenuItem Header="Открыть текущую позицию в отдельном окне" Click="PosoWindo_Click"/>
+                </ContextMenu>
+            </Viewbox.ContextMenu>
+        </Viewbox>
+        <GridSplitter Name="SplitIn1" Grid.Column="1" HorizontalAlignment="Left" Width="5"></GridSplitter>
+        <StackPanel Name="GInfo" Grid.Column="1">
+            <TextBox Name="Namo" Text="{Binding Path=Namo}" HorizontalAlignment="Center" Background="AntiqueWhite"></TextBox>
+            <TextBox Name="Heado" Text="{Binding Path=BigNamo}" HorizontalAlignment="Center" Background="AntiqueWhite"></TextBox>
+            <TextBox Name="Fena" Text="{Binding Path=Fena}" ></TextBox>
+            <TextBox Name="Descro" Text="{Binding Path=Descripto}"  Background="AntiqueWhite" TextWrapping="Wrap"></TextBox>
+            <StackPanel HorizontalAlignment="Center" Name="sPanManagegViewPosition" VerticalAlignment="Top" Orientation="Horizontal">
+                <Button Content="Analizo" Name="AnaloBtn" Width="105" Click="AnaloBtn_Click" />
+                <Label Name="pSdvigLb1"></Label>
+                <Button Content="SaveXML" Name="xSavoBtn" Width="75" Click="xSavoBtn_Click" />
+            </StackPanel>
+            <StackPanel Name="spVarainto" CanVerticallyScroll="True" Orientation="Horizontal" HorizontalAlignment="Center" MinHeight="250">
+                <Button Name="pzNext"  Content="Next" Width="50" Click="pzNextBtn_Click" HorizontalAlignment="Stretch" Height="30" />
+                <Border Margin="10" Padding="10" BorderBrush="SteelBlue" BorderThickness="2" CornerRadius="5" HorizontalAlignment="Stretch">
+                    <RichTextBox Name="VibroVara" FontSize="12" MaxHeight="600" MinWidth="300" HorizontalAlignment="Center">
+                        <FlowDocument Name="FloDoca">
+                        </FlowDocument>
+                    </RichTextBox>
+                </Border>
+                <Button Name="pzPrev"  Content="Prev" Width="50" Click="pzPrevBtn_Click" HorizontalContentAlignment="Center" Height="30" />
+            </StackPanel>
+            <TextBox Name="Material" Text="{Binding Mode=OneWay, Path=Material}" HorizontalAlignment="Center"></TextBox>
+            <TextBox Name="AnaRes" Text="{Binding Path=AnaRes, Mode=OneWay}" TextChanged="AnaRes_TextChanged"></TextBox>
+            <StackPanel Name="stackPanelValues" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <DataGrid Name="ValueGrido" ItemsSource="{Binding Mode=OneWay, NotifyOnTargetUpdated=True}" AutoGenerateColumns="False" FrozenColumnCount="1" IsReadOnly="True"
+                  CanUserResizeRows="False" RowHeight="22" SelectionChanged="ValueGrido_SelectionChanged">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Цифра" Binding="{Binding Valo}" />
+                        <DataGridTextColumn Header="Ранго" Binding="{Binding Rango}" />
+                        <DataGridTextColumn Header="Мова" Binding="{Binding MovoVan}" />
+                        <DataGridTextColumn Header="Глубь" Binding="{Binding Glub}" />
+                        <DataGridTextColumn Header="Узелки" Binding="{Binding Nody}" />
+                        <DataGridTextColumn Header="Минуто" Binding="{Binding Duma}" />
+                        <DataGridTextColumn Header="Двиго" Binding="{Binding Dvigatel}" />
+                        <DataGridTextColumn Header="Дато" Binding="{Binding DatoStroke}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+            <TextBlock Name="AvaMove" Text="{Binding Path=Selfa.AvaMovo}" HorizontalAlignment="Left" FontFamily="Courier New"></TextBlock>
+        </StackPanel>
+    </Grid>       
+</Window>

@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="OnlyWorko.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LogoSwitcher" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="LogoFilo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.\LogoInfo.log</Value>
+    </Setting>
+    <Setting Name="Zapuskatel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">noHoma</Value>
+    </Setting>
+    <Setting Name="Houdini" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\Worka\Chaso\engino\Houdini3Prow32.exe</Value>
+    </Setting>
+    <Setting Name="MinoKvo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="ValuiKvo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="BidoGamos" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Password=Petro;Persist Security Info=True;User ID=Petro;Initial Catalog=Gosoma;Data Source=vyz7;</Value>
+    </Setting>
+    <Setting Name="GamoConfigoAtr" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\GamoAtro.cfg</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
