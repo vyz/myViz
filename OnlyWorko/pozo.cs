@@ -159,6 +159,34 @@ namespace OnlyWorko
             }
 
         /// <summary>
+        /// Сравнение неточное, только расположение фигур на доске
+        /// Модификация от 20 марта 2017 года
+        /// Заложен 20 марта 2017 года
+        /// </summary>
+        /// <param name="agent">Сравниваемая поза</param>
+        /// <returns>Эквивалентность</returns>
+        public bool EqualOnlyPozo(pozo agent) {
+            bool reto = false;
+            if( agent != null ) {
+                reto = (VanBoardo[0] == agent.VanBoardo[0]) && (VanBoardo[1] == agent.VanBoardo[1]);
+                }
+            return reto;
+            }
+
+        /// <summary>
+        /// Сравнение полное с учётом фени
+        /// Модификация от 20 марта 2017 года
+        /// Заложен 20 марта 2017 года
+        /// </summary>
+        /// <param name="agent">Сравниваемая поза</param>
+        /// <returns>Эквивалентность</returns>
+        /// </summary>
+        public bool EqualFullFeno(pozo agent) {
+            bool reto = EqualOnlyPozo(agent) && (bstwa == agent.TwaFeno);
+            return reto;
+            }
+
+        /// <summary>
         /// Модификация от 27 мая 2015 года
         /// Заложен 27 мая 2015 года
         /// </summary>

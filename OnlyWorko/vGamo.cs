@@ -292,7 +292,7 @@ namespace OnlyWorko {
             }
 
         /// <summary>
-        /// Модификация от 11 декабря 2016 года
+        /// Модификация от 20 марта 2017 года
         /// Заложен 11 ноября 2015 года
         /// </summary>
         /// <returns></returns>
@@ -329,7 +329,7 @@ Kg8 28. Rh5 Ne6 29. Rg1 e4 30. Nh4 a4 31. b4 Bxb4 32. Rh6 Nd4+ 33. Bxd4 Rxd4
 [BlackFideId] - [8500258]
 [BlackEloChange] - [-2]";
             reto.Descripto = "Искусственный член";
-
+            reto.Timingo = string.Empty;
             return reto;
             }
 

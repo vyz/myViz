@@ -83,7 +83,6 @@ namespace OnlyWorko {
             lipa = null;
             liqva = null;
             }
-
         
         /// <summary>
         /// Модификация от 5 февраля 2016 года

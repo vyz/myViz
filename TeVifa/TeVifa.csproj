@@ -56,6 +56,7 @@
     <Compile Include="ValuWorkaTestoU.cs" />
     <Compile Include="VarioTestoU.cs" />
     <Compile Include="vGamoTestoU.cs" />
+    <Compile Include="vPozaTestoU.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OnlyWorko\OnlyWorko.csproj">

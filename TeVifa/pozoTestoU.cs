@@ -68,22 +68,21 @@ namespace TeVifa
 
         /// <summary>
         ///Тест для Конструктор pozo(string)
-        /// Модификация от 14 декабря 2015 года
+        ///Функциональный текст 
+        /// Модификация от 20 марта 2017 года
         /// Заложен 14 декабря 2015 года
         ///</summary>
         [TestMethod()]
-        public void pozoConstructorTestoStringo()
-        {
+        public void pozoConstructorTestoStringo() {
             pozo Isko = pozo.SluchaynoPozo();
             string feno = Isko.fenout();
             pozo target = new pozo(feno);
-            Assert.AreEqual(Isko.VanBoardo[0], target.VanBoardo[0]);
-            Assert.AreEqual(Isko.VanBoardo[1], target.VanBoardo[1]);
-            Assert.AreEqual(Isko.TwaFeno, target.TwaFeno);
-        }
+            Assert.IsTrue(target.EqualFullFeno(Isko));
+            }
 
         /// <summary>
         ///Тест для Конструктор pozo(Guid[] van, int twa)
+        ///Функциональный текст 
         /// Модификация от 14 декабря 2015 года
         /// Заложен 14 декабря 2015 года
         ///</summary>

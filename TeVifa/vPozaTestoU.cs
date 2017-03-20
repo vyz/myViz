@@ -7,11 +7,11 @@ namespace TeVifa
     
     
     /// <summary>
-    ///Это класс теста для vGamoTestoU, в котором должны
-    ///находиться все модульные тесты vGamoTestoU
+    ///Это класс теста для vPozaTestoU, в котором должны
+    ///находиться все модульные тесты vPozaTestoU
     ///</summary>
     [TestClass()]
-    public class vGamoTestoU
+    public class vPozaTestoU
     {
 
 
@@ -65,19 +65,18 @@ namespace TeVifa
 
 
         /// <summary>
-        ///Тест для GetPozoOnOffset
+        ///Тест для rasschet
         /// Модификация от 20 марта 2017 года
         /// Заложен 20 марта 2017 года
         ///</summary>
         [TestMethod()]
-        public void GetPozoOnOffsetTesto()
-        {
-            vGamo target = vGamo.CreateExemplarusForLife();
-            int offseto = 24;
-            pozo expected = new pozo(new Guid[] { new Guid("43501121-0000-0010-0000-00009909cbda"), new Guid("26341011-0000-0900-0000-09009099aebc") }, 2098113);
-            pozo actual;
-            actual = target.GetPozoOnOffset(offseto);
-            Assert.IsTrue(actual.EqualFullFeno(expected));
+        public void rasschetTesto() {
+            vPoza target = new vPoza(pozo.SluchaynoPozo());
+            vlEngino ptypo = vlEngino.Houdini_3a_Pro_w32;
+            int minutka = 1;
+            int pvarqvo = 5;
+            target.rasschet(ptypo, minutka, pvarqvo);
+            Assert.IsTrue(target.AnaRes.Length > 30);
         }
     }
 }

@@ -6,6 +6,5 @@ Vifa/obj/*
 Vifa/bin/*
 TestResults/*
 *.suo
-*.sln
 *.testsettings
 
