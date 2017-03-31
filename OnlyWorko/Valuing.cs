@@ -126,7 +126,7 @@ namespace OnlyWorko {
             }
 
         /// <summary>
-        /// Модификация от 29 января 2016 года
+        /// Модификация от 21 марта 2017 года
         /// Заложен 29 января 2016 года
         /// </summary>
         /// <param name="seta">Результат анализа в виде набора строк</param>
@@ -136,45 +136,58 @@ namespace OnlyWorko {
         public void AddValuSet(List<string> seta, vlEngino ten, int dlito, int kvo) {
             int poradok = 0;
             string mosha = string.Empty;
-            foreach (string aa in seta) {
-                if (poradok == 2) {
-                    if (aa.StartsWith("info string")) {
-                        mosha += aa.Substring(11);
-                        continue;
-                    } else {
-                        break;
+
+            //Получение от двига обратной информации об используемых мощностях
+            //Её возвращают не все
+            if (ten == vlEngino.Stockfish_2_3_1_JA_64bit) {
+                mosha = "Этот " + ten.ToString() + " не сказал";
+            } else {
+                foreach (string aa in seta) {
+                    if (poradok == 2) {
+                        if (aa.StartsWith("info string")) {
+                            mosha += aa.Substring(11);
+                            continue;
+                        } else {
+                            break;
+                            }
                         }
-                } else if (poradok == 1 && aa.StartsWith("readyok") ) {
-                    poradok = 2;
-                    continue;
-                } else if( poradok == 0 && aa.StartsWith("info string") ) {
-                    mosha = aa.Substring(12);
-                    poradok = 1;
-                    continue;
-                    }
+                    else if (poradok == 1 && aa.StartsWith("readyok")) {
+                        poradok = 2;
+                        continue;
+                        }
+                    else if (poradok == 0 && aa.StartsWith("info string")) {
+                        mosha = aa.Substring(12);
+                        poradok = 1;
+                        continue;
+                        }
+                    }   
                 }
+
+            //Теперь с хвоста выбираем конкретные самые глубокие варианты    
             int kava = seta.Count;
             List<string> mano = new List<string>(kvo);
             bool vklo = false;
             for (int i = kava - 1; i > kava - 100 && i > 0; i--) {
                 if (vklo) {
-                    if (seta[i].StartsWith("info multipv")) {
+                    if (seta[i].StartsWith("info") && seta[i].Contains("multipv")) {
                         mano.Add(seta[i]);
                         continue;
                     } else {
                         break;
                         }
                 } else {
-                    if (seta[i].StartsWith("info multipv")) {
+                    if (seta[i].StartsWith("info") && seta[i].Contains("multipv")) {
                         mano.Add(seta[i]);
                         vklo = true;
                         continue;
                         }
                     }
                 }
+
             if (kvo != mano.Count) {
                 throw new myClasterException(string.Format("Valuing->AddValuSet, kvo != mano.Count --{0}--{1}--", kvo, mano.Count));
                 }
+
             string pstroke = string.Empty;
             int pvalo = 0;
             int pdep = 0;
@@ -191,7 +204,7 @@ namespace OnlyWorko {
             }
 
         /// <summary>
-        /// Модификация от 1 февраля 2016 года
+        /// Модификация от 21 марта 2017 года
         /// Заложен 1 февраля 2016 года
         /// </summary>
         /// <param name="xx">искомая строка</param>
@@ -204,7 +217,7 @@ namespace OnlyWorko {
             string reto = string.Empty;
             pvalo = pdep = prng = 0;
             pnod = 0L;
-            string patera = @"info multipv (\d+)";
+            string patera = @" multipv (\d+)";
             Match resa = Regex.Match(xx, patera);
             string rr = resa.Groups[1].Value;
             if (!int.TryParse(rr, out prng)) {
@@ -228,7 +241,7 @@ namespace OnlyWorko {
             if (!long.TryParse(rr, out pnod)) {
                 throw new myClasterException(string.Format("Valuing->AalizeVanStroke, не определил узелки --{0}--", rr));
                 }
-            patera = @"hashfull \d+ pv\s(.*)\Z";
+            patera = @" \d+ pv\s(.*)\Z";
             resa = Regex.Match(xx, patera);
             rr = resa.Groups[1].Value;
             if( rr.Length > 0 ) {
@@ -249,7 +262,8 @@ namespace OnlyWorko {
     public enum vlEngino
     {
         Houdini_3a_Pro_w32,
-        EventDateHasAnswer,
+        Komodo_TCECr_64_bit,
+        Stockfish_2_3_1_JA_64bit,
         Unknown
         }
 #endregion--------------------------------ENUM--vlEngino------------------------------

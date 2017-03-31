@@ -66,17 +66,42 @@ namespace TeVifa
 
         /// <summary>
         ///Тест для rasschet
-        /// Модификация от 20 марта 2017 года
+        /// Модификация от 21 марта 2017 года
         /// Заложен 20 марта 2017 года
         ///</summary>
         [TestMethod()]
         public void rasschetTesto() {
             vPoza target = new vPoza(pozo.SluchaynoPozo());
-            vlEngino ptypo = vlEngino.Houdini_3a_Pro_w32;
+            vlEngino ptypo = vlEngino.Stockfish_2_3_1_JA_64bit;
             int minutka = 1;
             int pvarqvo = 5;
             target.rasschet(ptypo, minutka, pvarqvo);
             Assert.IsTrue(target.AnaRes.Length > 30);
         }
+
+        /// <summary>
+        /// Тест для одновременной проверки нескольких движков
+        /// Долговременные и файлозависимые
+        /// Модификация от 22 марта 2017 года
+        /// Заложен 22 марта 2017 года
+        ///</summary>
+        [TestMethod()]
+        public void rasschetTestoBig() {
+            vPoza target = new vPoza(pozo.SluchaynoPozo());
+            int minutka = 1;
+            int pvarqvo = 5;
+            string bigflo = "bigflo.xml";
+            vlEngino ptypo = vlEngino.Stockfish_2_3_1_JA_64bit;
+            target.rasschet(ptypo, minutka, pvarqvo);
+            Assert.AreEqual(target.SetoAnalo.Count, 5);
+            ptypo = vlEngino.Komodo_TCECr_64_bit;
+            target.rasschet(ptypo, minutka, pvarqvo);
+            Assert.AreEqual(target.SetoAnalo.Count, 10);
+            ptypo = vlEngino.Houdini_3a_Pro_w32;
+            target.rasschet(ptypo, minutka, pvarqvo);
+            target.SavoInXmlFilo(bigflo);
+            Assert.AreEqual(target.SetoAnalo.Count, 15);
+            }
+
     }
 }

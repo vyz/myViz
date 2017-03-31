@@ -141,8 +141,6 @@ namespace OnlyWorko
         public string Fena { get { return ltexto[0]; } set { ltexto[0] = value; } }
         public string AnaRes { get { return ltexto[1]; } set { ltexto[1] = value; } }
         public string Descripto { get { return ltexto[2]; } set { ltexto[2] = value; } }
-//        public myTago Tago { get { return tago; } }
-//        public string TagoTextStroke { get { return tago.TStroke; } }
         public pozo Selfa { get { return poza; } }
         public List<Valuing> SetoAnalo { get { return setoanalizo; } set { setoanalizo = value; } }
         public string Material { get { return (poza == null) ? "Поза не зафиксена" : (poza.SetaWhite == poza.SetaBlack) ? "Материальное равенство" : string.Format("{0} : {1}", poza.SetaWhite, poza.SetaBlack); } }

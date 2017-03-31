@@ -39,6 +39,17 @@ namespace OnlyWorko
                 }
             }
 
+        /// <summary>
+        /// Модификация от 27 марта 2017 года
+        /// Заложен 27 марта 2017 года
+        /// </summary>
+        /// <param name="finamo">Прямое указание имени файла</param>
+        public static void initologo(string finamo) {
+            string filoname = Properties.Settings.Default.LogoFilo;
+            vf = new StreamWriter(filoname, true);
+            inya = true;
+            }
+
         public static void finitalogo() {
             if (inya) {
                 if (swa == 1) {

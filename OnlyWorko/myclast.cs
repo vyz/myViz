@@ -160,6 +160,7 @@ namespace OnlyWorko
         OKPReport = 0,
         Gamo = 201,
         Pozo = 202,
+        AnTask = 203,
         None = 10001
         }
 

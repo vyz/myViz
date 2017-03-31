@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Analya.cs" />
     <Compile Include="bido.cs" />
     <Compile Include="EngiPro.cs" />
     <Compile Include="Gamo.cs" />

@@ -63,7 +63,12 @@ namespace OnlyWorko
                 case vlEngino.Houdini_3a_Pro_w32:
                     reto = (swita == "Homa") ? Properties.Settings.Default.Houdini : @"d:\Worka\Chaso\engino\Houdini3Prow32.exe";
                     break;
-
+                case vlEngino.Komodo_TCECr_64_bit:
+                    reto = (swita == "Homa") ? Properties.Settings.Default.Houdini : @"d:\Worka\Chaso\engino\komodo-tcecr-64bit.exe";
+                    break;
+                case vlEngino.Stockfish_2_3_1_JA_64bit:
+                    reto = (swita == "Homa") ? Properties.Settings.Default.Houdini : @"d:\Worka\Chaso\engino\stockfish-231-64-ja.exe";
+                    break;
                 }
             return reto;
             }
@@ -140,8 +145,10 @@ namespace OnlyWorko
             Pro.Close();
             }
 
-        public void PrAsy()
-        {
+        /// <summary>
+        /// Модификация от 22 марта 2017 года
+        /// </summary>
+        public void PrAsy() {
 
             Process Pro;
             Pro = new Process();
@@ -149,6 +156,7 @@ namespace OnlyWorko
 
             // Set UseShellExecute to false for redirection.
             Pro.StartInfo.UseShellExecute = false;
+            Pro.StartInfo.CreateNoWindow = true;
             Pro.StartInfo.RedirectStandardInput = true;
             Pro.StartInfo.RedirectStandardOutput = true;
             Pro.OutputDataReceived += new DataReceivedEventHandler(StrOutputHandler);
@@ -160,18 +168,16 @@ namespace OnlyWorko
             StreamWriter sInpo = Pro.StandardInput;
             
 
-            foreach (string aa in sma)
-            {
+            foreach (string aa in sma) {
                 sInpo.WriteLine(aa);
-                if (aa.StartsWith("go"))
-                {
+                if (aa.StartsWith("go")) {
                     Thread.Sleep(interval);
+                    }
                 }
-            }
             sInpo.Close();
             Pro.WaitForExit();
             Pro.Close();
-        }
+            }
 
         public void ToTextFile( string fname ) {
             StreamWriter wfilo = new StreamWriter(fname);

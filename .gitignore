@@ -4,6 +4,8 @@ TeVifa/obj/*
 TeVifa/bin/*
 Vifa/obj/*
 Vifa/bin/*
+Dzobo/obj/*
+Dzobo/bin/*
 TestResults/*
 *.suo
 *.testsettings

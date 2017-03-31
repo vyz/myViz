@@ -4,7 +4,15 @@
     <Description>Есть конкретный файл вне проекта, нужный для запуска.</Description>
     <TestLinks>
       <TestLink id="67193d77-2b94-ef4b-52be-aaaee77e4141" name="FullListControlTesto" storage="tevifa\bin\release\tevifa.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="7d8e57ff-a5af-441a-8e6f-79f976e2a278" name="CreateExemplaroFromXmlFileTesto" storage="tevifa\bin\release\tevifa.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="a5d98044-bc4e-a6ec-30c4-86d70f220007" name="SavoInXmlFiloTesto" storage="tevifa\bin\release\tevifa.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       <TestLink id="e47c1d2d-8acd-b928-4f53-ec9611815130" name="pgWokaConstructorTesto" storage="tevifa\bin\release\tevifa.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    </TestLinks>
+  </TestList>
+  <TestList name="Долговременные" id="2457a1e5-0da0-40b6-b986-2419b9bf2674" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
+    <TestLinks>
+      <TestLink id="688515e0-27fb-6f01-af77-45617668f58f" name="rasschetTesto" storage="tevifa\bin\release\tevifa.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="13509792-e17f-781d-309b-f4d088be4554" name="rasschetTestoBig" storage="tevifa\bin\release\tevifa.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     </TestLinks>
   </TestList>
   <TestList name="Частично проверяющие" id="3b4565ce-16e8-4bfd-bf68-bba112a5f3e6" parentListId="d5193ad8-558e-4640-a1b0-0f9da8be40c4">

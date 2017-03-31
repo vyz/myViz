@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		pfVisualisator.vsmdi = pfVisualisator.vsmdi
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dzobo", "Dzobo\Dzobo.csproj", "{4CD6E243-E826-46BB-8354-400803F60A7F}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = pfVisualisator.vsmdi
@@ -55,6 +57,16 @@ Global
 		{A611A5B5-159F-4930-8446-A237BE818A9A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{A611A5B5-159F-4930-8446-A237BE818A9A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{A611A5B5-159F-4930-8446-A237BE818A9A}.Release|x86.ActiveCfg = Release|Any CPU
+		{4CD6E243-E826-46BB-8354-400803F60A7F}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{4CD6E243-E826-46BB-8354-400803F60A7F}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{4CD6E243-E826-46BB-8354-400803F60A7F}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{4CD6E243-E826-46BB-8354-400803F60A7F}.Debug|x86.ActiveCfg = Debug|x86
+		{4CD6E243-E826-46BB-8354-400803F60A7F}.Debug|x86.Build.0 = Debug|x86
+		{4CD6E243-E826-46BB-8354-400803F60A7F}.Release|Any CPU.ActiveCfg = Release|x86
+		{4CD6E243-E826-46BB-8354-400803F60A7F}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{4CD6E243-E826-46BB-8354-400803F60A7F}.Release|Mixed Platforms.Build.0 = Release|x86
+		{4CD6E243-E826-46BB-8354-400803F60A7F}.Release|x86.ActiveCfg = Release|x86
+		{4CD6E243-E826-46BB-8354-400803F60A7F}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
