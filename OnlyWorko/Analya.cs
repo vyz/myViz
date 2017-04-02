@@ -22,6 +22,7 @@ namespace OnlyWorko {
         string rilo;
         int orda;
         int kavo;
+        string sovokup;
         
         public Analya() { }
 
@@ -64,6 +65,16 @@ namespace OnlyWorko {
             XElement reto = new XElement("Analya");
             return reto;
         }
+
+#region--------------------------Свойства объекта-----------------------------------------
+        public int ZFirsto { get { return z1; } }
+        public int ZCommo { get { return zn; } }
+        public string Besto { get { return basta; } }
+        public string Realo { get { return rilo; } }
+        public int Ordo { get { return orda; } }
+        public int Qavo { get { return kavo; } }
+        public string Descripto { get { return sovokup; } }
+#endregion-----------------------Свойства объекта-----------------------------------------
 
         }
 #endregion-----------------------------ПЕРВИЧНЫЙ КЛАСС--Analya------------------------
@@ -170,7 +181,7 @@ namespace OnlyWorko {
         }
 
         /// <summary>
-        /// Модификация от 31 марта 2017 года
+        /// Модификация от 1 апреля 2017 года
         /// Заложен 31 марта 2017 года
         /// </summary>
         /// <param name="outposodir">Каталог для складывания проанализированных позиций. Уже существует. Не проверяется на житие.</param>
@@ -180,16 +191,28 @@ namespace OnlyWorko {
             Mova cumv = subjo.Gamma.ListoMovo[mvc-1];
             vPoza wrk = new vPoza(subjo.Gamma.ListoPozo[mvc], subjo.BigNamo);
             wrk.Descripto = string.Format("Создана {0} при автоанализе {1} для партии {2}", DateTime.Now.ToString(), LeoGuid.ToString(), subjo.LeoGuid.ToString());
+            if( dstaro == null ) { dstaro = DateTime.Now; }
             wrk.rasschet(wen, timo, qvaro);
             int oldpz1, oldpzn;
-            if (lenya == null || lenya.Count == 0) { oldpz1 = oldpzn = 0; }
+            if (lenya == null || lenya.Count == 0)  { 
+                oldpz1 = oldpzn = 0;
+                lenya = new List<Analya>();
+            } else {
+                oldpz1 = lenya[lenya.Count-1].ZFirsto;
+                oldpzn = lenya[lenya.Count-1].ZCommo;
+                }
+            Analya aly = new Analya(wrk.SetoAnalo, oldpz1, oldpzn, cumv);
+            lenya.Add(aly);
+            if (mvc == mvf)
+            {
+                ready = true;
+                dready = DateTime.Now;
+            }
             else
             {
-                oldpz1 = 1;
-                oldpzn = 1;
-            }
-            Analya aly = new Analya(wrk.SetoAnalo, oldpz1, oldpzn, cumv);
+                mvc++; 
 
+            }
             return reto;
             }
 
