@@ -9,7 +9,8 @@ namespace Dzobo
     {
         static void Main(string[] args)
         {
-            
+            JoWorker wk = new JoWorker();
+            wk.runo();
         }
     }
 }

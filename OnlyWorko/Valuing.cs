@@ -204,7 +204,7 @@ namespace OnlyWorko {
             }
 
         /// <summary>
-        /// Модификация от 21 марта 2017 года
+        /// Модификация от 7 апреля 2017 года
         /// Заложен 1 февраля 2016 года
         /// </summary>
         /// <param name="xx">искомая строка</param>
@@ -232,7 +232,15 @@ namespace OnlyWorko {
             patera = @"score cp (-?\d+)";
             resa = Regex.Match(xx, patera);
             rr = resa.Groups[1].Value;
-            if (!int.TryParse(rr, out pvalo)) {
+            if (rr == "") {
+                patera = @"score mate (-?\d+)";
+                resa = Regex.Match(xx, patera);
+                rr = resa.Groups[1].Value;
+                if (!int.TryParse(rr, out pvalo)) {
+                    throw new myClasterException(string.Format("Valuing->AalizeVanStroke, не смог понять во сколько ходов мат --{0}--", rr));
+                    }
+                pvalo = (pvalo > 0) ? 333000 + pvalo : 444000 - pvalo;
+            } else if (!int.TryParse(rr, out pvalo)) {
                 throw new myClasterException(string.Format("Valuing->AalizeVanStroke, не определил цифровую оценку --{0}--", rr));
                 }
             patera = @"nodes (\d+)";

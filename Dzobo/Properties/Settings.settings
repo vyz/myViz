@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Dzobo.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="huro" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="mina" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="diga" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\tempo\517</Value>
+    </Setting>
+    <Setting Name="dipo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\tempo\517\posoout</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

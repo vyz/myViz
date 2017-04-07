@@ -49,6 +49,7 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnalyaTestoU.cs" />
     <Compile Include="GamoTestoU.cs" />
     <Compile Include="GanaTestoU.cs" />
     <Compile Include="pgWokaTestoU.cs" />

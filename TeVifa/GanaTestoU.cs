@@ -1,6 +1,7 @@
 ﻿using OnlyWorko;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Xml.Linq;
 
 namespace TeVifa
 {
@@ -109,16 +110,33 @@ namespace TeVifa
         [DeploymentItem("OnlyWorko.dll")]
         public void OdinRazTesto()
         {
-            vGamo elemo = vGamo.CreateExempWithVariantoAndComments();
-            elemo.EtaloCreate();
-            int nmc = 11;
-            int fino = elemo.Gamma.ListoMovo.Count;
-            Gana_Accessor target = new Gana_Accessor(elemo, nmc, fino);
+            string filoanal = @"D:\tempo\517\43a1cda558264c81967c13c2eff2b5a9.xml";
             string outposodir = @"D:\tempo\517\posoout";
+            XDocument doca = XDocument.Load(filoanal);
+            Gana_Accessor target = new Gana_Accessor(doca.Element("Gana").Element("Leo"));
+            target.FullNamoFile = filoanal;
+            target.Grusha.EtaloCreate();
             bool expected = true;
             bool actual;
             actual = target.OdinRaz(outposodir);
             Assert.AreEqual(expected, actual);
         }
+
+        /// <summary>
+        /// Тест для Worko - файлозависимый и долговременный
+        /// Модификация от 5 апреля 2017 года
+        /// Заложен 5 апреля 2017 года
+        ///</summary>
+        [TestMethod()]
+        public void WorkoTesto() {
+            string filoanal = @"D:\tempo\517\43a1cda558264c81967c13c2eff2b5a9.xml";
+            string outposodir = @"D:\tempo\517\posoout";
+            Gana target = Gana.CreateExemplaroFromXmlFile(filoanal);
+            TimeSpan tamo = new TimeSpan(0, 20, 0);
+            bool expected = false;
+            bool actual;
+            actual = target.Worko(tamo, outposodir);
+            Assert.AreEqual(expected, actual);
+            }
+        }
     }
-}

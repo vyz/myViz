@@ -45,8 +45,8 @@ namespace OnlyWorko
         /// </summary>
         /// <param name="finamo">Прямое указание имени файла</param>
         public static void initologo(string finamo) {
-            string filoname = Properties.Settings.Default.LogoFilo;
-            vf = new StreamWriter(filoname, true);
+            vf = new StreamWriter(finamo, true);
+            swa = 1;
             inya = true;
             }
 
