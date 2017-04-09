@@ -87,14 +87,15 @@ namespace TeVifa
         /// <summary>
         /// Тест для CreateExemplaroFromXmlFile
         /// Отладочный файлозависимый
-        /// Модификация от 30 марта 2017 года
+        /// Модификация от 9 апреля 2017 года
         /// Заложен 30 марта 2017 года
         ///</summary>
         [TestMethod()]
         public void CreateExemplaroFromXmlFileTesto() {
-            string filo = @"D:\tempo\517\43a1cda558264c81967c13c2eff2b5a9.xml";
+            bool WhereWorking = Properties.Settings.Default.Zapuskatel == "Homa";
+            string filo = WhereWorking ? @"E:\Chess\ksamalo\dda1cda558264c81967c13c2eff2b5a9.xml" : @"D:\tempo\517\43a1cda558264c81967c13c2eff2b5a9.xml";
             Gana target;
-            int actual = 52;
+            int actual = WhereWorking ? 103 : 52;
             target = Gana.CreateExemplaroFromXmlFile(filo);
             vGamo vv = target.Grusha;
             vv.EtaloCreate();
@@ -103,15 +104,16 @@ namespace TeVifa
 
         /// <summary>
         /// Тест для OdinRaz
-        /// Модификация от 31 марта 2017 года
+        /// Модификация от 9 апреля 2017 года
         /// Заложен 31 марта 2017 года
         /// </summary>
         [TestMethod()]
         [DeploymentItem("OnlyWorko.dll")]
         public void OdinRazTesto()
         {
-            string filoanal = @"D:\tempo\517\43a1cda558264c81967c13c2eff2b5a9.xml";
-            string outposodir = @"D:\tempo\517\posoout";
+            bool WhereWorking = Properties.Settings.Default.Zapuskatel == "Homa";
+            string filoanal = WhereWorking ? @"E:\Chess\ksamalo\dda1cda558264c81967c13c2eff2b5a9.xml" : @"D:\tempo\517\43a1cda558264c81967c13c2eff2b5a9.xml";
+            string outposodir =  WhereWorking ? @"E:\Chess\ksamalo\posoout" : @"D:\tempo\517\posoout";
             XDocument doca = XDocument.Load(filoanal);
             Gana_Accessor target = new Gana_Accessor(doca.Element("Gana").Element("Leo"));
             target.FullNamoFile = filoanal;
@@ -124,13 +126,14 @@ namespace TeVifa
 
         /// <summary>
         /// Тест для Worko - файлозависимый и долговременный
-        /// Модификация от 5 апреля 2017 года
+        /// Модификация от 9 апреля 2017 года
         /// Заложен 5 апреля 2017 года
         ///</summary>
         [TestMethod()]
         public void WorkoTesto() {
-            string filoanal = @"D:\tempo\517\43a1cda558264c81967c13c2eff2b5a9.xml";
-            string outposodir = @"D:\tempo\517\posoout";
+            bool WhereWorking = Properties.Settings.Default.Zapuskatel == "Homa";
+            string filoanal = WhereWorking ? @"E:\Chess\ksamalo\dda1cda558264c81967c13c2eff2b5a9.xml" : @"D:\tempo\517\43a1cda558264c81967c13c2eff2b5a9.xml";
+            string outposodir = WhereWorking ? @"E:\Chess\ksamalo\posoout" : @"D:\tempo\517\posoout";
             Gana target = Gana.CreateExemplaroFromXmlFile(filoanal);
             TimeSpan tamo = new TimeSpan(0, 20, 0);
             bool expected = false;

@@ -9,10 +9,10 @@
       <Value Profile="(Default)">.\LogoInfo.log</Value>
     </Setting>
     <Setting Name="Zapuskatel" Type="System.String" Scope="User">
-      <Value Profile="(Default)">noHoma</Value>
+      <Value Profile="(Default)">Homa</Value>
     </Setting>
     <Setting Name="Houdini" Type="System.String" Scope="User">
-      <Value Profile="(Default)">D:\Worka\Chaso\engino\Houdini3Prow32.exe</Value>
+      <Value Profile="(Default)">E:\Chess\engine\Houdini3Prow32.exe</Value>
     </Setting>
     <Setting Name="MinoKvo" Type="System.String" Scope="User">
       <Value Profile="(Default)">5</Value>
