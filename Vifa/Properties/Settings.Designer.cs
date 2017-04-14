@@ -58,5 +58,17 @@ namespace Vifa.Properties {
                 this["ValuiKvo"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\tempo\\517")]
+        public string AnaloyDir {
+            get {
+                return ((string)(this["AnaloyDir"]));
+            }
+            set {
+                this["AnaloyDir"] = value;
+            }
+        }
     }
 }

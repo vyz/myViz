@@ -29,6 +29,7 @@
                 <ContextMenu Name="cme">
                     <MenuItem Header="Сохранить текущий набор в XML файле" Click="SavoXMLListo_Click"/>
                     <MenuItem Header="Сохранить выбранные элементы в БД" Click="SavoBDMultiSelect_Click"/>
+                    <MenuItem Header="Создать джобу для анализа" Click="SavoXMLOdnaForAnalizo"/>
                 </ContextMenu>
             </DataGrid.ContextMenu>
         </DataGrid>

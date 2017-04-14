@@ -68,6 +68,25 @@ namespace Vifa
             }
 
         /// <summary>
+        /// Модификация от 11 апреля 2017 года
+        /// Заложен 11 апреля 2017 года
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SavoXMLOdnaForAnalizo(object sender, RoutedEventArgs e)
+        {
+            vGamo aa = (vGamo)this.GamoGrido.CurrentItem;
+            if (!(aa == null)) {
+                string catalogo = Properties.Settings.Default.AnaloyDir;
+                aa.EtaloCreate();
+                Gana target = new Gana(aa, 15, aa.Gamma.ListoMovo.Count);
+                target.SavoInXmlFilo(catalogo);
+
+            }
+        }
+
+
+        /// <summary>
         /// Модификация от 18 ноября 2015 года
         /// Заложен 18 ноября 2015 года
         /// </summary>

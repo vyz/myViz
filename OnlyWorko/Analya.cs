@@ -377,13 +377,13 @@ namespace OnlyWorko {
             }
 
         /// <summary>
-        /// Модификация от 5 апреля 2017 года
+        /// Модификация от 12 апреля 2017 года
         /// Заложен 30 марта 2017 года
         /// </summary>
         private void PodyemDatov() {
             if(ltexto[2].Length > 0) { dcreato = DateTime.Parse(ltexto[2]); }
             if (ltexto[3].Length > 0) { dstaro = DateTime.Parse(ltexto[3]); } else { dstaro = DateTime.MinValue; }
-            if (ltexto[4].Length > 0) { dready = DateTime.Parse(ltexto[4]); } else { dready = DateTime.MinValue; }
+            if (ltexto[4].Length > 0) { dready = DateTime.Parse(ltexto[4]); ready = true; } else { dready = DateTime.MinValue; ready = false; }
             }
 
 #region--------------------------Свойства объекта-----------------------------------------

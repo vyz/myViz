@@ -112,7 +112,7 @@ namespace TeVifa
         public void OdinRazTesto()
         {
             bool WhereWorking = Properties.Settings.Default.Zapuskatel == "Homa";
-            string filoanal = WhereWorking ? @"E:\Chess\ksamalo\dda1cda558264c81967c13c2eff2b5a9.xml" : @"D:\tempo\517\43a1cda558264c81967c13c2eff2b5a9.xml";
+            string filoanal = WhereWorking ? @"E:\Chess\ksamalo\dda1cda558264c81967c13c2eff2b5a9.xml" : @"D:\tempo\517\2c684bccf7044713b15f973d129098b5.xml";
             string outposodir =  WhereWorking ? @"E:\Chess\ksamalo\posoout" : @"D:\tempo\517\posoout";
             XDocument doca = XDocument.Load(filoanal);
             Gana_Accessor target = new Gana_Accessor(doca.Element("Gana").Element("Leo"));

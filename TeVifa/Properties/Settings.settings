@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="Zapuskatel" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Homa</Value>
+      <Value Profile="(Default)">noHoma</Value>
     </Setting>
   </Settings>
 </SettingsFile>
