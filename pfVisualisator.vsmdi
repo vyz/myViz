@@ -29,11 +29,12 @@
   <TestList name="Списки тестов" id="8c43106b-9dc1-4907-a29f-aa66a61bf5b6" />
   <TestList name="Проверочные" id="d5193ad8-558e-4640-a1b0-0f9da8be40c4" parentListId="8c43106b-9dc1-4907-a29f-aa66a61bf5b6">
     <TestLinks>
-      <TestLink id="616848f2-539b-1ad6-043f-6847e0766cf1" name="AnalyaConstructorTesto" storage="tevifa\bin\release\tevifa.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="5e91e2a4-54a5-db88-06c4-f26ae9d8d94a" name="pozoConstructorTestoStringo" storage="tevifa\bin\release\tevifa.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       <TestLink id="f8cc507d-e37d-976a-516d-4d50eddcf50a" name="GetPozoOnOffsetTesto" storage="tevifa\bin\release\tevifa.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       <TestLink id="0659d718-36a9-493f-c63e-6f1253bef8c0" name="pozoConstructorTestoTwoVanoFeno" storage="tevifa\bin\release\tevifa.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="616848f2-539b-1ad6-043f-6847e0766cf1" name="AnalyaConstructorTesto" storage="tevifa\bin\release\tevifa.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <TestLink id="129b105f-241e-f594-9b7b-9fd0fed84bc5" name="VarioConstructorTesto" storage="tevifa\bin\release\tevifa.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       <TestLink id="1763a3a9-4d6a-6f66-1dd4-a0e2a63d2fff" name="AnalizeVanStrokeTesto" storage="tevifa\bin\release\tevifa.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-      <TestLink id="5e91e2a4-54a5-db88-06c4-f26ae9d8d94a" name="pozoConstructorTestoStringo" storage="tevifa\bin\release\tevifa.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     </TestLinks>
   </TestList>
 </TestLists>

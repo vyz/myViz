@@ -126,7 +126,7 @@ namespace OnlyWorko {
             }
 
         /// <summary>
-        /// Модификация от 21 марта 2017 года
+        /// Модификация от 25 апреля 2017 года
         /// Заложен 29 января 2016 года
         /// </summary>
         /// <param name="seta">Результат анализа в виде набора строк</param>
@@ -185,6 +185,9 @@ namespace OnlyWorko {
                 }
 
             if (kvo != mano.Count) {
+                for (int i = kava - 25; i < kava; i++) {
+                    LogoCM.OutString(string.Format("Valuing->AddValuSet->Nabor :: {0} :: {1}", i, seta[i]));  
+                    }
                 throw new myClasterException(string.Format("Valuing->AddValuSet, kvo != mano.Count --{0}--{1}--", kvo, mano.Count));
                 }
 
