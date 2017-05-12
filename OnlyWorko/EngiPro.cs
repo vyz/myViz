@@ -146,7 +146,7 @@ namespace OnlyWorko
             }
 
         /// <summary>
-        /// Модификация от 11 апреля 2017 года
+        /// Модификация от 11 мая 2017 года
         /// Заложен в феврале 2016 года
         /// </summary>
         public void PrAsy() {
@@ -162,8 +162,7 @@ namespace OnlyWorko
             Pro.StartInfo.RedirectStandardOutput = true;
             Pro.OutputDataReceived += new DataReceivedEventHandler(StrOutputHandler);
 
-            try
-            {
+            try {
                 Pro.Start();
                 Pro.BeginOutputReadLine();
 
@@ -171,23 +170,22 @@ namespace OnlyWorko
                 StreamWriter sInpo = Pro.StandardInput;
 
 
-                foreach (string aa in sma)
-                {
+                foreach (string aa in sma) {
                     sInpo.WriteLine(aa);
-                    if (aa.StartsWith("go"))
-                    {
+                    if (aa.StartsWith("go")) {
+                        LogoCM.OutString(string.Format("EngiPro->PrAsy:После go Pro.Id:{0} Pro.Handle:{1}", Pro.Id, Pro.Handle));
                         Thread.Sleep(interval);
+                        }
                     }
-                }
                 sInpo.Close();
                 Pro.WaitForExit();
+                Thread.Sleep(new TimeSpan(0,0,5));
+                LogoCM.OutString(string.Format("EngiPro->PrAsy->Новый слип Pro.Id:{0} Pro.Handle:{1}", Pro.Id, Pro.Handle));
                 Pro.Close();
-            }
-            catch (Exception ex)
-            {
+            } catch (Exception ex) {
                 LogoCM.OutString(string.Format(@"EngiPro->Processo->PrAsy :: модуль {0} -- проблема {1}", filomodul, ex.Message));
                 throw new myClasterException(@"EngiPro->Processo->PrAsy :: модуль " + filomodul, ex);
-            }
+                }
             }
 
         public void ToTextFile( string fname ) {
