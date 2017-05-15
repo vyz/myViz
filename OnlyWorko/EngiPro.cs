@@ -178,9 +178,15 @@ namespace OnlyWorko
                         }
                     }
                 sInpo.Close();
-                Pro.WaitForExit();
-                Thread.Sleep(new TimeSpan(0,0,5));
-                LogoCM.OutString(string.Format("EngiPro->PrAsy->Новый слип Pro.Id:{0} Pro.Handle:{1}", Pro.Id, Pro.Handle));
+                int itimo = 3000;
+                for (int i = 10; i > 0; i--) {
+                    bool zeta = Pro.WaitForExit(itimo);
+                    if (zeta) {
+                        LogoCM.OutString(string.Format("EngiPro->PrAsy->Не кончили сходу i = {0} Pro.Id:{1} Pro.Handle:{2}", i, Pro.Id, Pro.Handle));
+                    } else {
+                        break;
+                        }
+                    }
                 Pro.Close();
             } catch (Exception ex) {
                 LogoCM.OutString(string.Format(@"EngiPro->Processo->PrAsy :: модуль {0} -- проблема {1}", filomodul, ex.Message));
