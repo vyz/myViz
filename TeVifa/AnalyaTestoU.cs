@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Xml.Linq;
+using System.Collections.Generic;
 
 namespace TeVifa
 {
@@ -81,6 +82,24 @@ namespace TeVifa
                                                   );
             Analya target = new Analya(xel);
             Assert.AreEqual(target.FFPoso, @"D:\tempo\517\posoout\43a1cda558264c81967c13c2eff2b5a9_011.rdy");
+        }
+
+        /// <summary>
+        /// Проверочный тест для Конструктор Analya на основе расчёта
+        /// с использованием пяти линий вариантов и дополнительных параметров, эмулирующих реалии
+        /// Модификация от 17 мая 2017 года
+        /// Заложен 17 мая 2017 года
+        ///</summary>
+        [TestMethod()]
+        public void AnalyaConstructorTesto1()
+        {
+            List<Valuing> rda = Valuing.GetoDeboFivaList(); // TODO: инициализация подходящего значения
+            int pz1old = 0; // TODO: инициализация подходящего значения
+            int pznold = 0; // TODO: инициализация подходящего значения
+            Mova pmvr = null; // TODO: инициализация подходящего значения
+            string pffp = string.Empty; // TODO: инициализация подходящего значения
+            Analya target = new Analya(rda, pz1old, pznold, pmvr, pffp);
+            Assert.Inconclusive("TODO: реализуйте код для проверки целевого объекта");
         }
     }
 }

@@ -29,7 +29,7 @@ namespace OnlyWorko {
         public Analya() { }
 
         /// <summary>
-        /// Модификация от 5 апреля 2017 года
+        /// Модификация от 19 мая 2017 года
         /// Заложен 27 марта 2017 года
         /// </summary>
         /// <param name="rda">Набор анализов</param>

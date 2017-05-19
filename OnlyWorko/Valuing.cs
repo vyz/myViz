@@ -103,6 +103,26 @@ namespace OnlyWorko {
 
 #endregion-----------------------Свойства объекта-----------------------------------------
 
+        /// <summary>
+        /// Модификация от 18 мая 2017 года
+        /// Заложен 18 мая 2017 года
+        /// </summary>
+        /// <returns></returns>
+        static public List<Valuing> GetoDeboFivaList()
+        {
+            List<Valuing> reto = new List<Valuing>(5);
+            pozo pp = new pozo(@"4n2Q/pb1p1kp1/5p1B/1p6/3P3R/Pq4N1/6rP/2R2K2 w - - 2 26");
+            vlEngino ten = vlEngino.Houdini_3a_Pro_w32;
+            int dlito = 2;
+            string pmo = "4 processor(s) found, POPCNT available 512 MB Hash 3 threads used";
+            long pnod = 5;
+            reto.Add(new Valuing(pp, "", ten, 0, dlito, 2, pnod, 1, pmo));
+            reto.Add(new Valuing(pp, "", ten, 0, dlito, 2, pnod, 2, pmo));
+            reto.Add(new Valuing(pp, "", ten, 0, dlito, 2, pnod, 3, pmo));
+            reto.Add(new Valuing(pp, "", ten, 0, dlito, 2, pnod, 4, pmo));
+            reto.Add(new Valuing(pp, "", ten, 0, dlito, 2, pnod, 5, pmo));
+            return reto;
+        }
         }
 #endregion-----------------------------ПЕРВИЧНЫЙ КЛАСС--Valuing------------------------
 
@@ -242,7 +262,7 @@ namespace OnlyWorko {
                 if (!int.TryParse(rr, out pvalo)) {
                     throw new myClasterException(string.Format("Valuing->AalizeVanStroke, не смог понять во сколько ходов мат --{0}--", rr));
                     }
-                pvalo = (pvalo > 0) ? 333000 + pvalo : 444000 - pvalo;
+                pvalo = (pvalo > 0) ? 333000 + pvalo : pvalo - 333000;
             } else if (!int.TryParse(rr, out pvalo)) {
                 throw new myClasterException(string.Format("Valuing->AalizeVanStroke, не определил цифровую оценку --{0}--", rr));
                 }

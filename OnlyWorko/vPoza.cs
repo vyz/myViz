@@ -98,7 +98,7 @@ namespace OnlyWorko
             }
 
         /// <summary>
-        /// Модификация от 28 февраля 2017 года
+        /// Модификация от 19 мая 2017 года
         /// Заложен 9 февраля 2016 года
         /// </summary>
         /// <param name="ptypo"></param>
@@ -110,7 +110,7 @@ namespace OnlyWorko
                 EngiPro aa = new EngiPro(this, ptypo, minutka, pvarqvo);
                 aa.Analase();
                 if (setoanalizo.Count > 0) {
-                    setoanalizo = setoanalizo.OrderByDescending(F => F.Valo).ToList();
+                    setoanalizo = setoanalizo.OrderByDescending(F => F.Valo).ThenBy(F => F.Rango).ToList();
                     AnaRes = setoanalizo[0].Texa;
                     OnPropertyChanged("Anares");
                     OnPropertyChanged("SetoAnalo");
