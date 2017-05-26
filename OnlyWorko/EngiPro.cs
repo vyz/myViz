@@ -7,8 +7,8 @@ using System.Threading;
 using System.Diagnostics;
 
 
-namespace OnlyWorko
-{
+namespace OnlyWorko {
+#region--------------------------------ПЕРВИЧНЫЙ КЛАСС--EngiPro------------------------
     /// <summary>
     /// Модификация от 8 февраля 2016 года
     /// Заложен 8 февраля 2016 года
@@ -37,16 +37,24 @@ namespace OnlyWorko
             }
 
         /// <summary>
-        /// Модификация от 9 февраля 2016 года
+        /// Модификация от 24 мая 2017 года
         /// Заложен 9 февраля 2016 года
         /// </summary>
         public void Analase() {
-            ppm.PrAsy();
+            int antycykl = 10;
             ValuWorka target = new ValuWorka(wrka.Selfa);
-            target.AddValuSet(ppm.NaboroStroke(), dvig, minqvo, varqvo);
-            if (null == wrka.SetoAnalo) {
-                wrka.SetoAnalo = target.LiValus;
-            } else { wrka.SetoAnalo.AddRange(target.LiValus); 
+            for (; antycykl > 0; antycykl--) {
+                ppm.PrAsy();
+                if (target.AddValuSet(ppm.NaborStrok, dvig, minqvo, varqvo)) { break; }
+                }
+            if (antycykl > 0) {
+                if (null == wrka.SetoAnalo) {
+                    wrka.SetoAnalo = target.LiValus;
+                } else {
+                    wrka.SetoAnalo.AddRange(target.LiValus);
+                    }
+            } else {
+                throw new myClasterException(string.Format("EngiPro->Analase, antycykl --{0}--", antycykl));
                 }
             }
 
@@ -95,13 +103,16 @@ namespace OnlyWorko
             return rret.ToArray();
             }
         }
+#endregion-----------------------------ПЕРВИЧНЫЙ КЛАСС--EngiPro------------------------
 
-
+#region--------------------------------ДРУГОЙ КЛАСС--Processo--------------------------
     public class Processo {
         private StringBuilder strOutput;
         private TimeSpan interval;
         private string filomodul;
         private string[] sma;
+        private string[] vykhod;
+        bool nevpervoy;
 
         /// <summary>
         /// vjlj
@@ -114,6 +125,7 @@ namespace OnlyWorko
             interval = new TimeSpan(0, qvomin, 0);
             sma = pcmd;
             strOutput = new StringBuilder();
+            nevpervoy = false;
             }
 
         public void PrSyn() {
@@ -161,7 +173,9 @@ namespace OnlyWorko
             Pro.StartInfo.RedirectStandardInput = true;
             Pro.StartInfo.RedirectStandardOutput = true;
             Pro.OutputDataReceived += new DataReceivedEventHandler(StrOutputHandler);
-
+            if (nevpervoy) {
+                LogoCM.OutString(string.Format("EngiPro->PrAsy:Невпервой Pro.Id:{0} Pro.Handle:{1} HandleCount{2}", Pro.Id, Pro.Handle, Pro.HandleCount));
+                }
             try {
                 Pro.Start();
                 Pro.BeginOutputReadLine();
@@ -188,10 +202,12 @@ namespace OnlyWorko
                         }
                     }
                 Pro.Close();
+                NaboroStroke();
             } catch (Exception ex) {
                 LogoCM.OutString(string.Format(@"EngiPro->Processo->PrAsy :: модуль {0} -- проблема {1}", filomodul, ex.Message));
                 throw new myClasterException(@"EngiPro->Processo->PrAsy :: модуль " + filomodul, ex);
                 }
+            nevpervoy = true;
             }
 
         public void ToTextFile( string fname ) {
@@ -203,14 +219,12 @@ namespace OnlyWorko
             }
 
         /// <summary>
-        /// Модификация от 8 февраля 2016 года
+        /// Модификация от 24 мая 2017 года
         /// Заложен 8 февраля 2016 года
         /// </summary>
-        /// <returns></returns>
-        public List<string> NaboroStroke() {
+        private void NaboroStroke() {
             string [] bb = { Environment.NewLine, };
-            string[] aa = this.strOutput.ToString().Split(bb, StringSplitOptions.RemoveEmptyEntries);
-            return aa.ToList();
+            vykhod = this.strOutput.ToString().Split(bb, StringSplitOptions.RemoveEmptyEntries);
             }
 
         private void StrOutputHandler( object sendingProcess, DataReceivedEventArgs outLine ) {
@@ -219,6 +233,8 @@ namespace OnlyWorko
                 }
             }
 
+        public List<string> NaborStrok { get { return vykhod.ToList(); } }
         }
-    }
+#endregion-----------------------------ДРУГОЙ КЛАСС--Processo--------------------------
+}
 

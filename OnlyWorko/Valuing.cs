@@ -153,7 +153,9 @@ namespace OnlyWorko {
         /// <param name="ten">Тип двигателя</param>
         /// <param name="dlito">Время расчёта в минутах</param>
         /// <param name="kvo">Количество оцениваемых ходов</param>
-        public void AddValuSet(List<string> seta, vlEngino ten, int dlito, int kvo) {
+        /// <returns>Ложь при плохом наборе</returns>
+        public bool AddValuSet(List<string> seta, vlEngino ten, int dlito, int kvo) {
+            bool reto = false;
             int poradok = 0;
             string mosha = string.Empty;
 
@@ -208,7 +210,8 @@ namespace OnlyWorko {
                 for (int i = kava - 25; i < kava; i++) {
                     LogoCM.OutString(string.Format("Valuing->AddValuSet->Nabor :: {0} :: {1}", i, seta[i]));  
                     }
-                throw new myClasterException(string.Format("Valuing->AddValuSet, kvo != mano.Count --{0}--{1}--", kvo, mano.Count));
+                return reto;
+                //throw new myClasterException(string.Format("Valuing->AddValuSet, kvo != mano.Count --{0}--{1}--", kvo, mano.Count));
                 }
 
             string pstroke = string.Empty;
@@ -222,7 +225,8 @@ namespace OnlyWorko {
                 if (lival == null) { lival = new List<Valuing>(); }
                 lival.Add(vv);
                 }
-
+            reto = true;
+            return reto;
             //Еще нужна проверка на схлопывание вариантов
             }
 
