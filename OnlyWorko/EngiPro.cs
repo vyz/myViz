@@ -72,7 +72,7 @@ namespace OnlyWorko {
                     reto = (swita == "Homa") ? Properties.Settings.Default.Houdini : @"d:\Worka\Chaso\engino\Houdini3Prow32.exe";
                     break;
                 case vlEngino.Komodo_TCECr_64_bit:
-                    reto = (swita == "Homa") ? Properties.Settings.Default.Houdini : @"d:\Worka\Chaso\engino\komodo-tcecr-64bit.exe";
+                    reto = (swita == "Homa") ? Properties.Settings.Default.Komodo : @"d:\Worka\Chaso\engino\komodo-tcecr-64bit.exe";
                     break;
                 case vlEngino.Stockfish_2_3_1_JA_64bit:
                     reto = (swita == "Homa") ? Properties.Settings.Default.Houdini : @"d:\Worka\Chaso\engino\stockfish-231-64-ja.exe";
