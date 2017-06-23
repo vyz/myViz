@@ -5,11 +5,10 @@ using System.Text;
 using System.Data.SqlClient;
 using System.Xml.Linq;
 
-namespace OnlyWorko
-{
-    public class bido
-    {
+namespace OnlyWorko {
+    public sealed class bido : IDisposable {
         SqlConnection conq;
+        bool isDisposed = false;
 
         public bido() {
             string constr = Properties.Settings.Default.BidoGamos;
@@ -37,6 +36,20 @@ namespace OnlyWorko
             }
 
         /// <summary>
+        /// Модификация от 22 июня 2017 года
+        /// Заложен 22 июня 2017 года
+        /// </summary>
+        public void Dispose() {
+            if (isDisposed) {
+                return;
+                }
+            if (null != conq) {
+                conq.Close();
+                }
+            isDisposed = true;
+            }
+
+        /// <summary>
         /// Модификация от 17 декабря 2014 года
         /// Заложен 17 декабря 2014 года
         /// </summary>
@@ -45,10 +58,11 @@ namespace OnlyWorko
         public List<string> GetRepoStartSet(string gvido)
         {
             List<string> rlist = new List<string>();
+            SqlCommand cmd = null;
             try
             {
                 conq.Open();
-                SqlCommand cmd = new SqlCommand(@"SELECT pointa, Name, scriptFileName, Comment, query, Comto
+                cmd = new SqlCommand(@"SELECT pointa, Name, scriptFileName, Comment, query, Comto
                                                   FROM RepoTri
                                                   where uid = convert(uniqueidentifier, @pgvido)", conq);
                 cmd.CommandType = System.Data.CommandType.Text;
@@ -77,6 +91,7 @@ namespace OnlyWorko
             }
             finally
             {
+                cmd.Dispose();
                 conq.Close();
             }
             return rlist;
@@ -89,9 +104,10 @@ namespace OnlyWorko
         /// <param name="pp"></param>
         public void PutLeoRecord(myclast pp)
         {
+            SqlCommand cmd = null;
             try {
                 conq.Open();
-                SqlCommand cmd = new SqlCommand("OBG.ObagoAddRecord", conq);
+                cmd = new SqlCommand("OBG.ObagoAddRecord", conq);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@pGvido", pp.LeoGuid);
                 cmd.Parameters.AddWithValue("@pTypo", pp.LeoTypo.ToString()); 
@@ -102,6 +118,7 @@ namespace OnlyWorko
                 Console.WriteLine(exa.Message);
                 }
             finally {
+                cmd.Dispose();
                 conq.Close();
                 }
             }
@@ -114,9 +131,11 @@ namespace OnlyWorko
         /// <returns></returns>
         public int PutGamoGam(vGamo pp) {
             int reto = 0;
-            try {
+            SqlCommand cmd = null;
+            try
+            {
                 conq.Open();
-                SqlCommand cmd = new SqlCommand("Gam.pPutGamosiko", conq);
+                cmd = new SqlCommand("Gam.pPutGamosiko", conq);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@pgvido", pp.LeoGuid);
                 cmd.Parameters.AddWithValue("@pwplayer", pp.White);
@@ -165,6 +184,7 @@ namespace OnlyWorko
             } catch (SqlException exa) {
                 Console.WriteLine(exa.Message);
             } finally {
+                cmd.Dispose();
                 conq.Close();
                 }
             return reto;
@@ -177,9 +197,11 @@ namespace OnlyWorko
         /// <param name="gg"></param>
         /// <param name="pp"></param>
         public void PutGamoPozo(Guid gg, pozo pp) {
-            try {
+            SqlCommand cmd = null;
+            try
+            {
                 conq.Open();
-                SqlCommand cmd = new SqlCommand("Gam.pPutPosoSet", conq);
+                cmd = new SqlCommand("Gam.pPutPosoSet", conq);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@pgvido", gg);
                 cmd.Parameters.AddWithValue("@pnumo", pp.NumberMove);
@@ -191,6 +213,7 @@ namespace OnlyWorko
             } catch (SqlException exa) {
                 Console.WriteLine(exa.Message);
             } finally {
+                cmd.Dispose();
                 conq.Close();
                 }
             }
@@ -202,9 +225,11 @@ namespace OnlyWorko
         /// <param name="gg"></param>
         /// <param name="pp"></param>
         public void PutGamoTimo(Guid gg, gTimo pp) {
-            try {
+            SqlCommand cmd = null;
+            try
+            {
                 conq.Open();
-                SqlCommand cmd = new SqlCommand("Gam.pPutTimoshka", conq);
+                cmd = new SqlCommand("Gam.pPutTimoshka", conq);
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@pgvido", gg);
                 cmd.Parameters.AddWithValue("@pnumo", pp.NumberForMove);
@@ -214,6 +239,7 @@ namespace OnlyWorko
             } catch (SqlException exa) {
                 Console.WriteLine(exa.Message);
             } finally {
+                cmd.Dispose();
                 conq.Close();
                 }
             }
